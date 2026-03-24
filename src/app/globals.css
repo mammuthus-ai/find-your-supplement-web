@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0D1117;
+  --surface: #161B22;
+  --surface-alt: #1C2333;
+  --border: #30363D;
+  --text: #F1F5F9;
+  --text-secondary: #94A3B8;
+  --text-tertiary: #64748B;
+  --teal: #14B8A6;
+  --teal-light: #2DD4BF;
+  --teal-dark: #042F2E;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-tertiary);
+}
+
+/* Selection */
+::selection {
+  background-color: rgba(20, 184, 166, 0.3);
+  color: var(--text);
+}
+
+/* Focus ring */
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Blog content prose */
+.prose h2 {
+  @apply text-xl font-semibold text-text mt-8 mb-3;
+}
+
+.prose h3 {
+  @apply text-lg font-semibold text-text mt-6 mb-2;
+}
+
+.prose p {
+  @apply text-text-secondary leading-relaxed mb-4;
+}
+
+.prose ul {
+  @apply list-disc list-inside space-y-1 mb-4 text-text-secondary;
+}
+
+.prose ol {
+  @apply list-decimal list-inside space-y-1 mb-4 text-text-secondary;
+}
+
+.prose li {
+  @apply text-text-secondary;
+}
+
+.prose strong {
+  @apply text-text font-semibold;
+}
+
+.prose em {
+  @apply text-text-secondary italic;
+}
+
+.prose table {
+  @apply w-full border-collapse mb-6 text-sm;
+}
+
+.prose th {
+  @apply text-left p-3 font-semibold text-text bg-surface border border-border;
+}
+
+.prose td {
+  @apply p-3 text-text-secondary border border-border;
+}
+
+.prose blockquote {
+  @apply border-l-2 border-teal pl-4 my-4 text-text-secondary italic;
+}
+
+.prose a {
+  @apply text-teal hover:text-teal-light underline transition-colors;
+}
+
+.prose hr {
+  @apply border-border my-8;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #14B8A6, #2DD4BF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.card-hover:hover {
+  border-color: var(--teal);
+  transform: translateY(-1px);
+}
+
+/* Animated gradient border */
+@keyframes pulse-border {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}

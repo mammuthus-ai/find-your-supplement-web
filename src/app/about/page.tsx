@@ -1,0 +1,240 @@
+import Link from 'next/link'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About — Find Your Supplement',
+  description:
+    'Learn about the evidence-based methodology behind Find Your Supplement, our privacy-first approach, and how the recommendation engine works.',
+}
+
+const methodologySteps = [
+  {
+    step: '01',
+    title: 'You answer a short quiz',
+    desc: 'Four steps covering your health goals, diet type, lifestyle factors (sun exposure, exercise, alcohol, caffeine, stress), and optional symptoms. No account required. Takes under 2 minutes.',
+  },
+  {
+    step: '02',
+    title: 'We score each supplement',
+    desc: 'Our engine evaluates 15 supplements across four dimensions: your diet (strongest signal), lifestyle factors, reported symptoms, and stated goals. Each dimension is weighted based on its clinical diagnostic accuracy in the PubMed literature.',
+  },
+  {
+    step: '03',
+    title: 'Results are ranked by relevance',
+    desc: "Supplements are ranked by a relevance score (0–100) normalized to the data you've provided. High priority (≥60) means strong multi-dimensional support. Medium (30–59) means moderate relevance. Low (<30) is notable but not critical.",
+  },
+  {
+    step: '04',
+    title: 'Evidence grades contextualize quality',
+    desc: 'Each supplement carries a grade (A–D) reflecting the quality of underlying evidence: A = meta-analyses and RCTs, B = multiple controlled trials, C = limited or small trials, D = preliminary or mechanistic evidence only.',
+  },
+]
+
+const weightTable = [
+  { dimension: 'Diet', weight: 20, note: 'Vegan diets show 93–95% B12 deficiency in systematic reviews' },
+  { dimension: 'Lifestyle', weight: 15, note: 'PubMed-backed mappings for sun, exercise, alcohol, caffeine, stress' },
+  { dimension: 'Symptoms', weight: 10, note: 'Lower weight due to sensitivity <80% and symptom overlap' },
+  { dimension: 'Goals', weight: 5, note: 'User preference — important but not a clinical signal' },
+]
+
+const privacyPoints = [
+  {
+    title: 'No account, no tracking',
+    desc: 'You never create an account. We never set cookies for tracking. Your quiz answers are processed entirely in your browser using JavaScript.',
+  },
+  {
+    title: 'No server storage',
+    desc: "Your health profile never leaves your device. It lives in sessionStorage — a temporary in-browser store — and is cleared when you close the tab.",
+  },
+  {
+    title: 'No data sold, ever',
+    desc: 'We have no ad network, no analytics pipeline, and no data broker relationships. The business model is Amazon affiliate commissions only.',
+  },
+]
+
+export default function AboutPage() {
+  return (
+    <div className="min-h-screen bg-bg">
+      {/* Hero */}
+      <div className="bg-surface border-b border-border py-14">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal/10 border border-teal/20 text-teal text-xs font-medium mb-5">
+            About the Project
+          </div>
+          <h1 className="text-3xl sm:text-4xl font-bold text-text mb-4">
+            Evidence-based. Privacy-first. Free, always.
+          </h1>
+          <p className="text-text-secondary text-base leading-relaxed max-w-2xl">
+            Find Your Supplement is a personalized supplement recommendation engine built on PubMed research.
+            It started as a mobile app and now has a web version so anyone can access it instantly, without
+            downloading anything.
+          </p>
+        </div>
+      </div>
+
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12 space-y-16">
+
+        {/* The problem */}
+        <section>
+          <h2 className="text-2xl font-bold text-text mb-4">The problem we're solving</h2>
+          <div className="prose">
+            <p>
+              The supplement industry is a $177 billion market filled with marketing claims, proprietary
+              blends, and influencer promotions. Most people don&apos;t know which supplements they actually need —
+              and end up spending money on things that do nothing for their specific situation.
+            </p>
+            <p>
+              The science, however, is clear. Certain nutrients are systematically deficient in certain diets.
+              Lifestyle factors like low sun exposure, intense exercise, or chronic stress create specific
+              nutritional demands. Symptoms can point to likely deficiencies. None of this is secret — it&apos;s all
+              published in peer-reviewed literature.
+            </p>
+            <p>
+              We built this tool to translate that research into simple, personalized recommendations — without
+              selling you anything.
+            </p>
+          </div>
+        </section>
+
+        {/* How it works */}
+        <section>
+          <h2 className="text-2xl font-bold text-text mb-2">How the engine works</h2>
+          <p className="text-text-secondary text-sm mb-8">
+            Our algorithm is a weighted, multi-dimensional scoring system calibrated against PubMed
+            systematic reviews and clinical diagnostic accuracy data.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-10">
+            {methodologySteps.map((s) => (
+              <div key={s.step} className="bg-surface border border-border rounded-xl p-5 relative">
+                <span className="text-text-tertiary font-mono text-xs absolute top-4 right-5">{s.step}</span>
+                <h3 className="text-text font-semibold text-sm mb-2 pr-8">{s.title}</h3>
+                <p className="text-text-secondary text-sm leading-relaxed">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Weight table */}
+          <div>
+            <h3 className="text-text font-semibold text-base mb-4">Dimension weights</h3>
+            <div className="bg-surface border border-border rounded-xl overflow-hidden">
+              <div className="grid grid-cols-12 px-5 py-3 border-b border-border text-xs font-semibold text-text-tertiary uppercase tracking-wider">
+                <div className="col-span-3">Dimension</div>
+                <div className="col-span-1 text-right">Weight</div>
+                <div className="col-span-8 pl-4">Calibration note</div>
+              </div>
+              {weightTable.map((row, i) => (
+                <div
+                  key={i}
+                  className={`grid grid-cols-12 px-5 py-3.5 text-sm ${
+                    i < weightTable.length - 1 ? 'border-b border-border' : ''
+                  }`}
+                >
+                  <div className="col-span-3 text-text font-medium">{row.dimension}</div>
+                  <div className="col-span-1 text-teal font-semibold text-right">{row.weight}</div>
+                  <div className="col-span-8 pl-4 text-text-secondary text-xs leading-relaxed">{row.note}</div>
+                </div>
+              ))}
+            </div>
+            <p className="text-text-tertiary text-xs mt-3">
+              Weights sum to 50 for the web version (blood work and genetics are app-only features).
+              Scores are normalized to the available dimensions to account for missing data.
+            </p>
+          </div>
+        </section>
+
+        {/* Evidence grades */}
+        <section>
+          <h2 className="text-2xl font-bold text-text mb-4">Evidence grades explained</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {[
+              {
+                grade: 'A',
+                color: 'bg-grade-a/10 border-grade-a/30 text-grade-a',
+                title: 'Meta-analyses & systematic RCTs',
+                desc: 'The gold standard. Multiple high-quality randomized controlled trials, often synthesized in systematic reviews and meta-analyses.',
+              },
+              {
+                grade: 'B',
+                color: 'bg-grade-b/10 border-grade-b/30 text-grade-b',
+                title: 'Multiple controlled trials',
+                desc: 'Several well-designed RCTs with consistent findings, or a smaller number of large-scale trials.',
+              },
+              {
+                grade: 'C',
+                color: 'bg-grade-c/10 border-grade-c/30 text-grade-c',
+                title: 'Limited or small trials',
+                desc: 'Some clinical evidence exists but is limited in scale, duration, or consistency. More research needed.',
+              },
+              {
+                grade: 'D',
+                color: 'bg-grade-d/10 border-grade-d/30 text-grade-d',
+                title: 'Preliminary evidence',
+                desc: 'Mostly in-vitro, animal studies, or very small human trials. Mechanistically plausible but not yet well-established clinically.',
+              },
+            ].map((g) => (
+              <div key={g.grade} className={`flex gap-4 p-4 rounded-xl border ${g.color}`}>
+                <span className="text-2xl font-bold flex-shrink-0">{g.grade}</span>
+                <div>
+                  <p className="font-semibold text-sm mb-1">{g.title}</p>
+                  <p className="text-xs leading-relaxed opacity-80">{g.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Privacy */}
+        <section>
+          <h2 className="text-2xl font-bold text-text mb-2">Privacy first</h2>
+          <p className="text-text-secondary text-sm mb-6">
+            Your health data is personal. We treat it that way.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {privacyPoints.map((p) => (
+              <div key={p.title} className="bg-surface border border-border rounded-xl p-5">
+                <div className="w-8 h-8 rounded-lg bg-teal/10 flex items-center justify-center mb-3">
+                  <svg className="w-4 h-4 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
+                </div>
+                <h3 className="text-text font-semibold text-sm mb-2">{p.title}</h3>
+                <p className="text-text-secondary text-xs leading-relaxed">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Business model */}
+        <section className="bg-surface border border-border rounded-2xl p-6 sm:p-8">
+          <h2 className="text-xl font-bold text-text mb-3">How we make money (transparency)</h2>
+          <p className="text-text-secondary text-sm leading-relaxed mb-4">
+            This site is free and has no subscription. Revenue comes exclusively from the Amazon Associates
+            affiliate program. When you click &ldquo;Buy on Amazon&rdquo; and make a purchase, we earn a small
+            commission (typically 1–4%) at no extra cost to you.
+          </p>
+          <p className="text-text-secondary text-sm leading-relaxed">
+            Our recommendations are based entirely on your quiz responses and the scientific literature —
+            not on commission rates or brand partnerships. We link to the supplement category on Amazon
+            (e.g., &ldquo;Vitamin D3 supplement&rdquo;) so you can choose the product that best fits your needs and
+            budget. We don&apos;t push specific brands.
+          </p>
+        </section>
+
+        {/* CTA */}
+        <section className="text-center">
+          <h2 className="text-2xl font-bold text-text mb-3">Try it yourself</h2>
+          <p className="text-text-secondary text-sm mb-6 max-w-md mx-auto">
+            The quiz takes under 2 minutes. No account, no email, no credit card.
+          </p>
+          <Link
+            href="/quiz"
+            className="inline-block bg-teal hover:bg-teal-light text-bg font-semibold text-base px-10 py-4 rounded-xl transition-colors shadow-lg shadow-teal/20"
+          >
+            Take the Free Quiz →
+          </Link>
+        </section>
+      </div>
+    </div>
+  )
+}

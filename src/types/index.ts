@@ -1,0 +1,97 @@
+export type Goal =
+  | 'energy'
+  | 'sleep'
+  | 'muscle'
+  | 'focus'
+  | 'longevity'
+  | 'immunity'
+  | 'mood'
+  | 'weight_loss'
+
+export type DietType =
+  | 'omnivore'
+  | 'vegetarian'
+  | 'vegan'
+  | 'keto'
+  | 'paleo'
+  | 'pescatarian'
+  | 'mediterranean'
+  | 'carnivore'
+  | 'other'
+
+export type Symptom =
+  | 'fatigue'
+  | 'poor_sleep'
+  | 'brain_fog'
+  | 'joint_pain'
+  | 'frequent_illness'
+  | 'anxiety'
+  | 'hair_loss'
+  | 'digestive_issues'
+  | 'low_mood'
+  | 'muscle_weakness'
+  | 'poor_memory'
+  | 'dry_skin'
+
+export type SunExposure = 'very_little' | 'some' | 'a_lot'
+export type ExerciseType = 'none' | 'cardio' | 'weight_training' | 'both'
+export type AlcoholConsumption = 'none' | 'light' | 'moderate' | 'heavy'
+export type CaffeineIntake = 'none' | 'light' | 'moderate' | 'heavy'
+export type StressLevel = 'low' | 'moderate' | 'high' | 'very_high'
+export type EvidenceGrade = 'A' | 'B' | 'C' | 'D'
+export type Priority = 'high' | 'medium' | 'low'
+
+export interface QuizProfile {
+  goals: Goal[]
+  dietType: DietType
+  sunExposure: SunExposure
+  exerciseType: ExerciseType
+  alcoholConsumption: AlcoholConsumption
+  caffeineIntake: CaffeineIntake
+  stressLevel: StressLevel
+  symptoms: Symptom[]
+}
+
+export interface DrugInteraction {
+  drug: string
+  severity: 'high' | 'moderate' | 'low'
+  description: string
+}
+
+export interface WebSupplement {
+  id: string
+  name: string
+  description: string
+  evidenceGrade: EvidenceGrade
+  goalsSupported: Goal[]
+  deficiencySymptoms: Symptom[]
+  safeUpperLimit: string
+  drugInteractions: DrugInteraction[]
+  pubmedCitation: string
+  nihUrl: string
+}
+
+export interface RecommendationReason {
+  type: 'goal' | 'symptom' | 'diet' | 'lifestyle'
+  label: string
+  detail: string
+}
+
+export interface SupplementRecommendation {
+  supplement: WebSupplement
+  score: number
+  rank: number
+  priority: Priority
+  reasons: RecommendationReason[]
+  evidenceGrade: EvidenceGrade
+}
+
+export interface BlogPost {
+  slug: string
+  title: string
+  excerpt: string
+  date: string
+  category: string
+  readTime: string
+  content: string
+}
