@@ -1,5 +1,23 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { blogPosts } from '@/data/blogPosts'
+import QuizCounter from '@/components/QuizCounter'
+
+export const metadata: Metadata = {
+  title: 'Find Your Supplement | Free Personalized Supplement Quiz',
+  description:
+    'Take our free 2-minute quiz to discover which supplements your body actually needs. Evidence-based, personalized recommendations for energy, sleep, focus, immunity, and more.',
+  alternates: {
+    canonical: 'https://findyoursupplement.shop/',
+  },
+  openGraph: {
+    title: 'Find Your Supplement | Free Personalized Supplement Quiz',
+    description:
+      'Take our free 2-minute quiz to discover which supplements your body actually needs. Personalized, evidence-based recommendations.',
+    url: 'https://findyoursupplement.shop/',
+    type: 'website',
+  },
+}
 
 const features = [
   {
@@ -86,6 +104,8 @@ export default function HomePage() {
             personalized, science-backed supplement recommendations — ranked by evidence
             and relevance to <em>you</em>.
           </p>
+
+          <QuizCounter className="mb-6" />
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

@@ -5,6 +5,9 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { buildRecommendations } from '@/engine/recommendationEngine'
 import type { QuizProfile, SupplementRecommendation, Priority, EvidenceGrade } from '@/types'
+import EmailCaptureCard from '@/components/EmailCaptureCard'
+import QuizCounter from '@/components/QuizCounter'
+import { incrementQuizCount } from '@/lib/quizCounter'
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -236,6 +239,7 @@ export default function ResultsPage() {
       setProfile(p)
       const recs = buildRecommendations(p)
       setRecommendations(recs)
+      incrementQuizCount()
     } catch {
       router.replace('/quiz')
     }
@@ -278,6 +282,8 @@ export default function ResultsPage() {
               )}
             </p>
           )}
+
+          <QuizCounter className="mt-2" />
 
           {/* Summary pills */}
           <div className="flex flex-wrap gap-2 mt-4">
@@ -330,6 +336,14 @@ export default function ResultsPage() {
             <PriorityGroup priority="low" recs={low} />
           </>
         )}
+
+        {/* Email capture */}
+        <div className="mb-10">
+          <EmailCaptureCard
+            quizGoals={profile.goals}
+            dietType={profile.dietType}
+          />
+        </div>
 
         {/* Retake / disclaimer */}
         <div className="border-t border-border pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">

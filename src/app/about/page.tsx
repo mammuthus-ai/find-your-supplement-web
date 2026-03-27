@@ -2,9 +2,19 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About — Find Your Supplement',
+  title: 'How It Works | Evidence-Based Supplement Methodology',
   description:
-    'Learn about the evidence-based methodology behind Find Your Supplement, our privacy-first approach, and how the recommendation engine works.',
+    'Learn how Find Your Supplement uses PubMed research to generate personalized supplement recommendations. Our evidence-based methodology explained.',
+  alternates: {
+    canonical: 'https://findyoursupplement.shop/about/',
+  },
+  openGraph: {
+    title: 'How It Works | Find Your Supplement',
+    description:
+      'Our evidence-based methodology for personalized supplement recommendations. Learn how our scoring algorithm uses PubMed research.',
+    url: 'https://findyoursupplement.shop/about/',
+    type: 'website',
+  },
 }
 
 const methodologySteps = [

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { blogPosts, getBlogPost } from '@/data/blogPosts'
 import type { Metadata } from 'next'
+import LeadMagnetPopup from '@/components/LeadMagnetPopup'
 
 interface Props {
   params: { slug: string }
@@ -14,9 +15,24 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getBlogPost(params.slug)
   if (!post) return { title: 'Not Found' }
+  const url = `https://findyoursupplement.shop/blog/${post.slug}/`
   return {
-    title: `${post.title} — Find Your Supplement`,
+    title: post.title,
     description: post.excerpt,
+    alternates: { canonical: url },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      url,
+      type: 'article',
+      publishedTime: post.date,
+      authors: ['Find Your Supplement'],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
+    },
   }
 }
 
@@ -101,6 +117,7 @@ function renderMarkdown(content: string) {
 
 function formatInline(text: string): string {
   return text
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-teal hover:underline">$1</a>')
     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
     .replace(/\*(.*?)\*/g, '<em>$1</em>')
     .replace(/`(.*?)`/g, '<code class="font-mono bg-surface-alt px-1 py-0.5 rounded text-xs">$1</code>')
@@ -112,8 +129,37 @@ export default function BlogPostPage({ params }: Props) {
 
   const related = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 3)
 
+  const blogPostingJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      '@type': 'Organization',
+      name: 'Find Your Supplement',
+      url: 'https://findyoursupplement.shop',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Find Your Supplement',
+      url: 'https://findyoursupplement.shop',
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://findyoursupplement.shop/blog/${post.slug}/`,
+    },
+    url: `https://findyoursupplement.shop/blog/${post.slug}/`,
+    articleSection: post.category,
+  }
+
   return (
     <div className="min-h-screen bg-bg">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingJsonLd) }}
+      />
       {/* Breadcrumb */}
       <div className="border-b border-border bg-surface">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 py-3 flex items-center gap-2 text-xs text-text-tertiary">
@@ -225,6 +271,7 @@ export default function BlogPostPage({ params }: Props) {
           </Link>
         </div>
       </div>
+      <LeadMagnetPopup />
     </div>
   )
 }
