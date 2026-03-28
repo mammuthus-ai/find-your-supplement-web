@@ -86,6 +86,39 @@ export interface SupplementRecommendation {
   evidenceGrade: EvidenceGrade
 }
 
+// ─── Evidence Cache Types (from free APIs) ──────────────────────────────────
+
+export interface TrialData {
+  completed: number
+  positive: number
+  phase3Plus: number
+}
+
+export interface SafetyData {
+  safeUpperLimit: string
+  adverseEventCount: number
+  interactionWarnings: string[]
+}
+
+export interface EvidenceEntry {
+  supplement: string
+  condition: string
+  pubmedCount: number
+  rctCount: number
+  metaAnalysisCount: number
+  citationScore: number
+  trialData: TrialData
+  safety: SafetyData
+  productCount: number
+  lastUpdated: string
+}
+
+export interface EvidenceCache {
+  version: string
+  generatedAt: string
+  entries: Record<string, EvidenceEntry[]>
+}
+
 export interface BlogPost {
   slug: string
   title: string

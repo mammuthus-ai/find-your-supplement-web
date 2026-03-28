@@ -22,6 +22,14 @@ import {
   EvidenceGrade,
   Priority,
 } from '@/types'
+import {
+  evidenceStrengthScore,
+  clinicalTrialScore,
+  safetyScore,
+  availabilityScore,
+  computeEvidenceGrade,
+  hasEvidenceCache,
+} from './evidenceScorer'
 
 const WEIGHTS = {
   diet: 20,
@@ -302,12 +310,6 @@ export function buildRecommendations(profile: QuizProfile): SupplementRecommenda
     const rawScore = goals.pts + symptoms.pts + diet.pts + lifestyle.pts
     if (rawScore <= 0) continue
 
-    let normalized = (rawScore / denominator) * 100
-    const bonus = corroborationBonus(diet.pts, lifestyle.pts, symptoms.pts, goals.pts)
-    if (bonus > 0) normalized = Math.min(normalized * (1 + bonus), 100)
-
-    const score = Math.min(Math.round(normalized), 100)
-
     const allReasons: RecommendationReason[] = [
       ...diet.reasons,
       ...lifestyle.reasons,
@@ -315,13 +317,63 @@ export function buildRecommendations(profile: QuizProfile): SupplementRecommenda
       ...goals.reasons,
     ]
 
+    let score: number
+    let grade: EvidenceGrade
+
+    if (hasEvidenceCache()) {
+      // ─── Enhanced 6-layer scoring (with evidence cache) ─────────────
+      // Layer 1: Profile relevance (0-25)
+      const profileScore = Math.min(Math.round((rawScore / denominator) * 25), 25)
+
+      // Layer 2: Evidence strength from PubMed/Semantic Scholar (0-25)
+      const evidence = evidenceStrengthScore(supp.name, profile.goals, profile.symptoms)
+
+      // Layer 3: Clinical trial data (0-15)
+      const trials = clinicalTrialScore(supp.name, profile.goals, profile.symptoms)
+
+      // Layer 4: Safety profile (0-15)
+      const safety = safetyScore(supp.name)
+
+      // Layer 5: Product availability (0-10)
+      const availability = availabilityScore(supp.name)
+
+      // Layer 6: Corroboration bonus
+      const activeDimensions = [diet.pts, lifestyle.pts, symptoms.pts, goals.pts, evidence, trials]
+        .filter(v => v > 0).length
+      const bonus = activeDimensions >= CORROBORATION_MIN_DIMENSIONS
+        ? (activeDimensions - CORROBORATION_MIN_DIMENSIONS + 1) * CORROBORATION_BONUS_RATE
+        : 0
+
+      let combined = profileScore + evidence + trials + safety + availability
+      if (bonus > 0) combined = Math.min(combined * (1 + bonus), 100)
+
+      score = Math.min(Math.round(combined), 100)
+      grade = computeEvidenceGrade(supp.name, profile.goals, profile.symptoms)
+
+      // Add evidence reason if significant
+      if (evidence >= 15) {
+        allReasons.push({
+          type: 'goal',
+          label: 'Strong research evidence',
+          detail: `Backed by multiple meta-analyses and randomized controlled trials from PubMed`,
+        })
+      }
+    } else {
+      // ─── Fallback: original 4-dimension scoring (no cache) ──────────
+      let normalized = (rawScore / denominator) * 100
+      const bonus = corroborationBonus(diet.pts, lifestyle.pts, symptoms.pts, goals.pts)
+      if (bonus > 0) normalized = Math.min(normalized * (1 + bonus), 100)
+      score = Math.min(Math.round(normalized), 100)
+      grade = supp.evidenceGrade as EvidenceGrade
+    }
+
     results.push({
       supplement: supp,
       score,
       rank: 0,
       priority: priorityFromScore(score),
       reasons: allReasons,
-      evidenceGrade: supp.evidenceGrade as EvidenceGrade,
+      evidenceGrade: grade,
     })
   }
 

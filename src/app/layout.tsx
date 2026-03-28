@@ -81,9 +81,23 @@ const organizationJsonLd = {
   description: 'Evidence-based personalized supplement recommendation platform.',
 }
 
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-XXXXXXXXXX'
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="bg-bg">
+      <head>
+        {GA_ID !== 'G-XXXXXXXXXX' && (
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${GA_ID}',{send_page_view:true});`,
+              }}
+            />
+          </>
+        )}
+      </head>
       <body className="min-h-screen flex flex-col bg-bg text-text">
         <script
           type="application/ld+json"

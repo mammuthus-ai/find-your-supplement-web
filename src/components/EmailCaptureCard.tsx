@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { subscribeToConvertKit } from '@/lib/convertkit';
+import { trackEmailCapture } from '@/lib/analytics';
 
 interface EmailCaptureCardProps {
   quizGoals?: string[];
@@ -25,6 +26,7 @@ export default function EmailCaptureCard({ quizGoals, dietType }: EmailCaptureCa
         ...(dietType ? { diet_type: dietType } : {}),
       },
     });
+    if (ok) trackEmailCapture('quiz_results');
     setStatus(ok ? 'success' : 'error');
   };
 

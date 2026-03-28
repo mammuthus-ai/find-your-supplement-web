@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { subscribeToConvertKit } from '@/lib/convertkit';
+import { trackEmailCapture } from '@/lib/analytics';
 
 const DISMISS_KEY = 'fys_leadmagnet_dismissed';
 const DISMISS_DAYS = 7;
@@ -44,6 +45,7 @@ export default function LeadMagnetPopup() {
 
     setStatus('loading');
     const ok = await subscribeToConvertKit({ email, formType: 'leadMagnet' });
+    if (ok) trackEmailCapture('lead_magnet');
     setStatus(ok ? 'success' : 'error');
     if (ok) {
       localStorage.setItem(DISMISS_KEY, String(Date.now()));

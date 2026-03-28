@@ -1,7 +1,8 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
+import { trackQuizStart, trackQuizStepComplete, trackQuizComplete } from '@/lib/analytics'
 import type {
   Goal,
   DietType,
@@ -207,7 +208,11 @@ export default function QuizPage() {
     return true
   }
 
+  useEffect(() => { trackQuizStart() }, [])
+
   function handleNext() {
+    const stepNames = ['goals', 'diet', 'lifestyle', 'symptoms']
+    trackQuizStepComplete(step, stepNames[step - 1] || 'unknown')
     if (step < TOTAL_STEPS) {
       setStep((s) => s + 1)
       window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -235,6 +240,7 @@ export default function QuizPage() {
       symptoms,
     }
     sessionStorage.setItem('quizProfile', JSON.stringify(profile))
+    trackQuizComplete(goals, dietType!)
     router.push('/results')
   }
 
