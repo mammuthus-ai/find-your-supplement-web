@@ -81,7 +81,7 @@ const organizationJsonLd = {
   description: 'Evidence-based personalized supplement recommendation platform.',
 }
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-XXXXXXXXXX'
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-Z0VTGTBB6R'
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
