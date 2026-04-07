@@ -1,0 +1,31 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Your Supplement Recommendations — Personalized Results',
+  description:
+    'Your personalized supplement recommendations based on your health goals, diet, lifestyle, and symptoms. Evidence-graded and ranked by relevance.',
+  alternates: {
+    canonical: 'https://findyoursupplement.shop/results/',
+  },
+  openGraph: {
+    title: 'Your Personalized Supplement Recommendations',
+    description:
+      'Evidence-based supplement recommendations tailored to your health profile. Graded A–D based on PubMed research quality.',
+    url: 'https://findyoursupplement.shop/results/',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Your Personalized Supplement Recommendations',
+    description:
+      'Evidence-based supplement recommendations tailored to your health profile.',
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
+}
+
+export default function ResultsLayout({ children }: { children: React.ReactNode }) {
+  return <>{children}</>
+}

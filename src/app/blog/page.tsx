@@ -7,6 +7,19 @@ export const metadata: Metadata = {
   description:
     'Research-backed articles on supplements, vitamins, and nutrition. Deep dives into the science behind the supplements you take.',
   alternates: { canonical: 'https://findyoursupplement.shop/blog/' },
+  openGraph: {
+    title: 'Blog — Evidence-Based Supplement Guides | Find Your Supplement',
+    description:
+      'Research-backed articles on supplements, vitamins, and nutrition. Deep dives into the science behind the supplements you take.',
+    url: 'https://findyoursupplement.shop/blog/',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Evidence-Based Supplement Guides',
+    description:
+      'Research-backed articles on supplements, vitamins, and nutrition. Deep dives into the science behind the supplements you take.',
+  },
 }
 
 export default function BlogPage() {

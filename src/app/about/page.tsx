@@ -62,9 +62,83 @@ const privacyPoints = [
   },
 ]
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How does Find Your Supplement work?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'You take a free 2-minute quiz about your health goals, diet, lifestyle, and symptoms. Our scoring engine evaluates 15 supplements across four dimensions — diet, lifestyle, symptoms, and goals — weighted by clinical diagnostic accuracy from PubMed research. Results are ranked by relevance score (0–100) and each supplement carries an evidence grade (A–D).',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is Find Your Supplement free?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, completely free. No account, no subscription, no paywall. We earn a small commission through the Amazon Associates affiliate program when you purchase supplements through our links, at no extra cost to you.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is my health data private?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Your quiz answers are processed entirely in your browser using JavaScript. Your health profile never leaves your device — it lives in sessionStorage and is cleared when you close the tab. We never store, sell, or share your health data.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What do the evidence grades (A–D) mean?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Grade A means the supplement is backed by meta-analyses and systematic RCTs (the gold standard). Grade B means multiple controlled trials with consistent findings. Grade C means limited or small trials where more research is needed. Grade D means preliminary evidence from in-vitro, animal studies, or very small human trials.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Should I replace my doctor with this quiz?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No. This tool is for informational and educational purposes only. It is not medical advice and should not replace consultation with a qualified healthcare professional. Always speak to your doctor before starting any supplement regimen, especially if you are pregnant, nursing, or taking medications.',
+      },
+    },
+  ],
+}
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: 'https://findyoursupplement.shop/',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'How It Works',
+      item: 'https://findyoursupplement.shop/about/',
+    },
+  ],
+}
+
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-bg">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       {/* Hero */}
       <div className="bg-surface border-b border-border py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
