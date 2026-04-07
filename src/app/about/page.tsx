@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   description:
     'Learn how Find Your Supplement uses PubMed research to generate personalized supplement recommendations. Our evidence-based methodology explained.',
   alternates: {
-    canonical: 'https://findyoursupplement.shop/about/',
+    canonical: 'https://findyoursupplement.co/about/',
   },
   openGraph: {
     title: 'How It Works | Find Your Supplement',
     description:
       'Our evidence-based methodology for personalized supplement recommendations. Learn how our scoring algorithm uses PubMed research.',
-    url: 'https://findyoursupplement.shop/about/',
+    url: 'https://findyoursupplement.co/about/',
     type: 'website',
   },
 }
@@ -117,13 +117,13 @@ const breadcrumbJsonLd = {
       '@type': 'ListItem',
       position: 1,
       name: 'Home',
-      item: 'https://findyoursupplement.shop/',
+      item: 'https://findyoursupplement.co/',
     },
     {
       '@type': 'ListItem',
       position: 2,
       name: 'How It Works',
-      item: 'https://findyoursupplement.shop/about/',
+      item: 'https://findyoursupplement.co/about/',
     },
   ],
 }

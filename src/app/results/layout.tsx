@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description:
     'Your personalized supplement recommendations based on your health goals, diet, lifestyle, and symptoms. Evidence-graded and ranked by relevance.',
   alternates: {
-    canonical: 'https://findyoursupplement.shop/results/',
+    canonical: 'https://findyoursupplement.co/results/',
   },
   openGraph: {
     title: 'Your Personalized Supplement Recommendations',
     description:
       'Evidence-based supplement recommendations tailored to your health profile. Graded A–D based on PubMed research quality.',
-    url: 'https://findyoursupplement.shop/results/',
+    url: 'https://findyoursupplement.co/results/',
     type: 'website',
   },
   twitter: {

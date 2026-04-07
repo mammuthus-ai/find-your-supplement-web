@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description: 'Privacy policy for Find Your Supplement app and website.',
-  alternates: { canonical: 'https://findyoursupplement.shop/privacy/' },
+  alternates: { canonical: 'https://findyoursupplement.co/privacy/' },
 }
 
 export default function PrivacyPage() {
@@ -19,7 +19,7 @@ export default function PrivacyPage() {
             <p>
               Find Your Supplement (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) is committed to protecting your privacy.
               This Privacy Policy explains how we collect, use, and safeguard your information when you use our
-              website (findyoursupplement.shop) and mobile application.
+              website (findyoursupplement.co) and mobile application.
             </p>
           </section>
 
@@ -123,8 +123,8 @@ export default function PrivacyPage() {
             <h2>Contact Us</h2>
             <p>
               If you have questions about this Privacy Policy, contact us at:{' '}
-              <a href="mailto:support@findyoursupplement.shop" className="text-teal hover:text-teal-light">
-                support@findyoursupplement.shop
+              <a href="mailto:support@findyoursupplement.co" className="text-teal hover:text-teal-light">
+                support@findyoursupplement.co
               </a>
             </p>
           </section>

@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   description:
     'Take our free 2-minute quiz to discover which supplements your body actually needs. Evidence-based, personalized recommendations for energy, sleep, focus, immunity, and more.',
   alternates: {
-    canonical: 'https://findyoursupplement.shop/',
+    canonical: 'https://findyoursupplement.co/',
   },
   openGraph: {
     title: 'Find Your Supplement | Free Personalized Supplement Quiz',
     description:
       'Take our free 2-minute quiz to discover which supplements your body actually needs. Personalized, evidence-based recommendations.',
-    url: 'https://findyoursupplement.shop/',
+    url: 'https://findyoursupplement.co/',
     type: 'website',
   },
 }

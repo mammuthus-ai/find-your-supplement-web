@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: 'Blog — Evidence-Based Supplement Guides',
   description:
     'Research-backed articles on supplements, vitamins, and nutrition. Deep dives into the science behind the supplements you take.',
-  alternates: { canonical: 'https://findyoursupplement.shop/blog/' },
+  alternates: { canonical: 'https://findyoursupplement.co/blog/' },
   openGraph: {
     title: 'Blog — Evidence-Based Supplement Guides | Find Your Supplement',
     description:
       'Research-backed articles on supplements, vitamins, and nutrition. Deep dives into the science behind the supplements you take.',
-    url: 'https://findyoursupplement.shop/blog/',
+    url: 'https://findyoursupplement.co/blog/',
     type: 'website',
   },
   twitter: {

@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Terms of Service',
   description: 'Terms of service for Find Your Supplement app and website.',
-  alternates: { canonical: 'https://findyoursupplement.shop/terms/' },
+  alternates: { canonical: 'https://findyoursupplement.co/terms/' },
 }
 
 export default function TermsPage() {
@@ -18,7 +18,7 @@ export default function TermsPage() {
             <h2>Acceptance of Terms</h2>
             <p>
               By accessing or using Find Your Supplement (&quot;the Service&quot;), including our website
-              (findyoursupplement.shop) and mobile application, you agree to be bound by these Terms of Service.
+              (findyoursupplement.co) and mobile application, you agree to be bound by these Terms of Service.
               If you do not agree, do not use the Service.
             </p>
           </section>
@@ -135,8 +135,8 @@ export default function TermsPage() {
             <h2>Contact</h2>
             <p>
               Questions about these Terms? Contact us at:{' '}
-              <a href="mailto:support@findyoursupplement.shop" className="text-teal hover:text-teal-light">
-                support@findyoursupplement.shop
+              <a href="mailto:support@findyoursupplement.co" className="text-teal hover:text-teal-light">
+                support@findyoursupplement.co
               </a>
             </p>
           </section>

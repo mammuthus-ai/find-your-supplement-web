@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Find Your Supplement' }],
   creator: 'Find Your Supplement',
   publisher: 'Find Your Supplement',
-  metadataBase: new URL('https://findyoursupplement.shop'),
+  metadataBase: new URL('https://findyoursupplement.co'),
   alternates: {
     canonical: '/',
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: 'Find Your Supplement | Free Personalized Supplement Quiz',
     description:
       'Get personalized, evidence-based supplement recommendations in 2 minutes. Based on your health goals, diet, lifestyle, and symptoms.',
-    url: 'https://findyoursupplement.shop',
+    url: 'https://findyoursupplement.co',
     siteName: 'Find Your Supplement',
     type: 'website',
     locale: 'en_US',
@@ -69,14 +69,14 @@ const websiteJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'Find Your Supplement',
-  url: 'https://findyoursupplement.shop',
+  url: 'https://findyoursupplement.co',
   description:
     'Free personalized supplement recommendations based on your health goals, diet, lifestyle, and symptoms.',
   potentialAction: {
     '@type': 'SearchAction',
     target: {
       '@type': 'EntryPoint',
-      urlTemplate: 'https://findyoursupplement.shop/blog/',
+      urlTemplate: 'https://findyoursupplement.co/blog/',
     },
   },
 }
@@ -85,7 +85,7 @@ const organizationJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Find Your Supplement',
-  url: 'https://findyoursupplement.shop',
+  url: 'https://findyoursupplement.co',
   description: 'Evidence-based personalized supplement recommendation platform.',
 }
 

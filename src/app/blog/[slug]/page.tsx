@@ -15,7 +15,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getBlogPost(params.slug)
   if (!post) return { title: 'Not Found' }
-  const url = `https://findyoursupplement.shop/blog/${post.slug}/`
+  const url = `https://findyoursupplement.co/blog/${post.slug}/`
   return {
     title: post.title,
     description: post.excerpt,
@@ -137,19 +137,19 @@ export default function BlogPostPage({ params }: Props) {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://findyoursupplement.shop/',
+        item: 'https://findyoursupplement.co/',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Blog',
-        item: 'https://findyoursupplement.shop/blog/',
+        item: 'https://findyoursupplement.co/blog/',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: post.title,
-        item: `https://findyoursupplement.shop/blog/${post.slug}/`,
+        item: `https://findyoursupplement.co/blog/${post.slug}/`,
       },
     ],
   }
@@ -164,18 +164,18 @@ export default function BlogPostPage({ params }: Props) {
     author: {
       '@type': 'Organization',
       name: 'Find Your Supplement',
-      url: 'https://findyoursupplement.shop',
+      url: 'https://findyoursupplement.co',
     },
     publisher: {
       '@type': 'Organization',
       name: 'Find Your Supplement',
-      url: 'https://findyoursupplement.shop',
+      url: 'https://findyoursupplement.co',
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://findyoursupplement.shop/blog/${post.slug}/`,
+      '@id': `https://findyoursupplement.co/blog/${post.slug}/`,
     },
-    url: `https://findyoursupplement.shop/blog/${post.slug}/`,
+    url: `https://findyoursupplement.co/blog/${post.slug}/`,
     articleSection: post.category,
   }
 

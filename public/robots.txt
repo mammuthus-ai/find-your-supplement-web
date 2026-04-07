@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://findyoursupplement.shop/sitemap.xml
+Sitemap: https://findyoursupplement.co/sitemap.xml
