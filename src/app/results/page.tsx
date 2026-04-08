@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { buildRecommendations } from '@/engine/recommendationEngine'
 import type { QuizProfile, SupplementRecommendation, Priority, EvidenceGrade } from '@/types'
 import EmailCaptureCard from '@/components/EmailCaptureCard'
+import MyStackCard from '@/components/MyStackCard'
 import QuizCounter from '@/components/QuizCounter'
 import { incrementQuizCount } from '@/lib/quizCounter'
 import { trackResultsView, trackSupplementExpand, trackAmazonClick } from '@/lib/analytics'
@@ -61,6 +62,48 @@ function ScoreBar({ score }: { score: number }) {
 }
 
 // ─── Supplement card ──────────────────────────────────────────────────────────
+
+const FREE_LIMIT = 3 // Show top 3 fully, lock the rest
+
+function LockedSupplementCard({ rec }: { rec: SupplementRecommendation }) {
+  const { supplement: supp, rank, priority, evidenceGrade } = rec
+
+  return (
+    <div className="bg-surface border border-border rounded-xl overflow-hidden relative">
+      <div className="p-5 blur-[2px] select-none pointer-events-none">
+        <div className="flex items-start gap-3">
+          <span className="flex-shrink-0 w-7 h-7 rounded-full bg-surface-alt border border-border flex items-center justify-center text-text-tertiary text-xs font-mono">
+            {rank}
+          </span>
+          <div>
+            <h3 className="text-text font-semibold text-base">{supp.name}</h3>
+            <div className="flex items-center gap-1.5 mt-1.5">
+              <span className={`text-xs font-semibold px-2 py-0.5 rounded border ${priorityStyles(priority)}`}>
+                {priorityLabel(priority)}
+              </span>
+              <span className={`text-xs font-medium px-2 py-0.5 rounded border ${gradeStyles(evidenceGrade)}`}>
+                Evidence {evidenceGrade}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute inset-0 flex items-center justify-center bg-surface/60 backdrop-blur-[1px]">
+        <div className="text-center px-6">
+          <svg className="w-5 h-5 text-teal mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+          </svg>
+          <p className="text-text text-sm font-medium">
+            {supp.name}
+          </p>
+          <p className="text-text-tertiary text-xs mt-1">
+            Unlock full report with dosage, timing & evidence
+          </p>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 function SupplementCard({ rec }: { rec: SupplementRecommendation }) {
   const [expanded, setExpanded] = useState(false)
@@ -214,9 +257,13 @@ function PriorityGroup({
       </div>
       <p className="text-text-tertiary text-xs mb-4 ml-4">{desc}</p>
       <div className="flex flex-col gap-3">
-        {recs.map((rec) => (
-          <SupplementCard key={rec.supplement.id} rec={rec} />
-        ))}
+        {recs.map((rec) =>
+          rec.rank <= FREE_LIMIT ? (
+            <SupplementCard key={rec.supplement.id} rec={rec} />
+          ) : (
+            <LockedSupplementCard key={rec.supplement.id} rec={rec} />
+          )
+        )}
       </div>
     </div>
   )
@@ -334,6 +381,44 @@ export default function ResultsPage() {
         ) : (
           <>
             <PriorityGroup priority="high" recs={high} />
+
+            {/* Unlock CTA — shown after top 3 free results */}
+            {recommendations.length > FREE_LIMIT && (
+              <div className="bg-surface border border-teal/20 rounded-2xl p-6 sm:p-8 mb-10 text-center relative overflow-hidden">
+                <div className="absolute inset-0 pointer-events-none">
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-72 h-36 bg-teal/5 blur-3xl" />
+                </div>
+                <div className="relative">
+                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal/10 border border-teal/20 text-teal text-xs font-medium mb-4">
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                    {recommendations.length - FREE_LIMIT} more recommendations locked
+                  </div>
+                  <h3 className="text-text font-bold text-lg sm:text-xl mb-2">
+                    Unlock your full supplement plan
+                  </h3>
+                  <p className="text-text-secondary text-sm mb-5 max-w-md mx-auto">
+                    Get all {recommendations.length} recommendations with detailed dosage, timing guidance,
+                    drug interaction alerts, and the full evidence breakdown.
+                  </p>
+                  <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+                    <a
+                      href="https://apps.apple.com/app/find-your-supplement/id6761743777"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-teal hover:bg-teal-light text-bg font-semibold text-sm px-6 py-3 rounded-xl transition-colors shadow-lg shadow-teal/20"
+                    >
+                      Download the App — Free Trial
+                    </a>
+                    <p className="text-text-tertiary text-xs">
+                      Free for 7 days, then $4.99/mo
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
+
             <PriorityGroup priority="medium" recs={medium} />
             <PriorityGroup priority="low" recs={low} />
           </>
@@ -346,6 +431,16 @@ export default function ResultsPage() {
             dietType={profile.dietType}
           />
         </div>
+
+        {/* Share your stack */}
+        {recommendations.length > 0 && (
+          <div className="mb-10">
+            <MyStackCard
+              recommendations={recommendations}
+              goals={profile.goals}
+            />
+          </div>
+        )}
 
         {/* Retake / disclaimer */}
         <div className="border-t border-border pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
