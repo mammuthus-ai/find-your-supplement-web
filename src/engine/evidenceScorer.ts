@@ -35,6 +35,7 @@ const SYMPTOM_CONDITIONS: Record<Symptom, string[]> = {
   muscle_weakness: ['muscle strength'],
   poor_memory: ['cognitive function'],
   dry_skin: ['inflammation'],
+  acid_reflux: ['digestive health', 'gut health'],
 }
 
 // ─── Helpers ────────────────────────────────────────────────────────────────

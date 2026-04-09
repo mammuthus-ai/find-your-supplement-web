@@ -32,6 +32,7 @@ export type Symptom =
   | 'muscle_weakness'
   | 'poor_memory'
   | 'dry_skin'
+  | 'acid_reflux'
 
 export type SunExposure = 'very_little' | 'some' | 'a_lot'
 export type ExerciseType = 'none' | 'cardio' | 'weight_training' | 'both'

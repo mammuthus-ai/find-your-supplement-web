@@ -65,36 +65,30 @@ function ScoreBar({ score }: { score: number }) {
 
 const FREE_LIMIT = 3 // Show top 3 fully, lock the rest
 
-function LockedSupplementCard({ rec }: { rec: SupplementRecommendation }) {
-  const { supplement: supp, rank, priority, evidenceGrade } = rec
-
+function LockedSupplementCard({ index }: { index: number }) {
   return (
     <div className="bg-surface border border-border rounded-xl overflow-hidden relative">
-      <div className="p-5 blur-[2px] select-none pointer-events-none">
+      <div className="p-5">
         <div className="flex items-start gap-3">
           <span className="flex-shrink-0 w-7 h-7 rounded-full bg-surface-alt border border-border flex items-center justify-center text-text-tertiary text-xs font-mono">
-            {rank}
+            {index}
           </span>
-          <div>
-            <h3 className="text-text font-semibold text-base">{supp.name}</h3>
-            <div className="flex items-center gap-1.5 mt-1.5">
-              <span className={`text-xs font-semibold px-2 py-0.5 rounded border ${priorityStyles(priority)}`}>
-                {priorityLabel(priority)}
-              </span>
-              <span className={`text-xs font-medium px-2 py-0.5 rounded border ${gradeStyles(evidenceGrade)}`}>
-                Evidence {evidenceGrade}
-              </span>
+          <div className="flex-1">
+            <div className="h-4 w-40 bg-border/40 rounded mb-2" />
+            <div className="flex items-center gap-1.5">
+              <div className="h-5 w-24 bg-border/30 rounded" />
+              <div className="h-5 w-20 bg-border/30 rounded" />
             </div>
           </div>
         </div>
       </div>
-      <div className="absolute inset-0 flex items-center justify-center bg-surface/60 backdrop-blur-[1px]">
+      <div className="absolute inset-0 flex items-center justify-center bg-surface/80">
         <div className="text-center px-6">
           <svg className="w-5 h-5 text-teal mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
           </svg>
           <p className="text-text text-sm font-medium">
-            {supp.name}
+            Supplement #{index}
           </p>
           <p className="text-text-tertiary text-xs mt-1">
             Unlock full report with dosage, timing & evidence
@@ -261,7 +255,7 @@ function PriorityGroup({
           rec.rank <= FREE_LIMIT ? (
             <SupplementCard key={rec.supplement.id} rec={rec} />
           ) : (
-            <LockedSupplementCard key={rec.supplement.id} rec={rec} />
+            <LockedSupplementCard key={rec.supplement.id} index={rec.rank} />
           )
         )}
       </div>

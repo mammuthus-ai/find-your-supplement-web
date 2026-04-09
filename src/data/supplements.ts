@@ -32,7 +32,7 @@ export const supplements: WebSupplement[] = [
       'An essential mineral involved in over 300 enzymatic reactions including ATP production, DNA synthesis, muscle contraction, and nerve transmission. Magnesium glycinate is the best-tolerated form for most people.',
     evidenceGrade: 'A',
     goalsSupported: ['sleep', 'focus', 'longevity', 'energy', 'mood'],
-    deficiencySymptoms: ['poor_sleep', 'muscle_weakness', 'anxiety', 'fatigue', 'poor_memory'],
+    deficiencySymptoms: ['poor_sleep', 'muscle_weakness', 'anxiety', 'fatigue', 'poor_memory', 'acid_reflux'],
     safeUpperLimit: '350 mg/day supplemental (NIH UL); higher doses under supervision can cause diarrhea',
     drugInteractions: [
       {
@@ -71,7 +71,7 @@ export const supplements: WebSupplement[] = [
       'A trace mineral required for immune function, protein synthesis, wound healing, and DNA synthesis. Deficiency is common in vegetarians and vegans due to phytate inhibition.',
     evidenceGrade: 'A',
     goalsSupported: ['immunity', 'muscle', 'energy'],
-    deficiencySymptoms: ['frequent_illness', 'hair_loss', 'poor_memory'],
+    deficiencySymptoms: ['frequent_illness', 'hair_loss', 'poor_memory', 'acid_reflux'],
     safeUpperLimit: '40 mg/day for adults',
     drugInteractions: [
       {
@@ -221,7 +221,7 @@ export const supplements: WebSupplement[] = [
       'A pineal hormone that regulates the sleep-wake cycle. Highly effective for jet lag, shift work, and sleep-onset difficulties. Lower doses (0.3–1 mg) are often more physiological than standard 5–10 mg.',
     evidenceGrade: 'A',
     goalsSupported: ['sleep'],
-    deficiencySymptoms: ['poor_sleep'],
+    deficiencySymptoms: ['poor_sleep', 'acid_reflux'],
     safeUpperLimit: '10 mg/day short-term; long-term safety above 5 mg not well established',
     drugInteractions: [
       {
@@ -259,7 +259,7 @@ export const supplements: WebSupplement[] = [
       'Live microorganisms that modulate the gut microbiome. Multi-strain formulas with Lactobacillus and Bifidobacterium species are most evidence-backed for immunity, digestion, and mood via the gut-brain axis.',
     evidenceGrade: 'B',
     goalsSupported: ['immunity', 'mood', 'longevity'],
-    deficiencySymptoms: ['digestive_issues', 'frequent_illness', 'low_mood', 'anxiety'],
+    deficiencySymptoms: ['digestive_issues', 'frequent_illness', 'low_mood', 'anxiety', 'acid_reflux'],
     safeUpperLimit: 'Generally safe; 10–100 billion CFU commonly used',
     drugInteractions: [
       {

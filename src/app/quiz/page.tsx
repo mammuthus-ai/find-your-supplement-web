@@ -53,6 +53,7 @@ const SYMPTOMS: { value: Symptom; label: string }[] = [
   { value: 'muscle_weakness', label: 'Muscle Weakness' },
   { value: 'poor_memory', label: 'Poor Memory' },
   { value: 'dry_skin', label: 'Dry Skin' },
+  { value: 'acid_reflux', label: 'Acid Reflux / GERD' },
 ]
 
 const SUN_OPTIONS: { value: SunExposure; label: string; desc: string }[] = [
