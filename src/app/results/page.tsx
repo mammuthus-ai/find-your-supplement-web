@@ -183,6 +183,28 @@ function SupplementCard({ rec }: { rec: SupplementRecommendation }) {
                 </div>
               ))}
 
+              {/* Recommended forms & dosage */}
+              {(supp.recommendedForms || supp.typicalDose) && (
+                <div className="mt-3 pt-3 border-t border-border space-y-2">
+                  {supp.recommendedForms && supp.recommendedForms.length > 0 && (
+                    <div className="bg-teal/5 border border-teal/10 rounded-lg px-3 py-2.5">
+                      <p className="text-text-secondary text-xs">
+                        <span className="text-teal font-semibold">Best forms: </span>
+                        {supp.recommendedForms[0]}
+                      </p>
+                    </div>
+                  )}
+                  {supp.typicalDose && (
+                    <div className="bg-surface-alt rounded-lg px-3 py-2.5">
+                      <p className="text-text-tertiary text-xs">
+                        <span className="text-text-secondary font-medium">Typical dose: </span>
+                        {supp.typicalDose}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              )}
+
               {/* Evidence info */}
               <div className="mt-3 pt-3 border-t border-border flex items-center justify-between">
                 <span className="text-text-tertiary text-xs">{gradeLabel(evidenceGrade)}</span>

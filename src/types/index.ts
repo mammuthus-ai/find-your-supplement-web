@@ -70,6 +70,8 @@ export interface WebSupplement {
   drugInteractions: DrugInteraction[]
   pubmedCitation: string
   nihUrl: string
+  recommendedForms?: string[]
+  typicalDose?: string
 }
 
 export interface RecommendationReason {

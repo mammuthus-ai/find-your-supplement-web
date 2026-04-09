@@ -24,6 +24,8 @@ export const supplements: WebSupplement[] = [
     ],
     pubmedCitation: 'PMID: 33278150',
     nihUrl: 'https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/',
+    recommendedForms: ['D3 cholecalciferol (preferred), D2 ergocalciferol (vegan)'],
+    typicalDose: '2,000-4,000 IU/day with a fat-containing meal',
   },
   {
     id: 'magnesium_glycinate',
@@ -43,6 +45,8 @@ export const supplements: WebSupplement[] = [
     ],
     pubmedCitation: 'PMID: 28264064',
     nihUrl: 'https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/',
+    recommendedForms: ['Glycinate (best absorbed, gentle), Threonate (brain health), Malate (energy), Citrate (constipation). Avoid Oxide (poor absorption).'],
+    typicalDose: '200-400 mg elemental magnesium/day, ideally before bed',
   },
   {
     id: 'omega3',
@@ -63,6 +67,8 @@ export const supplements: WebSupplement[] = [
     ],
     pubmedCitation: 'PMID: 30674433',
     nihUrl: 'https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/',
+    recommendedForms: ['Fish oil (EPA+DHA), Algae oil (vegan DHA+EPA), Krill oil (phospholipid form)'],
+    typicalDose: '1,000-2,000 mg combined EPA+DHA/day with food',
   },
   {
     id: 'zinc',
@@ -82,6 +88,8 @@ export const supplements: WebSupplement[] = [
     ],
     pubmedCitation: 'PMID: 29699272',
     nihUrl: 'https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/',
+    recommendedForms: ['Picolinate or Bisglycinate (best absorbed), Gluconate, Citrate. Zinc-Carnosine for gut/reflux.'],
+    typicalDose: '15-30 mg/day with food; take with copper if >25 mg/day',
   },
   {
     id: 'b12_methylcobalamin',
@@ -106,6 +114,8 @@ export const supplements: WebSupplement[] = [
     ],
     pubmedCitation: 'PMID: 33805492',
     nihUrl: 'https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/',
+    recommendedForms: ['Methylcobalamin (active form, preferred), Adenosylcobalamin, Cyanocobalamin (synthetic)'],
+    typicalDose: '500-1,000 mcg/day sublingual or oral',
   },
   {
     id: 'methylfolate',
@@ -126,6 +136,8 @@ export const supplements: WebSupplement[] = [
     ],
     pubmedCitation: 'PMID: 27951521',
     nihUrl: 'https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/',
+    recommendedForms: ['5-MTHF / Methylfolate (active form, bypasses MTHFR). Avoid folic acid if MTHFR variant.'],
+    typicalDose: '400-800 mcg/day',
   },
   {
     id: 'vitamin_c',
@@ -145,6 +157,8 @@ export const supplements: WebSupplement[] = [
     ],
     pubmedCitation: 'PMID: 29099763',
     nihUrl: 'https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/',
+    recommendedForms: ['Ascorbic acid (standard), Buffered/Calcium ascorbate (gentle on stomach), Liposomal (higher absorption)'],
+    typicalDose: '500-1,000 mg/day in divided doses',
   },
   {
     id: 'coq10',
@@ -169,6 +183,8 @@ export const supplements: WebSupplement[] = [
     ],
     pubmedCitation: 'PMID: 26432661',
     nihUrl: 'https://www.nccih.nih.gov/health/coenzyme-q10',
+    recommendedForms: ['Ubiquinol (reduced, better absorbed), Ubiquinone (standard, cheaper)'],
+    typicalDose: '100-200 mg/day with a fat-containing meal',
   },
   {
     id: 'ashwagandha',
@@ -193,6 +209,8 @@ export const supplements: WebSupplement[] = [
     ],
     pubmedCitation: 'PMID: 31975514',
     nihUrl: 'https://www.nccih.nih.gov/health/ashwagandha',
+    recommendedForms: ['KSM-66 root extract (most studied), Sensoril (root+leaf, better for sleep)'],
+    typicalDose: '300-600 mg/day KSM-66; cycle 8 weeks on, 4 weeks off',
   },
   {
     id: 'creatine',
@@ -213,6 +231,8 @@ export const supplements: WebSupplement[] = [
     ],
     pubmedCitation: 'PMID: 28615996',
     nihUrl: 'https://www.nccih.nih.gov/health/creatine',
+    recommendedForms: ['Monohydrate (gold standard, most studied). Skip HCL, ethyl ester — no advantage.'],
+    typicalDose: '3-5 g/day maintenance; no loading needed',
   },
   {
     id: 'melatonin',
@@ -232,6 +252,8 @@ export const supplements: WebSupplement[] = [
     ],
     pubmedCitation: 'PMID: 28411635',
     nihUrl: 'https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know',
+    recommendedForms: ['Immediate-release (sleep onset), Extended-release (staying asleep). Start low.'],
+    typicalDose: '0.3-1 mg 30-60 min before bed; lower doses often more effective',
   },
   {
     id: 'nac',
@@ -251,6 +273,8 @@ export const supplements: WebSupplement[] = [
     ],
     pubmedCitation: 'PMID: 25549859',
     nihUrl: 'https://www.nccih.nih.gov/health/n-acetyl-cysteine',
+    recommendedForms: ['N-Acetyl Cysteine capsules or powder'],
+    typicalDose: '600-1,200 mg/day on empty stomach',
   },
   {
     id: 'probiotics',
@@ -271,6 +295,8 @@ export const supplements: WebSupplement[] = [
     ],
     pubmedCitation: 'PMID: 29581563',
     nihUrl: 'https://www.nccih.nih.gov/health/probiotics-what-you-need-to-know',
+    recommendedForms: ['Multi-strain Lactobacillus + Bifidobacterium (most studied), Saccharomyces boulardii (travel/antibiotics)'],
+    typicalDose: '10-50 billion CFU/day; refrigerated strains preferred',
   },
   {
     id: 'collagen',
@@ -284,6 +310,8 @@ export const supplements: WebSupplement[] = [
     drugInteractions: [],
     pubmedCitation: 'PMID: 30681787',
     nihUrl: 'https://www.nccih.nih.gov/health/collagen',
+    recommendedForms: ['Hydrolyzed bovine peptides (Types I & III), Marine collagen (skin-focused). Take with Vitamin C.'],
+    typicalDose: '10-15 g/day; best on empty stomach',
   },
   {
     id: 'iron',
@@ -304,5 +332,7 @@ export const supplements: WebSupplement[] = [
     ],
     pubmedCitation: 'PMID: 31671808',
     nihUrl: 'https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/',
+    recommendedForms: ['Ferrous bisglycinate (gentle, well-absorbed), Heme iron polypeptide. Avoid ferrous sulfate (GI upset).'],
+    typicalDose: '18-27 mg/day for women; only supplement if lab-confirmed deficiency',
   },
 ]
