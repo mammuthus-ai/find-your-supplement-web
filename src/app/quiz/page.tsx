@@ -7,6 +7,7 @@ import type {
   Goal,
   DietType,
   Symptom,
+  Sex,
   SunExposure,
   ExerciseType,
   AlcoholConsumption,
@@ -16,6 +17,13 @@ import type {
 } from '@/types'
 
 // ─── Step data ────────────────────────────────────────────────────────────────
+
+const SEX_OPTIONS: { value: Sex; label: string }[] = [
+  { value: 'male', label: 'Male' },
+  { value: 'female', label: 'Female' },
+  { value: 'other', label: 'Non-binary / Other' },
+  { value: 'prefer_not_to_say', label: 'Prefer not to say' },
+]
 
 const GOALS: { value: Goal; label: string; emoji: string }[] = [
   { value: 'energy', label: 'Energy', emoji: '⚡' },
@@ -63,10 +71,8 @@ const SUN_OPTIONS: { value: SunExposure; label: string; desc: string }[] = [
 ]
 
 const EXERCISE_OPTIONS: { value: ExerciseType; label: string; desc: string }[] = [
-  { value: 'none', label: 'None / Very little', desc: 'Mostly sedentary' },
   { value: 'cardio', label: 'Cardio', desc: 'Running, cycling, swimming' },
   { value: 'weight_training', label: 'Weight training', desc: 'Lifting, resistance' },
-  { value: 'both', label: 'Both', desc: 'Cardio + weights' },
 ]
 
 const ALCOHOL_OPTIONS: { value: AlcoholConsumption; label: string; desc: string }[] = [
@@ -180,19 +186,33 @@ function SingleSelectCard({
 
 // ─── Main quiz component ──────────────────────────────────────────────────────
 
-const TOTAL_STEPS = 4
+const TOTAL_STEPS = 6
 
 export default function QuizPage() {
   const router = useRouter()
   const [step, setStep] = useState(1)
 
+  // Step 1: Age & Sex
+  const [age, setAge] = useState('')
+  const [sex, setSex] = useState<Sex | null>(null)
+
+  // Step 2: Goals
   const [goals, setGoals] = useState<Goal[]>([])
+
+  // Step 3: Diet
   const [dietType, setDietType] = useState<DietType | null>(null)
-  const [sunExposure, setSunExposure] = useState<SunExposure>('some')
-  const [exerciseType, setExerciseType] = useState<ExerciseType>('none')
-  const [alcoholConsumption, setAlcoholConsumption] = useState<AlcoholConsumption>('none')
-  const [caffeineIntake, setCaffeineIntake] = useState<CaffeineIntake>('none')
-  const [stressLevel, setStressLevel] = useState<StressLevel>('moderate')
+
+  // Step 4: Lifestyle
+  const [sunExposure, setSunExposure] = useState<SunExposure | null>(null)
+  const [exerciseTypes, setExerciseTypes] = useState<ExerciseType[]>([])
+  const [alcoholConsumption, setAlcoholConsumption] = useState<AlcoholConsumption | null>(null)
+  const [caffeineIntake, setCaffeineIntake] = useState<CaffeineIntake | null>(null)
+  const [stressLevel, setStressLevel] = useState<StressLevel | null>(null)
+
+  // Step 5: Medications
+  const [medicationsText, setMedicationsText] = useState('')
+
+  // Step 6: Symptoms
   const [symptoms, setSymptoms] = useState<Symptom[]>([])
 
   function toggleGoal(g: Goal) {
@@ -203,16 +223,22 @@ export default function QuizPage() {
     setSymptoms((prev) => (prev.includes(s) ? prev.filter((x) => x !== s) : [...prev, s]))
   }
 
+  function toggleExercise(e: ExerciseType) {
+    setExerciseTypes((prev) => (prev.includes(e) ? prev.filter((x) => x !== e) : [...prev, e]))
+  }
+
   function canProceed() {
-    if (step === 1) return goals.length > 0
-    if (step === 2) return dietType !== null
-    return true
+    if (step === 1) return age.trim() !== '' && Number(age) > 0 && Number(age) < 120 && sex !== null
+    if (step === 2) return goals.length > 0
+    if (step === 3) return dietType !== null
+    if (step === 4) return sunExposure !== null && alcoholConsumption !== null && caffeineIntake !== null && stressLevel !== null
+    return true // steps 5 (medications) and 6 (symptoms) are optional
   }
 
   useEffect(() => { trackQuizStart() }, [])
 
   function handleNext() {
-    const stepNames = ['goals', 'diet', 'lifestyle', 'symptoms']
+    const stepNames = ['age_sex', 'goals', 'diet', 'lifestyle', 'medications', 'symptoms']
     trackQuizStepComplete(step, stepNames[step - 1] || 'unknown')
     if (step < TOTAL_STEPS) {
       setStep((s) => s + 1)
@@ -231,14 +257,20 @@ export default function QuizPage() {
 
   function handleSubmit() {
     const profile: QuizProfile = {
+      age: Number(age),
+      sex: sex!,
       goals,
       dietType: dietType!,
-      sunExposure,
-      exerciseType,
-      alcoholConsumption,
-      caffeineIntake,
-      stressLevel,
+      sunExposure: sunExposure!,
+      exerciseType: exerciseTypes,
+      alcoholConsumption: alcoholConsumption!,
+      caffeineIntake: caffeineIntake!,
+      stressLevel: stressLevel!,
       symptoms,
+      medications: medicationsText
+        .split(',')
+        .map((m) => m.trim())
+        .filter(Boolean),
     }
     sessionStorage.setItem('quizProfile', JSON.stringify(profile))
     trackQuizComplete(goals, dietType!)
@@ -249,11 +281,58 @@ export default function QuizPage() {
     <div className="min-h-screen bg-bg py-8 sm:py-12">
       <div className="max-w-2xl mx-auto px-4 sm:px-6">
 
-        {/* Step 1: Goals */}
+        {/* Step 1: Age & Sex */}
         {step === 1 && (
           <div>
             <StepHeader
               step={1}
+              total={TOTAL_STEPS}
+              title="Tell us about yourself"
+              subtitle="We personalise your supplement recommendations to your biology."
+            />
+
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-text font-semibold text-sm mb-3">Your age</h3>
+                <input
+                  type="number"
+                  inputMode="numeric"
+                  min={1}
+                  max={120}
+                  value={age}
+                  onChange={(e) => setAge(e.target.value)}
+                  placeholder="e.g. 34"
+                  className="w-full sm:w-40 bg-surface border border-border rounded-xl px-4 py-3 text-sm text-text placeholder:text-text-tertiary focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal"
+                />
+              </div>
+
+              <div>
+                <h3 className="text-text font-semibold text-sm mb-3">Biological sex</h3>
+                <div className="flex flex-col gap-2">
+                  {SEX_OPTIONS.map((o) => (
+                    <SingleSelectCard
+                      key={o.value}
+                      selected={sex === o.value}
+                      onSelect={() => setSex(o.value)}
+                      label={o.label}
+                      desc=""
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {(!age || !sex) && (
+              <p className="text-text-tertiary text-xs mt-4">Please enter your age and select your biological sex to continue.</p>
+            )}
+          </div>
+        )}
+
+        {/* Step 2: Goals */}
+        {step === 2 && (
+          <div>
+            <StepHeader
+              step={2}
               total={TOTAL_STEPS}
               title="What are your health goals?"
               subtitle="Select all that apply. We'll prioritize supplements that match your goals."
@@ -275,11 +354,11 @@ export default function QuizPage() {
           </div>
         )}
 
-        {/* Step 2: Diet */}
-        {step === 2 && (
+        {/* Step 3: Diet */}
+        {step === 3 && (
           <div>
             <StepHeader
-              step={2}
+              step={3}
               total={TOTAL_STEPS}
               title="What's your diet type?"
               subtitle="Your diet determines which nutrients you're likely missing. This is the strongest signal in our engine."
@@ -298,11 +377,11 @@ export default function QuizPage() {
           </div>
         )}
 
-        {/* Step 3: Lifestyle */}
-        {step === 3 && (
+        {/* Step 4: Lifestyle */}
+        {step === 4 && (
           <div>
             <StepHeader
-              step={3}
+              step={4}
               total={TOTAL_STEPS}
               title="Tell us about your lifestyle"
               subtitle="These factors influence which nutrients your body needs more of."
@@ -312,7 +391,7 @@ export default function QuizPage() {
               {/* Sun exposure */}
               <div>
                 <h3 className="text-text font-semibold text-sm mb-3">
-                  ☀️ Sun exposure
+                  Sun exposure
                 </h3>
                 <div className="flex flex-col gap-2">
                   {SUN_OPTIONS.map((o) => (
@@ -327,19 +406,19 @@ export default function QuizPage() {
                 </div>
               </div>
 
-              {/* Exercise */}
+              {/* Exercise (multi-select) */}
               <div>
-                <h3 className="text-text font-semibold text-sm mb-3">
-                  🏋️ Exercise type
+                <h3 className="text-text font-semibold text-sm mb-1">
+                  Exercise type
                 </h3>
+                <p className="text-text-tertiary text-xs mb-3">Select all that apply, or leave empty if sedentary.</p>
                 <div className="flex flex-col gap-2">
                   {EXERCISE_OPTIONS.map((o) => (
-                    <SingleSelectCard
+                    <MultiSelectChip
                       key={o.value}
-                      selected={exerciseType === o.value}
-                      onSelect={() => setExerciseType(o.value)}
-                      label={o.label}
-                      desc={o.desc}
+                      selected={exerciseTypes.includes(o.value)}
+                      onToggle={() => toggleExercise(o.value)}
+                      label={`${o.label} — ${o.desc}`}
                     />
                   ))}
                 </div>
@@ -348,7 +427,7 @@ export default function QuizPage() {
               {/* Alcohol */}
               <div>
                 <h3 className="text-text font-semibold text-sm mb-3">
-                  🍷 Alcohol consumption
+                  Alcohol consumption
                 </h3>
                 <div className="flex flex-col gap-2">
                   {ALCOHOL_OPTIONS.map((o) => (
@@ -366,7 +445,7 @@ export default function QuizPage() {
               {/* Caffeine */}
               <div>
                 <h3 className="text-text font-semibold text-sm mb-3">
-                  ☕ Caffeine intake
+                  Caffeine intake
                 </h3>
                 <div className="flex flex-col gap-2">
                   {CAFFEINE_OPTIONS.map((o) => (
@@ -384,7 +463,7 @@ export default function QuizPage() {
               {/* Stress */}
               <div>
                 <h3 className="text-text font-semibold text-sm mb-3">
-                  🧘 Stress level
+                  Stress level
                 </h3>
                 <div className="flex flex-col gap-2">
                   {STRESS_OPTIONS.map((o) => (
@@ -399,14 +478,47 @@ export default function QuizPage() {
                 </div>
               </div>
             </div>
+            {!canProceed() && (
+              <p className="text-text-tertiary text-xs mt-4">Please answer all sections above to continue.</p>
+            )}
           </div>
         )}
 
-        {/* Step 4: Symptoms */}
-        {step === 4 && (
+        {/* Step 5: Medications */}
+        {step === 5 && (
           <div>
             <StepHeader
-              step={4}
+              step={5}
+              total={TOTAL_STEPS}
+              title="Do you take any medications?"
+              subtitle="We'll check for potential interactions with recommended supplements."
+            />
+            <textarea
+              value={medicationsText}
+              onChange={(e) => setMedicationsText(e.target.value)}
+              placeholder="e.g. levothyroxine, metformin, warfarin"
+              rows={3}
+              className="w-full bg-surface border border-border rounded-xl px-4 py-3 text-sm text-text placeholder:text-text-tertiary focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal resize-none"
+            />
+            <p className="text-text-tertiary text-xs mt-2">
+              Enter medication names separated by commas, or leave blank if none.
+            </p>
+            <div className="flex items-center gap-2 bg-surface-alt rounded-lg px-3 py-2 mt-3">
+              <svg className="w-3.5 h-3.5 text-text-tertiary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+              <p className="text-text-tertiary text-xs">
+                Medication data is never stored on our servers and stays in your browser session only.
+              </p>
+            </div>
+          </div>
+        )}
+
+        {/* Step 6: Symptoms */}
+        {step === 6 && (
+          <div>
+            <StepHeader
+              step={6}
               total={TOTAL_STEPS}
               title="Any symptoms you'd like to address?"
               subtitle="Select all that apply. Symptoms help identify likely deficiencies. Skip if none apply."
@@ -435,7 +547,7 @@ export default function QuizPage() {
               step === 1 ? 'invisible' : ''
             }`}
           >
-            ← Back
+            &larr; Back
           </button>
 
           <button
@@ -447,18 +559,18 @@ export default function QuizPage() {
                 : 'bg-surface border border-border text-text-tertiary cursor-not-allowed'
             }`}
           >
-            {step === TOTAL_STEPS ? 'Get My Results →' : 'Continue →'}
+            {step === TOTAL_STEPS ? 'Get My Results \u2192' : 'Continue \u2192'}
           </button>
         </div>
 
-        {/* Skip for symptoms step */}
-        {step === 4 && (
+        {/* Skip option for optional steps */}
+        {(step === 5 || step === 6) && (
           <div className="text-center mt-3">
             <button
-              onClick={handleSubmit}
+              onClick={step === TOTAL_STEPS ? handleSubmit : handleNext}
               className="text-text-tertiary hover:text-text-secondary text-xs underline transition-colors"
             >
-              Skip symptoms and see results
+              {step === 5 ? 'Skip — I don\u0027t take any medications' : 'Skip symptoms and see results'}
             </button>
           </div>
         )}

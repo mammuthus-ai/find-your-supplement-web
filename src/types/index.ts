@@ -1,3 +1,5 @@
+export type Sex = 'male' | 'female' | 'other' | 'prefer_not_to_say'
+
 export type Goal =
   | 'energy'
   | 'sleep'
@@ -35,7 +37,7 @@ export type Symptom =
   | 'acid_reflux'
 
 export type SunExposure = 'very_little' | 'some' | 'a_lot'
-export type ExerciseType = 'none' | 'cardio' | 'weight_training' | 'both'
+export type ExerciseType = 'none' | 'cardio' | 'weight_training'
 export type AlcoholConsumption = 'none' | 'light' | 'moderate' | 'heavy'
 export type CaffeineIntake = 'none' | 'light' | 'moderate' | 'heavy'
 export type StressLevel = 'low' | 'moderate' | 'high' | 'very_high'
@@ -43,14 +45,17 @@ export type EvidenceGrade = 'A' | 'B' | 'C' | 'D'
 export type Priority = 'high' | 'medium' | 'low'
 
 export interface QuizProfile {
+  age?: number
+  sex?: Sex
   goals: Goal[]
   dietType: DietType
   sunExposure: SunExposure
-  exerciseType: ExerciseType
+  exerciseType: ExerciseType[]
   alcoholConsumption: AlcoholConsumption
   caffeineIntake: CaffeineIntake
   stressLevel: StressLevel
   symptoms: Symptom[]
+  medications: string[]
 }
 
 export interface DrugInteraction {
@@ -87,6 +92,7 @@ export interface SupplementRecommendation {
   priority: Priority
   reasons: RecommendationReason[]
   evidenceGrade: EvidenceGrade
+  warnings: string[]
 }
 
 // ─── Evidence Cache Types (from free APIs) ──────────────────────────────────

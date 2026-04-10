@@ -48,9 +48,9 @@ If your total daily protein intake is insufficient, MPS can't keep up with break
 
 ## What the Evidence Actually Shows
 
-### Creatine: Evidence Grades by Goal
+### Creatine: Evidence Levels by Goal
 
-**Strength Gains — Grade A**
+**Strength Gains — High Evidence**
 
 This is the strongest evidence base in sports nutrition. A 2025 meta-analysis published in PMC (PMC12665265) analyzed results across multiple randomized controlled trials and found creatine supplementation combined with resistance training produced:
 
@@ -61,19 +61,19 @@ This is the strongest evidence base in sports nutrition. A 2025 meta-analysis pu
 
 These numbers represent real-world performance changes — not tiny statistical blips.
 
-**Muscle Hypertrophy — Grade B**
+**Muscle Hypertrophy — Good Evidence**
 
 Creatine adds 1–3 lbs of lean tissue over 6–8 weeks of resistance training, beyond what training alone produces. Mechanistically, this likely comes from increased training volume enabled by better energy availability, rather than a direct anabolic signal. When combined with protein supplementation, effects are additive — you get more muscle than either supplement alone.
 
-**Cognitive Function — Grade B**
+**Cognitive Function — Good Evidence**
 
 A 2024 meta-analysis in *Frontiers in Nutrition* (PMC reference: 10.3389/fnut.2024.1424972) reviewed 16 RCTs involving 492 participants and found significant positive effects of creatine supplementation on memory and attention. Effects were particularly pronounced in older adults (66–76 years). This makes creatine unusual among fitness supplements — it has legitimate evidence for brain health, not just physical performance.
 
-**Fat Loss — Grade C**
+**Fat Loss — Moderate Evidence**
 
 Creatine doesn't directly burn fat. It can preserve muscle mass during a caloric deficit (by maintaining training intensity), which indirectly supports body composition. However, the 2–4 lbs of water weight creatine draws into muscles can look like a setback on the scale even when fat loss is proceeding normally.
 
-**Aerobic Endurance — Grade D**
+**Aerobic Endurance — Limited Evidence**
 
 For pure aerobic activities — distance running, cycling at steady state — creatine provides minimal benefit. The phosphocreatine system is largely tapped out after 10–15 seconds of maximal effort; it doesn't contribute meaningfully to sustained aerobic output. The water weight gain may actually slightly impair performance in weight-bearing endurance sports.
 
@@ -83,23 +83,23 @@ Exception: sports requiring repeated high-intensity bursts within longer events 
 
 ---
 
-### Protein Powder: Evidence Grades by Goal
+### Protein Powder: Evidence Levels by Goal
 
-**Muscle Growth — Grade A**
+**Muscle Growth — High Evidence**
 
 A network meta-analysis of 78 RCTs confirmed that protein supplementation combined with resistance training significantly increases muscle mass compared to training alone. The effect is dose-dependent up to approximately 1.6g per kg of body weight per day — beyond that threshold, additional protein provides no further muscle-building benefit.
 
 Whey protein produces 93% greater acute muscle protein synthesis than casein in the hours immediately after a workout (making timing somewhat relevant for whey, less so for other forms). However, when matched for total daily protein and leucine content, high-quality plant proteins produce equivalent muscle gains to whey over longer study periods.
 
-**Recovery — Grade A**
+**Recovery — High Evidence**
 
-Protein is the primary driver of post-exercise recovery. Consuming 20–40g of protein after training (with adequate leucine — at least 2–3g) maximally stimulates MPS and accelerates the repair process. Pre-sleep protein (30–40g casein) has Grade A evidence for improving overnight muscle protein synthesis.
+Protein is the primary driver of post-exercise recovery. Consuming 20–40g of protein after training (with adequate leucine — at least 2–3g) maximally stimulates MPS and accelerates the repair process. Pre-sleep protein (30–40g casein) has High Evidence evidence for improving overnight muscle protein synthesis.
 
-**Fat Loss — Grade B**
+**Fat Loss — Good Evidence**
 
 Protein has the highest thermic effect of food (TEF) — approximately 20–30% of its calories are burned during digestion, compared to 5–10% for carbohydrates and 0–3% for fat. More practically, protein increases satiety through effects on ghrelin (hunger hormone) and peptide YY (fullness hormone). During a caloric deficit, adequate protein preserves muscle mass, which is critical for maintaining metabolic rate.
 
-**Strength Gains — Grade B**
+**Strength Gains — Good Evidence**
 
 Protein doesn't boost strength independently the way creatine does. But without sufficient protein, training-induced strength gains are blunted because the muscle tissue needed to express force isn't being adequately built. Protein is prerequisite infrastructure; creatine is performance amplification.
 
@@ -111,10 +111,10 @@ Protein doesn't boost strength independently the way creatine does. But without 
 
 | Form | Evidence Level | Standard Dose | Key Facts |
 |------|---------------|---------------|-----------|
-| **Creatine Monohydrate** | Grade A | 3–5g/day | Most studied form; most performance gains; cheapest |
-| **Creatine HCl** | Grade B | 1.5–2g/day | Better water solubility; no evidence of superior results |
-| **Creatine Ethyl Ester** | Grade D | — | Degrades in stomach; lower muscle uptake than monohydrate |
-| **Buffered Creatine (Kre-Alkalyn)** | Grade C | 3–5g/day | Marketing claims not supported by head-to-head evidence |
+| **Creatine Monohydrate** | High Evidence | 3–5g/day | Most studied form; most performance gains; cheapest |
+| **Creatine HCl** | Good Evidence | 1.5–2g/day | Better water solubility; no evidence of superior results |
+| **Creatine Ethyl Ester** | Limited Evidence | — | Degrades in stomach; lower muscle uptake than monohydrate |
+| **Buffered Creatine (Kre-Alkalyn)** | Moderate Evidence | 3–5g/day | Marketing claims not supported by head-to-head evidence |
 
 **The verdict:** Creatine monohydrate wins on all metrics. It has the most robust evidence, the largest performance effects in studies, and costs a fraction of alternative forms. The marketing around HCl and ethyl ester is not supported by the performance data. Buy monohydrate.
 
@@ -218,7 +218,7 @@ For protein, prioritize pea + rice blends (complete amino acid profile when comb
 
 Both supplements are particularly relevant for older adults:
 
-**Creatine** has Grade B evidence for combating sarcopenia (age-related muscle loss) and Grade B evidence for cognitive benefits — memory and processing speed — in adults 65+. This dual benefit makes it especially valuable in this demographic.
+**Creatine** has Good Evidence evidence for combating sarcopenia (age-related muscle loss) and Good Evidence evidence for cognitive benefits — memory and processing speed — in adults 65+. This dual benefit makes it especially valuable in this demographic.
 
 **Protein** requirements actually *increase* with age due to anabolic resistance — older muscle tissue is less sensitive to the MPS signal and requires more leucine to achieve the same response. Recommendations for adults 60+ often land at 2.0g/kg or higher, particularly when combined with resistance training.
 
@@ -259,9 +259,9 @@ For healthy individuals with normal kidney function, high protein intake (up to 
 
 1. **Creatine and protein work through completely different mechanisms.** Creatine boosts energy availability during intense efforts. Protein provides building blocks for repair and growth. They complement each other.
 
-2. **Creatine has Grade A evidence for strength gains** — among the strongest evidence in sports nutrition. Expect +4–11 kg of strength over 8–12 weeks with consistent training.
+2. **Creatine has High Evidence evidence for strength gains** — among the strongest evidence in sports nutrition. Expect +4–11 kg of strength over 8–12 weeks with consistent training.
 
-3. **Protein has Grade A evidence for muscle growth and recovery.** Hit 1.6–2.0g per kilogram of body weight daily. Beyond that threshold, more protein adds calories, not muscle.
+3. **Protein has High Evidence evidence for muscle growth and recovery.** Hit 1.6–2.0g per kilogram of body weight daily. Beyond that threshold, more protein adds calories, not muscle.
 
 4. **Creatine monohydrate is the only form you need.** Ignore HCl, ethyl ester, and buffered versions — they don't outperform monohydrate in head-to-head trials.
 
@@ -417,7 +417,7 @@ A 2025 placebo-controlled trial (PMC12412596) tested bisglycinate specifically �
 
 A landmark double-blind, placebo-controlled trial (PMC3703169) found that magnesium supplementation in elderly patients with insomnia improved sleep efficiency, sleep time, sleep onset latency, and early morning awakening. It also raised melatonin and reduced serum cortisol — addressing two of the most common drivers of age-related insomnia simultaneously.
 
-**Evidence Grade: A for glycinate and threonate in specific sleep populations. B for general magnesium insufficiency and sleep duration.**
+**Evidence Level: High for glycinate and threonate in specific sleep populations. Good for general magnesium insufficiency and sleep duration.**
 
 ---
 
@@ -581,7 +581,7 @@ For most adults, **2,000–4,000 IU/day** is a reasonable maintenance dose. Thos
 
 **Important:** Vitamin D3 works synergistically with Vitamin K2 (which directs calcium to bones rather than arteries) and magnesium (which activates D3). Consider taking all three together.
 
-## Evidence Grade: A
+## Evidence Level: High
 
 Vitamin D3 is one of the most studied nutrients in medicine. A 2021 meta-analysis of 46 RCTs confirmed its role in immune function, bone health, and mood regulation (PMID: 33278150).
 
@@ -641,7 +641,7 @@ The RDA for adults is 310–420 mg/day. Most supplements provide 200–400 mg. T
 
 **Best timing:** 30–60 minutes before bed for sleep benefits.
 
-## Evidence Grade: A
+## Evidence Level: High
 
 Supported by a 2017 meta-analysis of 40 studies (PMID: 28264064) confirming magnesium's role in metabolic health, sleep quality, and anxiety reduction.
     `,
@@ -705,7 +705,7 @@ Ashwagandha is generally recommended in cycles: **8–12 weeks on, 4 weeks off**
 - Those on thyroid medications — dose adjustments may be needed
 - People taking immunosuppressants
 
-## Evidence Grade: B
+## Evidence Level: Good
 
 Strong RCT evidence for stress and cortisol reduction. Evidence for testosterone and performance is promising but requires more large-scale trials.
     `,
@@ -763,7 +763,7 @@ Creatine monohydrate is one of the most studied supplements in history. Decades 
 
 **Caution:** People with pre-existing kidney disease should consult a physician before supplementing.
 
-## Evidence Grade: A
+## Evidence Level: High
 
 Supported by over 1,000 published studies (PMID: 28615996). The International Society of Sports Nutrition rates creatine as the most effective ergogenic nutritional supplement available.
     `,
@@ -829,7 +829,7 @@ Both provide bioavailable EPA and DHA. The choice often comes down to:
 
 For vegans and vegetarians, algae oil is the obvious choice. For omnivores, high-quality fish oil is also excellent.
 
-## Evidence Grade: A
+## Evidence Level: High
 
 EPA and DHA have some of the most extensive evidence in nutritional science. A 2019 meta-analysis of 13 RCTs (PMID: 30674433) confirmed cardiovascular benefits and supports cognitive health across the lifespan.
     `,
@@ -1645,7 +1645,7 @@ Understanding why magnesium deficiency is so common requires understanding how w
 
 Here is the evidence for each major magnesium benefit, organized by the quality and consistency of that evidence.
 
-## Sleep Quality — Grade A Evidence
+## Sleep Quality — High Evidence Evidence
 
 The sleep benefits of magnesium are among its most clinically well-established effects.
 
@@ -1659,7 +1659,7 @@ A 2021 systematic review of 7 RCTs confirmed that magnesium supplementation sign
 
 **Best form for sleep:** Magnesium Glycinate — bound to glycine, which has independent sleep-promoting effects (lowers core body temperature, promotes inhibitory neurotransmission). [View on Amazon](https://www.amazon.com/s?k=magnesium+glycinate+sleep&tag=insquire-20)
 
-## Stress and Anxiety — Grade A Evidence
+## Stress and Anxiety — High Evidence Evidence
 
 Magnesium plays a central role in regulating the hypothalamic-pituitary-adrenal (HPA) axis — the central command system of the stress response.
 
@@ -1671,7 +1671,7 @@ More importantly, the population most likely to benefit is the population most l
 
 The mechanism: NMDA (glutamate) receptor overactivation is implicated in anxiety. Magnesium is a natural NMDA channel blocker, reducing excitatory neurotransmission. This anti-excitatory effect is part of why magnesium has a calming quality that is noticeably different from sedation.
 
-## Cardiovascular Health — Grade A Evidence
+## Cardiovascular Health — High Evidence Evidence
 
 Magnesium is essential for cardiac rhythm regulation and vascular tone. It competes with calcium at smooth muscle cells, promoting vasodilation (lower blood pressure) and preventing excessive cardiac electrical activity (arrhythmias).
 
@@ -1683,7 +1683,7 @@ The cardiovascular evidence for magnesium is extensive:
 
 **Cardiovascular events:** Several large prospective studies (including the Nurses' Health Study and ARIC Study) have found that higher dietary magnesium intake is associated with significantly reduced risk of cardiovascular disease, heart attack, and stroke.
 
-## Blood Sugar and Insulin Sensitivity — Grade B/A Evidence
+## Blood Sugar and Insulin Sensitivity — Good Evidence/A Evidence
 
 Magnesium is an essential cofactor for insulin receptor activity. When you eat carbohydrates, insulin binds to receptors on cells to facilitate glucose uptake. This receptor-mediated process requires magnesium. Low magnesium impairs insulin signaling.
 
@@ -1691,7 +1691,7 @@ Multiple large observational studies have found that low magnesium intake is ass
 
 RCT evidence is more mixed but generally supportive: several well-designed trials show magnesium supplementation improves insulin sensitivity, fasting glucose, and HbA1c in both prediabetic and diabetic populations.
 
-## Muscle Function and Athletic Recovery — Grade A Evidence
+## Muscle Function and Athletic Recovery — High Evidence Evidence
 
 Muscles require magnesium for both contraction (binding to myosin) and relaxation (competing with calcium to allow muscle fibers to release). Magnesium deficiency disrupts this balance, causing the excessive, uncontrolled contractions experienced as muscle cramps.
 
@@ -1703,7 +1703,7 @@ Beyond cramps, magnesium supports athletic performance by reducing lactate accum
 
 **Best form for performance:** Magnesium Malate — malate is a citric acid cycle intermediate involved in ATP production, making this form particularly well-suited for energy and muscle performance. [View on Amazon](https://www.amazon.com/s?k=magnesium+malate&tag=insquire-20)
 
-## Migraine Prevention — Grade B Evidence
+## Migraine Prevention — Good Evidence Evidence
 
 Magnesium has become an evidence-supported preventive treatment for migraines — not a fringe claim but a mainstream medical recommendation.
 

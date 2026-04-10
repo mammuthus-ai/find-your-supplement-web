@@ -2,13 +2,14 @@
  * Web Recommendation Engine
  *
  * Adapted from the mobile app engine (v4) for the web quiz.
- * Web version uses: Goals, Diet, Lifestyle, Symptoms
+ * Web version uses: Goals, Diet, Lifestyle, Symptoms, Age/Sex
  * (Blood work and genetics are app-only features)
  *
  * Dimension weights calibrated from PubMed literature:
  *   Diet:      20  (vegan diets: 93–95% B12 deficiency prevalence)
  *   Lifestyle: 15  (PubMed-backed: sun exposure, exercise, alcohol, caffeine, stress)
  *   Symptoms:  10  (sensitivity <80%, high overlap between conditions)
+ *   Age/Sex:    8  (CoQ10 declines after 40, iron needs differ by sex, etc.)
  *   Goals:      5  (user preference, not clinical signal)
  */
 
@@ -35,6 +36,7 @@ const WEIGHTS = {
   diet: 20,
   lifestyle: 15,
   symptoms: 10,
+  ageSex: 8,
   goals: 5,
 } as const
 
@@ -144,6 +146,25 @@ const MAGNITUDE_SCORE: Record<Magnitude, number> = {
   low: 1,
 }
 
+// ─── Age/Sex boost maps (PubMed-derived) ─────────────────────────────────────
+
+const AGE_BOOSTS: { minAge: number; supplement: string; magnitude: Magnitude; reason: string }[] = [
+  { minAge: 40, supplement: 'CoQ10 (Ubiquinol)', magnitude: 'high', reason: 'CoQ10 synthesis declines significantly after 40' },
+  { minAge: 40, supplement: 'Collagen Peptides', magnitude: 'medium', reason: 'Collagen production declines with age' },
+  { minAge: 40, supplement: 'Melatonin', magnitude: 'medium', reason: 'Melatonin production drops after 40' },
+  { minAge: 50, supplement: 'Calcium', magnitude: 'medium', reason: 'Calcium needs increase after 50' },
+  { minAge: 50, supplement: 'Vitamin D3', magnitude: 'medium', reason: 'Vitamin D synthesis decreases with age' },
+  { minAge: 60, supplement: 'Creatine Monohydrate', magnitude: 'medium', reason: 'Combats age-related sarcopenia' },
+  { minAge: 60, supplement: 'Vitamin B12', magnitude: 'medium', reason: 'B12 absorption decreases with age' },
+]
+
+const SEX_BOOSTS: { sex: string; supplement: string; magnitude: Magnitude; maxAge?: number; reason: string }[] = [
+  { sex: 'female', supplement: 'Iron', magnitude: 'high', maxAge: 50, reason: 'Women of reproductive age need more iron due to menstruation' },
+  { sex: 'female', supplement: 'Methylfolate (5-MTHF)', magnitude: 'high', maxAge: 45, reason: 'Folate is critical for women of childbearing age' },
+  { sex: 'female', supplement: 'Calcium', magnitude: 'medium', reason: 'Women need more calcium, especially post-menopause' },
+  { sex: 'female', supplement: 'Vitamin D3', magnitude: 'medium', reason: 'Women are at higher risk for vitamin D deficiency' },
+]
+
 // ─── Scoring functions ────────────────────────────────────────────────────────
 
 function goalsScore(
@@ -228,9 +249,10 @@ function lifestyleScore(
 
   if (profile.sunExposure === 'very_little') activeKeys.push('sun_very_little')
 
-  if (profile.exerciseType === 'weight_training') activeKeys.push('exercise_weight_training')
-  else if (profile.exerciseType === 'cardio') activeKeys.push('exercise_cardio')
-  else if (profile.exerciseType === 'both') activeKeys.push('exercise_both')
+  const exercises = profile.exerciseType ?? []
+  if (exercises.includes('weight_training')) activeKeys.push('exercise_weight_training')
+  if (exercises.includes('cardio')) activeKeys.push('exercise_cardio')
+  if (exercises.includes('weight_training') && exercises.includes('cardio')) activeKeys.push('exercise_both')
 
   if (profile.alcoholConsumption === 'moderate') activeKeys.push('alcohol_moderate')
   else if (profile.alcoholConsumption === 'heavy') activeKeys.push('alcohol_heavy')
@@ -267,6 +289,63 @@ function lifestyleScore(
   return { pts: Math.min(pts, WEIGHTS.lifestyle), reasons }
 }
 
+function ageSexScore(
+  supp: WebSupplement,
+  profile: QuizProfile,
+): { pts: number; reasons: RecommendationReason[] } {
+  const reasons: RecommendationReason[] = []
+  let pts = 0
+
+  const age = profile.age
+  const sex = profile.sex
+
+  if (age && age > 0) {
+    for (const boost of AGE_BOOSTS) {
+      if (age >= boost.minAge && boost.supplement === supp.name) {
+        pts += MAGNITUDE_SCORE[boost.magnitude]
+        reasons.push({
+          type: 'lifestyle',
+          label: `Age-related need`,
+          detail: boost.reason,
+        })
+      }
+    }
+  }
+
+  if (sex) {
+    for (const boost of SEX_BOOSTS) {
+      if (boost.sex === sex && boost.supplement === supp.name) {
+        if (boost.maxAge && age && age > boost.maxAge) continue
+        pts += MAGNITUDE_SCORE[boost.magnitude]
+        reasons.push({
+          type: 'lifestyle',
+          label: `Recommended for your profile`,
+          detail: boost.reason,
+        })
+      }
+    }
+  }
+
+  return { pts: Math.min(pts, WEIGHTS.ageSex), reasons }
+}
+
+function checkWarnings(supp: WebSupplement, profile: QuizProfile): string[] {
+  const warnings: string[] = []
+  const meds = profile.medications ?? []
+  if (meds.length === 0) return warnings
+
+  for (const med of meds) {
+    for (const interaction of supp.drugInteractions) {
+      if (interaction.drug.toLowerCase().includes(med.toLowerCase())) {
+        warnings.push(
+          `${interaction.severity.toUpperCase()} interaction with ${med}: ${interaction.description}`
+        )
+      }
+    }
+  }
+  return warnings
+}
+
 function corroborationBonus(dietPts: number, lifestylePts: number, symptomPts: number, goalPts: number): number {
   const activeDims = [dietPts, lifestylePts, symptomPts, goalPts].filter((p) => p > 0).length
   if (activeDims < CORROBORATION_MIN_DIMENSIONS) return 0
@@ -286,17 +365,20 @@ export function buildRecommendations(profile: QuizProfile): SupplementRecommenda
 
   const hasGoals = profile.goals.length > 0
   const hasSymptoms = profile.symptoms.length > 0
+  const exercises = profile.exerciseType ?? []
   const hasLifestyle =
     profile.sunExposure !== 'some' ||
-    profile.exerciseType !== 'none' ||
+    exercises.length > 0 ||
     profile.alcoholConsumption !== 'none' ||
     profile.caffeineIntake !== 'none' ||
     profile.stressLevel !== 'low'
+  const hasAgeSex = !!(profile.age && profile.age > 0) || !!(profile.sex && profile.sex !== 'prefer_not_to_say')
 
   const availableMax =
     WEIGHTS.diet +
     (hasLifestyle ? WEIGHTS.lifestyle : 0) +
     (hasSymptoms ? WEIGHTS.symptoms : 0) +
+    (hasAgeSex ? WEIGHTS.ageSex : 0) +
     (hasGoals ? WEIGHTS.goals : 0)
 
   const denominator = availableMax || 1
@@ -306,13 +388,15 @@ export function buildRecommendations(profile: QuizProfile): SupplementRecommenda
     const symptoms = symptomsScore(supp, profile)
     const diet = dietScore(supp, profile)
     const lifestyle = lifestyleScore(supp, profile)
+    const ageSex = ageSexScore(supp, profile)
 
-    const rawScore = goals.pts + symptoms.pts + diet.pts + lifestyle.pts
+    const rawScore = goals.pts + symptoms.pts + diet.pts + lifestyle.pts + ageSex.pts
     if (rawScore <= 0) continue
 
     const allReasons: RecommendationReason[] = [
       ...diet.reasons,
       ...lifestyle.reasons,
+      ...ageSex.reasons,
       ...symptoms.reasons,
       ...goals.reasons,
     ]
@@ -374,6 +458,7 @@ export function buildRecommendations(profile: QuizProfile): SupplementRecommenda
       priority: priorityFromScore(score),
       reasons: allReasons,
       evidenceGrade: grade,
+      warnings: checkWarnings(supp, profile),
     })
   }
 

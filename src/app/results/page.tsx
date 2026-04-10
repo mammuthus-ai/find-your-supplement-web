@@ -142,6 +142,23 @@ function SupplementCard({ rec }: { rec: SupplementRecommendation }) {
         {/* Score bar */}
         <ScoreBar score={score} />
 
+        {/* Drug interaction warnings */}
+        {rec.warnings && rec.warnings.length > 0 && (
+          <div className="mt-3 bg-red-500/10 border border-red-500/20 rounded-lg px-3 py-2.5">
+            <div className="flex items-start gap-2">
+              <svg className="w-4 h-4 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
+              </svg>
+              <div>
+                <p className="text-red-400 text-xs font-semibold mb-1">Drug Interaction Warning</p>
+                {rec.warnings.map((w, i) => (
+                  <p key={i} className="text-red-300 text-xs leading-relaxed">{w}</p>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Description */}
         <p className="text-text-secondary text-sm leading-relaxed mt-3 line-clamp-2">
           {supp.description}
@@ -300,6 +317,14 @@ export default function ResultsPage() {
     }
     try {
       const p: QuizProfile = JSON.parse(raw)
+      // Migration: handle old profiles with single-select exerciseType
+      if (typeof p.exerciseType === 'string') {
+        const ex = p.exerciseType as string
+        if (ex === 'both') p.exerciseType = ['cardio', 'weight_training']
+        else if (ex === 'none') p.exerciseType = []
+        else p.exerciseType = [ex as 'cardio' | 'weight_training']
+      }
+      if (!p.medications) p.medications = []
       setProfile(p)
       const recs = buildRecommendations(p)
       setRecommendations(recs)
