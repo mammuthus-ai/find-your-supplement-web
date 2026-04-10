@@ -2,6 +2,283 @@ import { BlogPost } from '@/types'
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'creatine-vs-protein-powder',
+    title: 'Creatine vs Protein Powder: Which One Is Right for Your Goals?',
+    excerpt:
+      'Creatine and protein powder both build muscle — but they work completely differently. This evidence-graded breakdown tells you exactly which to prioritize, how to dose each, and why serious athletes use both.',
+    date: '2026-04-10',
+    category: 'Research Reviews',
+    readTime: '12 min read',
+    content: `
+## The Question Everyone Gets Wrong
+
+Walk into any gym and you'll hear it debated: creatine or protein powder? Which one should you take? Which one actually works?
+
+The premise of the question is flawed. Creatine and protein powder aren't competitors — they target completely different physiological mechanisms. But understanding *why* changes everything about how you supplement.
+
+This guide breaks down the science with evidence grades, specific study citations, and clear recommendations for different goals and populations. No marketing. No broscience.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## How They Actually Work: Completely Different Mechanisms
+
+Before comparing effects, you need to understand what each supplement actually does in your body.
+
+### How Creatine Works
+
+Creatine is a compound made from three amino acids (methionine, arginine, and glycine) that your body naturally produces in the liver and kidneys. When you supplement creatine, it accumulates in your muscles as phosphocreatine — a rapidly available phosphate donor.
+
+During explosive, high-intensity efforts (think: a max deadlift, a sprint, the last few reps of a hard set), your muscles burn through ATP (adenosine triphosphate) faster than aerobic metabolism can replenish it. Phosphocreatine bridges that gap: it donates a phosphate group to ADP, regenerating ATP almost instantly.
+
+The result: you can sustain peak power output for longer before fatigue hits. You get one or two extra reps on your heaviest sets. Over months of training, those extra reps compound into meaningfully greater strength and muscle gains.
+
+### How Protein Powder Works
+
+Protein powder doesn't boost energy or power output. It provides amino acids — the literal building blocks your body reassembles into muscle tissue.
+
+Exercise, especially resistance training, creates microscopic damage to muscle fibers. Your body responds by repairing that damage and adding new tissue — muscle protein synthesis (MPS). But MPS requires raw materials: specifically, a complete set of essential amino acids with adequate leucine to trigger the process.
+
+If your total daily protein intake is insufficient, MPS can't keep up with breakdown, and you end up in a net catabolic state despite training hard. Protein powder solves a dietary supply problem. Creatine solves an energy regeneration problem.
+
+**The key insight:** creatine makes your workouts harder; protein rebuilds what those workouts break down. They operate at different points in the muscle-building chain.
+
+---
+
+## What the Evidence Actually Shows
+
+### Creatine: Evidence Grades by Goal
+
+**Strength Gains — Grade A**
+
+This is the strongest evidence base in sports nutrition. A 2025 meta-analysis published in PMC (PMC12665265) analyzed results across multiple randomized controlled trials and found creatine supplementation combined with resistance training produced:
+
+- Upper-body strength gains of **+4.43 kg** compared to placebo
+- Lower-body strength gains of **+11.35 kg** compared to placebo
+- Effects were significant when supplementation lasted 8+ weeks
+- Males showed greater strength gains than females in the available data, though female research remains underrepresented
+
+These numbers represent real-world performance changes — not tiny statistical blips.
+
+**Muscle Hypertrophy — Grade B**
+
+Creatine adds 1–3 lbs of lean tissue over 6–8 weeks of resistance training, beyond what training alone produces. Mechanistically, this likely comes from increased training volume enabled by better energy availability, rather than a direct anabolic signal. When combined with protein supplementation, effects are additive — you get more muscle than either supplement alone.
+
+**Cognitive Function — Grade B**
+
+A 2024 meta-analysis in *Frontiers in Nutrition* (PMC reference: 10.3389/fnut.2024.1424972) reviewed 16 RCTs involving 492 participants and found significant positive effects of creatine supplementation on memory and attention. Effects were particularly pronounced in older adults (66–76 years). This makes creatine unusual among fitness supplements — it has legitimate evidence for brain health, not just physical performance.
+
+**Fat Loss — Grade C**
+
+Creatine doesn't directly burn fat. It can preserve muscle mass during a caloric deficit (by maintaining training intensity), which indirectly supports body composition. However, the 2–4 lbs of water weight creatine draws into muscles can look like a setback on the scale even when fat loss is proceeding normally.
+
+**Aerobic Endurance — Grade D**
+
+For pure aerobic activities — distance running, cycling at steady state — creatine provides minimal benefit. The phosphocreatine system is largely tapped out after 10–15 seconds of maximal effort; it doesn't contribute meaningfully to sustained aerobic output. The water weight gain may actually slightly impair performance in weight-bearing endurance sports.
+
+Exception: sports requiring repeated high-intensity bursts within longer events (cycling finishing sprints, rowing, team sports) may see some benefit.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+### Protein Powder: Evidence Grades by Goal
+
+**Muscle Growth — Grade A**
+
+A network meta-analysis of 78 RCTs confirmed that protein supplementation combined with resistance training significantly increases muscle mass compared to training alone. The effect is dose-dependent up to approximately 1.6g per kg of body weight per day — beyond that threshold, additional protein provides no further muscle-building benefit.
+
+Whey protein produces 93% greater acute muscle protein synthesis than casein in the hours immediately after a workout (making timing somewhat relevant for whey, less so for other forms). However, when matched for total daily protein and leucine content, high-quality plant proteins produce equivalent muscle gains to whey over longer study periods.
+
+**Recovery — Grade A**
+
+Protein is the primary driver of post-exercise recovery. Consuming 20–40g of protein after training (with adequate leucine — at least 2–3g) maximally stimulates MPS and accelerates the repair process. Pre-sleep protein (30–40g casein) has Grade A evidence for improving overnight muscle protein synthesis.
+
+**Fat Loss — Grade B**
+
+Protein has the highest thermic effect of food (TEF) — approximately 20–30% of its calories are burned during digestion, compared to 5–10% for carbohydrates and 0–3% for fat. More practically, protein increases satiety through effects on ghrelin (hunger hormone) and peptide YY (fullness hormone). During a caloric deficit, adequate protein preserves muscle mass, which is critical for maintaining metabolic rate.
+
+**Strength Gains — Grade B**
+
+Protein doesn't boost strength independently the way creatine does. But without sufficient protein, training-induced strength gains are blunted because the muscle tissue needed to express force isn't being adequately built. Protein is prerequisite infrastructure; creatine is performance amplification.
+
+---
+
+## The Form Question: What Should You Actually Buy?
+
+### Creatine Forms
+
+| Form | Evidence Level | Standard Dose | Key Facts |
+|------|---------------|---------------|-----------|
+| **Creatine Monohydrate** | Grade A | 3–5g/day | Most studied form; most performance gains; cheapest |
+| **Creatine HCl** | Grade B | 1.5–2g/day | Better water solubility; no evidence of superior results |
+| **Creatine Ethyl Ester** | Grade D | — | Degrades in stomach; lower muscle uptake than monohydrate |
+| **Buffered Creatine (Kre-Alkalyn)** | Grade C | 3–5g/day | Marketing claims not supported by head-to-head evidence |
+
+**The verdict:** Creatine monohydrate wins on all metrics. It has the most robust evidence, the largest performance effects in studies, and costs a fraction of alternative forms. The marketing around HCl and ethyl ester is not supported by the performance data. Buy monohydrate.
+
+[View Creatine Monohydrate on Amazon](https://www.amazon.com/s?k=creatine+monohydrate+unflavored&tag=insquire-20)
+
+### Protein Powder Forms
+
+| Type | Best For | Digestion Speed | Key Notes |
+|------|----------|-----------------|-----------|
+| **Whey Concentrate** | General use, post-workout | Fast | Contains some lactose; most affordable whey |
+| **Whey Isolate** | Lactose-sensitive users | Fast | >90% protein; minimal fat/lactose |
+| **Casein** | Before bed, sustained release | Slow | Ideal for overnight MPS support |
+| **Pea + Rice Blend** | Vegan/dairy-free | Moderate | Matches whey for muscle gains when leucine-matched |
+| **Egg White Protein** | Dairy-free with complete profile | Moderate | Excellent amino acid profile; less common |
+
+**The verdict:** Whey isolate or concentrate for post-workout (or any general daytime use). Casein before bed for overnight recovery. For vegans, a pea + rice blend is your best option — matched studies show equivalent muscle gains.
+
+[View Whey Protein Isolate on Amazon](https://www.amazon.com/s?k=whey+protein+isolate&tag=insquire-20)
+
+[View Pea + Rice Protein Blend on Amazon](https://www.amazon.com/s?k=pea+rice+protein+powder+blend&tag=insquire-20)
+
+---
+
+## Dosage: The Numbers You Actually Need
+
+### Creatine Dosing
+
+**Option A — No Loading Phase (Recommended):**
+- 3–5g daily, every day
+- Takes 3–4 weeks to fully saturate muscle creatine stores
+- Simpler, no GI discomfort risk
+
+**Option B — Loading Phase:**
+- 20–25g daily for 5–7 days, split into 4–5 servings
+- Saturates stores in about 1 week
+- May cause mild GI upset in some people
+- Suitable if you want faster results
+
+**Maintenance:** 3–5g daily indefinitely. Larger athletes (220+ lbs) may benefit from up to 8g/day.
+
+**Timing:** Despite popular belief, timing is not critical for creatine. Post-workout has slight evidence advantage, but consistency matters far more than precision. Take it whenever fits your routine.
+
+**Important:** You need at least 8 weeks of consistent supplementation and training to see meaningful strength and hypertrophy effects. Studies showing results consistently run 8–12 weeks.
+
+### Protein Dosing
+
+**Daily protein target:** 1.6–2.0g per kilogram of body weight
+- Example: 170 lb (77 kg) person → 123–154g protein/day
+- No additional muscle-building benefit beyond ~1.6g/kg has been demonstrated in most studies
+
+**Per serving:** 20–40g is optimal
+- 20–25g post-workout is sufficient to maximally stimulate acute MPS
+- More than 40g per serving provides diminishing returns for MPS (though excess protein isn't harmful, just expensive)
+
+**Timing:**
+- Post-workout: 20–25g whey within 1–2 hours
+- Before bed: 30–40g casein for overnight recovery
+- Other times: any source, as part of hitting daily targets
+
+---
+
+## Which Should You Take? Decision Framework
+
+**If you could only choose one:**
+
+Choose **protein powder** if:
+- You're not hitting your daily protein target through food (most common scenario)
+- Your primary goal is muscle growth or fat loss
+- You're in a caloric deficit
+- You're recovering from injury
+- You're over 60 (protein requirements increase with age)
+
+Choose **creatine** if:
+- You're already hitting 1.6g/kg protein through diet alone
+- Your primary goal is strength (not just muscle size)
+- You're vegetarian or vegan (dietary creatine intake is zero)
+- You're doing heavy compound lifts in the 1–8 rep range
+- You have cognitive health goals (memory, brain fog)
+
+**Take both if:**
+- You're serious about resistance training as a long-term pursuit
+- You want to maximize strength AND muscle gains
+- You have the budget and consistency to maintain both
+- You're training 3+ days per week with progressive overload
+
+The research is unambiguous: creatine + protein together produces greater gains than either supplement alone. They don't compete — they compound.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## Special Populations: Tailored Recommendations
+
+### Vegetarians and Vegans
+
+Creatine is especially impactful for plant-based eaters. Dietary creatine comes almost exclusively from meat and fish. Vegetarians begin supplementation with substantially lower muscle creatine stores than omnivores and show 20–30% greater performance improvements from supplementation.
+
+For protein, prioritize pea + rice blends (complete amino acid profile when combined), or pea protein alone if you're getting sufficient calories from varied whole foods. Look for products with ≥2.5g leucine per serving to ensure adequate MPS stimulation.
+
+### Adults Over 60
+
+Both supplements are particularly relevant for older adults:
+
+**Creatine** has Grade B evidence for combating sarcopenia (age-related muscle loss) and Grade B evidence for cognitive benefits — memory and processing speed — in adults 65+. This dual benefit makes it especially valuable in this demographic.
+
+**Protein** requirements actually *increase* with age due to anabolic resistance — older muscle tissue is less sensitive to the MPS signal and requires more leucine to achieve the same response. Recommendations for adults 60+ often land at 2.0g/kg or higher, particularly when combined with resistance training.
+
+Both supplements should be paired with consistent resistance training for meaningful effect.
+
+### Endurance Athletes
+
+**Protein:** Essential, especially at higher training volumes. Aim for 1.6g/kg minimum, rising to 2.0g/kg during heavy training blocks.
+
+**Creatine:** Use with caution and context-specific analysis. The 2–4 lb water weight gain may impair performance in weight-bearing sports (running, triathlon). For cycling, rowing, or swim sports where weight isn't penalized by gravity, creatine may support repeated high-intensity efforts. For pure distance running, the risk-benefit is unfavorable.
+
+### Women
+
+Early creatine research was heavily male. More recent data shows that women benefit from creatine, though the effect sizes for strength gains appear somewhat smaller in female populations (likely due to naturally lower muscle creatine stores being a less significant limiting factor). Benefits for cognitive function appear to be equivalent or potentially greater for women, with emerging research suggesting creatine may help mitigate hormonal impacts on brain function during luteal phase and perimenopause.
+
+---
+
+## Common Questions Answered
+
+**Can I mix creatine and protein in the same shake?**
+Yes — no harmful interaction exists. Protein's effect on insulin may slightly improve creatine uptake (insulin helps shuttle creatine into muscle cells). Taking them together post-workout is convenient and effective.
+
+**Does creatine cause bloating?**
+The water retention from creatine sits inside muscle cells (intracellular), not subcutaneously. You won't look puffy. The 2–4 lbs is essentially intramuscular hydration — which is actually associated with a fuller, not softer, appearance.
+
+**Is creatine safe long-term?**
+Yes. Research following supplementation for 2+ years shows no adverse effects on kidney or liver function in healthy individuals. Creatine slightly elevates serum creatinine (a metabolic byproduct), which may concern some doctors unfamiliar with supplementation — but this is expected and benign in the absence of underlying kidney disease.
+
+**Do I need to cycle creatine?**
+No. Cycling (taking breaks) was a popular recommendation that has no scientific basis. Daily consistent supplementation is the protocol used in virtually all positive research.
+
+**How much protein is too much?**
+For healthy individuals with normal kidney function, high protein intake (up to 3g/kg) has not been shown to cause harm. The "too much protein damages kidneys" concern applies to people with pre-existing kidney disease, not healthy adults. That said, beyond ~1.6g/kg, extra protein doesn't add muscle — it just adds calories.
+
+---
+
+## Key Takeaways
+
+1. **Creatine and protein work through completely different mechanisms.** Creatine boosts energy availability during intense efforts. Protein provides building blocks for repair and growth. They complement each other.
+
+2. **Creatine has Grade A evidence for strength gains** — among the strongest evidence in sports nutrition. Expect +4–11 kg of strength over 8–12 weeks with consistent training.
+
+3. **Protein has Grade A evidence for muscle growth and recovery.** Hit 1.6–2.0g per kilogram of body weight daily. Beyond that threshold, more protein adds calories, not muscle.
+
+4. **Creatine monohydrate is the only form you need.** Ignore HCl, ethyl ester, and buffered versions — they don't outperform monohydrate in head-to-head trials.
+
+5. **Vegetarians and older adults benefit most from creatine.** Plant-based eaters have zero dietary creatine. Adults 60+ benefit from both the physical and cognitive effects.
+
+6. **If budget forces a choice, protein wins for most people.** Dietary protein deficiency is more common than creatine-limited training capacity. Solve the diet problem first.
+
+7. **If you can take both, do it.** The research supports additive benefits — more muscle and strength than either alone.
+
+**[Take the free supplement quiz to find your personal stack →](/quiz)**
+
+---
+
+*This article is for informational purposes only and does not constitute medical advice. Supplements are not intended to diagnose, treat, cure, or prevent any disease. Consult your physician before starting any new supplement regimen, especially if you have pre-existing health conditions, take prescription medications, or are pregnant or nursing. Individual results will vary.*
+`,
+  },
+  {
     slug: 'best-magnesium-for-sleep',
     title: 'Best Magnesium for Sleep: The Science-Backed Guide to Forms, Dosage, and Timing',
     excerpt:
