@@ -6,9 +6,9 @@ export const blogPosts: BlogPost[] = [
     title: 'Creatine vs Protein Powder: Which One Is Right for Your Goals?',
     excerpt:
       'Creatine and protein powder both build muscle — but they work completely differently. This evidence-graded breakdown tells you exactly which to prioritize, how to dose each, and why serious athletes use both.',
-    date: '2026-04-11',
+    date: '2026-04-10',
     category: 'Research Reviews',
-    readTime: '13 min read',
+    readTime: '12 min read',
     content: `
 ## The Question Everyone Gets Wrong
 
@@ -52,7 +52,7 @@ If your total daily protein intake is insufficient, MPS can't keep up with break
 
 **Strength Gains — High Evidence**
 
-This is the strongest evidence base in sports nutrition. A [2025 meta-analysis](https://pmc.ncbi.nlm.nih.gov/articles/PMC12665265/) analyzed results across multiple randomized controlled trials and found creatine supplementation combined with resistance training produced:
+This is the strongest evidence base in sports nutrition. A 2025 meta-analysis published in PMC (PMC12665265) analyzed results across multiple randomized controlled trials and found creatine supplementation combined with resistance training produced:
 
 - Upper-body strength gains of **+4.43 kg** compared to placebo
 - Lower-body strength gains of **+11.35 kg** compared to placebo
@@ -63,11 +63,11 @@ These numbers represent real-world performance changes — not tiny statistical 
 
 **Muscle Hypertrophy — Good Evidence**
 
-Creatine adds 1–3 lbs of lean tissue over 6–8 weeks of resistance training, beyond what training alone produces. Mechanistically, this likely comes from increased training volume enabled by better energy availability, rather than a direct anabolic signal. When combined with protein supplementation, [effects are additive](https://pubmed.ncbi.nlm.nih.gov/11591884/) — you get more muscle than either supplement alone.
+Creatine adds 1–3 lbs of lean tissue over 6–8 weeks of resistance training, beyond what training alone produces. Mechanistically, this likely comes from increased training volume enabled by better energy availability, rather than a direct anabolic signal. When combined with protein supplementation, effects are additive — you get more muscle than either supplement alone.
 
 **Cognitive Function — Good Evidence**
 
-A [2024 meta-analysis in *Frontiers in Nutrition*](https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1424972/full) reviewed 16 RCTs involving 492 participants and found significant positive effects of creatine supplementation on memory and attention. Effects were particularly pronounced in older adults (66–76 years). This makes creatine unusual among fitness supplements — it has legitimate evidence for brain health, not just physical performance.
+A 2024 meta-analysis in *Frontiers in Nutrition* (PMC reference: 10.3389/fnut.2024.1424972) reviewed 16 RCTs involving 492 participants and found significant positive effects of creatine supplementation on memory and attention. Effects were particularly pronounced in older adults (66–76 years). This makes creatine unusual among fitness supplements — it has legitimate evidence for brain health, not just physical performance.
 
 **Fat Loss — Moderate Evidence**
 
@@ -87,9 +87,9 @@ Exception: sports requiring repeated high-intensity bursts within longer events 
 
 **Muscle Growth — High Evidence**
 
-A [network meta-analysis of 78 RCTs](https://pmc.ncbi.nlm.nih.gov/articles/PMC12862422/) confirmed that protein supplementation combined with resistance training significantly increases muscle mass compared to training alone. The effect is dose-dependent up to approximately 1.6g per kg of body weight per day — beyond that threshold, additional protein provides no further muscle-building benefit.
+A network meta-analysis of 78 RCTs confirmed that protein supplementation combined with resistance training significantly increases muscle mass compared to training alone. The effect is dose-dependent up to approximately 1.6g per kg of body weight per day — beyond that threshold, additional protein provides no further muscle-building benefit.
 
-Whey protein produces 93% greater acute muscle protein synthesis than casein in the hours immediately after a workout (making timing somewhat relevant for whey, less so for other forms). A [2025 systematic review](https://www.mdpi.com/2072-6643/17/16/2579) confirmed that 20–40g of whey protein combined with exercise enhances MPS through the AKT/mTOR signaling pathway. When matched for total daily protein and leucine content, high-quality plant proteins produce equivalent muscle gains to whey over longer study periods.
+Whey protein produces 93% greater acute muscle protein synthesis than casein in the hours immediately after a workout (making timing somewhat relevant for whey, less so for other forms). However, when matched for total daily protein and leucine content, high-quality plant proteins produce equivalent muscle gains to whey over longer study periods.
 
 **Recovery — High Evidence**
 
@@ -245,7 +245,7 @@ Yes — no harmful interaction exists. Protein's effect on insulin may slightly 
 The water retention from creatine sits inside muscle cells (intracellular), not subcutaneously. You won't look puffy. The 2–4 lbs is essentially intramuscular hydration — which is actually associated with a fuller, not softer, appearance.
 
 **Is creatine safe long-term?**
-Yes. [Research following supplementation for 2+ years](https://pmc.ncbi.nlm.nih.gov/articles/PMC7871530/) shows no adverse effects on kidney or liver function in healthy individuals. Creatine slightly elevates serum creatinine (a metabolic byproduct), which may concern some doctors unfamiliar with supplementation — but this is expected and benign in the absence of underlying kidney disease.
+Yes. Research following supplementation for 2+ years shows no adverse effects on kidney or liver function in healthy individuals. Creatine slightly elevates serum creatinine (a metabolic byproduct), which may concern some doctors unfamiliar with supplementation — but this is expected and benign in the absence of underlying kidney disease.
 
 **Do I need to cycle creatine?**
 No. Cycling (taking breaks) was a popular recommendation that has no scientific basis. Daily consistent supplementation is the protocol used in virtually all positive research.
@@ -272,19 +272,6 @@ For healthy individuals with normal kidney function, high protein intake (up to 
 7. **If you can take both, do it.** The research supports additive benefits — more muscle and strength than either alone.
 
 **[Take the free supplement quiz to find your personal stack →](/quiz)**
-
----
-
-## References
-
-1. Effects of creatine supplementation on muscle strength gains — a meta-analysis and systematic review. *PMC*, 2025. [Read study](https://pmc.ncbi.nlm.nih.gov/articles/PMC12665265/)
-2. The effects of creatine supplementation on cognitive function in adults: a systematic review and meta-analysis. *Frontiers in Nutrition*, 2024. [Read study](https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1424972/full)
-3. Which protein-based dietary supplements most effectively enhance fat-free mass and strength gains in healthy adults undergoing resistance training? A network meta-analysis. *PMC*, 2024. [Read study](https://pmc.ncbi.nlm.nih.gov/articles/PMC12862422/)
-4. Whey protein supplementation combined with exercise on muscle protein synthesis and the AKT/mTOR pathway in healthy adults: a systematic review and meta-analysis. *Nutrients*, 2025. [Read study](https://www.mdpi.com/2072-6643/17/16/2579)
-5. The effect of whey protein supplementation with and without creatine monohydrate combined with resistance training on lean tissue mass and muscle strength. *Int J Sport Nutr Exerc Metab*, 2001. [Read study](https://pubmed.ncbi.nlm.nih.gov/11591884/)
-6. Common questions and misconceptions about creatine supplementation: what does the scientific evidence really show? *J Int Soc Sports Nutr*, 2021. [Read study](https://pmc.ncbi.nlm.nih.gov/articles/PMC7871530/)
-7. Impact of creatine supplementation and exercise training in older adults: a systematic review and meta-analysis. *PMC*, 2025. [Read study](https://pmc.ncbi.nlm.nih.gov/articles/PMC12506341/)
-8. A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults. *Br J Sports Med*, 2018. [Read study](https://pubmed.ncbi.nlm.nih.gov/28698222/)
 
 ---
 
