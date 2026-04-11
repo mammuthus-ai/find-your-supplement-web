@@ -52,7 +52,7 @@ export default function MyStackCard({ recommendations, goals }: MyStackCardProps
             </p>
           </div>
           <div className="w-8 h-8 rounded-lg bg-teal flex items-center justify-center flex-shrink-0">
-            <span className="text-bg font-bold text-xs">Fx</span>
+            <span className="text-white font-bold text-xs">Fx</span>
           </div>
         </div>
       </div>

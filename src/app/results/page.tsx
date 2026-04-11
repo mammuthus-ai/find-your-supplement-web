@@ -82,7 +82,7 @@ function LockedSupplementCard({ index }: { index: number }) {
           </div>
         </div>
       </div>
-      <div className="absolute inset-0 flex items-center justify-center bg-surface/80">
+      <div className="absolute inset-0 flex items-center justify-center bg-bg/80 backdrop-blur-[2px]">
         <div className="text-center px-6">
           <svg className="w-5 h-5 text-teal mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
@@ -104,7 +104,7 @@ function SupplementCard({ rec }: { rec: SupplementRecommendation }) {
   const { supplement: supp, score, rank, priority, reasons, evidenceGrade } = rec
 
   return (
-    <div className="bg-surface border border-border rounded-xl overflow-hidden card-hover">
+    <div className="bg-bg border border-border rounded-xl overflow-hidden shadow-soft card-hover">
       {/* Header */}
       <div className="p-5">
         <div className="flex items-start justify-between gap-3 mb-3">
@@ -146,13 +146,13 @@ function SupplementCard({ rec }: { rec: SupplementRecommendation }) {
         {rec.warnings && rec.warnings.length > 0 && (
           <div className="mt-3 bg-red-500/10 border border-red-500/20 rounded-lg px-3 py-2.5">
             <div className="flex items-start gap-2">
-              <svg className="w-4 h-4 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
               </svg>
               <div>
-                <p className="text-red-400 text-xs font-semibold mb-1">Drug Interaction Warning</p>
+                <p className="text-red-700 text-xs font-semibold mb-1">Drug Interaction Warning</p>
                 {rec.warnings.map((w, i) => (
-                  <p key={i} className="text-red-300 text-xs leading-relaxed">{w}</p>
+                  <p key={i} className="text-red-600 text-xs leading-relaxed">{w}</p>
                 ))}
               </div>
             </div>
@@ -361,7 +361,7 @@ export default function ResultsPage() {
             <span className="w-1.5 h-1.5 rounded-full bg-teal" />
             {recommendations.length} supplements analyzed
           </div>
-          <h1 className="text-2xl sm:text-3xl font-bold text-text mb-2">
+          <h1 className="font-heading text-2xl sm:text-3xl font-extrabold text-text mb-2">
             Your personalized recommendations
           </h1>
           {goalLabels && (
@@ -425,9 +425,9 @@ export default function ResultsPage() {
 
             {/* Unlock CTA — shown after top 3 free results */}
             {recommendations.length > FREE_LIMIT && (
-              <div className="bg-surface border border-teal/20 rounded-2xl p-6 sm:p-8 mb-10 text-center relative overflow-hidden">
+              <div className="bg-gradient-to-br from-teal-dark to-surface border border-teal/20 rounded-2xl p-6 sm:p-8 mb-10 text-center relative overflow-hidden">
                 <div className="absolute inset-0 pointer-events-none">
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-72 h-36 bg-teal/5 blur-3xl" />
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-72 h-36 bg-teal/8 blur-3xl" />
                 </div>
                 <div className="relative">
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal/10 border border-teal/20 text-teal text-xs font-medium mb-4">
@@ -448,7 +448,7 @@ export default function ResultsPage() {
                       href="https://apps.apple.com/app/find-your-supplement/id6761743777"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-teal hover:bg-teal-light text-bg font-semibold text-sm px-6 py-3 rounded-xl transition-colors shadow-lg shadow-teal/20"
+                      className="bg-teal hover:bg-teal-light text-white font-semibold text-sm px-6 py-3 rounded-xl transition-colors shadow-lg shadow-teal/20"
                     >
                       Download the App — Free Trial
                     </a>

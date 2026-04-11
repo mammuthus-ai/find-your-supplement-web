@@ -145,7 +145,7 @@ export default function AboutPage() {
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal/10 border border-teal/20 text-teal text-xs font-medium mb-5">
             About the Project
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-text mb-4">
+          <h1 className="font-heading text-3xl sm:text-4xl font-extrabold text-text mb-4">
             Evidence-based. Privacy-first. Free, always.
           </h1>
           <p className="text-text-secondary text-base leading-relaxed max-w-2xl">
@@ -313,7 +313,7 @@ export default function AboutPage() {
           </p>
           <Link
             href="/quiz"
-            className="inline-block bg-teal hover:bg-teal-light text-bg font-semibold text-base px-10 py-4 rounded-xl transition-colors shadow-lg shadow-teal/20"
+            className="inline-block bg-teal hover:bg-teal-light text-white font-semibold text-base px-10 py-4 rounded-xl transition-colors shadow-lg shadow-teal/20"
           >
             Take the Free Quiz →
           </Link>

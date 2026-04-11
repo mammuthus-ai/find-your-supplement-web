@@ -32,7 +32,7 @@ export default function EmailCaptureCard({ quizGoals, dietType }: EmailCaptureCa
 
   if (status === 'success') {
     return (
-      <div className="bg-teal-900/30 border border-teal/30 rounded-xl p-6 text-center">
+      <div className="bg-teal/10 border border-teal/30 rounded-xl p-6 text-center">
         <div className="text-2xl mb-2">&#10003;</div>
         <h3 className="text-lg font-semibold text-text mb-1">Check your inbox!</h3>
         <p className="text-text-secondary text-sm">
@@ -60,20 +60,20 @@ export default function EmailCaptureCard({ quizGoals, dietType }: EmailCaptureCa
               onChange={(e) => setEmail(e.target.value)}
               placeholder="your@email.com"
               required
-              className="flex-1 bg-background border border-gray-700 rounded-lg px-4 py-2.5 text-sm text-text placeholder:text-gray-500 focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal"
+              className="flex-1 bg-bg border border-border rounded-lg px-4 py-2.5 text-sm text-text placeholder:text-text-tertiary focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal"
             />
             <button
               type="submit"
               disabled={status === 'loading'}
-              className="bg-teal hover:bg-teal-light text-background font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors disabled:opacity-50 whitespace-nowrap"
+              className="bg-teal hover:bg-teal-light text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors disabled:opacity-50 whitespace-nowrap"
             >
               {status === 'loading' ? 'Sending...' : 'Send My Plan'}
             </button>
           </form>
           {status === 'error' && (
-            <p className="text-red-400 text-xs mt-2">Something went wrong. Please try again.</p>
+            <p className="text-red-600 text-xs mt-2">Something went wrong. Please try again.</p>
           )}
-          <p className="text-gray-600 text-xs mt-2">No spam, ever. Unsubscribe anytime.</p>
+          <p className="text-text-tertiary text-xs mt-2">No spam, ever. Unsubscribe anytime.</p>
         </div>
       </div>
     </div>

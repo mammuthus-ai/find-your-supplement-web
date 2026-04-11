@@ -244,7 +244,7 @@ export default function BlogPostPage({ params }: Props) {
               </p>
               <Link
                 href="/quiz"
-                className="block w-full bg-teal hover:bg-teal-light text-bg text-xs font-semibold text-center px-4 py-2.5 rounded-lg transition-colors"
+                className="block w-full bg-teal hover:bg-teal-light text-white text-xs font-semibold text-center px-4 py-2.5 rounded-lg transition-colors"
               >
                 Take Free Quiz →
               </Link>

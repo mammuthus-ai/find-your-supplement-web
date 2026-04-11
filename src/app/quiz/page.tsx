@@ -555,7 +555,7 @@ export default function QuizPage() {
             disabled={!canProceed()}
             className={`text-sm font-semibold px-8 py-2.5 rounded-xl transition-colors ${
               canProceed()
-                ? 'bg-teal hover:bg-teal-light text-bg'
+                ? 'bg-teal hover:bg-teal-light text-white'
                 : 'bg-surface border border-border text-text-tertiary cursor-not-allowed'
             }`}
           >
