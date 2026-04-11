@@ -15,12 +15,12 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-bg/90 backdrop-blur-md shadow-sm">
+    <header className="sticky top-0 z-50 border-b border-border bg-bg/90 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group">
           <div className="w-8 h-8 rounded-lg bg-teal flex items-center justify-center flex-shrink-0">
-            <span className="text-white font-bold text-sm">Fx</span>
+            <span className="text-bg font-bold text-sm">Fx</span>
           </div>
           <span className="font-semibold text-text text-sm sm:text-base">
             Find Your<span className="text-teal"> Supplement</span>
@@ -44,7 +44,7 @@ export default function Header() {
           ))}
           <Link
             href="/quiz"
-            className="bg-teal hover:bg-teal-light text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
+            className="bg-teal hover:bg-teal-light text-bg text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
           >
             Take the Quiz
           </Link>
@@ -86,7 +86,7 @@ export default function Header() {
           <Link
             href="/quiz"
             onClick={() => setMenuOpen(false)}
-            className="bg-teal text-white text-sm font-semibold px-4 py-2.5 rounded-lg text-center mt-1 transition-colors"
+            className="bg-teal text-bg text-sm font-semibold px-4 py-2.5 rounded-lg text-center mt-1 transition-colors"
           >
             Take the Quiz →
           </Link>

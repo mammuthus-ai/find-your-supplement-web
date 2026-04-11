@@ -91,7 +91,7 @@ export default function BlogPage() {
           </p>
           <Link
             href="/quiz"
-            className="inline-block bg-teal hover:bg-teal-light text-white font-semibold text-sm px-6 py-3 rounded-xl transition-colors"
+            className="inline-block bg-teal hover:bg-teal-light text-bg font-semibold text-sm px-6 py-3 rounded-xl transition-colors"
           >
             Take the Free Quiz →
           </Link>
