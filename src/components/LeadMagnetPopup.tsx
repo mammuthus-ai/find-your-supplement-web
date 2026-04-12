@@ -56,10 +56,10 @@ export default function LeadMagnetPopup() {
 
   return (
     <div className="fixed bottom-4 right-4 z-50 w-80 animate-slide-up">
-      <div className="bg-surface border border-teal/30 rounded-xl shadow-2xl shadow-black/40 p-5">
+      <div className="bg-bg border border-teal/30 rounded-xl shadow-2xl shadow-gray-300/50 p-5">
         <button
           onClick={dismiss}
-          className="absolute top-3 right-3 text-gray-500 hover:text-text text-lg leading-none"
+          className="absolute top-3 right-3 text-text-tertiary hover:text-text text-lg leading-none"
           aria-label="Close"
         >
           &#10005;
@@ -87,20 +87,20 @@ export default function LeadMagnetPopup() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="your@email.com"
                 required
-                className="w-full bg-background border border-gray-700 rounded-lg px-3 py-2 text-sm text-text placeholder:text-gray-500 focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal"
+                className="w-full bg-bg border border-border rounded-lg px-3 py-2 text-sm text-text placeholder:text-text-tertiary focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal"
               />
               <button
                 type="submit"
                 disabled={status === 'loading'}
-                className="w-full bg-teal hover:bg-teal-light text-background font-semibold py-2 rounded-lg text-sm transition-colors disabled:opacity-50"
+                className="w-full bg-teal hover:bg-teal-light text-white font-semibold py-2 rounded-lg text-sm transition-colors disabled:opacity-50"
               >
                 {status === 'loading' ? 'Sending...' : 'Get Free Guide'}
               </button>
             </form>
             {status === 'error' && (
-              <p className="text-red-400 text-xs mt-1">Something went wrong. Try again.</p>
+              <p className="text-red-600 text-xs mt-1">Something went wrong. Try again.</p>
             )}
-            <p className="text-gray-600 text-[10px] mt-2 text-center">No spam. Unsubscribe anytime.</p>
+            <p className="text-text-tertiary text-[10px] mt-2 text-center">No spam. Unsubscribe anytime.</p>
           </>
         )}
       </div>

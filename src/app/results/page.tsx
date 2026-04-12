@@ -146,13 +146,13 @@ function SupplementCard({ rec }: { rec: SupplementRecommendation }) {
         {rec.warnings && rec.warnings.length > 0 && (
           <div className="mt-3 bg-red-500/10 border border-red-500/20 rounded-lg px-3 py-2.5">
             <div className="flex items-start gap-2">
-              <svg className="w-4 h-4 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
               </svg>
               <div>
-                <p className="text-red-400 text-xs font-semibold mb-1">Drug Interaction Warning</p>
+                <p className="text-red-600 text-xs font-semibold mb-1">Drug Interaction Warning</p>
                 {rec.warnings.map((w, i) => (
-                  <p key={i} className="text-red-300 text-xs leading-relaxed">{w}</p>
+                  <p key={i} className="text-red-500 text-xs leading-relaxed">{w}</p>
                 ))}
               </div>
             </div>
@@ -427,7 +427,7 @@ export default function ResultsPage() {
             {recommendations.length > FREE_LIMIT && (
               <div className="bg-surface border border-teal/20 rounded-2xl p-6 sm:p-8 mb-10 text-center relative overflow-hidden">
                 <div className="absolute inset-0 pointer-events-none">
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-72 h-36 bg-teal/5 blur-3xl" />
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-72 h-36 bg-teal/8 blur-3xl" />
                 </div>
                 <div className="relative">
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal/10 border border-teal/20 text-teal text-xs font-medium mb-4">

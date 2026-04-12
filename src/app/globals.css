@@ -4,16 +4,16 @@
 @tailwind utilities;
 
 :root {
-  --bg: #0D1117;
-  --surface: #161B22;
-  --surface-alt: #1C2333;
-  --border: #30363D;
-  --text: #F1F5F9;
-  --text-secondary: #94A3B8;
-  --text-tertiary: #64748B;
-  --teal: #14B8A6;
-  --teal-light: #2DD4BF;
-  --teal-dark: #042F2E;
+  --bg: #FFFFFF;
+  --surface: #F8FAFC;
+  --surface-alt: #F1F5F9;
+  --border: #E2E8F0;
+  --text: #0F172A;
+  --text-secondary: #475569;
+  --text-tertiary: #94A3B8;
+  --teal: #0D9488;
+  --teal-light: #14B8A6;
+  --teal-dark: #F0FDFA;
 }
 
 * {
@@ -42,7 +42,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--border);
+  background: #CBD5E1;
   border-radius: 3px;
 }
 
@@ -52,7 +52,7 @@ body {
 
 /* Selection */
 ::selection {
-  background-color: rgba(20, 184, 166, 0.3);
+  background-color: rgba(13, 148, 136, 0.2);
   color: var(--text);
 }
 
@@ -122,7 +122,7 @@ body {
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #14B8A6, #2DD4BF);
+  background: linear-gradient(135deg, #0D9488, #14B8A6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -138,8 +138,46 @@ body {
   transform: translateY(-1px);
 }
 
+/* Glow effects */
+.glow-teal {
+  background: radial-gradient(ellipse at center, rgba(13, 148, 136, 0.08) 0%, transparent 70%);
+}
+
+.glow-purple {
+  background: radial-gradient(ellipse at center, rgba(124, 58, 237, 0.06) 0%, transparent 70%);
+}
+
+.glow-amber {
+  background: radial-gradient(ellipse at center, rgba(217, 119, 6, 0.05) 0%, transparent 70%);
+}
+
+/* Gradient mesh hero background */
+.gradient-mesh {
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(13, 148, 136, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(124, 58, 237, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(37, 99, 235, 0.04) 0%, transparent 50%);
+}
+
 /* Animated gradient border */
 @keyframes pulse-border {
   0%, 100% { opacity: 0.5; }
   50% { opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float 8s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 7s ease-in-out 2s infinite;
 }

@@ -36,32 +36,32 @@ const GOALS: { value: Goal; label: string; emoji: string }[] = [
   { value: 'weight_loss', label: 'Weight Loss', emoji: '⚖️' },
 ]
 
-const DIETS: { value: DietType; label: string; desc: string }[] = [
-  { value: 'omnivore', label: 'Omnivore', desc: 'Eat everything' },
-  { value: 'vegetarian', label: 'Vegetarian', desc: 'No meat, yes dairy/eggs' },
-  { value: 'vegan', label: 'Vegan', desc: 'No animal products' },
-  { value: 'keto', label: 'Keto', desc: 'High fat, low carb' },
-  { value: 'paleo', label: 'Paleo', desc: 'Whole foods, no grains' },
-  { value: 'pescatarian', label: 'Pescatarian', desc: 'Fish but no meat' },
-  { value: 'mediterranean', label: 'Mediterranean', desc: 'Olive oil, fish, veg' },
-  { value: 'carnivore', label: 'Carnivore', desc: 'Mostly animal foods' },
-  { value: 'other', label: 'Other', desc: "Doesn't fit a category" },
+const DIETS: { value: DietType; label: string; desc: string; emoji: string }[] = [
+  { value: 'omnivore', label: 'Omnivore', desc: 'Eat everything', emoji: '🍽️' },
+  { value: 'vegetarian', label: 'Vegetarian', desc: 'No meat, yes dairy/eggs', emoji: '🥬' },
+  { value: 'vegan', label: 'Vegan', desc: 'No animal products', emoji: '🌱' },
+  { value: 'keto', label: 'Keto', desc: 'High fat, low carb', emoji: '🥑' },
+  { value: 'paleo', label: 'Paleo', desc: 'Whole foods, no grains', emoji: '🥩' },
+  { value: 'pescatarian', label: 'Pescatarian', desc: 'Fish but no meat', emoji: '🐟' },
+  { value: 'mediterranean', label: 'Mediterranean', desc: 'Olive oil, fish, veg', emoji: '🫒' },
+  { value: 'carnivore', label: 'Carnivore', desc: 'Mostly animal foods', emoji: '🥓' },
+  { value: 'other', label: 'Other', desc: "Doesn't fit a category", emoji: '🍴' },
 ]
 
-const SYMPTOMS: { value: Symptom; label: string }[] = [
-  { value: 'fatigue', label: 'Fatigue / Low Energy' },
-  { value: 'poor_sleep', label: 'Poor Sleep' },
-  { value: 'brain_fog', label: 'Brain Fog' },
-  { value: 'joint_pain', label: 'Joint Pain' },
-  { value: 'frequent_illness', label: 'Get Sick Often' },
-  { value: 'anxiety', label: 'Anxiety / Worry' },
-  { value: 'hair_loss', label: 'Hair Loss / Thinning' },
-  { value: 'digestive_issues', label: 'Digestive Issues' },
-  { value: 'low_mood', label: 'Low Mood / Depression' },
-  { value: 'muscle_weakness', label: 'Muscle Weakness' },
-  { value: 'poor_memory', label: 'Poor Memory' },
-  { value: 'dry_skin', label: 'Dry Skin' },
-  { value: 'acid_reflux', label: 'Acid Reflux / GERD' },
+const SYMPTOMS: { value: Symptom; label: string; emoji: string }[] = [
+  { value: 'fatigue', label: 'Fatigue / Low Energy', emoji: '😴' },
+  { value: 'poor_sleep', label: 'Poor Sleep', emoji: '🌙' },
+  { value: 'brain_fog', label: 'Brain Fog', emoji: '🌫️' },
+  { value: 'joint_pain', label: 'Joint Pain', emoji: '🦴' },
+  { value: 'frequent_illness', label: 'Get Sick Often', emoji: '🤧' },
+  { value: 'anxiety', label: 'Anxiety / Worry', emoji: '😰' },
+  { value: 'hair_loss', label: 'Hair Loss / Thinning', emoji: '💇' },
+  { value: 'digestive_issues', label: 'Digestive Issues', emoji: '🫁' },
+  { value: 'low_mood', label: 'Low Mood / Depression', emoji: '😔' },
+  { value: 'muscle_weakness', label: 'Muscle Weakness', emoji: '💪' },
+  { value: 'poor_memory', label: 'Poor Memory', emoji: '🧠' },
+  { value: 'dry_skin', label: 'Dry Skin', emoji: '🏜️' },
+  { value: 'acid_reflux', label: 'Acid Reflux / GERD', emoji: '🔥' },
 ]
 
 const SUN_OPTIONS: { value: SunExposure; label: string; desc: string }[] = [
@@ -290,6 +290,16 @@ export default function QuizPage() {
               title="Tell us about yourself"
               subtitle="We personalise your supplement recommendations to your biology."
             />
+            <div className="flex justify-center mb-6">
+              <div className="w-full max-w-sm rounded-2xl overflow-hidden border border-border">
+                <img
+                  src="/images/tell-us-about-yourself.png"
+                  alt="Person taking a health quiz on their phone"
+                  className="w-full h-auto"
+                  loading="eager"
+                />
+              </div>
+            </div>
 
             <div className="space-y-6">
               <div>
@@ -369,7 +379,7 @@ export default function QuizPage() {
                   key={d.value}
                   selected={dietType === d.value}
                   onSelect={() => setDietType(d.value)}
-                  label={d.label}
+                  label={`${d.emoji} ${d.label}`}
                   desc={d.desc}
                 />
               ))}
@@ -387,11 +397,11 @@ export default function QuizPage() {
               subtitle="These factors influence which nutrients your body needs more of."
             />
 
-            <div className="space-y-7">
+            <div className="space-y-6">
               {/* Sun exposure */}
-              <div>
-                <h3 className="text-text font-semibold text-sm mb-3">
-                  Sun exposure
+              <div className="bg-surface/50 border border-border rounded-xl p-4">
+                <h3 className="text-text font-semibold text-sm mb-3 flex items-center gap-2">
+                  <span className="text-lg">☀️</span> Sun exposure
                 </h3>
                 <div className="flex flex-col gap-2">
                   {SUN_OPTIONS.map((o) => (
@@ -407,9 +417,9 @@ export default function QuizPage() {
               </div>
 
               {/* Exercise (multi-select) */}
-              <div>
-                <h3 className="text-text font-semibold text-sm mb-1">
-                  Exercise type
+              <div className="bg-surface/50 border border-border rounded-xl p-4">
+                <h3 className="text-text font-semibold text-sm mb-1 flex items-center gap-2">
+                  <span className="text-lg">🏋️</span> Exercise type
                 </h3>
                 <p className="text-text-tertiary text-xs mb-3">Select all that apply, or leave empty if sedentary.</p>
                 <div className="flex flex-col gap-2">
@@ -425,9 +435,9 @@ export default function QuizPage() {
               </div>
 
               {/* Alcohol */}
-              <div>
-                <h3 className="text-text font-semibold text-sm mb-3">
-                  Alcohol consumption
+              <div className="bg-surface/50 border border-border rounded-xl p-4">
+                <h3 className="text-text font-semibold text-sm mb-3 flex items-center gap-2">
+                  <span className="text-lg">🍷</span> Alcohol consumption
                 </h3>
                 <div className="flex flex-col gap-2">
                   {ALCOHOL_OPTIONS.map((o) => (
@@ -443,9 +453,9 @@ export default function QuizPage() {
               </div>
 
               {/* Caffeine */}
-              <div>
-                <h3 className="text-text font-semibold text-sm mb-3">
-                  Caffeine intake
+              <div className="bg-surface/50 border border-border rounded-xl p-4">
+                <h3 className="text-text font-semibold text-sm mb-3 flex items-center gap-2">
+                  <span className="text-lg">☕</span> Caffeine intake
                 </h3>
                 <div className="flex flex-col gap-2">
                   {CAFFEINE_OPTIONS.map((o) => (
@@ -461,9 +471,9 @@ export default function QuizPage() {
               </div>
 
               {/* Stress */}
-              <div>
-                <h3 className="text-text font-semibold text-sm mb-3">
-                  Stress level
+              <div className="bg-surface/50 border border-border rounded-xl p-4">
+                <h3 className="text-text font-semibold text-sm mb-3 flex items-center gap-2">
+                  <span className="text-lg">😰</span> Stress level
                 </h3>
                 <div className="flex flex-col gap-2">
                   {STRESS_OPTIONS.map((o) => (
@@ -529,6 +539,7 @@ export default function QuizPage() {
                   key={s.value}
                   selected={symptoms.includes(s.value)}
                   onToggle={() => toggleSymptom(s.value)}
+                  emoji={s.emoji}
                   label={s.label}
                 />
               ))}

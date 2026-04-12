@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
@@ -18,10 +19,14 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-border bg-bg/90 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="w-8 h-8 rounded-lg bg-teal flex items-center justify-center flex-shrink-0">
-            <span className="text-bg font-bold text-sm">Fx</span>
-          </div>
+        <Link href="/" className="flex items-center gap-2 group">
+          <Image
+            src="/logo-512.png"
+            alt="Find Your Supplement"
+            width={32}
+            height={32}
+            className="flex-shrink-0"
+          />
           <span className="font-semibold text-text text-sm sm:text-base">
             Find Your<span className="text-teal"> Supplement</span>
           </span>

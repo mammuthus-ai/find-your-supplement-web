@@ -24,26 +24,29 @@ const features = [
     icon: '🎯',
     title: 'Tell Us About Yourself',
     desc: 'Answer a short quiz about your health goals, diet, lifestyle, and symptoms.',
+    image: '/images/tell-us-about-yourself.png',
   },
   {
     icon: '🔬',
     title: 'Evidence-Based Scoring',
     desc: 'Our engine weighs your answers against PubMed research to rank supplements by relevance.',
+    image: '/images/evidence-based-scoring.png',
   },
   {
     icon: '🛒',
     title: 'Buy with Confidence',
     desc: "Shop directly on Amazon. We link to top-rated products — you're never overcharged.",
+    image: '/images/buy-with-confidence.png',
   },
 ]
 
 const sampleSupplements = [
-  { name: 'Vitamin D3', grade: 'A', goalTag: 'Immunity · Mood · Energy', gradeColor: 'bg-grade-a/20 text-grade-a border-grade-a/30' },
-  { name: 'Magnesium Glycinate', grade: 'A', goalTag: 'Sleep · Stress · Recovery', gradeColor: 'bg-grade-a/20 text-grade-a border-grade-a/30' },
-  { name: 'Omega-3 (Fish Oil)', grade: 'A', goalTag: 'Brain · Heart · Mood', gradeColor: 'bg-grade-a/20 text-grade-a border-grade-a/30' },
-  { name: 'Ashwagandha KSM-66', grade: 'B', goalTag: 'Stress · Sleep · Muscle', gradeColor: 'bg-grade-b/20 text-grade-b border-grade-b/30' },
-  { name: 'Creatine Monohydrate', grade: 'A', goalTag: 'Muscle · Focus · Energy', gradeColor: 'bg-grade-a/20 text-grade-a border-grade-a/30' },
-  { name: 'NAC (N-Acetyl Cysteine)', grade: 'B', goalTag: 'Longevity · Immunity · Mood', gradeColor: 'bg-grade-b/20 text-grade-b border-grade-b/30' },
+  { name: 'Vitamin D3', emoji: '☀️', grade: 'A', goalTag: 'Immunity · Mood · Energy', gradeColor: 'bg-grade-a/20 text-grade-a border-grade-a/30', borderColor: 'border-l-grade-a' },
+  { name: 'Magnesium Glycinate', emoji: '🧪', grade: 'A', goalTag: 'Sleep · Stress · Recovery', gradeColor: 'bg-grade-a/20 text-grade-a border-grade-a/30', borderColor: 'border-l-grade-a' },
+  { name: 'Omega-3 (Fish Oil)', emoji: '🐟', grade: 'A', goalTag: 'Brain · Heart · Mood', gradeColor: 'bg-grade-a/20 text-grade-a border-grade-a/30', borderColor: 'border-l-grade-a' },
+  { name: 'Ashwagandha KSM-66', emoji: '🌿', grade: 'B', goalTag: 'Stress · Sleep · Muscle', gradeColor: 'bg-grade-b/20 text-grade-b border-grade-b/30', borderColor: 'border-l-grade-b' },
+  { name: 'Creatine Monohydrate', emoji: '💪', grade: 'A', goalTag: 'Muscle · Focus · Energy', gradeColor: 'bg-grade-a/20 text-grade-a border-grade-a/30', borderColor: 'border-l-grade-a' },
+  { name: 'NAC (N-Acetyl Cysteine)', emoji: '🛡️', grade: 'B', goalTag: 'Longevity · Immunity · Mood', gradeColor: 'bg-grade-b/20 text-grade-b border-grade-b/30', borderColor: 'border-l-grade-b' },
 ]
 
 const trustPoints = [
@@ -83,9 +86,11 @@ export default function HomePage() {
     <div>
       {/* ── Hero ── */}
       <section className="relative overflow-hidden">
-        {/* Background glow */}
+        {/* Background mesh gradient */}
+        <div className="absolute inset-0 pointer-events-none gradient-mesh" />
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-teal/5 blur-3xl rounded-full" />
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-teal/8 blur-3xl rounded-full" />
+          <div className="absolute top-20 right-[10%] w-[300px] h-[300px] bg-grade-b/8 blur-3xl rounded-full" />
         </div>
 
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 pt-20 pb-24 text-center">
@@ -182,18 +187,31 @@ export default function HomePage() {
             Our scoring engine is adapted from PubMed systematic reviews and meta-analyses.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
+          {/* Connecting line on desktop */}
+          <div className="hidden md:block absolute top-12 left-[20%] right-[20%] h-px bg-gradient-to-r from-transparent via-border to-transparent" />
           {features.map((f, i) => (
             <div
               key={i}
-              className="relative bg-surface border border-border rounded-xl p-6 card-hover"
+              className="relative bg-surface border border-border rounded-xl overflow-hidden card-hover"
             >
-              <div className="text-3xl mb-4">{f.icon}</div>
-              <div className="absolute top-5 right-5 text-text-tertiary text-sm font-mono">
-                0{i + 1}
+              <div className="aspect-[16/10] overflow-hidden">
+                <img
+                  src={f.image}
+                  alt={f.title}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
-              <h3 className="text-text font-semibold text-base mb-2">{f.title}</h3>
-              <p className="text-text-secondary text-sm leading-relaxed">{f.desc}</p>
+              <div className="p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-8 h-8 rounded-full bg-teal/15 border border-teal/25 flex items-center justify-center text-teal text-xs font-bold">
+                    {i + 1}
+                  </div>
+                  <h3 className="text-text font-semibold text-base">{f.title}</h3>
+                </div>
+                <p className="text-text-secondary text-sm leading-relaxed">{f.desc}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -223,15 +241,14 @@ export default function HomePage() {
             {sampleSupplements.map((s) => (
               <div
                 key={s.name}
-                className="bg-bg border border-border rounded-xl p-4 flex items-start gap-3 card-hover"
+                className={`bg-bg border border-border border-l-2 ${s.borderColor} rounded-xl p-4 flex items-start gap-3 card-hover`}
               >
-                <span
-                  className={`flex-shrink-0 text-xs font-bold px-2 py-1 rounded border ${s.gradeColor}`}
-                >
-                  {s.grade}
-                </span>
-                <div>
-                  <p className="text-text font-medium text-sm">{s.name}</p>
+                <span className="text-xl flex-shrink-0">{s.emoji}</span>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2">
+                    <p className="text-text font-medium text-sm">{s.name}</p>
+                    <span className={`flex-shrink-0 text-[10px] font-bold px-1.5 py-0.5 rounded border ${s.gradeColor}`}>{s.grade}</span>
+                  </div>
                   <p className="text-text-tertiary text-xs mt-0.5">{s.goalTag}</p>
                 </div>
               </div>
@@ -250,17 +267,21 @@ export default function HomePage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-text mb-3">Why trust us?</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {trustPoints.map((t, i) => (
-            <div key={i} className="bg-surface border border-border rounded-xl p-6">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-9 h-9 rounded-lg bg-teal/10 flex items-center justify-center flex-shrink-0">
-                  {t.icon}
+          {trustPoints.map((t, i) => {
+            const bgColors = ['bg-teal/10', 'bg-grade-b/10', 'bg-grade-a/10']
+            const borderColors = ['border-teal/20', 'border-grade-b/20', 'border-grade-a/20']
+            return (
+              <div key={i} className="bg-surface border border-border rounded-xl p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className={`w-11 h-11 rounded-xl ${bgColors[i]} border ${borderColors[i]} flex items-center justify-center flex-shrink-0`}>
+                    {t.icon}
+                  </div>
+                  <h3 className="text-text font-semibold text-sm">{t.title}</h3>
                 </div>
-                <h3 className="text-text font-semibold text-sm">{t.title}</h3>
+                <p className="text-text-secondary text-sm leading-relaxed">{t.desc}</p>
               </div>
-              <p className="text-text-secondary text-sm leading-relaxed">{t.desc}</p>
-            </div>
-          ))}
+            )
+          })}
         </div>
       </section>
 
@@ -268,7 +289,8 @@ export default function HomePage() {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 pb-16">
         <div className="bg-surface border border-teal/20 rounded-2xl p-8 sm:p-12 text-center relative overflow-hidden">
           <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-48 bg-teal/5 blur-3xl" />
+            <div className="absolute top-0 left-1/4 w-72 h-48 bg-teal/8 blur-3xl" />
+            <div className="absolute bottom-0 right-1/4 w-64 h-40 bg-grade-b/8 blur-3xl" />
           </div>
           <div className="relative">
             <h2 className="text-2xl sm:text-3xl font-bold text-text mb-3">
@@ -323,11 +345,19 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {recentPosts.map((post) => (
+            {recentPosts.map((post) => {
+              const categoryColors: Record<string, string> = {
+                'Research Reviews': 'border-t-grade-a',
+                'Deep Dives': 'border-t-grade-b',
+                'Guides': 'border-t-teal',
+                'Nutrition Science': 'border-t-priority-medium',
+              }
+              const topBorder = categoryColors[post.category] || 'border-t-teal'
+              return (
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="block bg-bg border border-border rounded-xl overflow-hidden card-hover group"
+                className={`block bg-bg border border-border border-t-2 ${topBorder} rounded-xl overflow-hidden card-hover group`}
               >
                 <div className="p-5">
                   <div className="flex items-center gap-2 mb-3">
@@ -353,7 +383,8 @@ export default function HomePage() {
                   </span>
                 </div>
               </Link>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>

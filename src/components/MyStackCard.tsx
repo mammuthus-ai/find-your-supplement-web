@@ -51,9 +51,13 @@ export default function MyStackCard({ recommendations, goals }: MyStackCardProps
               {goals.length > 3 ? ` +${goals.length - 3} more` : ''}
             </p>
           </div>
-          <div className="w-8 h-8 rounded-lg bg-teal flex items-center justify-center flex-shrink-0">
-            <span className="text-bg font-bold text-xs">Fx</span>
-          </div>
+          <img
+            src="/logo-512.png"
+            alt="Find Your Supplement"
+            width={32}
+            height={32}
+            className="flex-shrink-0 rounded-lg"
+          />
         </div>
       </div>
 
