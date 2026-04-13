@@ -2,6 +2,275 @@ import { BlogPost } from '@/types'
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'supplements-for-runners-over-40',
+    title: 'Supplements for Runners Over 40: The Evidence-Based Guide to Training Harder and Recovering Faster',
+    excerpt:
+      'Running after 40 means fighting harder biology: slower recovery, joint wear, and declining muscle mass. This evidence-graded guide covers the best supplements for runners over 40 — what actually works, what to skip, and exactly how to dose each one.',
+    date: '2026-04-13',
+    category: 'Guides',
+    readTime: '14 min read',
+    content: `
+## Why Running After 40 Is a Different Game
+
+You still lace up. You still push. But something has changed — the recovery that used to take one day now takes two. Your knees talk back on long runs. You're packing on a little more weight despite logging the same miles. You pick up a minor injury and it lingers for weeks instead of days.
+
+This isn't weakness. It's physiology. After 40, your body undergoes measurable changes that directly affect running performance and recovery:
+
+- **Muscle loss (sarcopenia):** Adults lose 3–8% of muscle mass per decade after 30, accelerating after 60. Less muscle means less power, less running economy, and more injury risk.
+- **Slower recovery:** Protein synthesis rates decline with age, meaning your muscles take longer to repair after hard sessions.
+- **Joint wear:** Decades of running accumulates cartilage stress. The tendons and joints that absorbed punishment in your 20s are now working with a narrowing margin.
+- **Declining bone density:** Estrogen and testosterone drops after 40 reduce bone mineral density — a serious concern for stress fracture risk in high-mileage runners.
+- **Reduced micronutrient absorption:** Absorption of key nutrients including magnesium and vitamin D decreases with age, even when dietary intake stays the same.
+
+The good news: targeted supplementation can directly address each of these mechanisms. This guide covers seven supplements with the strongest evidence base for runners over 40 — along with honest assessments of what the science actually shows.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## The 7 Best Supplements for Runners Over 40
+
+### 1. Vitamin D3: The Injury-Prevention Foundation
+
+**Evidence Grade: A (for deficiency correction and bone health)**
+
+Vitamin D is less a "supplement" and more a hormone precursor — over 1,000 genes in your body have vitamin D response elements, including those governing muscle function, immune response, and bone mineralization.
+
+For runners, the bone health angle is the most immediately relevant. Stress fractures are one of the most common and debilitating running injuries, particularly in masters athletes. Research published in [PMC on vitamin D and musculoskeletal injuries in athletes](https://pmc.ncbi.nlm.nih.gov/articles/PMC8342187/) found that vitamin D supplements significantly reduced stress fracture incidence from 7.51% to 1.65% in athletes with insufficiency or deficiency.
+
+A [2024 ultramarathon RCT](https://pubmed.ncbi.nlm.nih.gov/40963202/) found that vitamin D3 supplementation influenced bone turnover markers during prolonged running events, suggesting an acute protective role during high-load training. Meanwhile, the large VITAL trial, published in the [Journal of Bone and Mineral Research](https://academic.oup.com/jbmr/article/35/5/883/7516653), confirmed that vitamin D3 supplementation improved bone health outcomes in adults over 50.
+
+**What makes this especially relevant over 40:** Skin synthesis of vitamin D from sunlight declines with age. Indoor training, northern latitudes, and sun protection all reduce endogenous production further. A [2023 meta-analysis in PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC10556715/) confirmed that vitamin D reduced fall risk in older adults — a secondary benefit for trail runners and anyone training on uneven terrain.
+
+**Dosage:** 2,000–4,000 IU of vitamin D3 daily, taken with a fat-containing meal. Ideally get your 25(OH)D serum levels tested; target 40–60 ng/mL for athletes. Many runners discover they're significantly deficient even without symptoms.
+
+**Form:** D3 (cholecalciferol), not D2. D3 raises blood levels roughly twice as effectively.
+
+[View on Amazon](https://www.amazon.com/s?k=vitamin+d3+2000+iu&tag=insquire-20)
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+### 2. Magnesium Glycinate: Recovery, Sleep, and Muscle Function
+
+**Evidence Grade: B (for deficiency correction and sleep quality)**
+
+Magnesium is a cofactor for over 300 enzymatic reactions — including those governing ATP production, muscle contraction, protein synthesis, and nervous system regulation. For runners over 40, it matters for three specific reasons:
+
+**Absorption declines with age.** Even at the same dietary intake, older adults absorb less magnesium. Combine that with the fact that sweating during runs actively depletes magnesium stores, and many masters runners are walking around deficient without knowing it.
+
+**Sleep quality is central to recovery.** Research consistently shows magnesium supplementation improves sleep quality, particularly in older adults with subclinical deficiency. A [2023 large cohort study](https://pubmed.ncbi.nlm.nih.gov/37330674/) found that higher magnesium intake was associated with better objective sleep quality measures. Since sleep is when your muscles actually rebuild, anything that improves sleep quality has direct performance implications.
+
+**Muscle cramps and performance.** Magnesium is required for muscle relaxation — the calcium/magnesium balance governs how efficiently muscles cycle between contraction and release. Many runners report reduced cramping and faster recovery after correcting deficiency.
+
+**Dosage:** 300–400 mg elemental magnesium daily, taken at night.
+
+**Form:** Glycinate or malate for runners over 40. Glycinate is the most bioavailable and least likely to cause GI distress; magnesium oxide (common in cheap supplements) is poorly absorbed and primarily acts as a laxative.
+
+[View on Amazon](https://www.amazon.com/s?k=magnesium+glycinate+supplement&tag=insquire-20)
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+### 3. Creatine Monohydrate: Muscle Preservation and Sprint Power
+
+**Evidence Grade: A (for strength and muscle mass in older adults)**
+
+Creatine might seem counterintuitive for distance runners, but for masters athletes it's one of the most evidence-backed interventions available — particularly for muscle preservation and late-race kick.
+
+The International Society of Sports Nutrition's [position stand on creatine safety and efficacy](https://link.springer.com/article/10.1186/s12970-017-0173-z) — one of the most comprehensive reviews in sports nutrition — established that creatine is the most researched and effective ergogenic supplement available, with a robust safety record. For older adults specifically, a review of 12 well-designed RCTs found that creatine plus resistance training produced **1.14 kg more lean muscle and 0.88% more body fat loss** compared to resistance training alone.
+
+For runners, the specific benefits after 40 include:
+
+**Fighting sarcopenia:** Declining muscle mass is the slow tax on running economy. Every year you lose muscle, your pace-for-effort gets worse. Creatine directly supports muscle protein synthesis and has shown particular efficacy in adults 55–77 in multiple controlled trials.
+
+**Final-mile power:** Creatine saturates the phosphocreatine system — the energy pathway used for high-intensity bursts. That hill sprint at mile 8, the race finishing kick, the surge to pass someone: all of these draw on phosphocreatine. A [2023 PMC review on creatine and endurance performance](https://pmc.ncbi.nlm.nih.gov/articles/PMC10132248/) confirmed that creatine benefits extend to endurance athletes who include high-intensity efforts in training.
+
+**Recovery:** Research on creatine supplementation in the [comprehensive 2021 PMC review](https://pmc.ncbi.nlm.nih.gov/articles/PMC8228369/) found reduced exercise-induced muscle damage markers and accelerated glycogen replenishment — directly shortening the recovery window between hard training days.
+
+**Cognitive function bonus:** [A 2024 meta-analysis of 16 RCTs](https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1424972/full) found creatine significantly improved memory and attention, with largest effects in adults 66–76. For masters athletes managing training, work, and life demands, this is a genuine secondary benefit.
+
+**Dosage:** 3–5 g of creatine monohydrate daily. No loading phase required — it takes 3–4 weeks to saturate at maintenance dose, but produces the same long-term result as loading protocols. Take it any time of day; consistency matters more than timing.
+
+**Form:** Monohydrate only. No evidence supports paying a premium for creatine HCl, buffered creatine, or other proprietary forms.
+
+[View on Amazon](https://www.amazon.com/s?k=creatine+monohydrate+powder&tag=insquire-20)
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+### 4. Collagen Peptides: Joint and Tendon Support
+
+**Evidence Grade: B (for joint pain and tendon health)**
+
+Joint pain is the most common reason runners over 40 reduce their mileage. Knees, hips, and achilles tendons accumulate decades of mechanical stress, and after 40, the collagen synthesis that repairs that damage slows meaningfully.
+
+Recent research has strengthened the case for collagen supplementation in active adults:
+
+A [2024 randomized controlled trial published in PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC12445226/) found that low-molecular-weight collagen peptides significantly reduced WOMAC pain scores over 12 weeks compared to placebo in adults with knee osteoarthritis — with no serious adverse events.
+
+A [2023 meta-analysis in PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC10505327/) pooled data from multiple RCTs and confirmed analgesic efficacy of collagen peptides for knee osteoarthritis, with significant improvements in pain and functional scores.
+
+For tendons specifically — the Achilles and patellar tendons being the most common running injury sites — a [systematic review in PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC8521576/) found that collagen peptide supplementation increased collagen synthesis markers and supported recovery from tendon injuries.
+
+**The vitamin C synergy:** Collagen synthesis requires vitamin C as a cofactor. Several protocols tested in research pair 10–15 g collagen with 50 mg vitamin C, taken 30–60 minutes before exercise or physical therapy, to maximize delivery of collagen precursors to the joint tissue while blood flow is elevated.
+
+**Dosage:** 10–15 g collagen peptides daily, ideally pre-workout with vitamin C.
+
+**Form:** Hydrolyzed collagen peptides (Type I/III for general joint support, Type II for cartilage-specific concerns). Look for products with third-party testing.
+
+[View on Amazon](https://www.amazon.com/s?k=hydrolyzed+collagen+peptides+powder&tag=insquire-20)
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+### 5. Omega-3 Fish Oil: Inflammation and Muscle Recovery
+
+**Evidence Grade: B (for recovery and inflammation reduction)**
+
+Every long run triggers an inflammatory response. Cytokines flood the system, muscle fibers are damaged, and your body mobilizes to repair the tissue. At 25, this process resolves in 24 hours. At 45, the inflammatory cascade tends to run longer — contributing to the prolonged soreness and fatigue that forces extra rest days.
+
+Omega-3 fatty acids (specifically EPA and DHA) directly modulate inflammatory signaling. A [2024 systematic review of RCTs published in PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC11243702/) found significant improvements in perceived muscle soreness and reduced inflammatory markers (including IL-6) following omega-3 supplementation in active adults.
+
+For older runners specifically, the evidence on sarcopenia reversal is promising. A [2024 ScienceDirect review](https://www.sciencedirect.com/science/article/pii/S2405457724000743) found omega-3 supplementation combined with resistance training showed improvements in skeletal muscle size and strength compared to training alone — directly relevant for fighting age-related muscle loss.
+
+Research from the [Gatorade Sports Science Institute](https://www.gssiweb.org/sports-science-exchange/article/omega--fatty-acids-for-training-adaptation-and-exercise-recovery-a-muscle-centric-perspective-in-athletes) synthesizes the current consensus: omega-3s reduce the acute inflammatory response to training, support muscle protein synthesis, and may improve training adaptation over time.
+
+**Dosage:** 2,000–3,000 mg combined EPA+DHA daily. Look at the combined EPA/DHA content, not the total fish oil weight on the label — a 1,000 mg fish oil capsule might only contain 300 mg combined EPA+DHA.
+
+**Form:** Triglyceride form fish oil is better absorbed than ethyl ester form. Alternatively, algae-based omega-3 provides DHA (and increasingly EPA) without the fish — bioequivalent and sustainable.
+
+[View on Amazon](https://www.amazon.com/s?k=omega+3+fish+oil+high+potency+EPA+DHA&tag=insquire-20)
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+### 6. Protein Powder: Meeting Elevated Needs for Muscle Repair
+
+**Evidence Grade: A (for muscle protein synthesis when dietary intake is insufficient)**
+
+Protein isn't exciting, but the science is unambiguous: after 40, you need *more* protein to produce the same anabolic response as younger athletes, not less.
+
+This phenomenon — called "anabolic resistance" — means the muscle protein synthesis signal triggered by a given amount of protein becomes blunted with age. Where a 25-year-old might maximally stimulate MPS with 20 g of post-run protein, a 45-year-old may need 35–40 g for the same response. Research on post-exercise protein timing consistently finds that 20–40 g consumed within 2 hours of training accelerates recovery markers in aging athletes.
+
+A [cross-sectional analysis of endurance athletes over 40 published in PubMed](https://pubmed.ncbi.nlm.nih.gov/35380079/) found that older athletes used substantially more dietary supplements than younger counterparts — and the most common gap was total protein intake.
+
+**Target:** 1.6–2.2 g of protein per kg of body weight per day for active runners over 40. For a 70 kg (154 lb) runner, that's 112–154 g/day. Most masters athletes fall significantly short.
+
+**Where protein powder fits:** It's not magic — it's concentrated, convenient protein for times when whole food intake is difficult (post-morning run, traveling, busy work days). Whey isolate is the gold standard for absorption kinetics post-workout. Casein is better before bed for overnight muscle repair. Plant-based blends (pea + rice) are now functionally equivalent for total daily intake.
+
+[View on Amazon](https://www.amazon.com/s?k=whey+protein+isolate+powder&tag=insquire-20)
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+### 7. Electrolytes: The Overlooked Recovery Lever
+
+**Evidence Grade: B (for hydration, cramping, and performance in heat)**
+
+Sweat doesn't just lose water — it loses sodium, potassium, magnesium, and chloride. For runners over 40, electrolyte depletion deserves more attention than it typically gets, for two reasons:
+
+**Thirst response declines with age.** Older adults have a blunted thirst mechanism, meaning you can become meaningfully dehydrated without feeling particularly thirsty. By the time you notice thirst on a long run, performance is already compromised.
+
+**Sodium loss varies enormously.** "Salty sweaters" — runners who finish with white residue on their clothes — lose 2–4x the sodium of low-salt sweaters at the same effort. Without replacing this sodium, muscles cramp, performance degrades, and over-drinking plain water can dilute blood sodium dangerously (hyponatremia).
+
+For runs longer than 60–75 minutes, electrolyte replacement is performance-critical, not optional. The simplest approach: electrolyte capsules or tabs containing at least 200–400 mg sodium per serving, taken every 45–60 minutes during long efforts, plus electrolyte powder in post-run recovery drinks.
+
+[View on Amazon](https://www.amazon.com/s?k=electrolyte+capsules+running+sodium+endurance&tag=insquire-20)
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## Evidence Summary Table
+
+| Supplement | Primary Benefit for 40+ Runners | Evidence Grade | Dose | Best Form |
+|---|---|---|---|---|
+| Vitamin D3 | Bone health, stress fracture prevention | A | 2,000–4,000 IU/day | D3 with fat |
+| Magnesium Glycinate | Recovery, sleep quality, cramp reduction | B | 300–400 mg/night | Glycinate or malate |
+| Creatine Monohydrate | Muscle preservation, power, recovery | A | 3–5 g/day | Monohydrate |
+| Collagen Peptides | Joint pain, tendon health | B | 10–15 g pre-workout | Hydrolyzed, with vitamin C |
+| Omega-3 Fish Oil | Inflammation, muscle recovery | B | 2,000–3,000 mg EPA+DHA | Triglyceride form |
+| Protein Powder | Muscle repair, counters anabolic resistance | A | 35–40 g post-run | Whey isolate or pea+rice blend |
+| Electrolytes | Hydration, cramp prevention, performance | B | 200–400 mg sodium/hour | During runs 75+ min |
+
+---
+
+## What to Skip (Mostly)
+
+**Glucosamine/Chondroitin:** Long considered a joint-health staple, the landmark GAIT trial funded by NIH found that glucosamine and chondroitin failed to significantly reduce knee pain compared to placebo in most participants. Some subgroup analyses showed modest effects for severe OA. For mild-to-moderate joint pain, collagen peptides now have a stronger evidence base.
+
+**Branched-Chain Amino Acids (BCAAs):** These were popular in the 1990s and 2000s, but the research consensus has shifted. BCAAs are simply a subset of protein amino acids — if you're hitting your total protein targets, BCAAs are redundant. Spend the money on quality protein powder instead.
+
+**Most "recovery blends" and "endurance formulas":** The supplement industry excels at packaging basic ingredients in expensive proprietary blends with minimal evidence behind the specific combinations. The individual supplements above — bought as standalone products — are almost always more cost-effective than branded blends.
+
+---
+
+## The Masters Runner's Supplement Stack: Prioritized
+
+Not everything at once. Here's how to phase in supplements based on likely impact:
+
+**Start here (foundational):**
+1. Vitamin D3 — test first if possible; most runners over 40 are deficient
+2. Protein — audit your current intake; most fall short of 1.6 g/kg
+3. Electrolytes — implement on any run over 75 minutes
+
+**Add next (high-value):**
+4. Magnesium Glycinate — especially if sleep quality or recovery is a concern
+5. Omega-3 Fish Oil — if you're training hard or managing chronic inflammation
+6. Creatine Monohydrate — particularly valuable if you do any strength training alongside running
+
+**Add if joint pain is a concern:**
+7. Collagen Peptides — most relevant for knee/tendon issues
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## Key Takeaways
+
+- After 40, the physiology of running changes: slower recovery, muscle loss, reduced bone density, and lower micronutrient absorption all compound over time
+- Vitamin D3 and magnesium are the highest-priority interventions for most runners over 40, as deficiency is widespread and correcting it produces meaningful performance and health benefits
+- Creatine monohydrate is dramatically underused by masters endurance athletes — its benefits for muscle preservation, recovery, and cognitive function are well-established and apply directly to aging runners
+- Collagen peptides have now accumulated sufficient RCT evidence to be a legitimate option for joint pain management, particularly when paired with vitamin C pre-workout
+- Omega-3 at sufficient doses (2,000+ mg EPA+DHA) reduces the inflammatory response to training and may help older runners recover between hard sessions
+- Protein needs increase with age due to anabolic resistance — target 1.6–2.2 g/kg body weight and consider post-run protein of 35–40 g
+- Most recovery blends and proprietary formulas are inferior to individual, evidence-based supplements bought separately
+
+**[Not sure which supplements you need? Take the free quiz →](/quiz)**
+
+---
+
+## References
+
+1. [Vitamin D in athletes: focus on physical performance and musculoskeletal injuries — PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC8342187/)
+2. [Single high-dose vitamin D supplementation in ultramarathon runners — PubMed](https://pubmed.ncbi.nlm.nih.gov/40963202/)
+3. [Effects of Supplemental Vitamin D on Bone Health: VITAL Trial — JBMR](https://academic.oup.com/jbmr/article/35/5/883/7516653)
+4. [Vitamin D Supplementation and Fall Risk in Older Adults: Meta-analysis — PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC10556715/)
+5. [Efficacy of low-molecular-weight collagen peptides for knee osteoarthritis — PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC12445226/)
+6. [Analgesic efficacy of collagen peptide in knee osteoarthritis: meta-analysis — PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC10505327/)
+7. [Collagen peptide supplementation for joint injury and exercise recovery — PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC8521576/)
+8. [International Society of Sports Nutrition position stand: creatine safety and efficacy — JISSN](https://link.springer.com/article/10.1186/s12970-017-0173-z)
+9. [Creatine for exercise and sports performance: comprehensive review — PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC8228369/)
+10. [Creatine supplementation and endurance performance — PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC10132248/)
+11. [Omega-3 fatty acids on post-exercise inflammation: systematic review of RCTs — PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC11243702/)
+12. [Omega-3 supplementation and resistance training on skeletal muscle — ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2405457724000743)
+13. [Age drives supplement use differences in endurance athletes — PubMed](https://pubmed.ncbi.nlm.nih.gov/35380079/)
+14. [Vitamin supplementation benefits in master athletes — PubMed](https://pubmed.ncbi.nlm.nih.gov/24323888/)
+15. [Omega-3 fatty acids for training adaptation: athlete review — GSSI](https://www.gssiweb.org/sports-science-exchange/article/omega--fatty-acids-for-training-adaptation-and-exercise-recovery-a-muscle-centric-perspective-in-athletes)
+
+---
+
+*This article is for informational purposes only and does not constitute medical advice. Supplements are not intended to diagnose, treat, cure, or prevent any disease. Consult a qualified healthcare provider before starting any supplementation protocol, particularly if you take medications or have existing health conditions. Individual results vary.*
+`,
+  },
+  {
     slug: 'creatine-vs-protein-powder',
     title: 'Creatine vs Protein Powder: Which One Is Right for Your Goals?',
     excerpt:
