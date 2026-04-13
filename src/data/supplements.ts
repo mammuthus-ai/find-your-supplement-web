@@ -335,4 +335,50 @@ export const supplements: WebSupplement[] = [
     recommendedForms: ['Ferrous bisglycinate (gentle, well-absorbed), Heme iron polypeptide. Avoid ferrous sulfate (GI upset).'],
     typicalDose: '18-27 mg/day for women; only supplement if lab-confirmed deficiency',
   },
+  {
+    id: 'calcium',
+    name: 'Calcium',
+    description:
+      'The most abundant mineral in the body, essential for bone density, muscle contraction, nerve signalling, and blood clotting. Most adults fall short of the RDA through diet alone, and absorption declines significantly with age.',
+    evidenceGrade: 'A',
+    goalsSupported: ['muscle', 'longevity'],
+    deficiencySymptoms: ['fatigue', 'poor_sleep', 'anxiety', 'muscle_weakness', 'low_mood'],
+    safeUpperLimit: '2,500 mg/day ages 19–50; 2,000 mg/day ages 51+ (Institute of Medicine). Includes dietary intake.',
+    drugInteractions: [
+      {
+        drug: 'levothyroxine',
+        severity: 'high',
+        description:
+          'Calcium reduces thyroid hormone absorption by 20–25%. Take at least 4 hours apart.',
+      },
+      {
+        drug: 'bisphosphonates',
+        severity: 'high',
+        description:
+          'Calcium binds bisphosphonates (e.g., alendronate) and prevents absorption. Take at least 2 hours apart.',
+      },
+      {
+        drug: 'tetracycline antibiotics',
+        severity: 'moderate',
+        description:
+          'Calcium reduces absorption of tetracycline-class antibiotics. Take 2 hours before or 6 hours after.',
+      },
+      {
+        drug: 'fluoroquinolones',
+        severity: 'moderate',
+        description:
+          'Calcium reduces absorption of ciprofloxacin and levofloxacin. Take 2 hours before or 6 hours after.',
+      },
+      {
+        drug: 'digoxin',
+        severity: 'high',
+        description:
+          'Excess calcium increases risk of digoxin toxicity and serious arrhythmias. Monitor calcium levels closely.',
+      },
+    ],
+    pubmedCitation: 'PMID: 26420598',
+    nihUrl: 'https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/',
+    recommendedForms: ['Calcium citrate (best absorbed, can take on empty stomach, gentler on GI). Calcium carbonate (cheaper, 40% elemental calcium, must take with food).'],
+    typicalDose: '500–600 mg per dose, 1–2x daily. Most adults get 700–900 mg from diet; a 500 mg supplement fills the gap.',
+  },
 ]

@@ -46,11 +46,11 @@ const CORROBORATION_MIN_DIMENSIONS = 2
 // ─── Diet boost/suppress maps (PubMed-derived) ────────────────────────────────
 
 const DIET_BOOST: Record<string, string[]> = {
-  carnivore: ['Vitamin C', 'Magnesium', 'Methylfolate (5-MTHF)', 'Probiotics'],
-  vegan: ['Vitamin B12', 'Omega-3 (Fish Oil / Algae)', 'Iron', 'Zinc', 'Vitamin D3', 'Creatine Monohydrate'],
-  vegetarian: ['Vitamin B12', 'Omega-3 (Fish Oil / Algae)', 'Iron', 'Zinc', 'Vitamin D3', 'Creatine Monohydrate'],
-  keto: ['Vitamin C', 'Methylfolate (5-MTHF)', 'Magnesium', 'Probiotics'],
-  paleo: ['Vitamin D3', 'Vitamin B12'],
+  carnivore: ['Vitamin C', 'Magnesium', 'Methylfolate (5-MTHF)', 'Probiotics', 'Calcium'],
+  vegan: ['Vitamin B12', 'Omega-3 (Fish Oil / Algae)', 'Iron', 'Zinc', 'Vitamin D3', 'Calcium', 'Creatine Monohydrate'],
+  vegetarian: ['Vitamin B12', 'Omega-3 (Fish Oil / Algae)', 'Iron', 'Zinc', 'Vitamin D3', 'Calcium', 'Creatine Monohydrate'],
+  keto: ['Vitamin C', 'Methylfolate (5-MTHF)', 'Magnesium', 'Probiotics', 'Calcium'],
+  paleo: ['Calcium', 'Vitamin D3', 'Vitamin B12'],
   pescatarian: ['Vitamin B12', 'Iron', 'Zinc', 'Creatine Monohydrate'],
   mediterranean: ['Vitamin D3', 'Vitamin B12'],
 }
@@ -152,8 +152,9 @@ const AGE_BOOSTS: { minAge: number; supplement: string; magnitude: Magnitude; re
   { minAge: 40, supplement: 'CoQ10 (Ubiquinol)', magnitude: 'high', reason: 'CoQ10 synthesis declines significantly after 40' },
   { minAge: 40, supplement: 'Collagen Peptides', magnitude: 'medium', reason: 'Collagen production declines with age' },
   { minAge: 40, supplement: 'Melatonin', magnitude: 'medium', reason: 'Melatonin production drops after 40' },
-  { minAge: 50, supplement: 'Calcium', magnitude: 'medium', reason: 'Calcium needs increase after 50' },
+  { minAge: 50, supplement: 'Calcium', magnitude: 'medium', reason: 'Calcium needs increase after 50; absorption declines with age' },
   { minAge: 50, supplement: 'Vitamin D3', magnitude: 'medium', reason: 'Vitamin D synthesis decreases with age' },
+  { minAge: 50, supplement: 'Magnesium', magnitude: 'medium', reason: 'Magnesium absorption decreases with age and dietary intake tends to drop' },
   { minAge: 60, supplement: 'Creatine Monohydrate', magnitude: 'medium', reason: 'Combats age-related sarcopenia' },
   { minAge: 60, supplement: 'Vitamin B12', magnitude: 'medium', reason: 'B12 absorption decreases with age' },
 ]
@@ -161,8 +162,9 @@ const AGE_BOOSTS: { minAge: number; supplement: string; magnitude: Magnitude; re
 const SEX_BOOSTS: { sex: string; supplement: string; magnitude: Magnitude; maxAge?: number; reason: string }[] = [
   { sex: 'female', supplement: 'Iron', magnitude: 'high', maxAge: 50, reason: 'Women of reproductive age need more iron due to menstruation' },
   { sex: 'female', supplement: 'Methylfolate (5-MTHF)', magnitude: 'high', maxAge: 45, reason: 'Folate is critical for women of childbearing age' },
-  { sex: 'female', supplement: 'Calcium', magnitude: 'medium', reason: 'Women need more calcium, especially post-menopause' },
+  { sex: 'female', supplement: 'Calcium', magnitude: 'medium', reason: 'Women need more calcium, especially post-menopause when bone density drops rapidly' },
   { sex: 'female', supplement: 'Vitamin D3', magnitude: 'medium', reason: 'Women are at higher risk for vitamin D deficiency' },
+  { sex: 'female', supplement: 'Magnesium', magnitude: 'medium', reason: 'Women are more likely to be magnesium deficient, especially post-menopause' },
 ]
 
 // ─── Scoring functions ────────────────────────────────────────────────────────
