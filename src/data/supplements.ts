@@ -77,7 +77,7 @@ export const supplements: WebSupplement[] = [
       'A trace mineral required for immune function, protein synthesis, wound healing, and DNA synthesis. Deficiency is common in vegetarians and vegans due to phytate inhibition.',
     evidenceGrade: 'A',
     goalsSupported: ['immunity', 'muscle', 'energy'],
-    deficiencySymptoms: ['frequent_illness', 'hair_loss', 'poor_memory', 'acid_reflux'],
+    deficiencySymptoms: ['frequent_illness', 'hair_loss', 'poor_memory'],
     safeUpperLimit: '40 mg/day for adults',
     drugInteractions: [
       {
@@ -380,5 +380,135 @@ export const supplements: WebSupplement[] = [
     nihUrl: 'https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/',
     recommendedForms: ['Calcium citrate (best absorbed, can take on empty stomach, gentler on GI). Calcium carbonate (cheaper, 40% elemental calcium, must take with food).'],
     typicalDose: '500–600 mg per dose, 1–2x daily. Most adults get 700–900 mg from diet; a 500 mg supplement fills the gap.',
+  },
+  {
+    id: 'alginate',
+    name: 'Alginate',
+    description:
+      'A natural polysaccharide derived from brown seaweed. Forms a viscous gel that floats on stomach contents, physically blocking acid reflux into the esophagus. The strongest evidence-based non-prescription treatment for GERD symptoms.',
+    evidenceGrade: 'A',
+    goalsSupported: ['longevity'],
+    deficiencySymptoms: ['acid_reflux'],
+    safeUpperLimit: 'Up to 1 g sodium alginate per dose, 3–4x daily after meals and at bedtime. GRAS by FDA.',
+    drugInteractions: [
+      {
+        drug: 'levothyroxine',
+        severity: 'moderate',
+        description: 'Alginate may reduce absorption of thyroid medication. Take at least 2 hours apart.',
+      },
+      {
+        drug: 'tetracycline',
+        severity: 'moderate',
+        description: 'Alginate binds tetracycline antibiotics. Separate by 2+ hours.',
+      },
+    ],
+    pubmedCitation: 'PMID: 28375448',
+    nihUrl: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5577773/',
+    recommendedForms: ['Liquid sodium alginate (e.g., Gaviscon Advance). Chewable tablets offer portable alternative but may have lower efficacy than liquid.'],
+    typicalDose: '10 mL liquid (500 mg alginate) after meals and at bedtime, 3–4x daily.',
+  },
+  {
+    id: 'psyllium',
+    name: 'Psyllium Husk',
+    description:
+      'A soluble fiber from Plantago ovata seeds. Forms a gel in the gut that regulates transit, improves stool consistency, lowers LDL cholesterol, and feeds beneficial gut bacteria. The gold-standard fiber supplement for constipation and IBS.',
+    evidenceGrade: 'A',
+    goalsSupported: ['longevity', 'weight_loss'],
+    deficiencySymptoms: ['constipation', 'ibs'],
+    safeUpperLimit: '10–30 g/day (3–10 g per dose, 1–3x daily). Always take with at least 8 oz water.',
+    drugInteractions: [
+      {
+        drug: 'levothyroxine',
+        severity: 'moderate',
+        description: 'Psyllium reduces thyroid medication absorption. Separate doses by 2+ hours.',
+      },
+      {
+        drug: 'lithium',
+        severity: 'moderate',
+        description: 'Psyllium may lower lithium absorption. Separate doses.',
+      },
+      {
+        drug: 'carbamazepine',
+        severity: 'moderate',
+        description: 'May reduce absorption. Separate by 2+ hours.',
+      },
+    ],
+    pubmedCitation: 'PMID: 30843436',
+    nihUrl: 'https://www.nccih.nih.gov/health/psyllium',
+    recommendedForms: ['Psyllium husk powder (unflavored) mixed into water. Capsule form requires many capsules per dose; powder is more efficient.'],
+    typicalDose: '5–10 g (1–2 tsp) in 8 oz water, 1–3x daily. Start low and increase gradually to avoid bloating.',
+  },
+  {
+    id: 'peppermint_oil',
+    name: 'Peppermint Oil (Enteric-Coated)',
+    description:
+      'Enteric-coated capsules of peppermint essential oil (Mentha piperita). The menthol relaxes smooth muscle in the gut, reducing cramping and spasms. Gold-standard herbal treatment for IBS, validated by multiple Cochrane meta-analyses.',
+    evidenceGrade: 'A',
+    goalsSupported: ['longevity'],
+    deficiencySymptoms: ['ibs', 'bloating', 'digestive_issues'],
+    safeUpperLimit: '180–225 mg enteric-coated oil, 3x daily before meals. Do not use non-enteric-coated oil internally.',
+    drugInteractions: [
+      {
+        drug: 'cyclosporine',
+        severity: 'moderate',
+        description: 'Peppermint oil may inhibit CYP3A4 and raise cyclosporine levels.',
+      },
+      {
+        drug: 'proton pump inhibitors',
+        severity: 'low',
+        description: 'PPIs may dissolve enteric coating prematurely, causing reflux or reduced efficacy.',
+      },
+    ],
+    pubmedCitation: 'PMID: 31756377',
+    nihUrl: 'https://www.nccih.nih.gov/health/peppermint-oil',
+    recommendedForms: ['Enteric-coated capsules ONLY for IBS (prevents stomach release that causes reflux). Look for 0.2 mL oil per capsule.'],
+    typicalDose: '1 enteric-coated capsule (180–225 mg) 3x daily, 30 min before meals, for 4–24 weeks.',
+  },
+  {
+    id: 'ginger',
+    name: 'Ginger (Zingiber officinale)',
+    description:
+      'Rhizome with active compounds (gingerols, shogaols) that promote gastric emptying, reduce inflammation, and suppress nausea. Strongest evidence for nausea (pregnancy, chemotherapy, motion sickness) and functional dyspepsia.',
+    evidenceGrade: 'A',
+    goalsSupported: ['longevity', 'immunity'],
+    deficiencySymptoms: ['nausea', 'bloating', 'digestive_issues'],
+    safeUpperLimit: '1–3 g/day dried ginger root or equivalent extract. Up to 4 g/day shown safe in studies.',
+    drugInteractions: [
+      {
+        drug: 'warfarin',
+        severity: 'moderate',
+        description: 'Ginger has antiplatelet effects and may increase bleeding risk with anticoagulants.',
+      },
+      {
+        drug: 'aspirin',
+        severity: 'low',
+        description: 'Possible additive antiplatelet effect. Monitor for bleeding.',
+      },
+    ],
+    pubmedCitation: 'PMID: 32340596',
+    nihUrl: 'https://www.nccih.nih.gov/health/ginger',
+    recommendedForms: ['Standardized extract (5% gingerols). Powdered root capsules. Fresh ginger tea or grated root for mild cases.'],
+    typicalDose: '250 mg 4x daily for nausea; 1–1.5 g daily for general digestive support.',
+  },
+  {
+    id: 'digestive_enzymes',
+    name: 'Digestive Enzymes',
+    description:
+      'Broad-spectrum enzyme blends (amylase, protease, lipase, lactase) that help break down carbohydrates, proteins, fats, and dairy. Moderate evidence for functional dyspepsia and bloating in people with pancreatic insufficiency or general digestive complaints.',
+    evidenceGrade: 'B',
+    goalsSupported: ['longevity'],
+    deficiencySymptoms: ['bloating', 'digestive_issues'],
+    safeUpperLimit: 'Varies by formulation. Typical dose: 1 capsule with each meal. Follow product label.',
+    drugInteractions: [
+      {
+        drug: 'warfarin',
+        severity: 'low',
+        description: 'Bromelain-containing enzyme blends may modestly increase bleeding risk.',
+      },
+    ],
+    pubmedCitation: 'PMID: 36164977',
+    nihUrl: 'https://www.niddk.nih.gov/health-information/digestive-diseases',
+    recommendedForms: ['Multi-enzyme blends (amylase + protease + lipase + lactase). Plant-based (bromelain, papain) for non-dairy diets.'],
+    typicalDose: '1 capsule with each meal. Dose-adjust based on symptom relief.',
   },
 ]

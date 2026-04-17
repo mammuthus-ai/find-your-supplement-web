@@ -35,6 +35,10 @@ export type Symptom =
   | 'poor_memory'
   | 'dry_skin'
   | 'acid_reflux'
+  | 'constipation'
+  | 'ibs'
+  | 'bloating'
+  | 'nausea'
 
 export type SunExposure = 'very_little' | 'some' | 'a_lot'
 export type ExerciseType = 'none' | 'cardio' | 'weight_training'

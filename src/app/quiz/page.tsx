@@ -62,6 +62,10 @@ const SYMPTOMS: { value: Symptom; label: string; emoji: string }[] = [
   { value: 'poor_memory', label: 'Poor Memory', emoji: '🧠' },
   { value: 'dry_skin', label: 'Dry Skin', emoji: '🏜️' },
   { value: 'acid_reflux', label: 'Acid Reflux / GERD', emoji: '🔥' },
+  { value: 'constipation', label: 'Constipation', emoji: '🚽' },
+  { value: 'ibs', label: 'IBS', emoji: '🌊' },
+  { value: 'bloating', label: 'Bloating', emoji: '🎈' },
+  { value: 'nausea', label: 'Nausea', emoji: '🤢' },
 ]
 
 const SUN_OPTIONS: { value: SunExposure; label: string; desc: string }[] = [

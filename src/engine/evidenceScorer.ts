@@ -35,7 +35,11 @@ const SYMPTOM_CONDITIONS: Record<Symptom, string[]> = {
   muscle_weakness: ['muscle strength'],
   poor_memory: ['cognitive function'],
   dry_skin: ['inflammation'],
-  acid_reflux: ['digestive health', 'gut health'],
+  acid_reflux: ['GERD', 'acid reflux', 'gastroesophageal reflux'],
+  constipation: ['constipation', 'digestive health'],
+  ibs: ['irritable bowel syndrome', 'IBS', 'digestive health'],
+  bloating: ['bloating', 'dyspepsia', 'digestive health'],
+  nausea: ['nausea', 'dyspepsia'],
 }
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
