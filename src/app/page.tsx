@@ -41,12 +41,12 @@ const features = [
 ]
 
 const sampleSupplements = [
-  { name: 'Vitamin D3', emoji: '☀️', grade: 'A', goalTag: 'Immunity · Mood · Energy', gradeColor: 'bg-grade-a/20 text-grade-a border-grade-a/30', borderColor: 'border-l-grade-a' },
-  { name: 'Magnesium Glycinate', emoji: '🧪', grade: 'A', goalTag: 'Sleep · Stress · Recovery', gradeColor: 'bg-grade-a/20 text-grade-a border-grade-a/30', borderColor: 'border-l-grade-a' },
-  { name: 'Omega-3 (Fish Oil)', emoji: '🐟', grade: 'A', goalTag: 'Brain · Heart · Mood', gradeColor: 'bg-grade-a/20 text-grade-a border-grade-a/30', borderColor: 'border-l-grade-a' },
-  { name: 'Ashwagandha KSM-66', emoji: '🌿', grade: 'B', goalTag: 'Stress · Sleep · Muscle', gradeColor: 'bg-grade-b/20 text-grade-b border-grade-b/30', borderColor: 'border-l-grade-b' },
-  { name: 'Creatine Monohydrate', emoji: '💪', grade: 'A', goalTag: 'Muscle · Focus · Energy', gradeColor: 'bg-grade-a/20 text-grade-a border-grade-a/30', borderColor: 'border-l-grade-a' },
-  { name: 'NAC (N-Acetyl Cysteine)', emoji: '🛡️', grade: 'B', goalTag: 'Longevity · Immunity · Mood', gradeColor: 'bg-grade-b/20 text-grade-b border-grade-b/30', borderColor: 'border-l-grade-b' },
+  { name: 'Vitamin D3', emoji: '☀️', evidence: 'Strong', goalTag: 'Immunity · Mood · Energy', gradeColor: 'bg-grade-a/15 text-grade-a border-grade-a/30', borderColor: 'border-l-grade-a' },
+  { name: 'Magnesium Glycinate', emoji: '🧪', evidence: 'Strong', goalTag: 'Sleep · Stress · Recovery', gradeColor: 'bg-grade-a/15 text-grade-a border-grade-a/30', borderColor: 'border-l-grade-a' },
+  { name: 'Omega-3 (Fish Oil)', emoji: '🐟', evidence: 'Strong', goalTag: 'Brain · Heart · Mood', gradeColor: 'bg-grade-a/15 text-grade-a border-grade-a/30', borderColor: 'border-l-grade-a' },
+  { name: 'Ashwagandha KSM-66', emoji: '🌿', evidence: 'Good', goalTag: 'Stress · Sleep · Muscle', gradeColor: 'bg-grade-b/15 text-grade-b border-grade-b/30', borderColor: 'border-l-grade-b' },
+  { name: 'Creatine Monohydrate', emoji: '💪', evidence: 'Strong', goalTag: 'Muscle · Focus · Energy', gradeColor: 'bg-grade-a/15 text-grade-a border-grade-a/30', borderColor: 'border-l-grade-a' },
+  { name: 'NAC (N-Acetyl Cysteine)', emoji: '🛡️', evidence: 'Good', goalTag: 'Longevity · Immunity · Mood', gradeColor: 'bg-grade-b/15 text-grade-b border-grade-b/30', borderColor: 'border-l-grade-b' },
 ]
 
 const trustPoints = [
@@ -57,7 +57,7 @@ const trustPoints = [
       </svg>
     ),
     title: 'Evidence-Based Only',
-    desc: 'Every recommendation is graded (A–D) based on PubMed research quality. No hype, no snake oil.',
+    desc: 'Every recommendation is ranked by research quality — from strong to preliminary evidence. No hype, no snake oil.',
   },
   {
     icon: (
@@ -226,7 +226,7 @@ export default function HomePage() {
                 Supplements we analyze
               </h2>
               <p className="text-text-secondary text-sm">
-                15 science-backed supplements, each graded A–D on evidence quality.
+                15 science-backed supplements, each ranked by evidence quality.
               </p>
             </div>
             <Link
@@ -245,18 +245,18 @@ export default function HomePage() {
               >
                 <span className="text-xl flex-shrink-0">{s.emoji}</span>
                 <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2">
-                    <p className="text-text font-medium text-sm">{s.name}</p>
-                    <span className={`flex-shrink-0 text-[10px] font-bold px-1.5 py-0.5 rounded border ${s.gradeColor}`}>{s.grade}</span>
+                  <p className="text-text font-medium text-sm">{s.name}</p>
+                  <div className="flex items-center gap-2 mt-1">
+                    <span className={`flex-shrink-0 text-[10px] font-semibold px-1.5 py-0.5 rounded border ${s.gradeColor}`}>Evidence: {s.evidence}</span>
                   </div>
-                  <p className="text-text-tertiary text-xs mt-0.5">{s.goalTag}</p>
+                  <p className="text-text-tertiary text-xs mt-1">{s.goalTag}</p>
                 </div>
               </div>
             ))}
           </div>
 
           <p className="text-text-tertiary text-xs text-center mt-6">
-            Evidence grades: A = meta-analyses/RCTs · B = multiple RCTs · C = limited trials · D = preliminary
+            Evidence tiers: Strong = meta-analyses &amp; RCTs · Good = multiple RCTs · Limited = small trials · Weak = early research
           </p>
         </div>
       </section>

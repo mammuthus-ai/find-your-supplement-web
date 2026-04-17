@@ -36,10 +36,19 @@ function gradeStyles(g: EvidenceGrade) {
 
 function gradeLabel(g: EvidenceGrade) {
   return {
-    A: 'Grade A — Meta-analyses & RCTs',
-    B: 'Grade B — Multiple RCTs',
-    C: 'Grade C — Limited trials',
-    D: 'Grade D — Preliminary evidence',
+    A: 'Strong evidence — Meta-analyses & RCTs',
+    B: 'Good evidence — Multiple RCTs',
+    C: 'Limited evidence — Small trials',
+    D: 'Weak evidence — Early/mechanistic research',
+  }[g]
+}
+
+function gradeShortLabel(g: EvidenceGrade) {
+  return {
+    A: 'Evidence: Strong',
+    B: 'Evidence: Good',
+    C: 'Evidence: Limited',
+    D: 'Evidence: Weak',
   }[g]
 }
 
@@ -119,7 +128,7 @@ function SupplementCard({ rec }: { rec: SupplementRecommendation }) {
                   {priorityLabel(priority)}
                 </span>
                 <span className={`text-xs font-medium px-2 py-0.5 rounded border ${gradeStyles(evidenceGrade)}`}>
-                  Evidence {evidenceGrade}
+                  {gradeShortLabel(evidenceGrade)}
                 </span>
               </div>
             </div>

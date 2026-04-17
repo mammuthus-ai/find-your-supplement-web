@@ -12,8 +12,9 @@ export default function MyStackCard({ recommendations, goals }: MyStackCardProps
   const [shared, setShared] = useState(false)
   const top5 = recommendations.slice(0, 5)
 
+  const evidenceShort: Record<string, string> = { A: 'Strong', B: 'Good', C: 'Limited', D: 'Weak' }
   const shareText = `My personalized supplement stack from Find Your Supplement:\n${top5
-    .map((r, i) => `${i + 1}. ${r.supplement.name} (Evidence: ${r.evidenceGrade})`)
+    .map((r, i) => `${i + 1}. ${r.supplement.name} (${evidenceShort[r.evidenceGrade] || r.evidenceGrade} evidence)`)
     .join('\n')}\n\nGet yours free: https://findyoursupplement.co/quiz`
 
   const handleShare = async () => {
@@ -71,8 +72,8 @@ export default function MyStackCard({ recommendations, goals }: MyStackCardProps
             <div className="flex-1 min-w-0">
               <p className="text-text text-sm font-medium truncate">{rec.supplement.name}</p>
             </div>
-            <span className={`text-xs font-semibold ${gradeColor(rec.evidenceGrade)}`}>
-              {rec.evidenceGrade}
+            <span className={`text-[10px] font-semibold ${gradeColor(rec.evidenceGrade)} whitespace-nowrap`}>
+              {evidenceShort[rec.evidenceGrade] || rec.evidenceGrade}
             </span>
             <div className="w-12 h-1 bg-surface-alt rounded-full overflow-hidden flex-shrink-0">
               <div

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Your Personalized Supplement Recommendations',
     description:
-      'Evidence-based supplement recommendations tailored to your health profile. Graded A–D based on PubMed research quality.',
+      'Evidence-based supplement recommendations tailored to your health profile. Each supplement tagged by research tier (Strong, Good, Limited, Weak) based on PubMed evidence.',
     url: 'https://findyoursupplement.co/results/',
     type: 'website',
   },
