@@ -459,10 +459,10 @@ export default function ResultsPage() {
                       rel="noopener noreferrer"
                       className="bg-teal hover:bg-teal-light text-bg font-semibold text-sm px-6 py-3 rounded-xl transition-colors shadow-lg shadow-teal/20"
                     >
-                      Download the App — Free Trial
+                      Download the App
                     </a>
                     <p className="text-text-tertiary text-xs">
-                      Free for 7 days, then $4.99/mo
+                      $4.99/mo — Cancel anytime
                     </p>
                   </div>
                 </div>

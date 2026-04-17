@@ -39,6 +39,10 @@ export type Symptom =
   | 'ibs'
   | 'bloating'
   | 'nausea'
+  | 'apo_b_elevated'
+  | 'ldl_elevated'
+  | 'hdl_low'
+  | 'triglycerides_high'
 
 export type SunExposure = 'very_little' | 'some' | 'a_lot'
 export type ExerciseType = 'none' | 'cardio' | 'weight_training'
@@ -80,7 +84,17 @@ export interface WebSupplement {
   pubmedCitation: string
   nihUrl: string
   recommendedForms?: string[]
+  forms?: SupplementForm[]
   typicalDose?: string
+}
+
+export interface SupplementForm {
+  name: string
+  bestFor: string[]
+  bioavailability: 'high' | 'medium' | 'low'
+  amazonSearch: string
+  warning?: string | null
+  priority: number
 }
 
 export interface RecommendationReason {

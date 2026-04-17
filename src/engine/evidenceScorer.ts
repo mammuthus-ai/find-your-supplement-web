@@ -40,6 +40,10 @@ const SYMPTOM_CONDITIONS: Record<Symptom, string[]> = {
   ibs: ['irritable bowel syndrome', 'IBS', 'digestive health'],
   bloating: ['bloating', 'dyspepsia', 'digestive health'],
   nausea: ['nausea', 'dyspepsia'],
+  apo_b_elevated: ['apolipoprotein B', 'apoB', 'dyslipidemia', 'cardiovascular risk'],
+  ldl_elevated: ['LDL cholesterol', 'hypercholesterolemia', 'dyslipidemia'],
+  hdl_low: ['HDL cholesterol', 'dyslipidemia', 'cardiovascular risk'],
+  triglycerides_high: ['triglycerides', 'hypertriglyceridemia', 'dyslipidemia'],
 }
 
 // ─── Helpers ────────────────────────────────────────────────────────────────

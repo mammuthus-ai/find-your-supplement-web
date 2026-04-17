@@ -511,4 +511,449 @@ export const supplements: WebSupplement[] = [
     recommendedForms: ['Multi-enzyme blends (amylase + protease + lipase + lactase). Plant-based (bromelain, papain) for non-dairy diets.'],
     typicalDose: '1 capsule with each meal. Dose-adjust based on symptom relief.',
   },
+  {
+    id: 'berberine',
+    name: 'Berberine',
+    description: 'An isoquinoline alkaloid from Berberis species (goldenseal, barberry, Oregon grape) with statin-independent LDL-lowering activity. Upregulates hepatic LDL-receptor expression via ERK-pathway stabilization of LDLR mRNA, activates AMPK, inhibits PCSK9 expression, and improves insulin sensitivity. A 2023 meta-analysis of 41 RCTs (n=4,838) showed LDL −15 mg/dL, triglycerides −19 mg/dL, and modest HDL increase. Because of poor oral bioavailability (~1%), phytosome and dihydroberberine delivery forms are clinically preferred.',
+    evidenceGrade: 'A',
+    goalsSupported: [
+      'longevity',
+      'weight_loss',
+      'energy'
+    ],
+    deficiencySymptoms: [
+      'ldl_elevated',
+      'apo_b_elevated',
+      'triglycerides_high'
+    ],
+    safeUpperLimit: '1,500 mg/day (typical clinical dose 500 mg BID–TID with meals). GI upset common at higher doses.',
+    drugInteractions: [
+      {
+        drug: 'statins (soft-warn, CYP3A4)',
+        severity: 'high',
+        description: 'Berberine inhibits CYP3A4 and P-gp, raising levels of simvastatin, atorvastatin, and lovastatin and increasing myopathy risk. Avoid combination or use under clinician guidance.'
+      },
+      {
+        drug: 'diabetes medications (hypoglycemia risk)',
+        severity: 'high',
+        description: 'Additive glucose-lowering effect with insulin, sulfonylureas, and metformin. Monitor blood glucose; dose adjustment may be required.'
+      },
+      {
+        drug: 'cyclosporine',
+        severity: 'high',
+        description: 'Berberine raises cyclosporine plasma levels via CYP3A4/P-gp inhibition — toxicity risk.'
+      },
+      {
+        drug: 'macrolide antibiotics',
+        severity: 'moderate',
+        description: 'Additive CYP3A4 inhibition; separate or avoid concurrent use.'
+      },
+      {
+        drug: 'pregnancy (exclude)',
+        severity: 'high',
+        description: 'Berberine crosses placenta and may displace bilirubin, causing neonatal kernicterus. Hard-exclude in pregnancy and breastfeeding.'
+      }
+    ],
+    pubmedCitation: 'Xiong et al., Front Pharmacol 2023; PMID: 37183391',
+    nihUrl: '',
+    recommendedForms: [
+      'Berberine — see forms below'
+    ],
+    typicalDose: '',
+    forms: [
+      {
+        name: 'Berberine phytosome (Berberine Phytosome / sunfiber complex)',
+        bestFor: [
+          'ldl_elevated',
+          'apo_b_elevated',
+          'triglycerides_high',
+          'weight_loss',
+          'longevity'
+        ],
+        bioavailability: 'high',
+        amazonSearch: 'berberine+phytosome',
+        warning: null,
+        priority: 1
+      },
+      {
+        name: 'Dihydroberberine (DHB)',
+        bestFor: [
+          'ldl_elevated',
+          'triglycerides_high',
+          'weight_loss'
+        ],
+        bioavailability: 'high',
+        amazonSearch: 'dihydroberberine',
+        warning: null,
+        priority: 2
+      },
+      {
+        name: 'Berberine HCl 500 mg',
+        bestFor: [
+          'ldl_elevated',
+          'apo_b_elevated',
+          'triglycerides_high',
+          'weight_loss'
+        ],
+        bioavailability: 'low',
+        amazonSearch: 'berberine+hcl+500+mg',
+        warning: 'Oral bioavailability ~1%; requires 500 mg 2–3×/day with meals and commonly causes GI upset.',
+        priority: 3
+      },
+      {
+        name: 'Berberine + Milk Thistle combo',
+        bestFor: [
+          'ldl_elevated',
+          'longevity'
+        ],
+        bioavailability: 'medium',
+        amazonSearch: 'berberine+milk+thistle',
+        warning: null,
+        priority: 4
+      }
+    ]
+  },
+  {
+    id: 'bergamot',
+    name: 'Bergamot (BPF)',
+    description: 'Standardized Bergamot Polyphenolic Fraction from Citrus bergamia, rich in brutieridin and melitidin — natural HMG-CoA reductase inhibitors — plus neoeriocitrin and naringin which activate AMPK and reduce hepatic lipogenesis. A 2019 review of 20 human studies (n=1,709) and multiple RCTs (PMID: 24239156, 35631240, 38892519) show LDL −15 to −25%, triglycerides −15 to −30%, HDL +5 to +10% at 500–1,000 mg standardized BPF per day. Unique among non-statin nutraceuticals for its concurrent HDL-raising effect.',
+    evidenceGrade: 'B',
+    goalsSupported: [
+      'longevity',
+      'energy'
+    ],
+    deficiencySymptoms: [
+      'ldl_elevated',
+      'triglycerides_high',
+      'hdl_low',
+      'apo_b_elevated'
+    ],
+    safeUpperLimit: '1,000 mg/day standardized BPF (≥38% polyphenols). Generally well-tolerated; rare mild GI upset or muscle cramps.',
+    drugInteractions: [
+      {
+        drug: 'statins (soft-warn, CYP3A4)',
+        severity: 'moderate',
+        description: 'Bergamot contains natural statin-like compounds and mildly inhibits CYP3A4. Combination with prescription statins may potentiate LDL reduction but increases theoretical myopathy risk — monitor creatine kinase (CK).'
+      },
+      {
+        drug: 'CYP3A4-metabolized drugs',
+        severity: 'low',
+        description: 'Mild furanocoumarin content; weaker than grapefruit but consider spacing.'
+      }
+    ],
+    pubmedCitation: 'Lamiquiz-Moneo et al., Nutrients 2019; PMID: 30847114',
+    nihUrl: '',
+    recommendedForms: [
+      'Bergamot (BPF) — see forms below'
+    ],
+    typicalDose: '',
+    forms: [
+      {
+        name: 'Bergamot phytosome (Bergavit / Vazguard-style, standardized ≥38% polyphenols)',
+        bestFor: [
+          'ldl_elevated',
+          'triglycerides_high',
+          'hdl_low',
+          'apo_b_elevated',
+          'longevity'
+        ],
+        bioavailability: 'high',
+        amazonSearch: 'bergamot+phytosome',
+        warning: null,
+        priority: 1
+      },
+      {
+        name: 'Citrus bergamot BPF extract (500–1000 mg)',
+        bestFor: [
+          'ldl_elevated',
+          'triglycerides_high',
+          'hdl_low'
+        ],
+        bioavailability: 'medium',
+        amazonSearch: 'citrus+bergamot+bpf',
+        warning: null,
+        priority: 2
+      },
+      {
+        name: 'Bergamot + artichoke combo',
+        bestFor: [
+          'ldl_elevated',
+          'longevity'
+        ],
+        bioavailability: 'medium',
+        amazonSearch: 'bergamot+artichoke',
+        warning: null,
+        priority: 3
+      },
+      {
+        name: 'Unstandardized bergamot powder',
+        bestFor: [
+          'ldl_elevated'
+        ],
+        bioavailability: 'low',
+        amazonSearch: 'bergamot+powder',
+        warning: 'Polyphenol content variable; clinical trials use standardized BPF only.',
+        priority: 4
+      }
+    ]
+  },
+  {
+    id: 'red_yeast_rice',
+    name: 'Red Yeast Rice (Standardized)',
+    description: 'Fermented rice (Monascus purpureus) that naturally contains monacolin K — chemically identical to prescription lovastatin — along with monacolins J, L, M and minor sterols. A 2015 Atherosclerosis meta-analysis of 20 RCTs (PMID: 25897793) reported LDL −39 mg/dL (20–30% reduction), comparable to low-dose statin therapy. Critical caveats: monacolin K content varies up to 100× between unregulated products (PMID: 27089602), and citrinin (a nephrotoxic mycotoxin) contamination is common — only use third-party tested, citrinin-free standardized products. EFSA capped supplemental monacolin K at <3 mg/day in the EU (2022).',
+    evidenceGrade: 'A',
+    goalsSupported: [
+      'longevity'
+    ],
+    deficiencySymptoms: [
+      'ldl_elevated',
+      'apo_b_elevated'
+    ],
+    safeUpperLimit: 'EFSA (2022): supplemental monacolin K <3 mg/day. Clinical dyslipidemia trials use 3–10 mg monacolin K/day but require clinician supervision and third-party citrinin testing.',
+    drugInteractions: [
+      {
+        drug: 'statins (hard-exclude)',
+        severity: 'high',
+        description: 'Monacolin K is lovastatin. Combining with prescription statins produces additive HMG-CoA reductase inhibition and major myopathy/rhabdomyolysis risk. Hard-exclude.'
+      },
+      {
+        drug: 'fibrates (hard-exclude)',
+        severity: 'high',
+        description: 'Additive myopathy and rhabdomyolysis risk — do not combine.'
+      },
+      {
+        drug: 'pregnancy (hard-exclude)',
+        severity: 'high',
+        description: 'Statin-class drugs are contraindicated in pregnancy due to potential fetal harm. Hard-exclude.'
+      },
+      {
+        drug: 'grapefruit juice',
+        severity: 'high',
+        description: 'Inhibits CYP3A4, dramatically raising monacolin K levels and myopathy risk. Avoid.'
+      },
+      {
+        drug: 'cyclosporine',
+        severity: 'high',
+        description: 'Severe myopathy risk via CYP3A4 inhibition.'
+      },
+      {
+        drug: 'macrolide antibiotics and azole antifungals',
+        severity: 'high',
+        description: 'Strong CYP3A4 inhibitors — hold RYR during therapy.'
+      }
+    ],
+    pubmedCitation: 'Gerards et al., Atherosclerosis 2015; PMID: 25897793',
+    nihUrl: '',
+    recommendedForms: [
+      'Red Yeast Rice (Standardized) — see forms below'
+    ],
+    typicalDose: '',
+    forms: [
+      {
+        name: 'Standardized Red Yeast Rice (citrinin-free, third-party tested)',
+        bestFor: [
+          'ldl_elevated',
+          'apo_b_elevated',
+          'longevity'
+        ],
+        bioavailability: 'high',
+        amazonSearch: 'red+yeast+rice+citrinin+free',
+        warning: 'Contains monacolin K (chemically identical to lovastatin). Do NOT combine with statins, fibrates, cyclosporine, grapefruit juice. Contraindicated in pregnancy and liver disease.',
+        priority: 1
+      },
+      {
+        name: 'Red Yeast Rice + CoQ10 combo',
+        bestFor: [
+          'ldl_elevated',
+          'fatigue',
+          'muscle_weakness'
+        ],
+        bioavailability: 'high',
+        amazonSearch: 'red+yeast+rice+coq10',
+        warning: 'CoQ10 helps offset statin-like myopathy risk. Same contraindications as RYR alone.',
+        priority: 2
+      },
+      {
+        name: 'Generic Red Yeast Rice',
+        bestFor: [
+          'ldl_elevated'
+        ],
+        bioavailability: 'medium',
+        amazonSearch: 'red+yeast+rice',
+        warning: 'Monacolin K content varies up to 100× between brands; citrinin contamination risk. Choose standardized citrinin-free products only.',
+        priority: 3
+      }
+    ]
+  },
+  {
+    id: 'plant_sterols',
+    name: 'Plant Sterols (Phytosterols)',
+    description: 'Structural cholesterol analogs (beta-sitosterol, campesterol, stigmasterol, plus their stanol derivatives) that competitively displace cholesterol from intestinal mixed micelles, reducing cholesterol absorption by ~50% and upregulating hepatic LDL-receptor clearance. A 2003 meta-analysis of 41 trials (PMID: 12911045) established 2 g/day produces LDL −10%, with plateau above that dose. FDA authorized health claim (21 CFR 101.83): 1.3 g sterol esters or 3.4 g stanol esters/day reduces CHD risk. Excellent safety profile — often stacked with statins for additive effect.',
+    evidenceGrade: 'A',
+    goalsSupported: [
+      'longevity'
+    ],
+    deficiencySymptoms: [
+      'ldl_elevated',
+      'apo_b_elevated'
+    ],
+    safeUpperLimit: '3 g/day; doses above 2 g/day produce minimal additional LDL reduction. GRAS status. Take with meals — fat is required for sterol incorporation into micelles.',
+    drugInteractions: [
+      {
+        drug: 'ezetimibe (additive)',
+        severity: 'moderate',
+        description: 'Both drugs inhibit intestinal cholesterol absorption via overlapping mechanisms (NPC1L1 pathway). Benefit may plateau; discuss with clinician.'
+      },
+      {
+        drug: 'fat-soluble vitamin absorption (take with meal)',
+        severity: 'low',
+        description: 'Plant sterols modestly reduce absorption of beta-carotene and other carotenoids. Take with meals containing colorful vegetables; no significant impact on vitamin D/E/K status at 2 g/day.'
+      }
+    ],
+    pubmedCitation: 'Katan et al., Mayo Clin Proc 2003; PMID: 12911045',
+    nihUrl: '',
+    recommendedForms: [
+      'Plant Sterols (Phytosterols) — see forms below'
+    ],
+    typicalDose: '',
+    forms: [
+      {
+        name: 'Plant sterol esters (CardioAid / Reducol, 2 g/day)',
+        bestFor: [
+          'ldl_elevated',
+          'apo_b_elevated',
+          'longevity'
+        ],
+        bioavailability: 'high',
+        amazonSearch: 'plant+sterols+2000+mg',
+        warning: null,
+        priority: 1
+      },
+      {
+        name: 'Beta-sitosterol',
+        bestFor: [
+          'ldl_elevated',
+          'longevity'
+        ],
+        bioavailability: 'high',
+        amazonSearch: 'beta+sitosterol',
+        warning: null,
+        priority: 2
+      },
+      {
+        name: 'Phytosterol + stanol complex',
+        bestFor: [
+          'ldl_elevated',
+          'apo_b_elevated'
+        ],
+        bioavailability: 'high',
+        amazonSearch: 'phytosterols+stanols',
+        warning: null,
+        priority: 3
+      },
+      {
+        name: 'Sterol-fortified margarine/spread',
+        bestFor: [
+          'ldl_elevated'
+        ],
+        bioavailability: 'high',
+        amazonSearch: 'benecol+plant+sterol+spread',
+        warning: 'Food-form delivery; watch total fat/calorie intake.',
+        priority: 4
+      }
+    ]
+  },
+  {
+    id: 'aged_garlic',
+    name: 'Aged Garlic Extract (Kyolic AGE)',
+    description: 'Aged Garlic Extract (Kyolic brand; Allium sativum aged 18–20 months) standardized to S-allyl cysteine (SAC) — a water-soluble, odor-free, stable marker compound. SAC weakly inhibits hepatic HMG-CoA reductase, with additional antioxidant, endothelial, and antiplatelet effects. A 2019 meta-analysis of 33 studies (n=1,273; PMID: 30049636) in diabetic populations showed TC −17 mg/dL, LDL −10 mg/dL, TG −12 mg/dL, HDL +3 mg/dL. AGE-specific Kyolic trials also demonstrate modest BP reduction (−7 to −10 mmHg SBP) and coronary artery calcium score stabilization. Fewer GI and breath side effects than raw garlic or allicin-standardized extracts.',
+    evidenceGrade: 'B',
+    goalsSupported: [
+      'longevity',
+      'immunity'
+    ],
+    deficiencySymptoms: [
+      'ldl_elevated',
+      'triglycerides_high',
+      'hdl_low'
+    ],
+    safeUpperLimit: '2,400 mg/day AGE has been used in clinical trials (typical dose 600–1,200 mg/day for lipids, up to 2,400 mg for BP). GRAS status.',
+    drugInteractions: [
+      {
+        drug: 'warfarin (soft-warn, bleeding risk)',
+        severity: 'moderate',
+        description: 'Garlic has antiplatelet activity and may potentiate warfarin. Monitor INR more frequently when starting or stopping AGE.'
+      },
+      {
+        drug: 'antiplatelets',
+        severity: 'moderate',
+        description: 'Additive antiplatelet effect with aspirin, clopidogrel, DOACs. Increased bleeding risk — clinician consult advised.'
+      },
+      {
+        drug: 'HIV protease inhibitors',
+        severity: 'high',
+        description: 'Garlic significantly lowers saquinavir and related protease inhibitor plasma levels — may compromise antiretroviral efficacy. Avoid combination.'
+      },
+      {
+        drug: 'diabetes medications',
+        severity: 'low',
+        description: 'Mild additive hypoglycemic effect; monitor blood glucose.'
+      }
+    ],
+    pubmedCitation: 'Shabani et al., Phytomedicine 2019; PMID: 30049636',
+    nihUrl: '',
+    recommendedForms: [
+      'Aged Garlic Extract (Kyolic AGE) — see forms below'
+    ],
+    typicalDose: '',
+    forms: [
+      {
+        name: 'Kyolic Aged Garlic Extract (AGE, 600–1,200 mg)',
+        bestFor: [
+          'ldl_elevated',
+          'triglycerides_high',
+          'longevity',
+          'immunity'
+        ],
+        bioavailability: 'high',
+        amazonSearch: 'kyolic+aged+garlic+extract',
+        warning: null,
+        priority: 1
+      },
+      {
+        name: 'Aged Garlic + CoQ10 cardiovascular formula',
+        bestFor: [
+          'ldl_elevated',
+          'longevity',
+          'energy'
+        ],
+        bioavailability: 'high',
+        amazonSearch: 'kyolic+aged+garlic+coq10',
+        warning: null,
+        priority: 2
+      },
+      {
+        name: 'Garlic oil softgel',
+        bestFor: [
+          'immunity',
+          'ldl_elevated'
+        ],
+        bioavailability: 'medium',
+        amazonSearch: 'garlic+oil+softgel',
+        warning: 'Less S-allyl cysteine than aged garlic extract; stronger odor.',
+        priority: 3
+      },
+      {
+        name: 'Allicin-standardized garlic extract',
+        bestFor: [
+          'immunity',
+          'ldl_elevated'
+        ],
+        bioavailability: 'medium',
+        amazonSearch: 'allicin+garlic+extract',
+        warning: 'Higher antiplatelet activity than AGE; more GI upset.',
+        priority: 4
+      }
+    ]
+  },
 ]

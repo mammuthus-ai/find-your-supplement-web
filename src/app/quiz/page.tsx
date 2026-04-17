@@ -66,6 +66,10 @@ const SYMPTOMS: { value: Symptom; label: string; emoji: string }[] = [
   { value: 'ibs', label: 'IBS', emoji: '🌊' },
   { value: 'bloating', label: 'Bloating', emoji: '🎈' },
   { value: 'nausea', label: 'Nausea', emoji: '🤢' },
+  { value: 'apo_b_elevated',     label: 'Elevated ApoB',        emoji: '🫀' },
+  { value: 'ldl_elevated',       label: 'High LDL Cholesterol', emoji: '🫀' },
+  { value: 'hdl_low',            label: 'Low HDL Cholesterol',  emoji: '🫀' },
+  { value: 'triglycerides_high', label: 'High Triglycerides',   emoji: '🫀' },
 ]
 
 const SUN_OPTIONS: { value: SunExposure; label: string; desc: string }[] = [
