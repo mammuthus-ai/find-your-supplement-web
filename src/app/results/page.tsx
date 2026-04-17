@@ -37,7 +37,7 @@ function gradeStyles(g: EvidenceGrade) {
 function gradeLabel(g: EvidenceGrade) {
   return {
     A: 'Strong evidence — Meta-analyses & RCTs',
-    B: 'Good evidence — Multiple RCTs',
+    B: 'Moderate evidence — Multiple RCTs',
     C: 'Limited evidence — Small trials',
     D: 'Weak evidence — Early/mechanistic research',
   }[g]
@@ -46,7 +46,7 @@ function gradeLabel(g: EvidenceGrade) {
 function gradeShortLabel(g: EvidenceGrade) {
   return {
     A: 'Evidence: Strong',
-    B: 'Evidence: Good',
+    B: 'Evidence: Moderate',
     C: 'Evidence: Limited',
     D: 'Evidence: Weak',
   }[g]

@@ -36,7 +36,7 @@ const methodologySteps = [
   {
     step: '04',
     title: 'Evidence tiers contextualize quality',
-    desc: 'Each supplement is tagged with an evidence tier reflecting underlying research quality: Strong = meta-analyses and RCTs, Good = multiple controlled trials, Limited = small trials, Weak = preliminary or mechanistic evidence only.',
+    desc: 'Each supplement is tagged with an evidence tier reflecting underlying research quality: Strong = meta-analyses and RCTs, Moderate = multiple controlled trials, Limited = small trials, Weak = preliminary or mechanistic evidence only.',
   },
 ]
 
@@ -64,7 +64,7 @@ const faqJsonLd = {
       name: 'How does Find Your Supplement work?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'You take a free 2-minute quiz about your health goals, diet, lifestyle, and symptoms. Our scoring engine evaluates 15 supplements across four dimensions — diet, lifestyle, symptoms, and goals — weighted by clinical diagnostic accuracy from PubMed research. Results are ranked by relevance score (0–100) and each supplement is tagged with an evidence tier (Strong, Good, Limited, or Weak).',
+        text: 'You take a free 2-minute quiz about your health goals, diet, lifestyle, and symptoms. Our scoring engine evaluates 15 supplements across four dimensions — diet, lifestyle, symptoms, and goals — weighted by clinical diagnostic accuracy from PubMed research. Results are ranked by relevance score (0–100) and each supplement is tagged with an evidence tier (Strong, Moderate, Limited, or Weak).',
       },
     },
     {
@@ -85,10 +85,10 @@ const faqJsonLd = {
     },
     {
       '@type': 'Question',
-      name: 'What do the evidence tiers (Strong, Good, Limited, Weak) mean?',
+      name: 'What do the evidence tiers (Strong, Moderate, Limited, Weak) mean?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Strong evidence means the supplement is backed by meta-analyses and systematic RCTs (the gold standard). Good evidence means multiple controlled trials with consistent findings. Limited evidence means small trials where more research is needed. Weak evidence means preliminary research from in-vitro, animal studies, or very small human trials.',
+        text: 'Strong evidence means the supplement is backed by meta-analyses and systematic RCTs (the gold standard). Moderate evidence means multiple controlled trials with consistent findings. Limited evidence means small trials where more research is needed. Weak evidence means preliminary research from in-vitro, animal studies, or very small human trials.',
       },
     },
     {
@@ -204,7 +204,7 @@ export default function AboutPage() {
                 desc: 'The gold standard. Multiple high-quality randomized controlled trials, often synthesized in systematic reviews and meta-analyses.',
               },
               {
-                tier: 'Good',
+                tier: 'Moderate',
                 color: 'bg-grade-b/10 border-grade-b/30 text-grade-b',
                 title: 'Multiple controlled trials',
                 desc: 'Several well-designed RCTs with consistent findings, or a smaller number of large-scale trials.',

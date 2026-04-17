@@ -12,7 +12,7 @@ export default function MyStackCard({ recommendations, goals }: MyStackCardProps
   const [shared, setShared] = useState(false)
   const top5 = recommendations.slice(0, 5)
 
-  const evidenceShort: Record<string, string> = { A: 'Strong', B: 'Good', C: 'Limited', D: 'Weak' }
+  const evidenceShort: Record<string, string> = { A: 'Strong', B: 'Moderate', C: 'Limited', D: 'Weak' }
   const shareText = `My personalized supplement stack from Find Your Supplement:\n${top5
     .map((r, i) => `${i + 1}. ${r.supplement.name} (${evidenceShort[r.evidenceGrade] || r.evidenceGrade} evidence)`)
     .join('\n')}\n\nGet yours free: https://findyoursupplement.co/quiz`

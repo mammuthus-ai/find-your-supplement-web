@@ -44,9 +44,9 @@ const sampleSupplements = [
   { name: 'Vitamin D3', emoji: '☀️', evidence: 'Strong', goalTag: 'Immunity · Mood · Energy', gradeColor: 'bg-grade-a/15 text-grade-a border-grade-a/30', borderColor: 'border-l-grade-a' },
   { name: 'Magnesium Glycinate', emoji: '🧪', evidence: 'Strong', goalTag: 'Sleep · Stress · Recovery', gradeColor: 'bg-grade-a/15 text-grade-a border-grade-a/30', borderColor: 'border-l-grade-a' },
   { name: 'Omega-3 (Fish Oil)', emoji: '🐟', evidence: 'Strong', goalTag: 'Brain · Heart · Mood', gradeColor: 'bg-grade-a/15 text-grade-a border-grade-a/30', borderColor: 'border-l-grade-a' },
-  { name: 'Ashwagandha KSM-66', emoji: '🌿', evidence: 'Good', goalTag: 'Stress · Sleep · Muscle', gradeColor: 'bg-grade-b/15 text-grade-b border-grade-b/30', borderColor: 'border-l-grade-b' },
+  { name: 'Ashwagandha KSM-66', emoji: '🌿', evidence: 'Moderate', goalTag: 'Stress · Sleep · Muscle', gradeColor: 'bg-grade-b/15 text-grade-b border-grade-b/30', borderColor: 'border-l-grade-b' },
   { name: 'Creatine Monohydrate', emoji: '💪', evidence: 'Strong', goalTag: 'Muscle · Focus · Energy', gradeColor: 'bg-grade-a/15 text-grade-a border-grade-a/30', borderColor: 'border-l-grade-a' },
-  { name: 'NAC (N-Acetyl Cysteine)', emoji: '🛡️', evidence: 'Good', goalTag: 'Longevity · Immunity · Mood', gradeColor: 'bg-grade-b/15 text-grade-b border-grade-b/30', borderColor: 'border-l-grade-b' },
+  { name: 'NAC (N-Acetyl Cysteine)', emoji: '🛡️', evidence: 'Moderate', goalTag: 'Longevity · Immunity · Mood', gradeColor: 'bg-grade-b/15 text-grade-b border-grade-b/30', borderColor: 'border-l-grade-b' },
 ]
 
 const trustPoints = [
@@ -256,7 +256,7 @@ export default function HomePage() {
           </div>
 
           <p className="text-text-tertiary text-xs text-center mt-6">
-            Evidence tiers: Strong = meta-analyses &amp; RCTs · Good = multiple RCTs · Limited = small trials · Weak = early research
+            Evidence tiers: Strong = meta-analyses &amp; RCTs · Moderate = multiple RCTs · Limited = small trials · Weak = early research
           </p>
         </div>
       </section>

@@ -34,13 +34,13 @@ Zinc is probably best known for immune support, and the evidence here is genuine
 
 This is why zinc lozenges became popular for colds. A [Cochrane review of zinc for the common cold](https://pubmed.ncbi.nlm.nih.gov/23775705/) found that zinc administered within 24 hours of cold symptom onset significantly reduced both duration and severity. The catch: the effect is most pronounced in people who were zinc-deficient to begin with, and the lozenge form (which allows zinc to contact throat mucosa directly) matters for this specific use case.
 
-### Testosterone and Male Reproductive Health (Good evidence)
+### Testosterone and Male Reproductive Health (Moderate evidence)
 
 Zinc is a co-factor for an enzyme that converts testosterone to its active form, and the androgen receptor itself is a zinc-finger protein. The relationship between zinc and testosterone is well-documented in deficient populations.
 
 A [2023 systematic review on zinc and testosterone](https://pubmed.ncbi.nlm.nih.gov/36577241/) confirmed that zinc supplementation increases testosterone levels — but importantly, mainly in people who are zinc-deficient or marginally deficient. A 1996 study found that zinc supplementation raised testosterone levels by 26% in deficient men. However, if you already have adequate zinc status, supplementing more won't push your testosterone further. The effect is essentially "restoring normal" rather than "enhancing above normal."
 
-### Wound Healing and Skin Health (Good evidence)
+### Wound Healing and Skin Health (Moderate evidence)
 
 Zinc plays a direct role in collagen synthesis and cell proliferation — both essential for wound repair. The [NIH Office of Dietary Supplements zinc fact sheet](https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/) notes that zinc deficiency is associated with impaired wound healing, and zinc supplementation is used clinically for chronic wound management, particularly in people with diabetes or pressure ulcers.
 
@@ -48,7 +48,7 @@ Zinc plays a direct role in collagen synthesis and cell proliferation — both e
 
 One of the most distinctive signs of zinc deficiency is loss of taste and smell. This is because gustin, an enzyme required for proper taste perception, is zinc-dependent. If food has started tasting bland or you've noticed your sense of smell fading, zinc deficiency is a legitimate thing to rule out. This is also why COVID-related taste/smell loss prompted research into zinc as a potential treatment.
 
-### Blood Sugar Regulation (Good evidence)
+### Blood Sugar Regulation (Moderate evidence)
 
 A [meta-analysis of 32 studies in 1,700 people](https://www.healthline.com/nutrition/calcium-magnesium-zinc) found that zinc supplementation significantly reduced fasting blood sugar, post-meal glucose, insulin levels, and hemoglobin A1c. The effect appears to be most significant in people with diabetes or prediabetes. Zinc's role in insulin synthesis and secretion from pancreatic beta cells likely explains this relationship.
 
@@ -83,13 +83,13 @@ Magnesium is a macromineral — your body needs it in much larger amounts than z
 
 Unlike zinc, which has more targeted effects, magnesium is foundational infrastructure. When you're low on it, things go wrong in a diffuse, hard-to-pinpoint way.
 
-### Sleep Quality (Good evidence)
+### Sleep Quality (Moderate evidence)
 
 This is arguably the strongest practical use case for magnesium supplements. Magnesium activates the parasympathetic nervous system (the "rest and digest" system), binds to GABA receptors (the same pathway as sleep medications like benzodiazepines), and regulates melatonin production.
 
 A [2024 systematic review on magnesium and sleep](https://pmc.ncbi.nlm.nih.gov/articles/PMC11444808/) found that magnesium supplementation may benefit people with mild insomnia and anxiety. A double-blind clinical trial published in [PubMed examining melatonin, magnesium, and zinc for insomnia](https://pubmed.ncbi.nlm.nih.gov/21226679/) found that the combination significantly improved sleep quality and quality of life in long-term care residents with primary insomnia. The effect size is modest but real, particularly in people with subclinical deficiency.
 
-### Anxiety and Mood (Good evidence)
+### Anxiety and Mood (Moderate evidence)
 
 A review of 18 studies found that magnesium supplementation reduced subjective anxiety, particularly in people prone to anxiety or under chronic stress. The mechanism is multifactorial: magnesium modulates the HPA axis (your stress-response system), regulates the NMDA receptor (involved in nervous system excitability), and influences serotonin signaling. A [comprehensive PMC review on magnesium disorders](https://pmc.ncbi.nlm.nih.gov/articles/PMC11444808/) confirms that hypomagnesemia (low magnesium) is associated with mood disturbances, irritability, and depressive symptoms.
 
@@ -97,11 +97,11 @@ A review of 18 studies found that magnesium supplementation reduced subjective a
 
 This is one of the strongest evidence bases for magnesium. The American Academy of Neurology and the American Headache Society have both classified magnesium as "probably effective" for migraine prevention. [Research cited at the NIH magnesium fact sheet](https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/) supports prophylactic magnesium supplementation at 400–600 mg daily for people with frequent migraines. If you get regular migraines, magnesium is one of the first-line evidence-based interventions to try.
 
-### Muscle Cramps and Athletic Performance (Good evidence)
+### Muscle Cramps and Athletic Performance (Moderate evidence)
 
 Magnesium governs the calcium/magnesium balance in muscle cells, which controls how efficiently muscles cycle between contraction and relaxation. Low magnesium is associated with muscle cramps, spasms, and reduced exercise tolerance. A [PubMed study on iron, zinc, and magnesium in athletic performance](https://pubmed.ncbi.nlm.nih.gov/3285436/) found that magnesium status is a significant predictor of exercise efficiency. Many athletes report reduced cramping and faster recovery after addressing magnesium deficiency.
 
-### Blood Sugar and Metabolic Health (Good evidence)
+### Blood Sugar and Metabolic Health (Moderate evidence)
 
 A [2020 combined magnesium and zinc supplementation study in PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC7257447/) found that 12 weeks of combined magnesium (250 mg) plus zinc (150 mg) supplementation significantly decreased fasting plasma glucose and insulin resistance in patients with type 2 diabetes and coronary heart disease. Magnesium appears to enhance insulin receptor sensitivity, which explains the blood sugar benefits.
 
