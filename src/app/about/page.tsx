@@ -40,13 +40,6 @@ const methodologySteps = [
   },
 ]
 
-const weightTable = [
-  { dimension: 'Diet', weight: 20, note: 'Vegan diets show 93–95% B12 deficiency in systematic reviews' },
-  { dimension: 'Lifestyle', weight: 15, note: 'PubMed-backed mappings for sun, exercise, alcohol, caffeine, stress' },
-  { dimension: 'Symptoms', weight: 10, note: 'Lower weight due to sensitivity <80% and symptom overlap' },
-  { dimension: 'Goals', weight: 5, note: 'User preference — important but not a clinical signal' },
-]
-
 const privacyPoints = [
   {
     title: 'No account, no tracking',
@@ -188,7 +181,7 @@ export default function AboutPage() {
             systematic reviews and clinical diagnostic accuracy data.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {methodologySteps.map((s) => (
               <div key={s.step} className="bg-surface border border-border rounded-xl p-5 relative">
                 <span className="text-text-tertiary font-mono text-xs absolute top-4 right-5">{s.step}</span>
@@ -196,34 +189,6 @@ export default function AboutPage() {
                 <p className="text-text-secondary text-sm leading-relaxed">{s.desc}</p>
               </div>
             ))}
-          </div>
-
-          {/* Weight table */}
-          <div>
-            <h3 className="text-text font-semibold text-base mb-4">Dimension weights</h3>
-            <div className="bg-surface border border-border rounded-xl overflow-hidden">
-              <div className="grid grid-cols-12 px-5 py-3 border-b border-border text-xs font-semibold text-text-tertiary uppercase tracking-wider">
-                <div className="col-span-3">Dimension</div>
-                <div className="col-span-1 text-right">Weight</div>
-                <div className="col-span-8 pl-4">Calibration note</div>
-              </div>
-              {weightTable.map((row, i) => (
-                <div
-                  key={i}
-                  className={`grid grid-cols-12 px-5 py-3.5 text-sm ${
-                    i < weightTable.length - 1 ? 'border-b border-border' : ''
-                  }`}
-                >
-                  <div className="col-span-3 text-text font-medium">{row.dimension}</div>
-                  <div className="col-span-1 text-teal font-semibold text-right">{row.weight}</div>
-                  <div className="col-span-8 pl-4 text-text-secondary text-xs leading-relaxed">{row.note}</div>
-                </div>
-              ))}
-            </div>
-            <p className="text-text-tertiary text-xs mt-3">
-              Weights sum to 50 for the web version (blood work and genetics are app-only features).
-              Scores are normalized to the available dimensions to account for missing data.
-            </p>
           </div>
         </section>
 
