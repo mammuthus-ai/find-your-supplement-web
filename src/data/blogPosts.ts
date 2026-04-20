@@ -2,6 +2,362 @@ import { BlogPost } from '@/types'
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'best-supplements-for-gut-health',
+    title: 'Best Supplements for Gut Health: What the Science Actually Says (2026)',
+    excerpt:
+      'From probiotics to butyrate, discover the best supplements for gut health ranked by clinical evidence. This research-backed guide covers dosing, strain selection, and exactly which supplements are worth your money.',
+    date: '2026-04-20',
+    category: 'Deep Dives',
+    readTime: '14 min read',
+    content: `
+## Your Gut Is Doing More Than You Think
+
+You've probably heard the phrase "gut health" thrown around a lot lately — and for once, the hype is somewhat justified. Your gastrointestinal tract houses roughly 70% of your immune system, produces about 95% of your body's serotonin, and contains trillions of microorganisms that influence everything from your mood to your metabolism to your risk of chronic disease.
+
+But here's the problem: the supplement market has exploded in response to this awareness, and not all gut health products are created equal. Some have decades of clinical trials behind them. Others have little more than a few in-vitro studies and an aggressive marketing budget.
+
+This guide cuts through the noise. Below, you'll find the nine best supplements for gut health ranked by the quality of their clinical evidence — along with exact dosages, the best forms to buy, and who is most likely to benefit from each one.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## How We Grade the Evidence
+
+Before diving in, here's the grading system used throughout this article:
+
+- **Grade A** — Multiple large meta-analyses or systematic reviews of RCTs confirm efficacy
+- **Grade B+/B** — Several RCTs with consistent positive findings; some mixed results
+- **Grade B-** — Early or limited RCT data; strong mechanistic evidence but fewer large trials
+- **Grade C** — Mostly preclinical or observational evidence; clinical trials pending or mixed
+
+Higher grades don't always mean "take this." The best supplement depends on *your* specific gut issue — which is why the quiz at the bottom of the page exists.
+
+---
+
+## 1. Probiotics — Grade A
+
+**Best for:** IBS, antibiotic-associated diarrhea, general microbiome support
+
+Probiotics are the most studied category in gut health, with decades of clinical research spanning thousands of patients. Live bacteria from the *Lactobacillus* and *Bifidobacterium* genera are the most common and best-studied strains.
+
+### What the Research Shows
+
+A [2024 umbrella meta-analysis of 15 systematic reviews covering 50 datasets](https://pmc.ncbi.nlm.nih.gov/articles/PMC12183855/) found that probiotics reduced the risk of diarrhea by 56%, nausea by 41%, epigastric pain by 29%, and bloating by 26%. These are meaningful, clinically significant reductions — not rounding errors.
+
+For IBS specifically, strain selection matters enormously. A [Lancet eClinicalMedicine meta-analysis](https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370(21)00434-X/fulltext) found that *Bifidobacterium bifidum* MIMBb75 and *Lactobacillus plantarum* 299v showed the strongest individual-strain evidence for IBS symptom relief. For antibiotic-associated diarrhea, *Saccharomyces boulardii* and *Lactobacillus rhamnosus* GG have the best evidence base.
+
+The [NIH Office of Dietary Supplements probiotic fact sheet](https://ods.od.nih.gov/factsheets/Probiotics-HealthProfessional/) provides a useful reference for condition-specific strain recommendations.
+
+### Best Strains by Condition
+
+| Condition | Best Strain(s) | Dose |
+|---|---|---|
+| IBS (general) | *L. plantarum* 299v | 10–20 billion CFU/day |
+| Antibiotic-associated diarrhea | *S. boulardii*, *L. rhamnosus* GG | 10–20 billion CFU/day |
+| Constipation | *B. lactis* DN-173 010 | 10–30 billion CFU/day |
+| General gut health | Multi-strain (Lactobacillus + Bifidobacterium) | 5–15 billion CFU/day |
+
+### Dosage & Form
+
+5–20 billion CFU per day for maintenance; up to 50 billion CFU for acute conditions. Enteric-coated capsules or freeze-dried powder survive stomach acid better than standard capsules. Food-based delivery (live yogurt, kefir) actually buffers stomach acid very effectively.
+
+**Worth trying:** [View probiotic supplements on Amazon](https://www.amazon.com/s?k=multi+strain+probiotic+supplement&tag=insquire-20)
+
+**Caution:** Use with care if immunocompromised or if you have a central venous catheter. Initial bloating and gas are normal in the first 1–2 weeks.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## 2. Prebiotics (Inulin, FOS, GOS) — Grade B+
+
+**Best for:** Feeding beneficial gut bacteria, constipation, improving microbiome diversity
+
+Probiotics get all the attention, but prebiotics arguably do the more foundational work. While probiotics introduce live bacteria, prebiotics are the *food* that determines whether those bacteria (and your existing beneficial strains) can thrive.
+
+### What the Research Shows
+
+A [comprehensive systematic review on inulin-type fructans](https://pmc.ncbi.nlm.nih.gov/articles/PMC8970830/) found consistent evidence that inulin and fructooligosaccharides (FOS) selectively feed *Bifidobacterium*, *Lactobacillus*, and *Faecalibacterium prausnitzii* — three of the most beneficial bacterial genera. This study also confirmed downstream benefits including improved intestinal barrier function, better laxation, improved calcium absorption, and favorable lipid changes.
+
+A [meta-analysis of FOS and gut microbiota](https://pmc.ncbi.nlm.nih.gov/articles/PMC9413759/) found that FOS supplementation significantly increased fecal *Bifidobacterium* concentrations versus placebo. And a [2026 RCT in overweight adults](https://pmc.ncbi.nlm.nih.gov/articles/PMC12219383/) found measurable glycemic and microbiome improvements after just 4 weeks.
+
+### Dosage & Form
+
+Start with 3–5g per day and gradually increase to 10–15g to minimize gas. Chicory root inulin and FOS powder are the most studied forms. Partially hydrolyzed guar gum (PHGG) is the most gentle option for people with sensitive digestive systems.
+
+**Worth trying:** [View prebiotic fiber supplements on Amazon](https://www.amazon.com/s?k=prebiotic+inulin+fiber+supplement&tag=insquire-20)
+
+**Caution:** People with IBS-D (diarrhea-predominant IBS) who follow a low-FODMAP diet may find prebiotics worsen symptoms at higher doses — start very low.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## 3. L-Glutamine — Grade B
+
+**Best for:** Post-infectious IBS, leaky gut (intestinal hyperpermeability), exercise-induced gut stress
+
+L-Glutamine is the primary fuel source for enterocytes — the cells that line your small intestine. When these cells are stressed, damaged, or under-fueled, the tight junctions between them can loosen, allowing undigested particles into the bloodstream (what's commonly called "leaky gut").
+
+### What the Research Shows
+
+The landmark study in this space is a [2019 double-blind RCT published in *Gut*](https://pubmed.ncbi.nlm.nih.gov/30108163/) that enrolled patients with post-infectious IBS-D and confirmed intestinal hyperpermeability. Those who received 5g of glutamine three times per day for 8 weeks had a **79.6% response rate** compared to just 5.8% in the placebo group. That's a dramatic, unusually large treatment effect — suggesting glutamine works best for people whose IBS has a clear intestinal permeability component.
+
+A [2024 systematic review and meta-analysis of 10 RCTs](https://pmc.ncbi.nlm.nih.gov/articles/PMC11471693/) (352 participants) found mixed overall results, but subgroup analysis showed significant permeability reduction at doses above 30g/day for short-term interventions. The [underlying mechanism is well-established](https://pmc.ncbi.nlm.nih.gov/articles/PMC4369670/): glutamine upregulates expression of tight junction proteins ZO-1, occludin, and claudin-3, which physically seal the gaps between intestinal cells.
+
+Glutamine also helps during exercise. A [2017 RCT of endurance runners](https://pmc.ncbi.nlm.nih.gov/articles/PMC5694515/) found that glutamine supplementation significantly reduced exercise-induced gut permeability in the heat — a common issue for endurance athletes.
+
+### Dosage & Form
+
+5g three times daily (15g/day) for IBS-D or leaky gut. Short-term acute protocols can use up to 30g/day. Free-form L-glutamine powder is the most bioavailable form and dissolves easily in water.
+
+**Worth trying:** [View L-glutamine powder on Amazon](https://www.amazon.com/s?k=l-glutamine+powder+gut+health&tag=insquire-20)
+
+**Caution:** Use with caution if you have epilepsy (glutamine is a glutamate precursor) or liver/kidney disease.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## 4. Zinc Carnosine — Grade B+
+
+**Best for:** NSAID-induced gut damage, gastric ulcers, H. pylori support, gastric mucosal repair
+
+Zinc carnosine (also called zinc L-carnosine or polaprezinc) is a chelated compound of zinc and the dipeptide L-carnosine. Unlike plain zinc supplements, this specific chelated form adheres to the gastric and intestinal mucosa and has a distinct set of gut-protective mechanisms.
+
+### What the Research Shows
+
+The [foundational human trial on zinc carnosine](https://pmc.ncbi.nlm.nih.gov/articles/PMC1856764/) (PMID 16777920) was particularly compelling: 8 healthy volunteers who took NSAIDs (indomethacin) — which reliably damage the gut lining — and were co-administered 37.5mg zinc carnosine twice daily saw a **three-fold reduction in gut permeability** versus those taking NSAIDs alone. This makes zinc carnosine a legitimate consideration for anyone who regularly takes ibuprofen, naproxen, or aspirin.
+
+A [2022 review of zinc L-carnosine applications](https://pubmed.ncbi.nlm.nih.gov/35659631/) confirmed its efficacy for gastric ulcers, chronic atrophic gastritis, and oral mucositis. A [2025 controlled study on chronic atrophic gastritis](https://pmc.ncbi.nlm.nih.gov/articles/PMC12683967/) found meaningful improvements in gastric mucosal markers following treatment.
+
+### Dosage & Form
+
+75mg twice daily (150mg/day total) is the standard Japanese clinical dose — this is the specific protocol studied in most trials. **Plain zinc supplements do not replicate these effects** — the chelated form is what allows it to adhere to and protect the mucosal lining.
+
+**Worth trying:** [View zinc carnosine supplements on Amazon](https://www.amazon.com/s?k=zinc+carnosine+supplement&tag=insquire-20)
+
+**Caution:** Do not take with quinolone antibiotics or tetracyclines (zinc chelates reduce absorption). Monitor copper levels with long-term use — excess zinc displaces copper.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## 5. Butyrate (Sodium Butyrate / Tributyrin) — Grade B
+
+**Best for:** IBD, ulcerative colitis, general colonocyte support, intestinal barrier maintenance
+
+Butyrate is a short-chain fatty acid (SCFA) produced when beneficial gut bacteria ferment dietary fiber. It's the primary energy source for colonocytes — the cells lining your large intestine — and it plays a critical role in intestinal barrier function and immune regulation.
+
+### What the Research Shows
+
+A [2022–2023 double-blind RCT](https://pmc.ncbi.nlm.nih.gov/articles/PMC11930386/) enrolled 36 patients with active mild-to-moderate ulcerative colitis on oral sodium butyrate supplementation. Results showed significant improvements in disease severity scores, intestinal inflammation markers, and psychological wellbeing compared to placebo.
+
+The mechanism is well-understood: a [comprehensive SCFA review](https://pmc.ncbi.nlm.nih.gov/articles/PMC9498509/) confirms that butyrate regulates tight junction expression (ZO-1, occludin), inhibits histone deacetylases (HDAC) to reduce pro-inflammatory gene expression, and directly fuels the colonocytes that would otherwise be undernourished in dysbiosis. A [2025 narrative review on butyrate's global health effects](https://pmc.ncbi.nlm.nih.gov/articles/PMC12029953/) extends this to anti-obesity, anticancer, and hepatoprotective effects.
+
+The catch: most people who eat enough fiber produce adequate butyrate naturally. Supplemental butyrate is most relevant for people with dysbiosis, IBD, or very low-fiber diets.
+
+### Dosage & Form
+
+300mg–4g/day sodium butyrate. Tributyrin (a glycerol ester) delivers more butyrate to the colon and has better bioavailability. Microencapsulated formulations are preferred — sodium butyrate has a notoriously unpleasant smell when uncoated.
+
+**Worth trying:** [View butyrate supplements on Amazon](https://www.amazon.com/s?k=sodium+butyrate+supplement+gut+health&tag=insquire-20)
+
+**Caution:** Sodium butyrate has significant sodium content — consider calcium or magnesium butyrate salts if you're on a sodium-restricted diet.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## 6. Digestive Enzymes — Grade B
+
+**Best for:** Functional dyspepsia, bloating after meals, suspected enzyme insufficiency, food intolerances
+
+Digestive enzymes — amylase (carbs), protease (proteins), lipase (fats), lactase (dairy), and cellulase (plant fiber) — help your body break down food more completely. When food isn't fully digested, undigested substrate ferments in the colon, feeding pathogenic bacteria and causing the bloating, gas, and discomfort many people experience after eating.
+
+### What the Research Shows
+
+A [2023 double-blind, placebo-controlled RCT](https://pubmed.ncbi.nlm.nih.gov/37976892/) found that multi-enzyme supplementation in functional dyspepsia significantly improved quality-of-life scores, reduced pain severity, and improved sleep versus placebo. A [comprehensive review of enzyme supplementation in GI diseases](https://pmc.ncbi.nlm.nih.gov/articles/PMC4923703/) confirms strong evidence for enzyme replacement therapy in exocrine pancreatic insufficiency (EPI) and useful supporting evidence for broader GI conditions.
+
+The [DigeZyme multi-enzyme clinical trial](https://pmc.ncbi.nlm.nih.gov/articles/PMC4094108/) showed that a penta-enzyme complex improved overall digestive tolerance and reduced post-meal discomfort.
+
+### Dosage & Form
+
+Take 1–2 capsules with each meal. Look for a broad-spectrum blend (amylase + protease + lipase + lactase + cellulase). Plant-derived enzymes (fungal-derived or from bromelain/papain) work across a wider pH range than animal pancreatic enzymes, making them more effective throughout the digestive tract.
+
+**Worth trying:** [View digestive enzyme supplements on Amazon](https://www.amazon.com/s?k=broad+spectrum+digestive+enzymes&tag=insquire-20)
+
+**Caution:** Bromelain (pineapple enzyme) and papain (papaya enzyme) can interact with blood thinners. Prescription-strength pancreatic enzyme replacement requires medical supervision.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## 7. Berberine — Grade B
+
+**Best for:** Gut dysbiosis linked to metabolic conditions, inflammatory GI conditions, SIBO support
+
+Berberine is a plant alkaloid found in goldenseal, barberry, and Oregon grape root. It's gained significant attention for blood sugar regulation, but its gut-health mechanisms are arguably more interesting — it directly reshapes the composition of the gut microbiome.
+
+### What the Research Shows
+
+A [2023 review on berberine and gut microbiota](https://pmc.ncbi.nlm.nih.gov/articles/PMC10435753/) found that berberine consistently increases short-chain fatty acid-producing bacteria (including *Bifidobacterium* and *Lactobacillus*), reduces pro-inflammatory species (including certain Firmicutes), and restores intestinal barrier function via NF-κB pathway modulation.
+
+The [PREMOTE study (Nature Communications, 2020)](https://pubmed.ncbi.nlm.nih.gov/33024120/) — a 409-person RCT in type 2 diabetes — found that berberine significantly improved both glycemic control and gut microbiome diversity versus placebo, validating the gut-mediated mechanism.
+
+An important nuance: berberine has very low oral bioavailability (under 1%). But this may actually be a feature, not a bug — berberine acts locally in the gut where it concentrations are highest, and gut bacteria convert it to more bioavailable metabolites that produce systemic effects.
+
+### Dosage & Form
+
+500mg 2–3 times daily (1,000–1,500mg/day) with meals to reduce GI irritation. Berberine HCl is the most common form. Dihydroberberine (DHB) offers ~5× better systemic absorption but has less clinical data.
+
+**Worth trying:** [View berberine supplements on Amazon](https://www.amazon.com/s?k=berberine+supplement+gut+health&tag=insquire-20)
+
+**Caution:** Not for use during pregnancy or breastfeeding. May interact with cyclosporine. Use in 12-week cycles with breaks. Can cause GI upset (nausea, constipation) when starting — begin with 500mg/day and titrate up.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## 8. Collagen Peptides — Grade B-
+
+**Best for:** Early-stage leaky gut support, general GI comfort, bloating
+
+Collagen peptides are rich in glycine, proline, and hydroxyproline — amino acids that the intestinal epithelium uses for structural repair and tight junction maintenance. While collagen is much better known for skin and joint benefits, its gut applications have begun accumulating clinical support.
+
+### What the Research Shows
+
+A [two-phase human study (PMC, 2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9198822/) gave 20g of hydrolyzed collagen peptides daily to healthy women for 8 weeks. Results showed significant reductions in self-reported bloating and improvements in mild digestive discomfort symptoms, suggesting real GI effects beyond placebo.
+
+The mechanistic underpinning comes from a cell study showing that [collagen peptides restored tight junction proteins ZO-1 and occludin](https://pubmed.ncbi.nlm.nih.gov/28174772/) in intestinal epithelial cells (Caco-2) after they were disrupted by TNF-α (a key inflammatory mediator in IBD). A [2024 study in npj Science of Food](https://www.nature.com/articles/s41538-024-00367-7) extended these findings to anti-inflammatory effects relevant to ulcerative colitis.
+
+The caveat: Grade B- reflects the still-limited size of the human RCT base. This is a promising supplement, but the evidence is not yet as robust as the top-tier options above.
+
+### Dosage & Form
+
+10–20g/day of hydrolyzed collagen peptides. Bovine hide Type I hydrolyzed collagen is most studied for gut applications; marine collagen is a suitable alternative. Look for molecular weights of 2,000–5,000 Da for optimal absorption.
+
+**Worth trying:** [View collagen peptide supplements on Amazon](https://www.amazon.com/s?k=hydrolyzed+collagen+peptides+gut+health&tag=insquire-20)
+
+**Caution:** Collagen and gelatin are high in histamine precursors — those with histamine intolerance may react. Source matters for religious and dietary restrictions (bovine, marine, or porcine).
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## 9. Omega-3 Fatty Acids — Grade B (for gut-specific benefits)
+
+**Best for:** Anti-inflammatory gut support, microbiome diversity, IBD adjunct
+
+Omega-3 fatty acids (EPA and DHA from fish oil or algae) are most commonly discussed for cardiovascular and brain health, but their effects on the gut microbiome are increasingly well-documented.
+
+### What the Research Shows
+
+An [RCT of omega-3 supplementation](https://pubmed.ncbi.nlm.nih.gov/28951525/) found that it reversibly increased populations of SCFA-producing bacteria — specifically *Bifidobacterium*, *Roseburia*, and *Lactobacillus*. A [microbiome-specific review](https://pmc.ncbi.nlm.nih.gov/articles/PMC5751248/) confirmed that omega-3s reduce gut-associated inflammation and shift the microbial composition toward a more anti-inflammatory profile.
+
+These effects are likely secondary to omega-3's powerful systemic anti-inflammatory action — reducing the inflammatory environment in which gut dysbiosis thrives.
+
+### Dosage & Form
+
+1–3g EPA+DHA per day with meals. Triglyceride form (natural fish oil or re-esterified triglycerides) absorbs better than ethyl ester form. Algae-based omega-3 is the best choice for vegans.
+
+**Worth trying:** [View omega-3 fish oil supplements on Amazon](https://www.amazon.com/s?k=fish+oil+omega+3+supplement+gut+health&tag=insquire-20)
+
+---
+
+## The Full Comparison: Gut Health Supplements by Evidence
+
+| Supplement | Evidence Grade | Best Use Case | Time to Effect |
+|---|---|---|---|
+| Probiotics | **A** | IBS, antibiotic diarrhea, general microbiome | 4–8 weeks |
+| Prebiotics (inulin/FOS) | **B+** | Microbiome diversity, constipation | 2–4 weeks |
+| Zinc Carnosine | **B+** | NSAID gut damage, gastric ulcers | 4–8 weeks |
+| L-Glutamine | **B** | Post-infectious IBS-D, leaky gut | 8 weeks |
+| Butyrate | **B** | UC, colonocyte support, IBD | 4–8 weeks |
+| Digestive Enzymes | **B** | Dyspepsia, bloating, food intolerances | Immediate |
+| Berberine | **B** | Dysbiosis, metabolic GI conditions | 4–12 weeks |
+| Collagen Peptides | **B-** | Mild bloating, leaky gut (early evidence) | 8 weeks |
+| Omega-3 Fatty Acids | **B** | Microbiome diversity, IBD support | 8–12 weeks |
+
+---
+
+## Frequently Asked Questions
+
+### What is the single most important supplement for gut health?
+
+Probiotics have the strongest overall evidence base and are the most universally applicable — but "most important" depends on your specific issue. Probiotics for IBS and antibiotic recovery, glutamine for leaky gut, digestive enzymes for bloating after meals.
+
+### How long does it take for gut health supplements to work?
+
+It depends heavily on the supplement and your baseline. Digestive enzymes work immediately (with each meal). Probiotics typically show IBS improvements after 4–8 weeks. L-Glutamine showed significant results after 8 weeks in the key IBS-D trial. Prebiotics begin shifting microbiome composition within 2 weeks, but clinical symptom improvements may take longer.
+
+### Can you take probiotics and digestive enzymes together?
+
+Yes — they work through entirely different mechanisms and can be taken simultaneously. Enzymes act during digestion in the upper GI tract; probiotics colonize the lower intestinal tract.
+
+### What gut health supplements help with leaky gut?
+
+The strongest evidence for intestinal permeability specifically: **L-Glutamine** (especially post-infectious IBS-D), **Zinc Carnosine** (particularly if taking NSAIDs), **Butyrate**, and **Probiotics** (barrier-strengthening strains). Collagen peptides and omega-3s offer supporting roles.
+
+### Do I need both probiotics and prebiotics?
+
+These work synergistically — probiotics introduce beneficial bacteria; prebiotics feed them. A supplement that combines both is called a "synbiotic." Whether you need both depends on your diet: if you already eat plenty of vegetables, legumes, and whole grains, your prebiotic needs may largely be met through food.
+
+### Is berberine safe long-term?
+
+Long-term human safety data beyond 12 weeks is limited. Most clinical protocols use berberine in cycles (12 weeks on, 4–6 weeks off). Avoid during pregnancy. If you take any medications that are CYP3A4 substrates, discuss berberine with your prescribing doctor.
+
+---
+
+## Key Takeaways
+
+- **Probiotics** have the strongest evidence (Grade A) and are a reasonable first step for most people with gut symptoms.
+- **Prebiotics** are the essential fuel for your gut microbiome — don't overlook them in favor of flashier supplements.
+- **L-Glutamine** has remarkable evidence for post-infectious IBS specifically; less compelling for IBS without a permeability component.
+- **Zinc Carnosine** is underrated and particularly valuable for NSAID users or anyone with gastric mucosal issues.
+- **Digestive enzymes** provide the fastest symptom relief and work best taken consistently with meals.
+- **Butyrate** is the most targeted option for IBD/UC patients and those with confirmed dysbiosis.
+- Not everything marketed as a "gut health supplement" is worth buying. Spend your money on the supplements that match your specific symptoms — not the ones with the best packaging.
+
+**[Take the free supplement quiz to find out which gut health supplements are right for your body →](/quiz)**
+
+---
+
+## References
+
+1. Gao R, et al. Probiotics and gastrointestinal disorders: umbrella meta-analysis. *PMC* (2024). [https://pmc.ncbi.nlm.nih.gov/articles/PMC12183855/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12183855/)
+2. Zhu D, et al. Clinical trials of probiotics: current outlook. *PMC* (2024). [https://pmc.ncbi.nlm.nih.gov/articles/PMC10916572/](https://pmc.ncbi.nlm.nih.gov/articles/PMC10916572/)
+3. Ford AC, et al. Probiotics in IBS — strain-specific meta-analysis. *Lancet eClinicalMedicine* (2022). [https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370(21)00434-X/fulltext](https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370(21)00434-X/fulltext)
+4. NIH ODS. Probiotics Health Professional Fact Sheet. [https://ods.od.nih.gov/factsheets/Probiotics-HealthProfessional/](https://ods.od.nih.gov/factsheets/Probiotics-HealthProfessional/)
+5. Dahl WJ & Stewart ML. Inulin-type fructans: systematic review. *PMC* (2022). [https://pmc.ncbi.nlm.nih.gov/articles/PMC8970830/](https://pmc.ncbi.nlm.nih.gov/articles/PMC8970830/)
+6. FOS meta-analysis: microbiota effects. *PMC* (2022). [https://pmc.ncbi.nlm.nih.gov/articles/PMC9413759/](https://pmc.ncbi.nlm.nih.gov/articles/PMC9413759/)
+7. Inulin/FOS RCT in overweight adults. *PMC* (2026). [https://pmc.ncbi.nlm.nih.gov/articles/PMC12219383/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12219383/)
+8. Zhou Q, et al. Randomised placebo-controlled trial of dietary glutamine supplements for post-infectious IBS. *Gut* (2019). [https://pubmed.ncbi.nlm.nih.gov/30108163/](https://pubmed.ncbi.nlm.nih.gov/30108163/)
+9. Rao R & Samak G. Glutamine and intestinal tight junctions. *PMC* (2015). [https://pmc.ncbi.nlm.nih.gov/articles/PMC4369670/](https://pmc.ncbi.nlm.nih.gov/articles/PMC4369670/)
+10. Teixeira VH, et al. Glutamine reduces gut permeability during exercise in the heat. *PMC* (2017). [https://pmc.ncbi.nlm.nih.gov/articles/PMC5694515/](https://pmc.ncbi.nlm.nih.gov/articles/PMC5694515/)
+11. Glutamine supplementation and gut permeability meta-analysis. *PMC* (2024). [https://pmc.ncbi.nlm.nih.gov/articles/PMC11471693/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11471693/)
+12. Mahmood A, et al. Zinc carnosine and small bowel integrity. *PMC* (2007). [https://pmc.ncbi.nlm.nih.gov/articles/PMC1856764/](https://pmc.ncbi.nlm.nih.gov/articles/PMC1856764/)
+13. Zinc L-carnosine GI applications review (2022). *PubMed*. [https://pubmed.ncbi.nlm.nih.gov/35659631/](https://pubmed.ncbi.nlm.nih.gov/35659631/)
+14. Zinc L-carnosine in chronic atrophic gastritis. *PMC* (2025). [https://pmc.ncbi.nlm.nih.gov/articles/PMC12683967/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12683967/)
+15. Oral butyrate in ulcerative colitis RCT. *PMC* (2025). [https://pmc.ncbi.nlm.nih.gov/articles/PMC11930386/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11930386/)
+16. Canani RB, et al. SCFAs and human health. *PMC* (2022). [https://pmc.ncbi.nlm.nih.gov/articles/PMC9498509/](https://pmc.ncbi.nlm.nih.gov/articles/PMC9498509/)
+17. Butyrate global health narrative review. *PMC* (2025). [https://pmc.ncbi.nlm.nih.gov/articles/PMC12029953/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12029953/)
+18. Digestive enzyme supplementation in GI diseases review. *PMC* (2016). [https://pmc.ncbi.nlm.nih.gov/articles/PMC4923703/](https://pmc.ncbi.nlm.nih.gov/articles/PMC4923703/)
+19. Digestive enzymes in functional dyspepsia RCT (2023). *PubMed*. [https://pubmed.ncbi.nlm.nih.gov/37976892/](https://pubmed.ncbi.nlm.nih.gov/37976892/)
+20. Berberine and gut microbiota — multiple diseases. *PMC* (2023). [https://pmc.ncbi.nlm.nih.gov/articles/PMC10435753/](https://pmc.ncbi.nlm.nih.gov/articles/PMC10435753/)
+21. Xie J, et al. PREMOTE study — berberine, probiotics, T2D. *Nature Communications* (2020). [https://pubmed.ncbi.nlm.nih.gov/33024120/](https://pubmed.ncbi.nlm.nih.gov/33024120/)
+22. Simental-Mendía LE, et al. Collagen peptide supplement and GI symptoms. *PMC* (2022). [https://pmc.ncbi.nlm.nih.gov/articles/PMC9198822/](https://pmc.ncbi.nlm.nih.gov/articles/PMC9198822/)
+23. Collagen peptides and tight junctions in Caco-2 cells (2017). *PubMed*. [https://pubmed.ncbi.nlm.nih.gov/28174772/](https://pubmed.ncbi.nlm.nih.gov/28174772/)
+24. Omega-3 and SCFA-producing bacteria RCT (2017). *PubMed*. [https://pubmed.ncbi.nlm.nih.gov/28951525/](https://pubmed.ncbi.nlm.nih.gov/28951525/)
+25. Omega-3 impact on gut microbiota review. *PMC* (2017). [https://pmc.ncbi.nlm.nih.gov/articles/PMC5751248/](https://pmc.ncbi.nlm.nih.gov/articles/PMC5751248/)
+
+---
+
+*This article is for informational purposes only and does not constitute medical advice. Supplement recommendations may not be appropriate for everyone. Individual results vary based on health status, diet, and underlying conditions. Always consult a qualified healthcare provider before starting any new supplement, particularly if you have an existing medical condition, are pregnant or breastfeeding, or are taking medications.*
+`,
+  },
+  {
     slug: 'zinc-vs-magnesium',
     title: 'Zinc vs Magnesium: Which Mineral Do You Actually Need?',
     excerpt:
