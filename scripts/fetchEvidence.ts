@@ -25,21 +25,22 @@ const CONDITIONS = [
   'digestive health', 'bone health', 'heart health', 'inflammation',
 ]
 
-// Map supplement names to PubMed-friendly search terms
-const PUBMED_NAMES: Record<string, string> = {
-  'Omega-3': 'omega-3 fatty acids',
-  'CoQ10': 'coenzyme Q10',
-  'Ashwagandha': 'Withania somnifera',
-  'Creatine': 'creatine monohydrate',
-  'NAC': 'N-acetylcysteine',
-  'Collagen': 'collagen peptides',
-  'Methylfolate': 'methylfolate OR 5-MTHF',
-  'Peppermint Oil': 'peppermint oil',
-  'Ginger': 'ginger OR zingiber officinale',
-  'Digestive Enzymes': 'digestive enzymes',
-  'Bergamot': 'citrus bergamot polyphenols',
-  'Red Yeast Rice': 'red yeast rice',
-  'Plant Sterols': 'plant sterols OR phytosterols',
+// PubMed-friendly search terms per supplement.
+// Arrays are OR-joined as separate quoted phrases so scientific synonyms match.
+const PUBMED_NAMES: Record<string, string[]> = {
+  'Omega-3': ['omega-3 fatty acids', 'omega-3', 'EPA', 'DHA'],
+  'CoQ10': ['coenzyme Q10', 'ubiquinone', 'ubiquinol'],
+  'Ashwagandha': ['Withania somnifera', 'ashwagandha'],
+  'Creatine': ['creatine monohydrate', 'creatine'],
+  'NAC': ['N-acetylcysteine', 'acetylcysteine'],
+  'Collagen': ['collagen peptides', 'hydrolyzed collagen'],
+  'Methylfolate': ['methylfolate', '5-MTHF', 'L-methylfolate'],
+  'Peppermint Oil': ['peppermint oil', 'Mentha piperita'],
+  'Ginger': ['ginger', 'Zingiber officinale'],
+  'Digestive Enzymes': ['digestive enzymes', 'pancreatic enzymes'],
+  'Bergamot': ['bergamot', 'Citrus bergamia'],
+  'Red Yeast Rice': ['red yeast rice', 'monacolin'],
+  'Plant Sterols': ['plant sterols', 'phytosterols'],
 }
 
 // Map supplement names to OpenFDA search terms
@@ -56,6 +57,31 @@ const FDA_NAMES: Record<string, string> = {
   'Bergamot': 'bergamot',
   'Red Yeast Rice': 'red yeast rice',
   'Plant Sterols': 'phytosterol',
+}
+
+// Biomedical synonyms per condition — consumer labels like "heart health" barely
+// appear in PubMed abstracts, which use terms like "cardiovascular" or "cholesterol".
+// Queries OR-join these synonyms so counts reflect the actual literature.
+const CONDITION_SYNONYMS: Record<string, string[]> = {
+  'heart health': ['heart health', 'cardiovascular', 'cholesterol', 'lipid', 'blood pressure'],
+  'digestive health': ['digestive health', 'gastrointestinal', 'gut health', 'bowel'],
+  'bone health': ['bone health', 'bone density', 'osteoporosis', 'BMD'],
+  'muscle strength': ['muscle strength', 'muscle mass', 'sarcopenia', 'strength training'],
+  'cognitive function': ['cognitive function', 'cognition', 'memory', 'executive function'],
+  'immune function': ['immune function', 'immunity', 'immune response'],
+  'immunity': ['immunity', 'immune function', 'immune response'],
+  'weight loss': ['weight loss', 'obesity', 'body weight', 'BMI'],
+  'joint pain': ['joint pain', 'osteoarthritis', 'arthritis'],
+  'hair loss': ['hair loss', 'alopecia'],
+  'mood': ['mood', 'depression', 'anxiety'],
+  'depression': ['depression', 'depressive'],
+  'anxiety': ['anxiety', 'anxiety disorder'],
+  'sleep': ['sleep', 'insomnia', 'sleep quality'],
+  'energy': ['energy', 'fatigue', 'vitality'],
+  'fatigue': ['fatigue', 'tiredness'],
+  'inflammation': ['inflammation', 'inflammatory', 'CRP'],
+  'focus': ['focus', 'attention', 'concentration'],
+  'longevity': ['longevity', 'aging', 'lifespan'],
 }
 
 // Relevant condition pairs per supplement (skip irrelevant combos)
@@ -124,22 +150,26 @@ async function fetchWithRetry(url: string, retries = 2): Promise<any> {
 // ─── API Fetchers ────────────────────────────────────────────────────────────
 
 async function fetchPubMed(supplement: string, condition: string) {
-  const name = PUBMED_NAMES[supplement] || supplement
+  const names = PUBMED_NAMES[supplement] || [supplement]
   const base = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi'
 
-  // Total count
-  const totalUrl = `${base}?db=pubmed&term="${encodeURIComponent(name)}"[Title/Abstract]+AND+"${encodeURIComponent(condition)}"[Title/Abstract]&rettype=count&retmode=json`
-  const total = await fetchWithRetry(totalUrl)
+  // Build OR-group of condition synonyms so consumer labels
+  // ("heart health") match real biomedical terms ("cardiovascular", "cholesterol").
+  const synonyms = CONDITION_SYNONYMS[condition] || [condition]
+  const condGroup = '(' + synonyms.map(s => `"${s}"[Title/Abstract]`).join(' OR ') + ')'
+  const suppGroup = '(' + names.map(n => `"${n}"[Title/Abstract]`).join(' OR ') + ')'
+  const baseTerm = `${suppGroup} AND ${condGroup}`
+
+  const buildUrl = (term: string) =>
+    `${base}?db=pubmed&term=${encodeURIComponent(term)}&rettype=count&retmode=json`
+
+  const total = await fetchWithRetry(buildUrl(baseTerm))
   await sleep(350) // 3 req/sec limit
 
-  // RCT count
-  const rctUrl = `${base}?db=pubmed&term="${encodeURIComponent(name)}"[Title/Abstract]+AND+"${encodeURIComponent(condition)}"[Title/Abstract]+AND+"randomized+controlled+trial"[pt]&rettype=count&retmode=json`
-  const rct = await fetchWithRetry(rctUrl)
+  const rct = await fetchWithRetry(buildUrl(`${baseTerm} AND "randomized controlled trial"[pt]`))
   await sleep(350)
 
-  // Meta-analysis count
-  const maUrl = `${base}?db=pubmed&term="${encodeURIComponent(name)}"[Title/Abstract]+AND+"${encodeURIComponent(condition)}"[Title/Abstract]+AND+("meta-analysis"[pt]+OR+"systematic+review"[pt])&rettype=count&retmode=json`
-  const ma = await fetchWithRetry(maUrl)
+  const ma = await fetchWithRetry(buildUrl(`${baseTerm} AND ("meta-analysis"[pt] OR "systematic review"[pt])`))
   await sleep(350)
 
   return {
