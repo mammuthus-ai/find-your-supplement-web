@@ -437,12 +437,26 @@ export function buildRecommendations(profile: QuizProfile): SupplementRecommenda
       score = Math.min(Math.round(combined), 100)
       grade = computeEvidenceGrade(supp.name, profile.goals, profile.symptoms)
 
-      // Add evidence reason if significant
-      if (evidence >= 15) {
+      // Add evidence reason tied to the per-user grade we actually display.
+      // Previously this always said "Strong research evidence" even when the
+      // user-facing badge was Moderate — confusing and contradictory.
+      const gradeToLabel: Record<EvidenceGrade, string> = {
+        A: 'Strong research evidence',
+        B: 'Moderate research evidence',
+        C: 'Limited research evidence',
+        D: 'Weak research evidence',
+      }
+      const gradeToDetail: Record<EvidenceGrade, string> = {
+        A: 'Backed by multiple meta-analyses and randomized controlled trials from PubMed',
+        B: 'Backed by multiple randomized controlled trials from PubMed',
+        C: 'Backed by small or mixed-result trials; more research is needed',
+        D: 'Preliminary evidence only — largely mechanistic or observational',
+      }
+      if (evidence >= 10 || grade === 'A' || grade === 'B') {
         allReasons.push({
           type: 'goal',
-          label: 'Strong research evidence',
-          detail: `Backed by multiple meta-analyses and randomized controlled trials from PubMed`,
+          label: gradeToLabel[grade],
+          detail: gradeToDetail[grade],
         })
       }
     } else {

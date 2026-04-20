@@ -115,6 +115,27 @@ function SupplementCard({ rec }: { rec: SupplementRecommendation }) {
   const displayGrade = primary?.grade ?? evidenceGrade
   const displayContext = primary?.condition
 
+  // Pick ONE specific form for this user based on their top matched condition.
+  // Falls back to priority-1 form (generic best) if no condition match.
+  const userTokens = new Set<string>()
+  if (primary?.condition) userTokens.add(primary.condition.toLowerCase())
+  for (const r of reasons) {
+    const label = r.label.toLowerCase()
+    // Surface symptom names from reason labels e.g. "Addresses symptom: sleep"
+    const m = label.match(/symptom:\s*(\w[\w\s]*)/i)
+    if (m) userTokens.add(m[1].trim())
+    // Goal names
+    const g = label.match(/goal:\s*(\w+)/i)
+    if (g) userTokens.add(g[1].trim())
+  }
+  const pickedForm = (supp.forms && supp.forms.length > 0)
+    ? [...supp.forms].sort((a, b) => {
+        const aHit = a.bestFor.some(t => userTokens.has(t.toLowerCase())) ? 1 : 0
+        const bHit = b.bestFor.some(t => userTokens.has(t.toLowerCase())) ? 1 : 0
+        return bHit - aHit || a.priority - b.priority
+      })[0]
+    : null
+
   return (
     <div className="bg-surface border border-border rounded-xl overflow-hidden card-hover">
       {/* Header */}
@@ -139,7 +160,9 @@ function SupplementCard({ rec }: { rec: SupplementRecommendation }) {
           </div>
 
           <a
-            href={amazonUrl(supp.name)}
+            href={amazonUrl(pickedForm?.amazonSearch
+              ? decodeURIComponent(pickedForm.amazonSearch).replace(/\+/g, ' ')
+              : supp.name)}
             target="_blank"
             rel="noopener noreferrer sponsored"
             className="flex-shrink-0 flex items-center gap-1.5 bg-[#FF9900] hover:bg-[#E68900] text-black text-xs font-semibold px-3 py-2 rounded-lg transition-colors"
@@ -172,8 +195,8 @@ function SupplementCard({ rec }: { rec: SupplementRecommendation }) {
           </div>
         )}
 
-        {/* Description */}
-        <p className="text-text-secondary text-sm leading-relaxed mt-3 line-clamp-2">
+        {/* Description — expanded/collapsed tied to the card's expand state */}
+        <p className={`text-text-secondary text-sm leading-relaxed mt-3 ${expanded ? '' : 'line-clamp-3'}`}>
           {supp.description}
         </p>
       </div>
@@ -216,14 +239,29 @@ function SupplementCard({ rec }: { rec: SupplementRecommendation }) {
               {/* Recommended forms & dosage */}
               {(supp.recommendedForms || supp.typicalDose) && (
                 <div className="mt-3 pt-3 border-t border-border space-y-2">
-                  {supp.recommendedForms && supp.recommendedForms.length > 0 && (
+                  {pickedForm ? (
+                    <div className="bg-teal/5 border border-teal/10 rounded-lg px-3 py-2.5">
+                      <p className="text-text-secondary text-xs">
+                        <span className="text-teal font-semibold">Recommended form: </span>
+                        {pickedForm.name}
+                        {displayContext ? (
+                          <span className="text-text-tertiary"> — best for {displayContext}</span>
+                        ) : null}
+                      </p>
+                      {pickedForm.warning ? (
+                        <p className="text-text-tertiary text-xs mt-1 italic">
+                          ⚠ {pickedForm.warning}
+                        </p>
+                      ) : null}
+                    </div>
+                  ) : supp.recommendedForms && supp.recommendedForms.length > 0 ? (
                     <div className="bg-teal/5 border border-teal/10 rounded-lg px-3 py-2.5">
                       <p className="text-text-secondary text-xs">
                         <span className="text-teal font-semibold">Best forms: </span>
                         {supp.recommendedForms[0]}
                       </p>
                     </div>
-                  )}
+                  ) : null}
                   {supp.typicalDose && (
                     <div className="bg-surface-alt rounded-lg px-3 py-2.5">
                       <p className="text-text-tertiary text-xs">
