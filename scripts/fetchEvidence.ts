@@ -14,6 +14,8 @@ const SUPPLEMENTS = [
   'Vitamin D3', 'Magnesium', 'Omega-3', 'Zinc', 'Vitamin B12',
   'Methylfolate', 'Vitamin C', 'CoQ10', 'Ashwagandha', 'Creatine',
   'Melatonin', 'NAC', 'Probiotics', 'Collagen', 'Iron',
+  'Calcium', 'Psyllium Husk', 'Peppermint Oil', 'Ginger',
+  'Digestive Enzymes', 'Berberine', 'Bergamot', 'Red Yeast Rice', 'Plant Sterols',
 ]
 
 const CONDITIONS = [
@@ -32,6 +34,12 @@ const PUBMED_NAMES: Record<string, string> = {
   'NAC': 'N-acetylcysteine',
   'Collagen': 'collagen peptides',
   'Methylfolate': 'methylfolate OR 5-MTHF',
+  'Peppermint Oil': 'peppermint oil',
+  'Ginger': 'ginger OR zingiber officinale',
+  'Digestive Enzymes': 'digestive enzymes',
+  'Bergamot': 'citrus bergamot polyphenols',
+  'Red Yeast Rice': 'red yeast rice',
+  'Plant Sterols': 'plant sterols OR phytosterols',
 }
 
 // Map supplement names to OpenFDA search terms
@@ -42,6 +50,12 @@ const FDA_NAMES: Record<string, string> = {
   'Ashwagandha': 'ashwagandha',
   'NAC': 'acetylcysteine',
   'Methylfolate': 'methylfolate',
+  'Peppermint Oil': 'peppermint oil',
+  'Ginger': 'ginger',
+  'Berberine': 'berberine',
+  'Bergamot': 'bergamot',
+  'Red Yeast Rice': 'red yeast rice',
+  'Plant Sterols': 'phytosterol',
 }
 
 // Relevant condition pairs per supplement (skip irrelevant combos)
@@ -61,6 +75,15 @@ const SUPPLEMENT_CONDITIONS: Record<string, string[]> = {
   'Probiotics': ['digestive health', 'immune function', 'mood', 'inflammation', 'weight loss'],
   'Collagen': ['joint pain', 'bone health', 'hair loss', 'digestive health'],
   'Iron': ['energy', 'fatigue', 'cognitive function', 'immune function', 'hair loss'],
+  'Calcium': ['bone health', 'muscle strength', 'heart health'],
+  'Psyllium Husk': ['digestive health', 'weight loss', 'heart health'],
+  'Peppermint Oil': ['digestive health'],
+  'Ginger': ['digestive health', 'inflammation', 'joint pain', 'immune function'],
+  'Digestive Enzymes': ['digestive health'],
+  'Berberine': ['weight loss', 'heart health', 'cognitive function'],
+  'Bergamot': ['heart health', 'inflammation'],
+  'Red Yeast Rice': ['heart health'],
+  'Plant Sterols': ['heart health'],
 }
 
 interface EvidenceEntry {
