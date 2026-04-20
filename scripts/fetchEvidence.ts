@@ -209,12 +209,12 @@ async function fetchOpenFDA(supplement: string) {
 }
 
 async function fetchDSLD(supplement: string) {
-  const name = encodeURIComponent(supplement)
-  const url = `https://api.ods.od.nih.gov/dsld/v9/browse-ingredients?q=${name}&max=1`
+  const q = encodeURIComponent(`"${supplement}"`)
+  const url = `https://api.ods.od.nih.gov/dsld/v9/search-filter?q=${q}&size=0`
 
   try {
     const data = await fetchWithRetry(url)
-    const count = data?.total || data?.resultCount || 0
+    const count = data?.stats?.count ?? 0
     return { productCount: typeof count === 'number' ? count : 0 }
   } catch {
     return { productCount: 0 }
