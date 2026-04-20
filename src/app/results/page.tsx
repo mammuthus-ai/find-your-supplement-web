@@ -4,10 +4,14 @@ import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { buildRecommendations } from '@/engine/recommendationEngine'
-import type { QuizProfile, SupplementRecommendation, Priority, EvidenceGrade } from '@/types'
+import type { QuizProfile, SupplementRecommendation, Priority, EvidenceGrade, TopProduct } from '@/types'
 import EmailCaptureCard from '@/components/EmailCaptureCard'
 import MyStackCard from '@/components/MyStackCard'
 import QuizCounter from '@/components/QuizCounter'
+import TopProductsCard from '@/components/TopProductsCard'
+import evidenceCacheRaw from '@/data/evidenceCache.json'
+
+const topProductsMap = (evidenceCacheRaw as { topProducts?: Record<string, TopProduct[]> }).topProducts || {}
 import { incrementPublicStat } from '@/lib/publicStats'
 import { trackResultsView, trackSupplementExpand, trackAmazonClick } from '@/lib/analytics'
 
@@ -135,6 +139,8 @@ function SupplementCard({ rec }: { rec: SupplementRecommendation }) {
         return bHit - aHit || a.priority - b.priority
       })[0]
     : null
+
+  const topProducts = topProductsMap[supp.name]
 
   return (
     <div className="bg-surface border border-border rounded-xl overflow-hidden card-hover">
@@ -294,6 +300,11 @@ function SupplementCard({ rec }: { rec: SupplementRecommendation }) {
                     {supp.safeUpperLimit}
                   </p>
                 </div>
+              )}
+
+              {/* Top 3 products by objective quality score */}
+              {topProducts && topProducts.length > 0 && (
+                <TopProductsCard products={topProducts} supplementName={supp.name} />
               )}
             </div>
           )}

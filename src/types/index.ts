@@ -123,6 +123,24 @@ export interface EvidenceForCondition {
   isPrimary?: boolean
 }
 
+// ─── Product-level quality (objective scoring) ──────────────────────────────
+
+export interface TopProduct {
+  asin?: string | null
+  brand: string
+  productName: string
+  mgPerServing?: number
+  servingUnits?: number
+  maxDaily?: number
+  certifications: string[]       // e.g. ["USP", "NSF"]
+  labVerification: number        // 0-40
+  doseMatch: number              // 0-30
+  formAccuracy: number           // 0-20
+  manufacturing: number          // 0-10
+  totalScore: number             // 0-100
+  rank: number                   // 1-3 in the top shortlist
+}
+
 // ─── Evidence Cache Types (from free APIs) ──────────────────────────────────
 
 export interface TrialData {

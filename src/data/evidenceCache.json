@@ -1,746 +1,56 @@
 {
-  "version": "1.0.0",
-  "generatedAt": "2026-04-19T06:38:21.563Z",
+  "version": "3",
+  "generatedAt": "2026-04-20T19:21:32.071449Z",
   "entries": {
-    "Vitamin D3": [
+    "Vitamin D": [
       {
-        "supplement": "Vitamin D3",
-        "condition": "bone health",
-        "pubmedCount": 188,
-        "rctCount": 47,
-        "metaAnalysisCount": 4,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 37,
-          "positive": 6,
-          "phase3Plus": 7
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 3171,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Vitamin D3",
-        "condition": "immune function",
-        "pubmedCount": 63,
-        "rctCount": 6,
-        "metaAnalysisCount": 0,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 31,
-          "positive": 6,
-          "phase3Plus": 8
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 3171,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Vitamin D3",
-        "condition": "mood",
-        "pubmedCount": 40,
-        "rctCount": 15,
-        "metaAnalysisCount": 2,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 15,
-          "positive": 3,
-          "phase3Plus": 3
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 3171,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Vitamin D3",
-        "condition": "depression",
-        "pubmedCount": 129,
-        "rctCount": 30,
-        "metaAnalysisCount": 4,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 24,
-          "positive": 5,
-          "phase3Plus": 7
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 3171,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Vitamin D3",
-        "condition": "sleep",
-        "pubmedCount": 35,
-        "rctCount": 8,
+        "supplement": "Vitamin D",
+        "condition": "all_cause_mortality",
+        "pubmedCount": 1,
+        "rctCount": 0,
         "metaAnalysisCount": 1,
         "citationScore": 0,
         "trialData": {
-          "completed": 5,
-          "positive": 1,
-          "phase3Plus": 3
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 3171,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Vitamin D3",
-        "condition": "fatigue",
-        "pubmedCount": 75,
-        "rctCount": 15,
-        "metaAnalysisCount": 2,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 14,
-          "positive": 1,
-          "phase3Plus": 2
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 3171,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Vitamin D3",
-        "condition": "muscle strength",
-        "pubmedCount": 71,
-        "rctCount": 29,
-        "metaAnalysisCount": 5,
-        "citationScore": 7,
-        "trialData": {
-          "completed": 32,
-          "positive": 4,
-          "phase3Plus": 8
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 3171,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      }
-    ],
-    "Magnesium": [
-      {
-        "supplement": "Magnesium",
-        "condition": "sleep",
-        "pubmedCount": 332,
-        "rctCount": 48,
-        "metaAnalysisCount": 12,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 25,
-          "positive": 5,
-          "phase3Plus": 11
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 683215,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Magnesium",
-        "condition": "anxiety",
-        "pubmedCount": 291,
-        "rctCount": 32,
-        "metaAnalysisCount": 10,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 9,
-          "positive": 1,
-          "phase3Plus": 0
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 683215,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Magnesium",
-        "condition": "muscle strength",
-        "pubmedCount": 73,
-        "rctCount": 16,
-        "metaAnalysisCount": 6,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 4,
+          "completed": 0,
           "positive": 0,
           "phase3Plus": 0
         },
         "safety": {
           "safeUpperLimit": "",
-          "adverseEventCount": 683215,
+          "adverseEventCount": 0,
           "interactionWarnings": []
         },
         "productCount": 0,
-        "lastUpdated": "2026-04-19"
+        "lastUpdated": "2026-04-20"
       },
       {
-        "supplement": "Magnesium",
-        "condition": "heart health",
-        "pubmedCount": 8,
-        "rctCount": 1,
-        "metaAnalysisCount": 0,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 1,
-          "positive": 0,
-          "phase3Plus": 0
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 683215,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Magnesium",
-        "condition": "fatigue",
-        "pubmedCount": 368,
-        "rctCount": 23,
-        "metaAnalysisCount": 5,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 10,
-          "positive": 1,
-          "phase3Plus": 2
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 683215,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Magnesium",
-        "condition": "bone health",
-        "pubmedCount": 251,
-        "rctCount": 7,
-        "metaAnalysisCount": 8,
-        "citationScore": 131,
-        "trialData": {
-          "completed": 5,
-          "positive": 0,
-          "phase3Plus": 2
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 683215,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Magnesium",
-        "condition": "mood",
-        "pubmedCount": 156,
-        "rctCount": 19,
-        "metaAnalysisCount": 2,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 18,
-          "positive": 3,
-          "phase3Plus": 2
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 683215,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      }
-    ],
-    "Omega-3": [
-      {
-        "supplement": "Omega-3",
-        "condition": "heart health",
-        "pubmedCount": 20,
+        "supplement": "Vitamin D",
+        "condition": "asthma_exacerbations",
+        "pubmedCount": 2,
         "rctCount": 0,
-        "metaAnalysisCount": 0,
+        "metaAnalysisCount": 1,
         "citationScore": 0,
         "trialData": {
-          "completed": 4,
-          "positive": 3,
-          "phase3Plus": 2
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 87655,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Omega-3",
-        "condition": "inflammation",
-        "pubmedCount": 1700,
-        "rctCount": 183,
-        "metaAnalysisCount": 81,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 33,
-          "positive": 3,
-          "phase3Plus": 11
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 87655,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Omega-3",
-        "condition": "cognitive function",
-        "pubmedCount": 187,
-        "rctCount": 19,
-        "metaAnalysisCount": 17,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 34,
-          "positive": 5,
-          "phase3Plus": 6
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 87655,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Omega-3",
-        "condition": "mood",
-        "pubmedCount": 212,
-        "rctCount": 33,
-        "metaAnalysisCount": 18,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 37,
-          "positive": 13,
-          "phase3Plus": 9
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 87655,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Omega-3",
-        "condition": "depression",
-        "pubmedCount": 563,
-        "rctCount": 83,
-        "metaAnalysisCount": 54,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 36,
-          "positive": 13,
-          "phase3Plus": 11
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 87655,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Omega-3",
-        "condition": "joint pain",
-        "pubmedCount": 13,
-        "rctCount": 5,
-        "metaAnalysisCount": 0,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 5,
-          "positive": 2,
-          "phase3Plus": 2
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 87655,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Omega-3",
-        "condition": "immune function",
-        "pubmedCount": 126,
-        "rctCount": 18,
-        "metaAnalysisCount": 7,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 13,
-          "positive": 2,
-          "phase3Plus": 4
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 87655,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      }
-    ],
-    "Zinc": [
-      {
-        "supplement": "Zinc",
-        "condition": "immune function",
-        "pubmedCount": 631,
-        "rctCount": 37,
-        "metaAnalysisCount": 11,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 4,
+          "completed": 0,
           "positive": 0,
           "phase3Plus": 0
         },
         "safety": {
           "safeUpperLimit": "",
-          "adverseEventCount": 38097,
+          "adverseEventCount": 0,
           "interactionWarnings": []
         },
         "productCount": 0,
-        "lastUpdated": "2026-04-19"
+        "lastUpdated": "2026-04-20"
       },
       {
-        "supplement": "Zinc",
-        "condition": "immunity",
-        "pubmedCount": 2039,
-        "rctCount": 40,
-        "metaAnalysisCount": 16,
-        "citationScore": 87,
-        "trialData": {
-          "completed": 15,
-          "positive": 2,
-          "phase3Plus": 4
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 38097,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Zinc",
-        "condition": "hair loss",
-        "pubmedCount": 121,
-        "rctCount": 4,
-        "metaAnalysisCount": 7,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 3,
-          "positive": 0,
-          "phase3Plus": 0
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 38097,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Zinc",
-        "condition": "cognitive function",
-        "pubmedCount": 225,
-        "rctCount": 15,
-        "metaAnalysisCount": 8,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 5,
-          "positive": 1,
-          "phase3Plus": 0
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 38097,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Zinc",
-        "condition": "mood",
-        "pubmedCount": 184,
-        "rctCount": 19,
-        "metaAnalysisCount": 7,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 2,
-          "positive": 0,
-          "phase3Plus": 0
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 38097,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Zinc",
-        "condition": "digestive health",
+        "supplement": "Vitamin D",
+        "condition": "atopic_dermatitis_severity",
         "pubmedCount": 1,
         "rctCount": 0,
         "metaAnalysisCount": 0,
         "citationScore": 0,
         "trialData": {
-          "completed": 4,
-          "positive": 0,
-          "phase3Plus": 1
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 38097,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      }
-    ],
-    "Vitamin B12": [
-      {
-        "supplement": "Vitamin B12",
-        "condition": "energy",
-        "pubmedCount": 822,
-        "rctCount": 29,
-        "metaAnalysisCount": 10,
-        "citationScore": 27,
-        "trialData": {
-          "completed": 9,
-          "positive": 2,
-          "phase3Plus": 3
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Vitamin B12",
-        "condition": "fatigue",
-        "pubmedCount": 211,
-        "rctCount": 7,
-        "metaAnalysisCount": 5,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 6,
-          "positive": 0,
-          "phase3Plus": 2
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Vitamin B12",
-        "condition": "cognitive function",
-        "pubmedCount": 200,
-        "rctCount": 27,
-        "metaAnalysisCount": 25,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 23,
-          "positive": 4,
-          "phase3Plus": 3
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Vitamin B12",
-        "condition": "mood",
-        "pubmedCount": 89,
-        "rctCount": 4,
-        "metaAnalysisCount": 8,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 9,
-          "positive": 2,
-          "phase3Plus": 2
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Vitamin B12",
-        "condition": "depression",
-        "pubmedCount": 433,
-        "rctCount": 20,
-        "metaAnalysisCount": 15,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 8,
-          "positive": 1,
-          "phase3Plus": 1
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Vitamin B12",
-        "condition": "immune function",
-        "pubmedCount": 40,
-        "rctCount": 6,
-        "metaAnalysisCount": 2,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 1,
-          "positive": 0,
-          "phase3Plus": 0
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      }
-    ],
-    "Methylfolate": [
-      {
-        "supplement": "Methylfolate",
-        "condition": "mood",
-        "pubmedCount": 0,
-        "rctCount": 0,
-        "metaAnalysisCount": 0,
-        "citationScore": 12,
-        "trialData": {
-          "completed": 3,
-          "positive": 2,
-          "phase3Plus": 0
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Methylfolate",
-        "condition": "depression",
-        "pubmedCount": 0,
-        "rctCount": 0,
-        "metaAnalysisCount": 0,
-        "citationScore": 15,
-        "trialData": {
-          "completed": 4,
-          "positive": 2,
-          "phase3Plus": 0
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Methylfolate",
-        "condition": "cognitive function",
-        "pubmedCount": 0,
-        "rctCount": 0,
-        "metaAnalysisCount": 0,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 2,
-          "positive": 0,
-          "phase3Plus": 0
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Methylfolate",
-        "condition": "energy",
-        "pubmedCount": 0,
-        "rctCount": 0,
-        "metaAnalysisCount": 0,
-        "citationScore": 15,
-        "trialData": {
           "completed": 0,
           "positive": 0,
           "phase3Plus": 0
@@ -751,12 +61,12 @@
           "interactionWarnings": []
         },
         "productCount": 0,
-        "lastUpdated": "2026-04-19"
+        "lastUpdated": "2026-04-20"
       },
       {
-        "supplement": "Methylfolate",
-        "condition": "heart health",
-        "pubmedCount": 0,
+        "supplement": "Vitamin D",
+        "condition": "autoimmunity",
+        "pubmedCount": 1,
         "rctCount": 0,
         "metaAnalysisCount": 0,
         "citationScore": 0,
@@ -771,161 +81,57 @@
           "interactionWarnings": []
         },
         "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      }
-    ],
-    "Vitamin C": [
-      {
-        "supplement": "Vitamin C",
-        "condition": "immune function",
-        "pubmedCount": 155,
-        "rctCount": 19,
-        "metaAnalysisCount": 4,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 13,
-          "positive": 0,
-          "phase3Plus": 3
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 87500,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
+        "lastUpdated": "2026-04-20"
       },
       {
-        "supplement": "Vitamin C",
-        "condition": "immunity",
-        "pubmedCount": 319,
-        "rctCount": 16,
-        "metaAnalysisCount": 5,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 7,
-          "positive": 1,
-          "phase3Plus": 2
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 87500,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Vitamin C",
-        "condition": "inflammation",
-        "pubmedCount": 1335,
-        "rctCount": 126,
-        "metaAnalysisCount": 41,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 33,
-          "positive": 10,
-          "phase3Plus": 10
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 87500,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Vitamin C",
-        "condition": "heart health",
-        "pubmedCount": 13,
-        "rctCount": 1,
+        "supplement": "Vitamin D",
+        "condition": "cancer_death",
+        "pubmedCount": 1,
+        "rctCount": 0,
         "metaAnalysisCount": 1,
         "citationScore": 0,
         "trialData": {
-          "completed": 1,
+          "completed": 0,
           "positive": 0,
           "phase3Plus": 0
         },
         "safety": {
           "safeUpperLimit": "",
-          "adverseEventCount": 87500,
+          "adverseEventCount": 0,
           "interactionWarnings": []
         },
         "productCount": 0,
-        "lastUpdated": "2026-04-19"
+        "lastUpdated": "2026-04-20"
       },
       {
-        "supplement": "Vitamin C",
-        "condition": "energy",
-        "pubmedCount": 2267,
-        "rctCount": 88,
-        "metaAnalysisCount": 28,
+        "supplement": "Vitamin D",
+        "condition": "cancer_mortality",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
         "citationScore": 0,
         "trialData": {
-          "completed": 6,
-          "positive": 1,
-          "phase3Plus": 2
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 87500,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Vitamin C",
-        "condition": "fatigue",
-        "pubmedCount": 200,
-        "rctCount": 18,
-        "metaAnalysisCount": 14,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 10,
+          "completed": 0,
           "positive": 0,
-          "phase3Plus": 1
+          "phase3Plus": 0
         },
         "safety": {
           "safeUpperLimit": "",
-          "adverseEventCount": 87500,
+          "adverseEventCount": 0,
           "interactionWarnings": []
         },
         "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      }
-    ],
-    "CoQ10": [
+        "lastUpdated": "2026-04-20"
+      },
       {
-        "supplement": "CoQ10",
-        "condition": "heart health",
+        "supplement": "Vitamin D",
+        "condition": "cathelicidin",
         "pubmedCount": 2,
         "rctCount": 0,
         "metaAnalysisCount": 0,
         "citationScore": 0,
         "trialData": {
-          "completed": 2,
-          "positive": 0,
-          "phase3Plus": 1
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "CoQ10",
-        "condition": "energy",
-        "pubmedCount": 447,
-        "rctCount": 20,
-        "metaAnalysisCount": 9,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 2,
+          "completed": 0,
           "positive": 0,
           "phase3Plus": 0
         },
@@ -935,54 +141,14 @@
           "interactionWarnings": []
         },
         "productCount": 0,
-        "lastUpdated": "2026-04-19"
+        "lastUpdated": "2026-04-20"
       },
       {
-        "supplement": "CoQ10",
-        "condition": "fatigue",
-        "pubmedCount": 119,
-        "rctCount": 24,
-        "metaAnalysisCount": 13,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 11,
-          "positive": 3,
-          "phase3Plus": 1
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "CoQ10",
-        "condition": "cognitive function",
-        "pubmedCount": 34,
-        "rctCount": 3,
-        "metaAnalysisCount": 0,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 6,
-          "positive": 3,
-          "phase3Plus": 3
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "CoQ10",
-        "condition": "muscle strength",
-        "pubmedCount": 28,
-        "rctCount": 6,
-        "metaAnalysisCount": 2,
+        "supplement": "Vitamin D",
+        "condition": "chronic_periodontitis",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
         "citationScore": 0,
         "trialData": {
           "completed": 0,
@@ -995,135 +161,13 @@
           "interactionWarnings": []
         },
         "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      }
-    ],
-    "Ashwagandha": [
-      {
-        "supplement": "Ashwagandha",
-        "condition": "anxiety",
-        "pubmedCount": 95,
-        "rctCount": 11,
-        "metaAnalysisCount": 11,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 1,
-          "positive": 0,
-          "phase3Plus": 0
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
+        "lastUpdated": "2026-04-20"
       },
       {
-        "supplement": "Ashwagandha",
-        "condition": "mood",
-        "pubmedCount": 30,
-        "rctCount": 5,
-        "metaAnalysisCount": 1,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 3,
-          "positive": 1,
-          "phase3Plus": 1
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Ashwagandha",
-        "condition": "sleep",
-        "pubmedCount": 70,
-        "rctCount": 7,
-        "metaAnalysisCount": 3,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 7,
-          "positive": 0,
-          "phase3Plus": 0
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Ashwagandha",
-        "condition": "muscle strength",
-        "pubmedCount": 14,
-        "rctCount": 4,
-        "metaAnalysisCount": 1,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 2,
-          "positive": 1,
-          "phase3Plus": 0
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Ashwagandha",
-        "condition": "cognitive function",
-        "pubmedCount": 26,
-        "rctCount": 2,
-        "metaAnalysisCount": 0,
-        "citationScore": 17,
-        "trialData": {
-          "completed": 2,
-          "positive": 0,
-          "phase3Plus": 0
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Ashwagandha",
-        "condition": "fatigue",
-        "pubmedCount": 36,
-        "rctCount": 8,
-        "metaAnalysisCount": 2,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 1,
-          "positive": 0,
-          "phase3Plus": 0
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Ashwagandha",
-        "condition": "energy",
-        "pubmedCount": 66,
-        "rctCount": 3,
+        "supplement": "Vitamin D",
+        "condition": "covid_19_prevention",
+        "pubmedCount": 1,
+        "rctCount": 0,
         "metaAnalysisCount": 0,
         "citationScore": 0,
         "trialData": {
@@ -1137,79 +181,17 @@
           "interactionWarnings": []
         },
         "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      }
-    ],
-    "Creatine": [
-      {
-        "supplement": "Creatine",
-        "condition": "muscle strength",
-        "pubmedCount": 58,
-        "rctCount": 28,
-        "metaAnalysisCount": 1,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 16,
-          "positive": 1,
-          "phase3Plus": 3
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
+        "lastUpdated": "2026-04-20"
       },
       {
-        "supplement": "Creatine",
-        "condition": "cognitive function",
-        "pubmedCount": 18,
-        "rctCount": 5,
-        "metaAnalysisCount": 2,
+        "supplement": "Vitamin D",
+        "condition": "covid_19_treatment",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
         "citationScore": 0,
         "trialData": {
-          "completed": 14,
-          "positive": 1,
-          "phase3Plus": 1
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Creatine",
-        "condition": "energy",
-        "pubmedCount": 108,
-        "rctCount": 21,
-        "metaAnalysisCount": 2,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 6,
-          "positive": 0,
-          "phase3Plus": 1
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Creatine",
-        "condition": "fatigue",
-        "pubmedCount": 61,
-        "rctCount": 27,
-        "metaAnalysisCount": 1,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 11,
+          "completed": 0,
           "positive": 0,
           "phase3Plus": 0
         },
@@ -1219,359 +201,1131 @@
           "interactionWarnings": []
         },
         "productCount": 0,
-        "lastUpdated": "2026-04-19"
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "dementia",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "dementia_prevention",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "depression",
+        "pubmedCount": 2,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 24,
+          "positive": 5,
+          "phase3Plus": 7
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "dysmenorrhea",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "endometriotic_implant_regression",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "endometriotic_lesion_invasion_and_proliferation",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "fev1_improvement",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "frailty",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "frailty_prevention",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "hypovitaminosis_d",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "infections",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "innate_immunity",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "ivf_reproductive_outcomes",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "mild_cognitive_impairment",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "mild_cognitive_impairment_prevention",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "musculoskeletal_injury_rehabilitation",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "non_cyclic_pelvic_pain",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "nonsurgical_periodontal_treatment",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "nonsurgical_periodontal_treatment_outcomes",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "osteosarcopenia",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "postpartum_depression",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "psoriasis_severity",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "salivary_secretory_immunoglobulin_a",
+        "pubmedCount": 2,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "sars_cov_2_infection",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "sars_cov_2_infection_prevention",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "sleep_quality",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "thyroid_cancer",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "type_2_immunity_biomarkers",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "upper_respiratory_tract_infection",
+        "pubmedCount": 2,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "upper_respiratory_tract_infection_duration",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "upper_respiratory_tract_infection_severity",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D",
+        "condition": "vitamin_d_status",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Calcium Vitamin D Combination": [
+      {
+        "supplement": "Calcium Vitamin D Combination",
+        "condition": "bone_mineral_density_arms",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Calcium Vitamin D Combination",
+        "condition": "bone_mineral_density_femoral_neck",
+        "pubmedCount": 2,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Calcium Vitamin D Combination",
+        "condition": "bone_mineral_density_lumbar_spine",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Calcium Vitamin D Combination",
+        "condition": "bone_mineral_density_total",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Calcium Vitamin D Combination",
+        "condition": "hip_fracture",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Calcium Vitamin D Combination",
+        "condition": "hip_fracture_prevention",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Calcium Vitamin D Combination",
+        "condition": "osteoporosis",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Whey Protein Vitamin D Combination": [
+      {
+        "supplement": "Whey Protein Vitamin D Combination",
+        "condition": "lean_mass",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Whey Protein Vitamin D Combination",
+        "condition": "muscle_strength",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Whey Protein Vitamin D Combination",
+        "condition": "physical_function",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Mixed Nutritional Supplements": [
+      {
+        "supplement": "Mixed Nutritional Supplements",
+        "condition": "pressure_ulcer_healing",
+        "pubmedCount": 3,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Mixed Nutritional Supplements",
+        "condition": "pressure_ulcer_prevention",
+        "pubmedCount": 4,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Arginine Micronutrient Combination": [
+      {
+        "supplement": "Arginine Micronutrient Combination",
+        "condition": "pressure_ulcer_healing",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Arginine": [
+      {
+        "supplement": "Arginine",
+        "condition": "pressure_ulcer_healing",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Ornithine Alpha Ketoglutarate Zinc Combination": [
+      {
+        "supplement": "Ornithine Alpha Ketoglutarate Zinc Combination",
+        "condition": "pressure_ulcer_healing",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Whey Protein": [
+      {
+        "supplement": "Whey Protein",
+        "condition": "appendicular_lean_mass",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Whey Protein",
+        "condition": "gait_speed",
+        "pubmedCount": 2,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Whey Protein",
+        "condition": "lean_mass",
+        "pubmedCount": 2,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Whey Protein",
+        "condition": "muscle_strength",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Whey Protein",
+        "condition": "osteosarcopenia",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Whey Protein",
+        "condition": "physical_function",
+        "pubmedCount": 2,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Amino Acids": [
+      {
+        "supplement": "Amino Acids",
+        "condition": "sleep_quality",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
       }
     ],
     "Melatonin": [
       {
         "supplement": "Melatonin",
-        "condition": "sleep",
-        "pubmedCount": 6052,
-        "rctCount": 562,
-        "metaAnalysisCount": 250,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 21,
-          "positive": 9,
-          "phase3Plus": 6
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 51660,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Melatonin",
-        "condition": "immune function",
-        "pubmedCount": 211,
-        "rctCount": 2,
-        "metaAnalysisCount": 3,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 0,
-          "positive": 0,
-          "phase3Plus": 0
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 51660,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Melatonin",
-        "condition": "mood",
-        "pubmedCount": 764,
-        "rctCount": 79,
-        "metaAnalysisCount": 21,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 21,
-          "positive": 3,
-          "phase3Plus": 6
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 51660,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      }
-    ],
-    "NAC": [
-      {
-        "supplement": "NAC",
-        "condition": "mood",
-        "pubmedCount": 57,
-        "rctCount": 8,
-        "metaAnalysisCount": 10,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 9,
-          "positive": 5,
-          "phase3Plus": 4
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 8854,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "NAC",
-        "condition": "depression",
-        "pubmedCount": 220,
-        "rctCount": 31,
-        "metaAnalysisCount": 18,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 6,
-          "positive": 4,
-          "phase3Plus": 3
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 8854,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "NAC",
-        "condition": "immune function",
-        "pubmedCount": 32,
-        "rctCount": 2,
-        "metaAnalysisCount": 0,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 4,
-          "positive": 1,
-          "phase3Plus": 1
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 8854,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "NAC",
-        "condition": "inflammation",
-        "pubmedCount": 1347,
-        "rctCount": 61,
-        "metaAnalysisCount": 28,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 19,
-          "positive": 2,
-          "phase3Plus": 11
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 8854,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "NAC",
-        "condition": "digestive health",
+        "condition": "sleep_quality",
         "pubmedCount": 1,
         "rctCount": 0,
-        "metaAnalysisCount": 0,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 0,
-          "positive": 0,
-          "phase3Plus": 0
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 8854,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "NAC",
-        "condition": "cognitive function",
-        "pubmedCount": 37,
-        "rctCount": 2,
-        "metaAnalysisCount": 2,
-        "citationScore": 27,
-        "trialData": {
-          "completed": 7,
-          "positive": 3,
-          "phase3Plus": 1
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 8854,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      }
-    ],
-    "Probiotics": [
-      {
-        "supplement": "Probiotics",
-        "condition": "digestive health",
-        "pubmedCount": 69,
-        "rctCount": 5,
         "metaAnalysisCount": 1,
         "citationScore": 0,
         "trialData": {
-          "completed": 35,
-          "positive": 1,
-          "phase3Plus": 5
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Probiotics",
-        "condition": "immune function",
-        "pubmedCount": 680,
-        "rctCount": 50,
-        "metaAnalysisCount": 25,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 35,
-          "positive": 1,
-          "phase3Plus": 3
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Probiotics",
-        "condition": "mood",
-        "pubmedCount": 355,
-        "rctCount": 46,
-        "metaAnalysisCount": 33,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 27,
-          "positive": 3,
-          "phase3Plus": 4
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Probiotics",
-        "condition": "inflammation",
-        "pubmedCount": 6231,
-        "rctCount": 278,
-        "metaAnalysisCount": 241,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 24,
-          "positive": 2,
-          "phase3Plus": 3
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Probiotics",
-        "condition": "weight loss",
-        "pubmedCount": 559,
-        "rctCount": 42,
-        "metaAnalysisCount": 35,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 19,
-          "positive": 2,
-          "phase3Plus": 5
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 0,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      }
-    ],
-    "Collagen": [
-      {
-        "supplement": "Collagen",
-        "condition": "joint pain",
-        "pubmedCount": 7,
-        "rctCount": 3,
-        "metaAnalysisCount": 0,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 16,
-          "positive": 1,
-          "phase3Plus": 2
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 26,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Collagen",
-        "condition": "bone health",
-        "pubmedCount": 8,
-        "rctCount": 0,
-        "metaAnalysisCount": 0,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 3,
+          "completed": 0,
           "positive": 0,
           "phase3Plus": 0
         },
         "safety": {
           "safeUpperLimit": "",
-          "adverseEventCount": 26,
+          "adverseEventCount": 0,
           "interactionWarnings": []
         },
         "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Multivitamin": [
       {
-        "supplement": "Collagen",
-        "condition": "hair loss",
-        "pubmedCount": 5,
-        "rctCount": 0,
-        "metaAnalysisCount": 0,
-        "citationScore": 7,
-        "trialData": {
-          "completed": 4,
-          "positive": 1,
-          "phase3Plus": 2
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 26,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Collagen",
-        "condition": "digestive health",
+        "supplement": "Multivitamin",
+        "condition": "postpartum_depression",
         "pubmedCount": 1,
         "rctCount": 0,
         "metaAnalysisCount": 0,
@@ -1583,113 +1337,2064 @@
         },
         "safety": {
           "safeUpperLimit": "",
-          "adverseEventCount": 26,
+          "adverseEventCount": 0,
           "interactionWarnings": []
         },
         "productCount": 0,
-        "lastUpdated": "2026-04-19"
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Calcium": [
+      {
+        "supplement": "Calcium",
+        "condition": "osteosarcopenia",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Calcium",
+        "condition": "postpartum_depression",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Zinc": [
+      {
+        "supplement": "Zinc",
+        "condition": "depression",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Zinc",
+        "condition": "postpartum_depression",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Omega 3": [
+      {
+        "supplement": "Omega 3",
+        "condition": "depression",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "5GsKD+LfpJOD8lTO/cfZf/QT2tnkrcsAzizr1qHz01d1LBgaphgSzxJP4H88EhWOJF2i1x1rzF8TRlJUJ1Ztx6pFJVfO05gUOyjXx68XA0vLXSyTsYSiti4H7LMEPqWdeXxTiMeSP9lUTIR+oePgcJLk3EIFisbfu9APBZIcC7fAkw1i9gPQmJRwR4r98WCM1GCkZAte",
+          "adverseEventCount": 40525,
+          "interactionWarnings": [
+            "OMEGA 3",
+            "VITAMIN D3",
+            "VITAMIN C",
+            "VITAMIN D",
+            "CALCIUM"
+          ]
+        },
+        "productCount": 13269,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Omega 3",
+        "condition": "musculoskeletal_injury_rehabilitation",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "5GsKD+LfpJOD8lTO/cfZf/QT2tnkrcsAzizr1qHz01d1LBgaphgSzxJP4H88EhWOJF2i1x1rzF8TRlJUJ1Ztx6pFJVfO05gUOyjXx68XA0vLXSyTsYSiti4H7LMEPqWdeXxTiMeSP9lUTIR+oePgcJLk3EIFisbfu9APBZIcC7fAkw1i9gPQmJRwR4r98WCM1GCkZAte",
+          "adverseEventCount": 40525,
+          "interactionWarnings": [
+            "OMEGA 3",
+            "VITAMIN D3",
+            "VITAMIN C",
+            "VITAMIN D",
+            "CALCIUM"
+          ]
+        },
+        "productCount": 13269,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Omega 3",
+        "condition": "postpartum_depression",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "5GsKD+LfpJOD8lTO/cfZf/QT2tnkrcsAzizr1qHz01d1LBgaphgSzxJP4H88EhWOJF2i1x1rzF8TRlJUJ1Ztx6pFJVfO05gUOyjXx68XA0vLXSyTsYSiti4H7LMEPqWdeXxTiMeSP9lUTIR+oePgcJLk3EIFisbfu9APBZIcC7fAkw1i9gPQmJRwR4r98WCM1GCkZAte",
+          "adverseEventCount": 40525,
+          "interactionWarnings": [
+            "OMEGA 3",
+            "VITAMIN D3",
+            "VITAMIN C",
+            "VITAMIN D",
+            "CALCIUM"
+          ]
+        },
+        "productCount": 13269,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Folate": [
+      {
+        "supplement": "Folate",
+        "condition": "depression",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
       }
     ],
     "Iron": [
       {
         "supplement": "Iron",
-        "condition": "energy",
-        "pubmedCount": 18712,
-        "rctCount": 213,
-        "metaAnalysisCount": 72,
+        "condition": "depression",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
         "citationScore": 0,
         "trialData": {
-          "completed": 9,
-          "positive": 1,
-          "phase3Plus": 3
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 75347,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Iron",
-        "condition": "fatigue",
-        "pubmedCount": 1073,
-        "rctCount": 68,
-        "metaAnalysisCount": 29,
-        "citationScore": 32,
-        "trialData": {
-          "completed": 17,
-          "positive": 2,
-          "phase3Plus": 9
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 75347,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Iron",
-        "condition": "cognitive function",
-        "pubmedCount": 484,
-        "rctCount": 31,
-        "metaAnalysisCount": 18,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 23,
-          "positive": 1,
-          "phase3Plus": 0
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 75347,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Iron",
-        "condition": "immune function",
-        "pubmedCount": 455,
-        "rctCount": 20,
-        "metaAnalysisCount": 8,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 6,
-          "positive": 1,
-          "phase3Plus": 1
-        },
-        "safety": {
-          "safeUpperLimit": "",
-          "adverseEventCount": 75347,
-          "interactionWarnings": []
-        },
-        "productCount": 0,
-        "lastUpdated": "2026-04-19"
-      },
-      {
-        "supplement": "Iron",
-        "condition": "hair loss",
-        "pubmedCount": 135,
-        "rctCount": 2,
-        "metaAnalysisCount": 5,
-        "citationScore": 0,
-        "trialData": {
-          "completed": 1,
+          "completed": 0,
           "positive": 0,
           "phase3Plus": 0
         },
         "safety": {
           "safeUpperLimit": "",
-          "adverseEventCount": 75347,
+          "adverseEventCount": 0,
           "interactionWarnings": []
         },
         "productCount": 0,
-        "lastUpdated": "2026-04-19"
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Iron",
+        "condition": "iron_deficiency_anemia",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Protein": [
+      {
+        "supplement": "Protein",
+        "condition": "pressure_ulcer_prevention",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Collagen": [
+      {
+        "supplement": "Collagen",
+        "condition": "musculoskeletal_injury_rehabilitation",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Collagen",
+        "condition": "pressure_ulcer_healing",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Vitamin C": [
+      {
+        "supplement": "Vitamin C",
+        "condition": "pressure_ulcer_healing",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Creatine": [
+      {
+        "supplement": "Creatine",
+        "condition": "musculoskeletal_injury_rehabilitation",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Probiotics": [
+      {
+        "supplement": "Probiotics",
+        "condition": "constipation",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Prebiotics": [
+      {
+        "supplement": "Prebiotics",
+        "condition": "constipation",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Synbiotics": [
+      {
+        "supplement": "Synbiotics",
+        "condition": "constipation",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Magnesium": [
+      {
+        "supplement": "Magnesium",
+        "condition": "constipation",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Lactoferrin": [
+      {
+        "supplement": "Lactoferrin",
+        "condition": "iron_deficiency_anemia",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Whey Protein Vitamin D": [
+      {
+        "supplement": "Whey Protein Vitamin D",
+        "condition": "lean_mass",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Whey Protein Vitamin D",
+        "condition": "muscle_strength",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Whey Protein Vitamin D",
+        "condition": "physical_function",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Dha": [
+      {
+        "supplement": "Dha",
+        "condition": "postpartum_depression",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Selenium": [
+      {
+        "supplement": "Selenium",
+        "condition": "postpartum_depression",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Mixed Nutritional Supplement": [
+      {
+        "supplement": "Mixed Nutritional Supplement",
+        "condition": "pressure_ulcer_healing",
+        "pubmedCount": 2,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Mixed Nutritional Supplement",
+        "condition": "pressure_ulcer_prevention",
+        "pubmedCount": 3,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Omega 3 And Antioxidants": [
+      {
+        "supplement": "Omega 3 And Antioxidants",
+        "condition": "pressure_ulcer_healing",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Omega 3 And Antioxidants",
+        "condition": "pressure_ulcer_prevention",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Arginine And Micronutrients": [
+      {
+        "supplement": "Arginine And Micronutrients",
+        "condition": "pressure_ulcer_healing",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Ornithine Alpha Ketoglutarate And Zinc": [
+      {
+        "supplement": "Ornithine Alpha Ketoglutarate And Zinc",
+        "condition": "pressure_ulcer_healing",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ],
+    "Vitamin D3": [
+      {
+        "supplement": "Vitamin D3",
+        "condition": "atopic_dermatitis_severity",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D3",
+        "condition": "type_2_immunity_biomarkers",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      },
+      {
+        "supplement": "Vitamin D3",
+        "condition": "vitamin_d_status",
+        "pubmedCount": 1,
+        "rctCount": 0,
+        "metaAnalysisCount": 0,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-04-20"
+      }
+    ]
+  },
+  "topProducts": {
+    "Vitamin D3": [
+      {
+        "asin": "B0019LRY8A",
+        "brand": "Thorne",
+        "productName": "Vitamin D-5000",
+        "mgPerServing": 0.125,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [
+          "TGA",
+          "NSF"
+        ],
+        "labVerification": 40.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 20.0,
+        "manufacturing": 10.0,
+        "totalScore": 100.0,
+        "rank": 1
+      },
+      {
+        "asin": "B07JHPVZNY",
+        "brand": "Sports Research",
+        "productName": "Vegan Vitamin D3 5000 IU (Plant-Based)",
+        "mgPerServing": 0.125,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [
+          "Informed-Sport"
+        ],
+        "labVerification": 38.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 20.0,
+        "manufacturing": 10.0,
+        "totalScore": 98.0,
+        "rank": 2
+      },
+      {
+        "asin": "B001IAGTRI",
+        "brand": "Nature Made",
+        "productName": "Vitamin D3 2000 IU",
+        "mgPerServing": 0.05,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [
+          "USP"
+        ],
+        "labVerification": 40.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 20.0,
+        "manufacturing": 5.0,
+        "totalScore": 95.0,
+        "rank": 3
+      }
+    ],
+    "Magnesium": [
+      {
+        "asin": "B0797H5C1W",
+        "brand": "Thorne",
+        "productName": "Magnesium Bisglycinate (powder)",
+        "mgPerServing": 200,
+        "servingUnits": 1,
+        "maxDaily": 2,
+        "certifications": [
+          "NSF",
+          "TGA"
+        ],
+        "labVerification": 40.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 90.0,
+        "rank": 1
+      },
+      {
+        "asin": "B0013OXKHC",
+        "brand": "NOW Foods",
+        "productName": "Magnesium Citrate 200 mg",
+        "mgPerServing": 200,
+        "servingUnits": 1,
+        "maxDaily": 2,
+        "certifications": [
+          "Labdoor-A"
+        ],
+        "labVerification": 34.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 84.0,
+        "rank": 2
+      },
+      {
+        "asin": "B0016GVLK8",
+        "brand": "Pure Encapsulations",
+        "productName": "Magnesium (Glycinate)",
+        "mgPerServing": 120,
+        "servingUnits": 1,
+        "maxDaily": 3,
+        "certifications": [],
+        "labVerification": 22.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 72.0,
+        "rank": 3
+      }
+    ],
+    "Omega-3 (Fish Oil / Algae)": [
+      {
+        "asin": "B0797G49DS",
+        "brand": "Thorne",
+        "productName": "Super EPA",
+        "mgPerServing": 850,
+        "servingUnits": 2,
+        "maxDaily": 2,
+        "certifications": [
+          "NSF"
+        ],
+        "labVerification": 40.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 90.0,
+        "rank": 1
+      },
+      {
+        "asin": "B00CAZAU62",
+        "brand": "Nordic Naturals",
+        "productName": "Ultimate Omega",
+        "mgPerServing": 1280,
+        "servingUnits": 2,
+        "maxDaily": 2,
+        "certifications": [
+          "IFOS-5",
+          "Informed-Sport"
+        ],
+        "labVerification": 38.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 88.0,
+        "rank": 2
+      },
+      {
+        "asin": "B01LXDBFLX",
+        "brand": "Kirkland Signature",
+        "productName": "Fish Oil 1200 mg",
+        "mgPerServing": 684,
+        "servingUnits": 2,
+        "maxDaily": 1,
+        "certifications": [
+          "USP"
+        ],
+        "labVerification": 40.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 5.0,
+        "totalScore": 85.0,
+        "rank": 3
+      }
+    ],
+    "Zinc": [
+      {
+        "asin": "B0019LRYOS",
+        "brand": "NOW Foods",
+        "productName": "Zinc Picolinate 50 mg",
+        "mgPerServing": 50,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [
+          "Labdoor-A"
+        ],
+        "labVerification": 34.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 20.0,
+        "manufacturing": 10.0,
+        "totalScore": 94.0,
+        "rank": 1
+      },
+      {
+        "asin": "B0797F5Q7W",
+        "brand": "Thorne",
+        "productName": "Zinc Picolinate 30 mg",
+        "mgPerServing": 30,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [
+          "TGA"
+        ],
+        "labVerification": 30.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 20.0,
+        "manufacturing": 10.0,
+        "totalScore": 90.0,
+        "rank": 2
+      },
+      {
+        "asin": "B0013OUQ74",
+        "brand": "Pure Encapsulations",
+        "productName": "Zinc 30 (picolinate)",
+        "mgPerServing": 30,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [],
+        "labVerification": 22.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 20.0,
+        "manufacturing": 10.0,
+        "totalScore": 82.0,
+        "rank": 3
+      }
+    ],
+    "Vitamin B12": [
+      {
+        "asin": "B004U3Y9AC",
+        "brand": "Nature Made",
+        "productName": "Vitamin B12 1000 mcg",
+        "mgPerServing": 1,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [
+          "USP"
+        ],
+        "labVerification": 40.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 5.0,
+        "totalScore": 85.0,
+        "rank": 1
+      },
+      {
+        "asin": "B0013OXHQ6",
+        "brand": "Jarrow Formulas",
+        "productName": "Methyl B-12 5000 mcg",
+        "mgPerServing": 5,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [
+          "Labdoor-A"
+        ],
+        "labVerification": 34.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 84.0,
+        "rank": 2
+      },
+      {
+        "asin": "B0797HHQS5",
+        "brand": "Thorne",
+        "productName": "Methylcobalamin 1 mg",
+        "mgPerServing": 1,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [
+          "TGA"
+        ],
+        "labVerification": 30.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 80.0,
+        "rank": 3
+      }
+    ],
+    "Methylfolate (5-MTHF)": [
+      {
+        "asin": "B0797FLS35",
+        "brand": "Thorne",
+        "productName": "5-MTHF 1 mg",
+        "mgPerServing": 1,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [
+          "TGA"
+        ],
+        "labVerification": 30.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 20.0,
+        "manufacturing": 10.0,
+        "totalScore": 90.0,
+        "rank": 1
+      },
+      {
+        "asin": "B0017OTVQC",
+        "brand": "Pure Encapsulations",
+        "productName": "Folate 1000 (Metafolin)",
+        "mgPerServing": 1,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [],
+        "labVerification": 22.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 20.0,
+        "manufacturing": 10.0,
+        "totalScore": 82.0,
+        "rank": 2
+      },
+      {
+        "asin": "B0013OVX9Q",
+        "brand": "Jarrow Formulas",
+        "productName": "Methyl Folate 400 mcg",
+        "mgPerServing": 0.4,
+        "servingUnits": 1,
+        "maxDaily": 2,
+        "certifications": [],
+        "labVerification": 22.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 20.0,
+        "manufacturing": 10.0,
+        "totalScore": 82.0,
+        "rank": 3
+      }
+    ],
+    "Iron": [
+      {
+        "asin": "B0013OVY4O",
+        "brand": "Thorne",
+        "productName": "Iron Bisglycinate",
+        "mgPerServing": 25,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [
+          "TGA"
+        ],
+        "labVerification": 30.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 20.0,
+        "manufacturing": 10.0,
+        "totalScore": 90.0,
+        "rank": 1
+      },
+      {
+        "asin": "B0019GW2CW",
+        "brand": "NOW Foods",
+        "productName": "Iron 18 mg (Ferrochel)",
+        "mgPerServing": 18,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [
+          "Labdoor-A"
+        ],
+        "labVerification": 34.0,
+        "doseMatch": 21.6,
+        "formAccuracy": 20.0,
+        "manufacturing": 10.0,
+        "totalScore": 85.6,
+        "rank": 2
+      },
+      {
+        "asin": null,
+        "brand": "Pure Encapsulations",
+        "productName": "OptiFerin-C",
+        "mgPerServing": 28,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [],
+        "labVerification": 22.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 20.0,
+        "manufacturing": 10.0,
+        "totalScore": 82.0,
+        "rank": 3
+      }
+    ],
+    "Vitamin C": [
+      {
+        "asin": "B005B1JEGO",
+        "brand": "Nature Made",
+        "productName": "Vitamin C 1000 mg",
+        "mgPerServing": 1000,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [
+          "USP"
+        ],
+        "labVerification": 40.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 5.0,
+        "totalScore": 85.0,
+        "rank": 1
+      },
+      {
+        "asin": "B0013OVYDU",
+        "brand": "NOW Foods",
+        "productName": "Sodium Ascorbate Powder",
+        "mgPerServing": 1035,
+        "servingUnits": 1,
+        "maxDaily": 3,
+        "certifications": [
+          "Labdoor-A"
+        ],
+        "labVerification": 34.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 84.0,
+        "rank": 2
+      },
+      {
+        "asin": "B0013OVYMQ",
+        "brand": "Thorne",
+        "productName": "Buffered C Powder",
+        "mgPerServing": 900,
+        "servingUnits": 1,
+        "maxDaily": 2,
+        "certifications": [
+          "TGA"
+        ],
+        "labVerification": 30.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 80.0,
+        "rank": 3
+      }
+    ],
+    "CoQ10 (Ubiquinol)": [
+      {
+        "asin": "B0019LRY48",
+        "brand": "Nature Made",
+        "productName": "CoQ10 200 mg",
+        "mgPerServing": 200,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [
+          "USP"
+        ],
+        "labVerification": 40.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 5.0,
+        "totalScore": 85.0,
+        "rank": 1
+      },
+      {
+        "asin": "B00EDFX9JK",
+        "brand": "Jarrow Formulas",
+        "productName": "QH-Absorb Ubiquinol 100 mg",
+        "mgPerServing": 100,
+        "servingUnits": 1,
+        "maxDaily": 2,
+        "certifications": [
+          "Labdoor-A"
+        ],
+        "labVerification": 34.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 84.0,
+        "rank": 2
+      },
+      {
+        "asin": "B001V9VTU8",
+        "brand": "Thorne",
+        "productName": "CoQ10 (ubiquinone) 100 mg",
+        "mgPerServing": 100,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [
+          "TGA"
+        ],
+        "labVerification": 30.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 80.0,
+        "rank": 3
+      }
+    ],
+    "Ashwagandha (KSM-66)": [
+      {
+        "asin": "B07HKLF57J",
+        "brand": "Sports Research",
+        "productName": "KSM-66 Ashwagandha 600 mg",
+        "mgPerServing": 600,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [
+          "Informed-Sport"
+        ],
+        "labVerification": 38.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 88.0,
+        "rank": 1
+      },
+      {
+        "asin": null,
+        "brand": "Pure Encapsulations",
+        "productName": "Ashwagandha (KSM-66)",
+        "mgPerServing": 500,
+        "servingUnits": 1,
+        "maxDaily": 2,
+        "certifications": [],
+        "labVerification": 22.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 72.0,
+        "rank": 2
+      },
+      {
+        "asin": "B01BKHQ2CS",
+        "brand": "NOW Foods",
+        "productName": "Ashwagandha 450 mg",
+        "mgPerServing": 450,
+        "servingUnits": 1,
+        "maxDaily": 2,
+        "certifications": [
+          "Labdoor-B"
+        ],
+        "labVerification": 22.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 72.0,
+        "rank": 3
+      }
+    ],
+    "Creatine Monohydrate": [
+      {
+        "asin": "B000GIPJ0M",
+        "brand": "Thorne",
+        "productName": "Creatine (Creapure)",
+        "mgPerServing": 5000,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [
+          "NSF"
+        ],
+        "labVerification": 40.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 90.0,
+        "rank": 1
+      },
+      {
+        "asin": "B002DYIZEO",
+        "brand": "Klean Athlete",
+        "productName": "Klean Creatine",
+        "mgPerServing": 5000,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [
+          "NSF"
+        ],
+        "labVerification": 40.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 90.0,
+        "rank": 2
+      },
+      {
+        "asin": "B0788LTNSC",
+        "brand": "Klean Athlete / Douglas Labs",
+        "productName": "Pure Creatine Creapure",
+        "mgPerServing": 5000,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [
+          "NSF"
+        ],
+        "labVerification": 40.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 90.0,
+        "rank": 3
+      }
+    ],
+    "Melatonin": [
+      {
+        "asin": "B0013OXG1S",
+        "brand": "NOW Foods",
+        "productName": "Melatonin 3 mg",
+        "mgPerServing": 3,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [
+          "Labdoor-A"
+        ],
+        "labVerification": 34.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 84.0,
+        "rank": 1
+      },
+      {
+        "asin": "B00OZU1VSQ",
+        "brand": "Natrol",
+        "productName": "Melatonin 3 mg Time Release",
+        "mgPerServing": 3,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [
+          "Labdoor-A"
+        ],
+        "labVerification": 34.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 5.0,
+        "totalScore": 79.0,
+        "rank": 2
+      },
+      {
+        "asin": "B00019GDVU",
+        "brand": "Life Extension",
+        "productName": "Melatonin 3 mg 6-Hour Time Release",
+        "mgPerServing": 3,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [],
+        "labVerification": 22.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 72.0,
+        "rank": 3
+      }
+    ],
+    "NAC (N-Acetyl Cysteine)": [
+      {
+        "asin": "B0013OXFQA",
+        "brand": "NOW Foods",
+        "productName": "NAC 600 mg",
+        "mgPerServing": 600,
+        "servingUnits": 1,
+        "maxDaily": 2,
+        "certifications": [
+          "Labdoor-A"
+        ],
+        "labVerification": 34.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 84.0,
+        "rank": 1
+      },
+      {
+        "asin": "B0797GWH8Z",
+        "brand": "Thorne",
+        "productName": "NAC (N-Acetyl-L-Cysteine) 500 mg",
+        "mgPerServing": 500,
+        "servingUnits": 1,
+        "maxDaily": 3,
+        "certifications": [
+          "TGA"
+        ],
+        "labVerification": 30.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 80.0,
+        "rank": 2
+      },
+      {
+        "asin": "B001GCUOYC",
+        "brand": "Jarrow Formulas",
+        "productName": "NAC Sustain 600 mg",
+        "mgPerServing": 600,
+        "servingUnits": 1,
+        "maxDaily": 2,
+        "certifications": [],
+        "labVerification": 22.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 72.0,
+        "rank": 3
+      }
+    ],
+    "Probiotics": [
+      {
+        "asin": "B00JEKYNZA",
+        "brand": "Culturelle",
+        "productName": "Daily Probiotic (LGG)",
+        "mgPerServing": 10,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [
+          "ConsumerLab-Pass"
+        ],
+        "labVerification": 36.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 5.0,
+        "totalScore": 81.0,
+        "rank": 1
+      },
+      {
+        "asin": "B0013OXKPO",
+        "brand": "Jarrow Formulas",
+        "productName": "Saccharomyces Boulardii + MOS",
+        "mgPerServing": 250,
+        "servingUnits": 1,
+        "maxDaily": 2,
+        "certifications": [],
+        "labVerification": 22.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 72.0,
+        "rank": 2
+      },
+      {
+        "asin": null,
+        "brand": "Klaire Labs",
+        "productName": "Ther-Biotic Complete",
+        "mgPerServing": 12,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [],
+        "labVerification": 22.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 72.0,
+        "rank": 3
+      }
+    ],
+    "Collagen Peptides": [
+      {
+        "asin": "B01N70VTZY",
+        "brand": "Vital Proteins",
+        "productName": "Collagen Peptides Unflavored",
+        "mgPerServing": 20000,
+        "servingUnits": 2,
+        "maxDaily": 1,
+        "certifications": [
+          "NSF"
+        ],
+        "labVerification": 40.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 90.0,
+        "rank": 1
+      },
+      {
+        "asin": "B01MZIFZI8",
+        "brand": "Sports Research",
+        "productName": "Collagen Peptides",
+        "mgPerServing": 11000,
+        "servingUnits": 1,
+        "maxDaily": 2,
+        "certifications": [
+          "Informed-Sport"
+        ],
+        "labVerification": 38.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 88.0,
+        "rank": 2
+      },
+      {
+        "asin": "B01AR9COL4",
+        "brand": "Vital Proteins",
+        "productName": "Marine Collagen",
+        "mgPerServing": 20000,
+        "servingUnits": 2,
+        "maxDaily": 1,
+        "certifications": [],
+        "labVerification": 0.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 50.0,
+        "rank": 3
+      }
+    ],
+    "Calcium": [
+      {
+        "asin": "B00M17JCAO",
+        "brand": "Nature Made",
+        "productName": "Calcium 600 mg with D3",
+        "mgPerServing": 600,
+        "servingUnits": 1,
+        "maxDaily": 2,
+        "certifications": [
+          "USP"
+        ],
+        "labVerification": 40.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 5.0,
+        "totalScore": 85.0,
+        "rank": 1
+      },
+      {
+        "asin": null,
+        "brand": "Thorne",
+        "productName": "Oscap (MCHA)",
+        "mgPerServing": 1000,
+        "servingUnits": 4,
+        "maxDaily": 1,
+        "certifications": [
+          "TGA"
+        ],
+        "labVerification": 30.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 80.0,
+        "rank": 2
+      },
+      {
+        "asin": "B000BV05EE",
+        "brand": "Citracal",
+        "productName": "Calcium Citrate + D3 Petites",
+        "mgPerServing": 400,
+        "servingUnits": 2,
+        "maxDaily": 2,
+        "certifications": [
+          "USP"
+        ],
+        "labVerification": 40.0,
+        "doseMatch": 24.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 5.0,
+        "totalScore": 79.0,
+        "rank": 3
+      }
+    ],
+    "Alginate": [
+      {
+        "asin": null,
+        "brand": "Modernist Pantry",
+        "productName": "Sodium Alginate (food-grade)",
+        "mgPerServing": 1000,
+        "servingUnits": 1,
+        "maxDaily": 3,
+        "certifications": [],
+        "labVerification": 0.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 50.0,
+        "rank": 1
+      },
+      {
+        "asin": "B001EPQ818",
+        "brand": "Reckitt (Gaviscon Advance UK)",
+        "productName": "Gaviscon Advance Aniseed Liquid",
+        "mgPerServing": 1000,
+        "servingUnits": 10,
+        "maxDaily": 4,
+        "certifications": [],
+        "labVerification": 0.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 5.0,
+        "totalScore": 45.0,
+        "rank": 2
+      },
+      {
+        "asin": null,
+        "brand": "Reckitt (Gaviscon Double Action)",
+        "productName": "Gaviscon Double Action Tablets",
+        "mgPerServing": 500,
+        "servingUnits": 2,
+        "maxDaily": 4,
+        "certifications": [],
+        "labVerification": 0.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 5.0,
+        "totalScore": 45.0,
+        "rank": 3
+      }
+    ],
+    "Psyllium Husk": [
+      {
+        "asin": "B00P3LPN2Q",
+        "brand": "Organic India",
+        "productName": "Whole Husk Psyllium",
+        "mgPerServing": 5000,
+        "servingUnits": 1,
+        "maxDaily": 3,
+        "certifications": [],
+        "labVerification": 0.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 50.0,
+        "rank": 1
+      },
+      {
+        "asin": "B001EQ4EGG",
+        "brand": "Yerba Prima",
+        "productName": "Organic Psyllium Whole Husks",
+        "mgPerServing": 5000,
+        "servingUnits": 1,
+        "maxDaily": 3,
+        "certifications": [],
+        "labVerification": 0.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 50.0,
+        "rank": 2
+      },
+      {
+        "asin": "B00028M0HC",
+        "brand": "Metamucil (P&G)",
+        "productName": "Metamucil Sugar-Free Orange",
+        "mgPerServing": 3400,
+        "servingUnits": 1,
+        "maxDaily": 3,
+        "certifications": [],
+        "labVerification": 0.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 5.0,
+        "totalScore": 45.0,
+        "rank": 3
+      }
+    ],
+    "Peppermint Oil (Enteric-Coated)": [
+      {
+        "asin": "B00020IAEI",
+        "brand": "Enzymatic Therapy",
+        "productName": "Peppermint Plus",
+        "mgPerServing": 200,
+        "servingUnits": 1,
+        "maxDaily": 3,
+        "certifications": [],
+        "labVerification": 0.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 50.0,
+        "rank": 1
+      },
+      {
+        "asin": "B00020IG3M",
+        "brand": "NOW Foods",
+        "productName": "Peppermint Gels (enteric-coated)",
+        "mgPerServing": 180,
+        "servingUnits": 1,
+        "maxDaily": 3,
+        "certifications": [],
+        "labVerification": 0.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 50.0,
+        "rank": 2
+      },
+      {
+        "asin": null,
+        "brand": "Heather's Tummy Care",
+        "productName": "Tummy Tamers Peppermint Oil Capsules",
+        "mgPerServing": 200,
+        "servingUnits": 1,
+        "maxDaily": 3,
+        "certifications": [],
+        "labVerification": 0.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 50.0,
+        "rank": 3
+      }
+    ],
+    "Ginger (Zingiber officinale)": [
+      {
+        "asin": "B0019LT8G4",
+        "brand": "Pure Encapsulations",
+        "productName": "Ginger Extract",
+        "mgPerServing": 250,
+        "servingUnits": 1,
+        "maxDaily": 2,
+        "certifications": [],
+        "labVerification": 22.0,
+        "doseMatch": 12.5,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 54.5,
+        "rank": 1
+      },
+      {
+        "asin": null,
+        "brand": "Designs for Health",
+        "productName": "Ginger Forte",
+        "mgPerServing": 220,
+        "servingUnits": 1,
+        "maxDaily": 2,
+        "certifications": [],
+        "labVerification": 22.0,
+        "doseMatch": 11.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 53.0,
+        "rank": 2
+      },
+      {
+        "asin": "B0019LRNYK",
+        "brand": "NOW Foods",
+        "productName": "Ginger Root 550 mg",
+        "mgPerServing": 550,
+        "servingUnits": 1,
+        "maxDaily": 3,
+        "certifications": [],
+        "labVerification": 0.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 50.0,
+        "rank": 3
+      }
+    ],
+    "Digestive Enzymes": [
+      {
+        "asin": "B0013OQ69I",
+        "brand": "Thorne",
+        "productName": "Bio-Gest",
+        "mgPerServing": 500,
+        "servingUnits": 1,
+        "maxDaily": 3,
+        "certifications": [
+          "TGA"
+        ],
+        "labVerification": 30.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 80.0,
+        "rank": 1
+      },
+      {
+        "asin": "B0013OQJ7O",
+        "brand": "Pure Encapsulations",
+        "productName": "Digestive Enzymes Ultra",
+        "mgPerServing": 430,
+        "servingUnits": 1,
+        "maxDaily": 3,
+        "certifications": [],
+        "labVerification": 22.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 72.0,
+        "rank": 2
+      },
+      {
+        "asin": "B00140JAFC",
+        "brand": "Enzymedica",
+        "productName": "Digest Gold",
+        "mgPerServing": 314,
+        "servingUnits": 1,
+        "maxDaily": 3,
+        "certifications": [],
+        "labVerification": 0.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 50.0,
+        "rank": 3
+      }
+    ],
+    "Berberine": [
+      {
+        "asin": "B08N4L7QJW",
+        "brand": "Designs for Health",
+        "productName": "Berberine Synergy",
+        "mgPerServing": 800,
+        "servingUnits": 2,
+        "maxDaily": 2,
+        "certifications": [],
+        "labVerification": 22.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 20.0,
+        "manufacturing": 10.0,
+        "totalScore": 82.0,
+        "rank": 1
+      },
+      {
+        "asin": "B0013OVVN0",
+        "brand": "Thorne",
+        "productName": "Berberine-500",
+        "mgPerServing": 500,
+        "servingUnits": 1,
+        "maxDaily": 3,
+        "certifications": [
+          "TGA"
+        ],
+        "labVerification": 30.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 6.0,
+        "manufacturing": 10.0,
+        "totalScore": 76.0,
+        "rank": 2
+      },
+      {
+        "asin": null,
+        "brand": "Thorne",
+        "productName": "Berberine Phytosome (Berberol)",
+        "mgPerServing": 1000,
+        "servingUnits": 2,
+        "maxDaily": 1,
+        "certifications": [],
+        "labVerification": 22.0,
+        "doseMatch": 20.0,
+        "formAccuracy": 20.0,
+        "manufacturing": 10.0,
+        "totalScore": 72.0,
+        "rank": 3
+      }
+    ],
+    "Bergamot (BPF)": [
+      {
+        "asin": null,
+        "brand": "Thorne",
+        "productName": "Bergamot Phytosome",
+        "mgPerServing": 1000,
+        "servingUnits": 2,
+        "maxDaily": 1,
+        "certifications": [
+          "TGA"
+        ],
+        "labVerification": 30.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 80.0,
+        "rank": 1
+      },
+      {
+        "asin": "B07RFBS33Z",
+        "brand": "Jarrow Formulas",
+        "productName": "Bergamot",
+        "mgPerServing": 500,
+        "servingUnits": 1,
+        "maxDaily": 2,
+        "certifications": [],
+        "labVerification": 22.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 72.0,
+        "rank": 2
+      },
+      {
+        "asin": "B00T45EHCE",
+        "brand": "Life Extension",
+        "productName": "Bergamot Citrus Bergamia",
+        "mgPerServing": 500,
+        "servingUnits": 1,
+        "maxDaily": 2,
+        "certifications": [],
+        "labVerification": 22.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 72.0,
+        "rank": 3
+      }
+    ],
+    "Red Yeast Rice (Standardized)": [
+      {
+        "asin": null,
+        "brand": "Thorne",
+        "productName": "Choleast-900",
+        "mgPerServing": 1800,
+        "servingUnits": 2,
+        "maxDaily": 1,
+        "certifications": [
+          "TGA"
+        ],
+        "labVerification": 30.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 20.0,
+        "manufacturing": 10.0,
+        "totalScore": 90.0,
+        "rank": 1
+      },
+      {
+        "asin": "B00IQZQ3KC",
+        "brand": "Pure Encapsulations",
+        "productName": "Red Yeast Rice",
+        "mgPerServing": 1200,
+        "servingUnits": 2,
+        "maxDaily": 1,
+        "certifications": [],
+        "labVerification": 22.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 20.0,
+        "manufacturing": 10.0,
+        "totalScore": 82.0,
+        "rank": 2
+      },
+      {
+        "asin": "B00IQZQ5PY",
+        "brand": "Jarrow Formulas",
+        "productName": "Red Yeast Rice + CoQ10",
+        "mgPerServing": 1200,
+        "servingUnits": 2,
+        "maxDaily": 1,
+        "certifications": [],
+        "labVerification": 22.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 72.0,
+        "rank": 3
+      }
+    ],
+    "Plant Sterols (Phytosterols)": [
+      {
+        "asin": "B0011860O0",
+        "brand": "Nature Made",
+        "productName": "CholestOff Plus",
+        "mgPerServing": 1800,
+        "servingUnits": 2,
+        "maxDaily": 2,
+        "certifications": [
+          "USP"
+        ],
+        "labVerification": 40.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 5.0,
+        "totalScore": 85.0,
+        "rank": 1
+      },
+      {
+        "asin": "B0017O7VGY",
+        "brand": "Jarrow Formulas",
+        "productName": "Plant Sterols 900 mg",
+        "mgPerServing": 900,
+        "servingUnits": 2,
+        "maxDaily": 2,
+        "certifications": [],
+        "labVerification": 22.0,
+        "doseMatch": 27.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 69.0,
+        "rank": 2
+      },
+      {
+        "asin": null,
+        "brand": "Pure Encapsulations",
+        "productName": "Beta Sitosterol",
+        "mgPerServing": 200,
+        "servingUnits": 1,
+        "maxDaily": 3,
+        "certifications": [],
+        "labVerification": 22.0,
+        "doseMatch": 9.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 51.0,
+        "rank": 3
+      }
+    ],
+    "Aged Garlic Extract (Kyolic AGE)": [
+      {
+        "asin": "B000GG87V2",
+        "brand": "Kyolic (Wakunaga)",
+        "productName": "Aged Garlic Extract Cardiovascular Formula 100",
+        "mgPerServing": 600,
+        "servingUnits": 2,
+        "maxDaily": 2,
+        "certifications": [],
+        "labVerification": 0.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 50.0,
+        "rank": 1
+      },
+      {
+        "asin": "B000GG7QU4",
+        "brand": "Kyolic (Wakunaga)",
+        "productName": "Aged Garlic Extract + CoQ10 Formula 110",
+        "mgPerServing": 600,
+        "servingUnits": 2,
+        "maxDaily": 2,
+        "certifications": [],
+        "labVerification": 0.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 50.0,
+        "rank": 2
+      },
+      {
+        "asin": "B0019LPVTE",
+        "brand": "NOW Foods",
+        "productName": "Garlic Oil 1500 (equivalent)",
+        "mgPerServing": 1500,
+        "servingUnits": 1,
+        "maxDaily": 1,
+        "certifications": [],
+        "labVerification": 0.0,
+        "doseMatch": 30.0,
+        "formAccuracy": 10.0,
+        "manufacturing": 10.0,
+        "totalScore": 50.0,
+        "rank": 3
       }
     ]
   }
