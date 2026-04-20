@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { supplements } from '@/data/supplements'
+
+const SUPPLEMENT_COUNT = supplements.length
 
 export const metadata: Metadata = {
   title: 'How It Works | Evidence-Based Supplement Methodology',
@@ -26,7 +29,7 @@ const methodologySteps = [
   {
     step: '02',
     title: 'We score each supplement',
-    desc: 'Our engine evaluates 15 supplements across four dimensions: your diet (strongest signal), lifestyle factors, reported symptoms, and stated goals. Each dimension is weighted based on its clinical diagnostic accuracy in the PubMed literature.',
+    desc: `Our engine evaluates ${SUPPLEMENT_COUNT} supplements across four dimensions: your diet (strongest signal), lifestyle factors, reported symptoms, and stated goals. Each dimension is weighted based on its clinical diagnostic accuracy in the PubMed literature.`,
   },
   {
     step: '03',
@@ -64,7 +67,7 @@ const faqJsonLd = {
       name: 'How does Find Your Supplement work?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'You take a free 2-minute quiz about your health goals, diet, lifestyle, and symptoms. Our scoring engine evaluates 15 supplements across four dimensions — diet, lifestyle, symptoms, and goals — weighted by clinical diagnostic accuracy from PubMed research. Results are ranked by relevance score (0–100) and each supplement is tagged with an evidence tier (Strong, Moderate, Limited, or Weak).',
+        text: `You take a free 2-minute quiz about your health goals, diet, lifestyle, and symptoms. Our scoring engine evaluates ${SUPPLEMENT_COUNT} supplements across four dimensions — diet, lifestyle, symptoms, and goals — weighted by clinical diagnostic accuracy from PubMed research. Results are ranked by relevance score (0–100) and each supplement is tagged with an evidence tier (Strong, Moderate, Limited, or Weak).`,
       },
     },
     {

@@ -1,7 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { blogPosts } from '@/data/blogPosts'
+import { supplements } from '@/data/supplements'
 import QuizCounter from '@/components/QuizCounter'
+
+const SUPPLEMENT_COUNT = supplements.length
 
 export const metadata: Metadata = {
   title: 'Find Your Supplement | Free Personalized Supplement Quiz',
@@ -128,7 +131,7 @@ export default function HomePage() {
           </div>
 
           <p className="text-text-tertiary text-sm mt-4">
-            No account required · 2 minutes · 15 supplements analyzed
+            No account required · 2 minutes · {SUPPLEMENT_COUNT} supplements analyzed
           </p>
         </div>
       </section>
