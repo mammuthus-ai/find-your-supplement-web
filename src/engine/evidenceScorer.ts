@@ -202,6 +202,54 @@ export function computeEvidenceGrade(
   return 'D'
 }
 
+// ─── Per-condition evidence grading ──────────────────────────────────────────
+// Show the user the grade for the SPECIFIC conditions that match their inputs,
+// not the supplement-wide grade. Omega-3 is A for triglycerides, C for anxiety.
+
+export interface ConditionEvidence {
+  condition: string
+  grade: EvidenceGrade
+  rctCount: number
+  metaAnalysisCount: number
+  pubmedCount: number
+}
+
+function gradeFromEntry(e: EvidenceEntry): EvidenceGrade {
+  let score = 0
+  if (e.metaAnalysisCount >= 3) score += 10
+  else if (e.metaAnalysisCount >= 1) score += 6
+  if (e.rctCount >= 20) score += 8
+  else if (e.rctCount >= 5) score += 5
+  else if (e.rctCount >= 1) score += 2
+  score += Math.min((e.citationScore || 0) / 100, 5)
+  if ((e.trialData?.phase3Plus || 0) > 0) score += 6
+  if ((e.trialData?.completed || 0) > 0) {
+    score += ((e.trialData?.positive || 0) / (e.trialData?.completed || 1)) * 9
+  }
+  if (score >= 22) return 'A'
+  if (score >= 14) return 'B'
+  if (score >= 7) return 'C'
+  return 'D'
+}
+
+export function computeEvidenceByCondition(
+  supplementName: string,
+  goals: Goal[],
+  symptoms: Symptom[],
+): ConditionEvidence[] {
+  const relevant = getRelevantEntries(supplementName, goals, symptoms)
+  const rank: Record<EvidenceGrade, number> = { A: 0, B: 1, C: 2, D: 3 }
+  return relevant
+    .map((e) => ({
+      condition: e.condition,
+      grade: gradeFromEntry(e),
+      rctCount: e.rctCount,
+      metaAnalysisCount: e.metaAnalysisCount,
+      pubmedCount: e.pubmedCount,
+    }))
+    .sort((a, b) => rank[a.grade] - rank[b.grade] || b.rctCount - a.rctCount)
+}
+
 /**
  * Check if the evidence cache is loaded and available.
  */

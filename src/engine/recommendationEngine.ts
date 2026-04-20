@@ -29,6 +29,7 @@ import {
   safetyScore,
   availabilityScore,
   computeEvidenceGrade,
+  computeEvidenceByCondition,
   hasEvidenceCache,
 } from './evidenceScorer'
 
@@ -453,6 +454,18 @@ export function buildRecommendations(profile: QuizProfile): SupplementRecommenda
       grade = supp.evidenceGrade as EvidenceGrade
     }
 
+    const evidenceByCondition = hasEvidenceCache()
+      ? computeEvidenceByCondition(supp.name, profile.goals, profile.symptoms)
+          .map((e, i) => ({
+            condition: e.condition,
+            grade: e.grade,
+            rctCount: e.rctCount,
+            metaAnalysisCount: e.metaAnalysisCount,
+            pubmedCount: e.pubmedCount,
+            isPrimary: i === 0,
+          }))
+      : undefined
+
     results.push({
       supplement: supp,
       score,
@@ -460,6 +473,7 @@ export function buildRecommendations(profile: QuizProfile): SupplementRecommenda
       priority: priorityFromScore(score),
       reasons: allReasons,
       evidenceGrade: grade,
+      evidenceByCondition,
       warnings: checkWarnings(supp, profile),
     })
   }

@@ -110,7 +110,10 @@ function LockedSupplementCard({ index }: { index: number }) {
 
 function SupplementCard({ rec }: { rec: SupplementRecommendation }) {
   const [expanded, setExpanded] = useState(false)
-  const { supplement: supp, score, rank, priority, reasons, evidenceGrade } = rec
+  const { supplement: supp, score, rank, priority, reasons, evidenceGrade, evidenceByCondition } = rec
+  const primary = evidenceByCondition?.[0]
+  const displayGrade = primary?.grade ?? evidenceGrade
+  const displayContext = primary?.condition
 
   return (
     <div className="bg-surface border border-border rounded-xl overflow-hidden card-hover">
@@ -127,8 +130,9 @@ function SupplementCard({ rec }: { rec: SupplementRecommendation }) {
                 <span className={`text-xs font-semibold px-2 py-0.5 rounded border ${priorityStyles(priority)}`}>
                   {priorityLabel(priority)}
                 </span>
-                <span className={`text-xs font-medium px-2 py-0.5 rounded border ${gradeStyles(evidenceGrade)}`}>
-                  {gradeShortLabel(evidenceGrade)}
+                <span className={`text-xs font-medium px-2 py-0.5 rounded border ${gradeStyles(displayGrade)}`}>
+                  {gradeShortLabel(displayGrade)}
+                  {displayContext ? ` for ${displayContext}` : ''}
                 </span>
               </div>
             </div>

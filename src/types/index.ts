@@ -110,7 +110,17 @@ export interface SupplementRecommendation {
   priority: Priority
   reasons: RecommendationReason[]
   evidenceGrade: EvidenceGrade
+  evidenceByCondition?: EvidenceForCondition[]
   warnings: string[]
+}
+
+export interface EvidenceForCondition {
+  condition: string
+  grade: EvidenceGrade
+  rctCount: number
+  metaAnalysisCount: number
+  pubmedCount: number
+  isPrimary?: boolean
 }
 
 // ─── Evidence Cache Types (from free APIs) ──────────────────────────────────
