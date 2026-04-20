@@ -129,15 +129,12 @@ export interface TopProduct {
   asin?: string | null
   brand: string
   productName: string
+  formName?: string              // e.g. "Magnesium glycinate"
   mgPerServing?: number
   servingUnits?: number
   maxDaily?: number
   certifications: string[]       // e.g. ["USP", "NSF"]
-  labVerification: number        // 0-40
-  doseMatch: number              // 0-30
-  formAccuracy: number           // 0-20
-  manufacturing: number          // 0-10
-  totalScore: number             // 0-100
+  totalScore: number             // 0-100 (proprietary score)
   rank: number                   // 1-3 in the top shortlist
 }
 

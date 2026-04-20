@@ -5,6 +5,7 @@ import type { TopProduct } from '@/types'
 interface Props {
   products: TopProduct[]
   supplementName: string
+  formName?: string
 }
 
 const AMAZON_TAG = 'insquire-20'
@@ -25,7 +26,7 @@ function amazonUrl(product: TopProduct): string {
   return `https://www.amazon.com/s?k=${encodeURIComponent(q)}&tag=${AMAZON_TAG}`
 }
 
-export default function TopProductsCard({ products, supplementName }: Props) {
+export default function TopProductsCard({ products, supplementName, formName }: Props) {
   if (!products || products.length === 0) return null
   const top = products.slice(0, 3)
 
@@ -34,7 +35,7 @@ export default function TopProductsCard({ products, supplementName }: Props) {
       <div className="flex items-baseline justify-between mb-2">
         <h4 className="text-text font-semibold text-sm">Where to buy</h4>
         <span className="text-text-tertiary text-xs">
-          Top {top.length} by objective quality score
+          {formName ? `Top ${top.length} · ${formName}` : `Top ${top.length}`}
         </span>
       </div>
 
@@ -80,22 +81,12 @@ export default function TopProductsCard({ products, supplementName }: Props) {
               </div>
             )}
 
-            <div className="text-text-tertiary text-xs mt-2 ml-7">
-              Lab {Math.round(p.labVerification)}/40 · Dose {Math.round(p.doseMatch)}/30 · Form{' '}
-              {Math.round(p.formAccuracy)}/20 · Mfg {Math.round(p.manufacturing)}/10
-            </div>
-
             <div className="flex items-center gap-1 mt-2 ml-7 pt-2 border-t border-border">
               <span className="text-teal text-xs font-semibold flex-1">Buy on Amazon →</span>
             </div>
           </a>
         ))}
       </div>
-
-      <p className="text-text-tertiary text-xs italic text-center mt-2 leading-snug">
-        Scored by third-party lab testing, clinical dose match, ingredient form,
-        and manufacturing transparency. Excludes user reviews and brand reputation by design.
-      </p>
     </div>
   )
 }

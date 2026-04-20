@@ -11,7 +11,7 @@ import QuizCounter from '@/components/QuizCounter'
 import TopProductsCard from '@/components/TopProductsCard'
 import evidenceCacheRaw from '@/data/evidenceCache.json'
 
-const topProductsMap = (evidenceCacheRaw as { topProducts?: Record<string, TopProduct[]> }).topProducts || {}
+const topProductsMap = (evidenceCacheRaw as { topProducts?: Record<string, Record<string, TopProduct[]>> }).topProducts || {}
 import { incrementPublicStat } from '@/lib/publicStats'
 import { trackResultsView, trackSupplementExpand, trackAmazonClick } from '@/lib/analytics'
 
@@ -140,7 +140,14 @@ function SupplementCard({ rec }: { rec: SupplementRecommendation }) {
       })[0]
     : null
 
-  const topProducts = topProductsMap[supp.name]
+  // Products scoped to the form the engine picked for this user — a glycinate-
+  // recommended user sees glycinate products, not oxide. Falls back to the
+  // cross-form top-3 ("_all") when the picked form has no direct-link products.
+  const productsBySupp = topProductsMap[supp.name]
+  const forForm = pickedForm?.name ? productsBySupp?.[pickedForm.name] : undefined
+  const forAll = productsBySupp?._all
+  const topProducts = (forForm && forForm.length > 0) ? forForm : forAll
+  const topProductsFormLabel = (forForm && forForm.length > 0) ? pickedForm?.name : undefined
 
   return (
     <div className="bg-surface border border-border rounded-xl overflow-hidden card-hover">
@@ -302,9 +309,13 @@ function SupplementCard({ rec }: { rec: SupplementRecommendation }) {
                 </div>
               )}
 
-              {/* Top 3 products by objective quality score */}
+              {/* Top 3 products, scoped to the form recommended for this user */}
               {topProducts && topProducts.length > 0 && (
-                <TopProductsCard products={topProducts} supplementName={supp.name} />
+                <TopProductsCard
+                  products={topProducts}
+                  supplementName={supp.name}
+                  formName={topProductsFormLabel}
+                />
               )}
             </div>
           )}
