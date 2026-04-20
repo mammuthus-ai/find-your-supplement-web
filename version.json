@@ -1,0 +1,13 @@
+{
+  "ios": {
+    "latest": "1.3.0",
+    "minRequired": "1.2.0",
+    "notes": "New digestive health supplements + clearer evidence grades"
+  },
+  "android": {
+    "latest": "1.3.0",
+    "minRequired": "1.2.0",
+    "notes": "New digestive health supplements + clearer evidence grades"
+  },
+  "comment": "Update this file with every release. `latest` bumps trigger soft banner. `minRequired` bumps force a blocking modal. Keep minRequired conservative — only bump when shipping a critical fix that invalidates older clients (e.g. API breaking change)."
+}
