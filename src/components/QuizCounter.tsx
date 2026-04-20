@@ -1,28 +1,40 @@
+'use client'
+
+import { useEffect, useState } from 'react'
+import { getPublicStat } from '@/lib/publicStats'
+
 interface QuizCounterProps {
-  className?: string;
+  className?: string
 }
 
 /**
- * Honest social-proof widget. Prior version used a fake "12,847 + your
- * localStorage" number; we don't have a real queryable live user count
- * from this static Next.js export. Instead we surface a real, verifiable
- * stat that differentiates us from competitors: the actual PubMed article
- * count backing our evidence cache.
+ * Social-proof widget that shows the real number of people who have
+ * completed the quiz, read live from Supabase public_stats.quiz_completions.
  *
- * To update: bump PUBMED_ARTICLES after each weekly scraper run. A future
- * enhancement can generate this from Supabase + ship via the same
- * /version.json-style static file.
+ * The /results page calls incrementPublicStat('quiz_completions') on mount,
+ * so every genuine completion bumps the counter. Renders nothing while
+ * loading (avoids layout shift) or if the fetch fails.
  */
 export default function QuizCounter({ className = '' }: QuizCounterProps) {
-  const PUBMED_ARTICLES = 2278; // Real count in Supabase as of 2026-04-19
+  const [count, setCount] = useState<number | null>(null)
+
+  useEffect(() => {
+    let cancelled = false
+    getPublicStat('quiz_completions').then((n) => {
+      if (!cancelled && typeof n === 'number') setCount(n)
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [])
+
+  // Don't render fake or placeholder state while loading / on failure
+  if (count === null || count < 1) return null
 
   return (
     <p className={`text-text-secondary text-sm ${className}`}>
-      Backed by{' '}
-      <span className="text-teal font-semibold">
-        {PUBMED_ARTICLES.toLocaleString('en-US')}+
-      </span>{' '}
-      PubMed studies
+      <span className="text-teal font-semibold">{count.toLocaleString('en-US')}+</span>{' '}
+      people have found their supplements
     </p>
-  );
+  )
 }

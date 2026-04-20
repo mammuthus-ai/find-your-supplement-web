@@ -8,7 +8,7 @@ import type { QuizProfile, SupplementRecommendation, Priority, EvidenceGrade } f
 import EmailCaptureCard from '@/components/EmailCaptureCard'
 import MyStackCard from '@/components/MyStackCard'
 import QuizCounter from '@/components/QuizCounter'
-import { incrementQuizCount } from '@/lib/quizCounter'
+import { incrementPublicStat } from '@/lib/publicStats'
 import { trackResultsView, trackSupplementExpand, trackAmazonClick } from '@/lib/analytics'
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -379,7 +379,7 @@ export default function ResultsPage() {
       setProfile(p)
       const recs = buildRecommendations(p)
       setRecommendations(recs)
-      incrementQuizCount()
+      incrementPublicStat('quiz_completions')
       trackResultsView(recs.length)
     } catch {
       router.replace('/quiz')
