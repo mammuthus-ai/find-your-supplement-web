@@ -19,9 +19,10 @@ function scoreColor(score: number): string {
 }
 
 function amazonUrl(product: TopProduct): string {
-  if (product.asin) {
-    return `https://www.amazon.com/dp/${product.asin}?tag=${AMAZON_TAG}`
-  }
+  // Always link to Amazon search for now. ASINs curated without PA-API
+  // verification can go stale; search shows the exact product when
+  // available AND relevant alternatives when not — better UX than a
+  // dead /dp/ page. Re-enable direct ASIN links once we wire PA-API.
   const q = `${product.brand} ${product.productName}`
   return `https://www.amazon.com/s?k=${encodeURIComponent(q)}&tag=${AMAZON_TAG}`
 }
