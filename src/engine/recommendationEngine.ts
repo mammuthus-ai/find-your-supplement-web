@@ -355,7 +355,33 @@ function corroborationBonus(dietPts: number, lifestylePts: number, symptomPts: n
   return (activeDims - CORROBORATION_MIN_DIMENSIONS + 1) * CORROBORATION_BONUS_RATE
 }
 
+// Rank-aware priority assignment. Top supplements for THIS user are always
+// "high" (with a score floor to avoid noise), regardless of absolute score.
+// The engine already renormalizes to the dimensions present for each user;
+// this keeps the priority label meaningful for users without labs/genetics.
+const PRIORITY_HIGH_MIN_SCORE = 25
+const PRIORITY_MEDIUM_MIN_SCORE = 10
+
+function assignRankedPriorities(results: SupplementRecommendation[]): void {
+  if (results.length === 0) return
+  const n = results.length
+  const highCutoff = Math.max(3, Math.min(6, Math.ceil(n * 0.15)))
+  const medCutoff = highCutoff + Math.max(3, Math.ceil(n * 0.30))
+  for (let i = 0; i < results.length; i++) {
+    const r = results[i]
+    const rank = i + 1
+    if (rank <= highCutoff && r.score >= PRIORITY_HIGH_MIN_SCORE) {
+      r.priority = 'high'
+    } else if (rank <= medCutoff && r.score >= PRIORITY_MEDIUM_MIN_SCORE) {
+      r.priority = 'medium'
+    } else {
+      r.priority = 'low'
+    }
+  }
+}
+
 function priorityFromScore(score: number): Priority {
+  // Legacy fallback; retained for any lingering call sites.
   if (score >= 60) return 'high'
   if (score >= 30) return 'medium'
   return 'low'
@@ -496,6 +522,7 @@ export function buildRecommendations(profile: QuizProfile): SupplementRecommenda
   results.forEach((r, i) => {
     r.rank = i + 1
   })
+  assignRankedPriorities(results)
 
   return results
 }
