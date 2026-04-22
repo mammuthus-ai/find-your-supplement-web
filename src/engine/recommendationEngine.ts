@@ -462,6 +462,15 @@ export function buildRecommendations(profile: QuizProfile): SupplementRecommenda
 
       score = Math.min(Math.round(combined), 100)
       grade = computeEvidenceGrade(supp.name, profile.goals, profile.symptoms)
+      // Fallback: if no cache entries matched this user's goals/symptoms,
+      // the dynamic grade is 'D' (Weak) by default. That would flag every
+      // supplement the user didn't specifically target as weak, even
+      // well-established ones. Fall back to the supplement's curated
+      // baseline grade (supplements.json evidenceGrade) in that case.
+      const relevantCacheHits = evidence + trials
+      if (grade === 'D' && relevantCacheHits === 0 && supp.evidenceGrade) {
+        grade = supp.evidenceGrade
+      }
 
       // Add evidence reason tied to the per-user grade we actually display.
       // Previously this always said "Strong research evidence" even when the

@@ -358,15 +358,14 @@ export default function QuizPage() {
     // Track completion and, for steps 1-5, show the interstitial preview.
     trackQuizStepComplete(step, stepNames[step - 1] || 'unknown')
 
-    // Count every user who completes step 1 (symptoms) toward the public
-    // quiz-completion counter. One increment per quiz attempt — guarded
-    // by sessionStorage so refreshing / going back doesn't double-count.
+    // Count every user who completes step 1 (symptoms). The session guard
+    // we had previously prevented the counter from moving when a user
+    // retook the quiz in the same tab — hiding real progress. Better UX
+    // to bump on every real completion; anti-fraud can be tightened later
+    // (e.g. IP-based rate limit in the RPC).
     if (step === 1 && typeof window !== 'undefined') {
       try {
-        if (!sessionStorage.getItem('quiz_counted')) {
-          sessionStorage.setItem('quiz_counted', '1')
-          import('@/lib/publicStats').then((m) => m.incrementPublicStat('quiz_completions'))
-        }
+        import('@/lib/publicStats').then((m) => m.incrementPublicStat('quiz_completions'))
       } catch {
         // ignore storage / network errors
       }
