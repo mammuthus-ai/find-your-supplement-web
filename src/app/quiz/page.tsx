@@ -330,7 +330,11 @@ export default function QuizPage() {
   // Track top-3 recommendation names at each step so IntermediatePreview
   // can show "NEW" badges for supplements that entered the top-3 with
   // the latest answer.
-  const [prevTopNames, setPrevTopNames] = useState<string[]>([])
+  // Previous-step ranking map (supplement.name → rank). Lets the
+  // IntermediatePreview show per-supplement delta badges like "↑5" or NEW.
+  const [prevRanking, setPrevRanking] = useState<Record<string, number>>({})
+  // Previous answers snapshot — used to explain WHICH input caused a rank change.
+  const [prevAnswers, setPrevAnswers] = useState<Record<string, unknown>>({})
 
   useEffect(() => { trackQuizStart() }, [])
 
@@ -808,7 +812,7 @@ export default function QuizPage() {
           <button
             onClick={handleBack}
             className={`text-sm font-medium px-5 py-2.5 rounded-xl border border-border text-text-secondary hover:text-text hover:border-text-secondary transition-colors ${
-              step === 1 ? 'invisible' : ''
+              step === 1 && phase === 'question' ? 'invisible' : ''
             }`}
           >
             &larr; Back
