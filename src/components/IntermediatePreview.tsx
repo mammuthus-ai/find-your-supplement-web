@@ -43,6 +43,48 @@ function pickBestProduct(supplementName: string, formName?: string): TopProduct 
   return list && list[0] ? list[0] : null
 }
 
+/** Evidence grade → display label + Tailwind classes for the badge. */
+const GRADE_LABELS: Record<string, string> = {
+  A: 'Strong',
+  B: 'Moderate',
+  C: 'Limited',
+  D: 'Weak',
+}
+function gradeStyles(g?: string): string {
+  return {
+    A: 'bg-grade-a/10 text-grade-a border-grade-a/40',
+    B: 'bg-grade-b/10 text-grade-b border-grade-b/40',
+    C: 'bg-grade-c/10 text-grade-c border-grade-c/40',
+    D: 'bg-grade-d/10 text-grade-d border-grade-d/40',
+  }[g || 'C'] || 'bg-surface-alt text-text-secondary border-border'
+}
+
+/** One-line summary of what the research looks like for this supplement's
+ *  primary matched condition. Pulls rctCount + metaAnalysisCount + pubmedCount
+ *  from the evidence cache. Example: "Backed by 23 RCTs and 2 meta-analyses
+ *  for acid reflux". */
+function buildEvidenceSummary(e: {
+  condition: string
+  rctCount: number
+  metaAnalysisCount: number
+  pubmedCount: number
+}): string {
+  const parts: string[] = []
+  if (e.metaAnalysisCount > 0) {
+    parts.push(`${e.metaAnalysisCount} meta-analys${e.metaAnalysisCount === 1 ? 'is' : 'es'}`)
+  }
+  if (e.rctCount > 0) {
+    parts.push(`${e.rctCount} RCT${e.rctCount === 1 ? '' : 's'}`)
+  }
+  if (parts.length === 0 && e.pubmedCount > 0) {
+    parts.push(`${e.pubmedCount} PubMed stud${e.pubmedCount === 1 ? 'y' : 'ies'}`)
+  }
+  if (parts.length === 0) return ''
+  // Join with " + "; humanize the condition string slightly
+  const cond = e.condition.replace(/_/g, ' ')
+  return `${parts.join(' + ')} for ${cond}`
+}
+
 /** Short human-readable reason the scored #1 product was picked. Pulls from
  *  whatever objective signals we have — certifications (most trust-worthy
  *  differentiator), then dose match, then form match, then "top score". */
@@ -75,10 +117,40 @@ interface PartialAnswers {
 interface Props {
   answers: PartialAnswers
   previousTopSupplements?: string[]
+  /** Previous-step full ranking (supplement.name → rank). Lets us show
+   *  per-card delta badges like "↑5", "NEW", or "↓3" so users see their
+   *  answers actually changing the order. */
+  previousRanking?: Record<string, number>
   stepLabel: string
   disclaimer?: string
   /** Set true on the last preview to swap disclaimer into the download-app CTA */
   showFinalCta?: boolean
+}
+
+/** Compute a delta badge for a supplement. Returns null if this is the
+ *  first preview (no prior data) or if the supplement's position is
+ *  unchanged and there was no notable history. */
+function rankDelta(
+  name: string,
+  newRank: number,
+  previousRanking: Record<string, number>,
+): { label: string; kind: 'new' | 'up' | 'down' | 'same' } | null {
+  if (Object.keys(previousRanking).length === 0) return null
+  const prev = previousRanking[name]
+  if (prev === undefined) return { label: 'NEW', kind: 'new' }
+  const delta = prev - newRank
+  if (delta > 0) return { label: `↑${delta}`, kind: 'up' }
+  if (delta < 0) return { label: `↓${-delta}`, kind: 'down' }
+  return { label: '=', kind: 'same' }
+}
+
+function deltaStyles(kind: 'new' | 'up' | 'down' | 'same'): string {
+  return {
+    new:  'bg-teal/20 text-teal',
+    up:   'bg-grade-a/20 text-grade-a',
+    down: 'bg-surface-alt text-text-tertiary',
+    same: 'bg-surface-alt text-text-tertiary',
+  }[kind]
 }
 
 const AMAZON_TAG = 'insquire-20'
@@ -106,6 +178,7 @@ function amazonSearchUrl(brand: string, product: string): string {
 export default function IntermediatePreview({
   answers,
   previousTopSupplements = [],
+  previousRanking = {},
   stepLabel,
   disclaimer,
   showFinalCta = false,
@@ -122,7 +195,6 @@ export default function IntermediatePreview({
 
   if (top3.length === 0) return null
 
-  const prevSet = new Set(previousTopSupplements)
 
   return (
     <div className="mt-6 bg-surface border border-teal/40 rounded-xl overflow-hidden">
@@ -138,7 +210,7 @@ export default function IntermediatePreview({
       <div className="p-4 space-y-3">
         {top3.map((rec) => {
           const supp = rec.supplement
-          const isNew = !prevSet.has(supp.name) && previousTopSupplements.length > 0
+          const delta = rankDelta(supp.name, rec.rank, previousRanking)
           const pickedForm =
             supp.forms && supp.forms.length > 0
               ? [...supp.forms].sort((a, b) => a.priority - b.priority)[0]
@@ -147,6 +219,13 @@ export default function IntermediatePreview({
           // Look up the specific #1 product for this supplement+form pairing.
           const bestProduct = pickBestProduct(supp.name, pickedForm?.name)
           const reason = bestProduct ? whyThisProduct(bestProduct) : null
+
+          // Primary evidence for the user's top matched condition.
+          const primaryEvidence = rec.evidenceByCondition?.[0]
+          const evidenceGrade = primaryEvidence?.grade ?? rec.evidenceGrade
+          const evidenceSummary = primaryEvidence
+            ? buildEvidenceSummary(primaryEvidence)
+            : null
 
           // Buy URL: specific brand + product name (search still — ASINs unverified
           // until PA-API; brand-anchored search is more accurate than generic).
@@ -167,13 +246,19 @@ export default function IntermediatePreview({
                   {rec.rank}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2 flex-wrap">
                     <span className="text-text font-semibold text-sm truncate">
                       {supp.name}
                     </span>
-                    {isNew ? (
-                      <span className="text-xs bg-teal/20 text-teal font-semibold rounded px-1.5 py-0.5">
-                        NEW
+                    {/* Evidence strength badge */}
+                    <span
+                      className={`text-xs font-semibold rounded border px-1.5 py-0.5 ${gradeStyles(evidenceGrade)}`}
+                    >
+                      {GRADE_LABELS[evidenceGrade] ?? evidenceGrade}
+                    </span>
+                    {delta && delta.kind !== 'same' ? (
+                      <span className={`text-xs font-semibold rounded px-1.5 py-0.5 ${deltaStyles(delta.kind)}`}>
+                        {delta.label}
                       </span>
                     ) : null}
                   </div>
@@ -185,6 +270,12 @@ export default function IntermediatePreview({
                   ) : pickedForm?.name ? (
                     <div className="text-text-secondary text-xs truncate mt-0.5">
                       Recommended form: {pickedForm.name}
+                    </div>
+                  ) : null}
+                  {/* One-line study summary */}
+                  {evidenceSummary ? (
+                    <div className="text-text-tertiary text-xs mt-1">
+                      📚 {evidenceSummary}
                     </div>
                   ) : null}
                 </div>

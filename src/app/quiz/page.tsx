@@ -86,7 +86,7 @@ const SYMPTOM_GROUPS: SymptomGroup[] = [
     items: [
       { key: 'fatigue',            label: 'Fatigue / Low Energy',     emoji: '😴', tokens: ['fatigue'] },
       { key: 'brain_fog_memory',   label: 'Brain Fog / Poor Memory',  emoji: '🌫️', tokens: ['brain_fog', 'poor_memory'] },
-      { key: 'mood',               label: 'Low Mood or Anxious',      emoji: '😔', tokens: ['low_mood', 'anxiety'] },
+      { key: 'mood',               label: 'Low Mood or Anxiety',      emoji: '😔', tokens: ['low_mood', 'anxiety'] },
       { key: 'poor_sleep',         label: 'Poor Sleep',               emoji: '🌙', tokens: ['poor_sleep'] },
     ],
   },
@@ -283,7 +283,6 @@ export default function QuizPage() {
 
   // Step 6: Symptoms
   const [symptoms, setSymptoms] = useState<Symptom[]>([])
-  const [noSymptoms, setNoSymptoms] = useState(false)
 
   function toggleGoal(g: Goal) {
     setGoals((prev) => (prev.includes(g) ? prev.filter((x) => x !== g) : [...prev, g]))
@@ -298,7 +297,6 @@ export default function QuizPage() {
    *  to the pre-merge version. Also clears the "No symptoms" flag if user
    *  selects anything. */
   function toggleSymptomGroup(tokens: Symptom[]) {
-    if (noSymptoms) setNoSymptoms(false)
     setSymptoms((prev) => {
       const allSelected = tokens.every((t) => prev.includes(t))
       if (allSelected) {
@@ -318,7 +316,7 @@ export default function QuizPage() {
   function canProceed() {
     // Step order: 1=Symptoms, 2=Diet, 3=Lifestyle, 4=Age/Sex, 5=Goals, 6=Medications
     // All steps require an explicit answer — no silent skips.
-    if (step === 1) return symptoms.length > 0 || noSymptoms
+    if (step === 1) return symptoms.length > 0
     if (step === 2) return dietType !== null
     if (step === 3) return sunExposure !== null && alcoholConsumption !== null && caffeineIntake !== null && stressLevel !== null
     if (step === 4) return age.trim() !== '' && Number(age) > 0 && Number(age) < 120 && sex !== null
@@ -399,7 +397,15 @@ export default function QuizPage() {
         symptoms,
         medications: medicationsText.split(',').map((m) => m.trim()).filter(Boolean),
       })
-      setPrevTopNames(snapshot.slice(0, 3).map((r) => r.supplement.name))
+      // Full ranking snapshot so the next preview can show rank-change
+      // deltas ("↑5", "↓2", NEW) rather than just "new entry" badges.
+      const rankMap: Record<string, number> = {}
+      snapshot.forEach((r, i) => { rankMap[r.supplement.name] = i + 1 })
+      setPrevRanking(rankMap)
+      setPrevAnswers({
+        age, sex, goals, dietType, sunExposure, exerciseTypes,
+        alcoholConsumption, caffeineIntake, stressLevel, symptoms,
+      })
     } catch {
       // best-effort — if the engine can't run on the partial profile, just skip the diff
     }
@@ -730,7 +736,7 @@ export default function QuizPage() {
               step={step}
               total={TOTAL_STEPS}
               title="What symptoms can we help with?"
-              subtitle="Pick anything that sounds like you — this is our strongest signal."
+              subtitle=""
             />
 
             <div className="space-y-5">
@@ -755,25 +761,6 @@ export default function QuizPage() {
               ))}
             </div>
 
-            {/* Explicit opt-out — replaces the former "skip this step" link.
-                Mutually exclusive with any symptom selection. */}
-            <div className="mt-6 pt-4 border-t border-border">
-              <button
-                type="button"
-                onClick={() => {
-                  const next = !noSymptoms
-                  setNoSymptoms(next)
-                  if (next) setSymptoms([])
-                }}
-                className={`w-full text-sm font-medium px-4 py-3 rounded-xl border transition-all ${
-                  noSymptoms
-                    ? 'bg-teal/10 border-teal text-teal'
-                    : 'bg-surface border-border text-text-secondary hover:border-text-tertiary hover:text-text'
-                }`}
-              >
-                {noSymptoms ? '✓ ' : ''}I'm feeling healthy — no symptoms right now
-              </button>
-            </div>
           </div>
         )}
 
@@ -795,7 +782,8 @@ export default function QuizPage() {
               stressLevel,
               symptoms,
             }}
-            previousTopSupplements={prevTopNames}
+            previousTopSupplements={Object.keys(prevRanking).slice(0, 3)}
+            previousRanking={prevRanking}
             stepLabel={
               step === 1 ? 'symptoms'
                 : step === 2 ? 'symptoms + diet'
