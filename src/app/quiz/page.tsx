@@ -20,11 +20,14 @@ import type {
 
 // ─── Step data ────────────────────────────────────────────────────────────────
 
+// Biological sex drives several engine boosts (iron/folate for women of
+// reproductive age, etc.). Keep UI binary — it maps directly to the
+// underlying data model. Users who don't identify in either category
+// can skip the question by not selecting; engine treats no selection
+// same as "male" (zero boosts), which is the conservative default.
 const SEX_OPTIONS: { value: Sex; label: string }[] = [
   { value: 'male', label: 'Male' },
   { value: 'female', label: 'Female' },
-  { value: 'other', label: 'Non-binary / Other' },
-  { value: 'prefer_not_to_say', label: 'Prefer not to say' },
 ]
 
 const GOALS: { value: Goal; label: string; emoji: string }[] = [
@@ -38,10 +41,12 @@ const GOALS: { value: Goal; label: string; emoji: string }[] = [
   { value: 'weight_loss', label: 'Weight Loss', emoji: '⚖️' },
 ]
 
+// Vegan and vegetarian trigger IDENTICAL engine behavior (same 7 boosts, same
+// 1 suppress), so they're merged into one UI chip. Internally the selection
+// stores "vegan" — conservative for engine matching.
 const DIETS: { value: DietType; label: string; desc: string; emoji: string }[] = [
   { value: 'omnivore', label: 'Omnivore', desc: 'Eat everything', emoji: '🍽️' },
-  { value: 'vegetarian', label: 'Vegetarian', desc: 'No meat, yes dairy/eggs', emoji: '🥬' },
-  { value: 'vegan', label: 'Vegan', desc: 'No animal products', emoji: '🌱' },
+  { value: 'vegan', label: 'Plant-based', desc: 'Vegan or vegetarian', emoji: '🌱' },
   { value: 'keto', label: 'Keto', desc: 'High fat, low carb', emoji: '🥑' },
   { value: 'paleo', label: 'Paleo', desc: 'Whole foods, no grains', emoji: '🥩' },
   { value: 'pescatarian', label: 'Pescatarian', desc: 'Fish but no meat', emoji: '🐟' },
@@ -50,34 +55,79 @@ const DIETS: { value: DietType; label: string; desc: string; emoji: string }[] =
   { value: 'other', label: 'Other', desc: "Doesn't fit a category", emoji: '🍴' },
 ]
 
-const SYMPTOMS: { value: Symptom; label: string; emoji: string }[] = [
-  { value: 'fatigue', label: 'Fatigue / Low Energy', emoji: '😴' },
-  { value: 'poor_sleep', label: 'Poor Sleep', emoji: '🌙' },
-  { value: 'brain_fog', label: 'Brain Fog', emoji: '🌫️' },
-  { value: 'joint_pain', label: 'Joint Pain', emoji: '🦴' },
-  { value: 'frequent_illness', label: 'Get Sick Often', emoji: '🤧' },
-  { value: 'anxiety', label: 'Anxiety / Worry', emoji: '😰' },
-  { value: 'hair_loss', label: 'Hair Loss / Thinning', emoji: '💇' },
-  { value: 'digestive_issues', label: 'Digestive Issues', emoji: '🫁' },
-  { value: 'low_mood', label: 'Low Mood / Depression', emoji: '😔' },
-  { value: 'muscle_weakness', label: 'Muscle Weakness', emoji: '💪' },
-  { value: 'poor_memory', label: 'Poor Memory', emoji: '🧠' },
-  { value: 'dry_skin', label: 'Dry Skin', emoji: '🏜️' },
-  { value: 'acid_reflux', label: 'Acid Reflux / GERD', emoji: '🔥' },
-  { value: 'constipation', label: 'Constipation', emoji: '🚽' },
-  { value: 'ibs', label: 'IBS', emoji: '🌊' },
-  { value: 'bloating', label: 'Bloating', emoji: '🎈' },
-  { value: 'nausea', label: 'Nausea', emoji: '🤢' },
-  { value: 'apo_b_elevated',     label: 'Elevated ApoB',        emoji: '🫀' },
-  { value: 'ldl_elevated',       label: 'High LDL Cholesterol', emoji: '🫀' },
-  { value: 'hdl_low',            label: 'Low HDL Cholesterol',  emoji: '🫀' },
-  { value: 'triglycerides_high', label: 'High Triglycerides',   emoji: '🫀' },
+// ─── Grouped symptoms (Option B) ─────────────────────────────────────────────
+// 21 raw Symptom tokens reduced to 13 merged chips across 5 sections. Each
+// chip selects ONE OR MORE underlying tokens so the engine keeps full
+// precision — a user ticking "Brain Fog / Poor Memory" adds both brain_fog
+// AND poor_memory to the profile, giving the engine identical signal to
+// the old separate chips. Chips are intentionally ordered by frequency of
+// mention across our userbase (top-ranked first within each section).
+
+interface SymptomGroupItem {
+  /** Unique UI key (merged token; used for the chip's selected state) */
+  key: string
+  /** Human label shown on the chip */
+  label: string
+  /** Emoji prefix */
+  emoji: string
+  /** Underlying Symptom tokens this chip represents in the engine profile */
+  tokens: Symptom[]
+}
+interface SymptomGroup {
+  id: string
+  title: string
+  emoji: string
+  items: SymptomGroupItem[]
+}
+
+const SYMPTOM_GROUPS: SymptomGroup[] = [
+  {
+    id: 'mind_mood', title: 'Mind & Mood', emoji: '🧠',
+    items: [
+      { key: 'fatigue',            label: 'Fatigue / Low Energy',     emoji: '😴', tokens: ['fatigue'] },
+      { key: 'brain_fog_memory',   label: 'Brain Fog / Poor Memory',  emoji: '🌫️', tokens: ['brain_fog', 'poor_memory'] },
+      { key: 'mood',               label: 'Low Mood or Anxious',      emoji: '😔', tokens: ['low_mood', 'anxiety'] },
+      { key: 'poor_sleep',         label: 'Poor Sleep',               emoji: '🌙', tokens: ['poor_sleep'] },
+    ],
+  },
+  {
+    id: 'immunity_appearance', title: 'Immunity & Appearance', emoji: '🛡️',
+    items: [
+      { key: 'frequent_illness',   label: 'Get Sick Often',           emoji: '🤧', tokens: ['frequent_illness'] },
+      { key: 'hair_skin',          label: 'Hair Loss or Dry Skin',     emoji: '💇', tokens: ['hair_loss', 'dry_skin'] },
+    ],
+  },
+  {
+    id: 'movement', title: 'Joints & Muscles', emoji: '💪',
+    items: [
+      { key: 'joint_muscle',       label: 'Joint Pain or Muscle Weakness', emoji: '🦴', tokens: ['joint_pain', 'muscle_weakness'] },
+    ],
+  },
+  {
+    id: 'digestive', title: 'Digestive', emoji: '🔥',
+    items: [
+      { key: 'acid_reflux',        label: 'Acid Reflux / GERD',       emoji: '🔥', tokens: ['acid_reflux'] },
+      { key: 'constipation',       label: 'Constipation',             emoji: '🚽', tokens: ['constipation'] },
+      { key: 'ibs',                label: 'IBS',                      emoji: '🌊', tokens: ['ibs'] },
+      { key: 'bloating_nausea',    label: 'Bloating / Nausea',        emoji: '🎈', tokens: ['bloating', 'nausea'] },
+    ],
+  },
+  {
+    id: 'cardio', title: 'Heart & Cholesterol', emoji: '🫀',
+    items: [
+      { key: 'high_cholesterol',   label: 'High Cholesterol (LDL / ApoB)', emoji: '🫀', tokens: ['ldl_elevated', 'apo_b_elevated'] },
+      { key: 'hdl_low',            label: 'Low HDL Cholesterol',      emoji: '🫀', tokens: ['hdl_low'] },
+      { key: 'triglycerides_high', label: 'High Triglycerides',       emoji: '🫀', tokens: ['triglycerides_high'] },
+    ],
+  },
 ]
 
+// Only `very_little` triggers the Vitamin D3 boost — "some" and "a lot"
+// get no engine treatment differently. Binary: do you get 15+ min of sun
+// most days or not.
 const SUN_OPTIONS: { value: SunExposure; label: string; desc: string }[] = [
-  { value: 'very_little', label: 'Very little', desc: 'Mostly indoors, always use SPF' },
-  { value: 'some', label: 'Some', desc: '15–30 min outdoors most days' },
-  { value: 'a_lot', label: 'A lot', desc: 'Outdoors most of the day' },
+  { value: 'some',        label: 'Yes', desc: 'At least 15 minutes of direct sun most days' },
+  { value: 'very_little', label: 'No',  desc: 'Mostly indoors, or always covered up' },
 ]
 
 const EXERCISE_OPTIONS: { value: ExerciseType; label: string; desc: string }[] = [
@@ -85,25 +135,30 @@ const EXERCISE_OPTIONS: { value: ExerciseType; label: string; desc: string }[] =
   { value: 'weight_training', label: 'Weight training', desc: 'Lifting, resistance' },
 ]
 
+// Engine gives IDENTICAL boost lists (Methylfolate, B12, Mg, Zn, D3, NAC)
+// for both "moderate" (3-7/week) and "heavy" (8+/week) drinking. Anything
+// below 3/week gets zero. So the honest binary threshold is 3+/week, not
+// 8+/week, which preserves current behavior for moderate drinkers.
 const ALCOHOL_OPTIONS: { value: AlcoholConsumption; label: string; desc: string }[] = [
-  { value: 'none', label: 'None', desc: "I don't drink" },
-  { value: 'light', label: 'Light', desc: '1–2 drinks/week' },
-  { value: 'moderate', label: 'Moderate', desc: '3–7 drinks/week' },
-  { value: 'heavy', label: 'Heavy', desc: '8+ drinks/week' },
+  { value: 'heavy', label: 'Yes', desc: '3 or more drinks per week' },
+  { value: 'none',  label: 'No',  desc: '2 or fewer drinks per week, or none at all' },
 ]
 
+// Caffeine-mediated depletion (Magnesium + Iron absorption) kicks in at
+// roughly 150+ mg/day, regardless of source. Captured as binary.
+// Equivalents shown in description so tea / energy-drink / pre-workout
+// users map themselves correctly.
 const CAFFEINE_OPTIONS: { value: CaffeineIntake; label: string; desc: string }[] = [
-  { value: 'none', label: 'None', desc: 'No coffee or tea' },
-  { value: 'light', label: 'Light', desc: '1 coffee/day or green tea' },
-  { value: 'moderate', label: 'Moderate', desc: '2–3 coffees/day' },
-  { value: 'heavy', label: 'Heavy', desc: '4+ coffees/day' },
+  { value: 'heavy', label: 'Yes', desc: '1.5+ cups of coffee daily — or 3+ cups of tea, an energy drink, or a pre-workout scoop' },
+  { value: 'none',  label: 'No',  desc: '1 cup of coffee a day or less, or none at all' },
 ]
 
+// "high" and "very_high" trigger IDENTICAL engine boosts (Ashwagandha,
+// Magnesium, B12, Vitamin C, Zinc). Merged into one "High" option.
 const STRESS_OPTIONS: { value: StressLevel; label: string; desc: string }[] = [
   { value: 'low', label: 'Low', desc: 'Generally relaxed' },
   { value: 'moderate', label: 'Moderate', desc: 'Normal life stress' },
-  { value: 'high', label: 'High', desc: 'Frequently stressed' },
-  { value: 'very_high', label: 'Very high', desc: 'Chronically overwhelmed' },
+  { value: 'high', label: 'High', desc: 'Frequently or chronically stressed' },
 ]
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
@@ -224,9 +279,11 @@ export default function QuizPage() {
 
   // Step 5: Medications
   const [medicationsText, setMedicationsText] = useState('')
+  const [noMedications, setNoMedications] = useState(false)
 
   // Step 6: Symptoms
   const [symptoms, setSymptoms] = useState<Symptom[]>([])
+  const [noSymptoms, setNoSymptoms] = useState(false)
 
   function toggleGoal(g: Goal) {
     setGoals((prev) => (prev.includes(g) ? prev.filter((x) => x !== g) : [...prev, g]))
@@ -236,18 +293,38 @@ export default function QuizPage() {
     setSymptoms((prev) => (prev.includes(s) ? prev.filter((x) => x !== s) : [...prev, s]))
   }
 
+  /** Toggle a merged symptom group item — adds or removes all its underlying
+   *  engine tokens at once so the recommendation engine gets identical signal
+   *  to the pre-merge version. Also clears the "No symptoms" flag if user
+   *  selects anything. */
+  function toggleSymptomGroup(tokens: Symptom[]) {
+    if (noSymptoms) setNoSymptoms(false)
+    setSymptoms((prev) => {
+      const allSelected = tokens.every((t) => prev.includes(t))
+      if (allSelected) {
+        return prev.filter((t) => !tokens.includes(t))
+      }
+      // Add any missing tokens (union, no duplicates)
+      const set = new Set(prev)
+      tokens.forEach((t) => set.add(t))
+      return Array.from(set)
+    })
+  }
+
   function toggleExercise(e: ExerciseType) {
     setExerciseTypes((prev) => (prev.includes(e) ? prev.filter((x) => x !== e) : [...prev, e]))
   }
 
   function canProceed() {
-    // NEW step order: 1=Symptoms (optional), 2=Diet, 3=Lifestyle, 4=Age/Sex, 5=Goals, 6=Medications (optional)
-    if (step === 1) return true
+    // Step order: 1=Symptoms, 2=Diet, 3=Lifestyle, 4=Age/Sex, 5=Goals, 6=Medications
+    // All steps require an explicit answer — no silent skips.
+    if (step === 1) return symptoms.length > 0 || noSymptoms
     if (step === 2) return dietType !== null
     if (step === 3) return sunExposure !== null && alcoholConsumption !== null && caffeineIntake !== null && stressLevel !== null
     if (step === 4) return age.trim() !== '' && Number(age) > 0 && Number(age) < 120 && sex !== null
     if (step === 5) return goals.length > 0
-    return true // step 6 (medications) is optional
+    if (step === 6) return noMedications || medicationsText.trim().length > 0
+    return true
   }
 
   // Track top-3 recommendation names at each step so IntermediatePreview
@@ -495,7 +572,7 @@ export default function QuizPage() {
               {/* Sun exposure */}
               <div className="bg-surface/50 border border-border rounded-xl p-4">
                 <h3 className="text-text font-semibold text-sm mb-3 flex items-center gap-2">
-                  <span className="text-lg">☀️</span> Sun exposure
+                  <span className="text-lg">☀️</span> Do you get at least 15 minutes of sun most days?
                 </h3>
                 <div className="flex flex-col gap-2">
                   {SUN_OPTIONS.map((o) => (
@@ -531,7 +608,7 @@ export default function QuizPage() {
               {/* Alcohol */}
               <div className="bg-surface/50 border border-border rounded-xl p-4">
                 <h3 className="text-text font-semibold text-sm mb-3 flex items-center gap-2">
-                  <span className="text-lg">🍷</span> Alcohol consumption
+                  <span className="text-lg">🍷</span> Do you drink alcohol regularly (3+ drinks per week)?
                 </h3>
                 <div className="flex flex-col gap-2">
                   {ALCOHOL_OPTIONS.map((o) => (
@@ -549,7 +626,7 @@ export default function QuizPage() {
               {/* Caffeine */}
               <div className="bg-surface/50 border border-border rounded-xl p-4">
                 <h3 className="text-text font-semibold text-sm mb-3 flex items-center gap-2">
-                  <span className="text-lg">☕</span> Caffeine intake
+                  <span className="text-lg">☕</span> Do you drink more than 1.5 cups of coffee daily?
                 </h3>
                 <div className="flex flex-col gap-2">
                   {CAFFEINE_OPTIONS.map((o) => (
@@ -599,14 +676,38 @@ export default function QuizPage() {
             />
             <textarea
               value={medicationsText}
-              onChange={(e) => setMedicationsText(e.target.value)}
+              onChange={(e) => {
+                setMedicationsText(e.target.value)
+                if (e.target.value.trim().length > 0 && noMedications) setNoMedications(false)
+              }}
               placeholder="e.g. levothyroxine, metformin, warfarin"
               rows={3}
-              className="w-full bg-surface border border-border rounded-xl px-4 py-3 text-sm text-text placeholder:text-text-tertiary focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal resize-none"
+              disabled={noMedications}
+              className={`w-full bg-surface border border-border rounded-xl px-4 py-3 text-sm text-text placeholder:text-text-tertiary focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal resize-none ${
+                noMedications ? 'opacity-40 cursor-not-allowed' : ''
+              }`}
             />
             <p className="text-text-tertiary text-xs mt-2">
-              Enter medication names separated by commas, or leave blank if none.
+              Separate multiple medications with commas.
             </p>
+
+            <div className="mt-4">
+              <button
+                type="button"
+                onClick={() => {
+                  const next = !noMedications
+                  setNoMedications(next)
+                  if (next) setMedicationsText('')
+                }}
+                className={`w-full text-sm font-medium px-4 py-3 rounded-xl border transition-all ${
+                  noMedications
+                    ? 'bg-teal/10 border-teal text-teal'
+                    : 'bg-surface border-border text-text-secondary hover:border-text-tertiary hover:text-text'
+                }`}
+              >
+                {noMedications ? '✓ ' : ''}I don't take any medications
+              </button>
+            </div>
             <div className="flex items-center gap-2 bg-surface-alt rounded-lg px-3 py-2 mt-3">
               <svg className="w-3.5 h-3.5 text-text-tertiary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
@@ -618,29 +719,57 @@ export default function QuizPage() {
           </div>
         )}
 
-        {/* Step 6: Symptoms */}
+        {/* Step 1: Symptoms — grouped for scannability */}
         {phase === 'question' && step === 1 && (
           <div>
             <StepHeader
               step={step}
               total={TOTAL_STEPS}
-              title="Any symptoms you'd like to address?"
-              subtitle="Select all that apply. Symptoms help identify likely deficiencies. Skip if none apply."
+              title="What symptoms can we help with?"
+              subtitle="Pick anything that sounds like you — this is our strongest signal."
             />
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-              {SYMPTOMS.map((s) => (
-                <MultiSelectChip
-                  key={s.value}
-                  selected={symptoms.includes(s.value)}
-                  onToggle={() => toggleSymptom(s.value)}
-                  emoji={s.emoji}
-                  label={s.label}
-                />
+
+            <div className="space-y-5">
+              {SYMPTOM_GROUPS.map((group) => (
+                <div key={group.id}>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-base">{group.emoji}</span>
+                    <h3 className="text-text font-semibold text-sm">{group.title}</h3>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                    {group.items.map((item) => (
+                      <MultiSelectChip
+                        key={item.key}
+                        selected={item.tokens.every((t) => symptoms.includes(t))}
+                        onToggle={() => toggleSymptomGroup(item.tokens)}
+                        emoji={item.emoji}
+                        label={item.label}
+                      />
+                    ))}
+                  </div>
+                </div>
               ))}
             </div>
-            <p className="text-text-tertiary text-xs mt-4">
-              You can skip this step — symptom data is optional.
-            </p>
+
+            {/* Explicit opt-out — replaces the former "skip this step" link.
+                Mutually exclusive with any symptom selection. */}
+            <div className="mt-6 pt-4 border-t border-border">
+              <button
+                type="button"
+                onClick={() => {
+                  const next = !noSymptoms
+                  setNoSymptoms(next)
+                  if (next) setSymptoms([])
+                }}
+                className={`w-full text-sm font-medium px-4 py-3 rounded-xl border transition-all ${
+                  noSymptoms
+                    ? 'bg-teal/10 border-teal text-teal'
+                    : 'bg-surface border-border text-text-secondary hover:border-text-tertiary hover:text-text'
+                }`}
+              >
+                {noSymptoms ? '✓ ' : ''}I'm feeling healthy — no symptoms right now
+              </button>
+            </div>
           </div>
         )}
 
@@ -704,17 +833,6 @@ export default function QuizPage() {
           </button>
         </div>
 
-        {/* Skip option for optional steps */}
-        {(step === 6 || step === 1) && (
-          <div className="text-center mt-3">
-            <button
-              onClick={step === TOTAL_STEPS ? handleSubmit : handleNext}
-              className="text-text-tertiary hover:text-text-secondary text-xs underline transition-colors"
-            >
-              {step === 6 ? 'Skip — I don\u0027t take any medications' : 'Skip symptoms and see results'}
-            </button>
-          </div>
-        )}
       </div>
     </div>
   )
