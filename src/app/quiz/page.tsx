@@ -3,6 +3,8 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { trackQuizStart, trackQuizStepComplete, trackQuizComplete } from '@/lib/analytics'
+import IntermediatePreview from '@/components/IntermediatePreview'
+import { buildRecommendations } from '@/engine/recommendationEngine'
 import type {
   Goal,
   DietType,
@@ -236,18 +238,48 @@ export default function QuizPage() {
   }
 
   function canProceed() {
-    if (step === 1) return age.trim() !== '' && Number(age) > 0 && Number(age) < 120 && sex !== null
-    if (step === 2) return goals.length > 0
-    if (step === 3) return dietType !== null
-    if (step === 4) return sunExposure !== null && alcoholConsumption !== null && caffeineIntake !== null && stressLevel !== null
-    return true // steps 5 (medications) and 6 (symptoms) are optional
+    // NEW step order: 1=Symptoms (optional), 2=Diet, 3=Lifestyle, 4=Age/Sex, 5=Goals, 6=Medications (optional)
+    if (step === 1) return true
+    if (step === 2) return dietType !== null
+    if (step === 3) return sunExposure !== null && alcoholConsumption !== null && caffeineIntake !== null && stressLevel !== null
+    if (step === 4) return age.trim() !== '' && Number(age) > 0 && Number(age) < 120 && sex !== null
+    if (step === 5) return goals.length > 0
+    return true // step 6 (medications) is optional
   }
+
+  // Track top-3 recommendation names at each step so IntermediatePreview
+  // can show "NEW" badges for supplements that entered the top-3 with
+  // the latest answer.
+  const [prevTopNames, setPrevTopNames] = useState<string[]>([])
 
   useEffect(() => { trackQuizStart() }, [])
 
   function handleNext() {
-    const stepNames = ['age_sex', 'goals', 'diet', 'lifestyle', 'medications', 'symptoms']
+    // stepNames aligned with NEW ordering
+    const stepNames = ['symptoms', 'diet', 'lifestyle', 'age_sex', 'goals', 'medications']
     trackQuizStepComplete(step, stepNames[step - 1] || 'unknown')
+
+    // Snapshot the top-3 supplement names from the CURRENT step so the next
+    // step's IntermediatePreview can highlight what changed. We build a
+    // quick partial profile identical to what the preview will render.
+    try {
+      const snapshot = buildRecommendations({
+        age: age ? Number(age) : undefined as any,
+        sex: (sex ?? undefined) as any,
+        goals,
+        dietType: (dietType ?? 'omnivore') as DietType,
+        sunExposure: (sunExposure ?? 'some') as SunExposure,
+        exerciseType: exerciseTypes,
+        alcoholConsumption: (alcoholConsumption ?? 'none') as AlcoholConsumption,
+        caffeineIntake: (caffeineIntake ?? 'none') as CaffeineIntake,
+        stressLevel: (stressLevel ?? 'moderate') as StressLevel,
+        symptoms,
+        medications: medicationsText.split(',').map((m) => m.trim()).filter(Boolean),
+      })
+      setPrevTopNames(snapshot.slice(0, 3).map((r) => r.supplement.name))
+    } catch {
+      // best-effort — if the engine can't run on the partial profile, just skip the diff
+    }
     if (step < TOTAL_STEPS) {
       setStep((s) => s + 1)
       window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -290,10 +322,10 @@ export default function QuizPage() {
       <div className="max-w-2xl mx-auto px-4 sm:px-6">
 
         {/* Step 1: Age & Sex */}
-        {step === 1 && (
+        {step === 4 && (
           <div>
             <StepHeader
-              step={1}
+              step={step}
               total={TOTAL_STEPS}
               title="Tell us about yourself"
               subtitle="We personalise your supplement recommendations to your biology."
@@ -347,10 +379,10 @@ export default function QuizPage() {
         )}
 
         {/* Step 2: Goals */}
-        {step === 2 && (
+        {step === 5 && (
           <div>
             <StepHeader
-              step={2}
+              step={step}
               total={TOTAL_STEPS}
               title="What are your health goals?"
               subtitle="Select all that apply. We'll prioritize supplements that match your goals."
@@ -373,10 +405,10 @@ export default function QuizPage() {
         )}
 
         {/* Step 3: Diet */}
-        {step === 3 && (
+        {step === 2 && (
           <div>
             <StepHeader
-              step={3}
+              step={step}
               total={TOTAL_STEPS}
               title="What's your diet type?"
               subtitle="Your diet determines which nutrients you're likely missing. This is the strongest signal in our engine."
@@ -396,10 +428,10 @@ export default function QuizPage() {
         )}
 
         {/* Step 4: Lifestyle */}
-        {step === 4 && (
+        {step === 3 && (
           <div>
             <StepHeader
-              step={4}
+              step={step}
               total={TOTAL_STEPS}
               title="Tell us about your lifestyle"
               subtitle="These factors influence which nutrients your body needs more of."
@@ -503,10 +535,10 @@ export default function QuizPage() {
         )}
 
         {/* Step 5: Medications */}
-        {step === 5 && (
+        {step === 6 && (
           <div>
             <StepHeader
-              step={5}
+              step={step}
               total={TOTAL_STEPS}
               title="Do you take any medications?"
               subtitle="We'll check for potential interactions with recommended supplements."
@@ -533,10 +565,10 @@ export default function QuizPage() {
         )}
 
         {/* Step 6: Symptoms */}
-        {step === 6 && (
+        {step === 1 && (
           <div>
             <StepHeader
-              step={6}
+              step={step}
               total={TOTAL_STEPS}
               title="Any symptoms you'd like to address?"
               subtitle="Select all that apply. Symptoms help identify likely deficiencies. Skip if none apply."
@@ -556,6 +588,33 @@ export default function QuizPage() {
               You can skip this step — symptom data is optional.
             </p>
           </div>
+        )}
+
+        {/* Intermediate preview — shows updated top 3 after each step 1-5 */}
+        {step >= 1 && step <= 5 && (
+          <IntermediatePreview
+            answers={{
+              age: age ? Number(age) : undefined,
+              sex,
+              goals,
+              dietType,
+              sunExposure,
+              exerciseType: exerciseTypes,
+              alcoholConsumption,
+              caffeineIntake,
+              stressLevel,
+              symptoms,
+            }}
+            previousTopSupplements={prevTopNames}
+            stepLabel={
+              step === 1 ? 'symptoms'
+                : step === 2 ? 'symptoms + diet'
+                : step === 3 ? 'lifestyle (plus everything so far)'
+                : step === 4 ? 'age & sex (plus everything so far)'
+                : 'goals (plus everything so far)'
+            }
+            showFinalCta={step === 5}
+          />
         )}
 
         {/* Navigation */}
@@ -583,13 +642,13 @@ export default function QuizPage() {
         </div>
 
         {/* Skip option for optional steps */}
-        {(step === 5 || step === 6) && (
+        {(step === 6 || step === 1) && (
           <div className="text-center mt-3">
             <button
               onClick={step === TOTAL_STEPS ? handleSubmit : handleNext}
               className="text-text-tertiary hover:text-text-secondary text-xs underline transition-colors"
             >
-              {step === 5 ? 'Skip — I don\u0027t take any medications' : 'Skip symptoms and see results'}
+              {step === 6 ? 'Skip — I don\u0027t take any medications' : 'Skip symptoms and see results'}
             </button>
           </div>
         )}
