@@ -198,9 +198,12 @@ function SingleSelectCard({
 
 const TOTAL_STEPS = 6
 
+type QuizPhase = 'question' | 'preview'
+
 export default function QuizPage() {
   const router = useRouter()
   const [step, setStep] = useState(1)
+  const [phase, setPhase] = useState<QuizPhase>('question')
 
   // Step 1: Age & Sex
   const [age, setAge] = useState('')
@@ -257,7 +260,46 @@ export default function QuizPage() {
   function handleNext() {
     // stepNames aligned with NEW ordering
     const stepNames = ['symptoms', 'diet', 'lifestyle', 'age_sex', 'goals', 'medications']
+
+    // PREVIEW → next question: we were showing the preview for this step;
+    // now advance to the next question (or submit if we just finished the
+    // final step's preview).
+    if (phase === 'preview') {
+      if (step >= TOTAL_STEPS) {
+        handleSubmit()
+        return
+      }
+      setStep((s) => s + 1)
+      setPhase('question')
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+      return
+    }
+
+    // QUESTION → preview: the user just answered this step's question.
+    // Track completion and, for steps 1-5, show the interstitial preview.
     trackQuizStepComplete(step, stepNames[step - 1] || 'unknown')
+
+    // Count every user who completes step 1 (symptoms) toward the public
+    // quiz-completion counter. One increment per quiz attempt — guarded
+    // by sessionStorage so refreshing / going back doesn't double-count.
+    if (step === 1 && typeof window !== 'undefined') {
+      try {
+        if (!sessionStorage.getItem('quiz_counted')) {
+          sessionStorage.setItem('quiz_counted', '1')
+          import('@/lib/publicStats').then((m) => m.incrementPublicStat('quiz_completions'))
+        }
+      } catch {
+        // ignore storage / network errors
+      }
+    }
+
+    // Steps 1-5 show a preview interstitial before moving on. Step 6
+    // (medications) and any submit path skip straight to submit/next.
+    if (step >= 1 && step <= 5) {
+      setPhase('preview')
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+      return
+    }
 
     // Snapshot the top-3 supplement names from the CURRENT step so the next
     // step's IntermediatePreview can highlight what changed. We build a
@@ -289,8 +331,20 @@ export default function QuizPage() {
   }
 
   function handleBack() {
+    // On a preview, Back returns to the question that generated it.
+    if (phase === 'preview') {
+      setPhase('question')
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+      return
+    }
+    // From question N, Back goes to preview of N-1 (where applicable) so
+    // users see their intermediate picks again, or to question N-1 if no
+    // preview was shown for that step.
     if (step > 1) {
       setStep((s) => s - 1)
+      // If the previous step had a preview, show it; otherwise go straight
+      // to its question. Steps 1-5 have previews.
+      setPhase(step - 1 >= 1 && step - 1 <= 5 ? 'preview' : 'question')
       window.scrollTo({ top: 0, behavior: 'smooth' })
     }
   }
@@ -322,7 +376,7 @@ export default function QuizPage() {
       <div className="max-w-2xl mx-auto px-4 sm:px-6">
 
         {/* Step 1: Age & Sex */}
-        {step === 4 && (
+        {phase === 'question' && step === 4 && (
           <div>
             <StepHeader
               step={step}
@@ -379,7 +433,7 @@ export default function QuizPage() {
         )}
 
         {/* Step 2: Goals */}
-        {step === 5 && (
+        {phase === 'question' && step === 5 && (
           <div>
             <StepHeader
               step={step}
@@ -405,7 +459,7 @@ export default function QuizPage() {
         )}
 
         {/* Step 3: Diet */}
-        {step === 2 && (
+        {phase === 'question' && step === 2 && (
           <div>
             <StepHeader
               step={step}
@@ -428,7 +482,7 @@ export default function QuizPage() {
         )}
 
         {/* Step 4: Lifestyle */}
-        {step === 3 && (
+        {phase === 'question' && step === 3 && (
           <div>
             <StepHeader
               step={step}
@@ -535,7 +589,7 @@ export default function QuizPage() {
         )}
 
         {/* Step 5: Medications */}
-        {step === 6 && (
+        {phase === 'question' && step === 6 && (
           <div>
             <StepHeader
               step={step}
@@ -565,7 +619,7 @@ export default function QuizPage() {
         )}
 
         {/* Step 6: Symptoms */}
-        {step === 1 && (
+        {phase === 'question' && step === 1 && (
           <div>
             <StepHeader
               step={step}
@@ -590,8 +644,11 @@ export default function QuizPage() {
           </div>
         )}
 
-        {/* Intermediate preview — shows updated top 3 after each step 1-5 */}
-        {step >= 1 && step <= 5 && (
+        {/* Intermediate preview — a separate interstitial page between
+            question steps. Shown ONLY in `preview` phase; the question
+            panels above are hidden in this phase (guarded by
+            `phase === 'question'`). */}
+        {phase === 'preview' && step >= 1 && step <= 5 && (
           <IntermediatePreview
             answers={{
               age: age ? Number(age) : undefined,
@@ -637,7 +694,13 @@ export default function QuizPage() {
                 : 'bg-surface border border-border text-text-tertiary cursor-not-allowed'
             }`}
           >
-            {step === TOTAL_STEPS ? 'Get My Results \u2192' : 'Continue \u2192'}
+            {phase === 'preview'
+              ? (step === 5 ? 'One last step \u2192' : 'Next question \u2192')
+              : step === TOTAL_STEPS
+                ? 'Get My Results \u2192'
+                : step === 5
+                  ? 'See My Top Picks \u2192'
+                  : 'Continue \u2192'}
           </button>
         </div>
 

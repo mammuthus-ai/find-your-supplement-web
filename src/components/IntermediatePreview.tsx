@@ -16,6 +16,7 @@ import { useMemo } from 'react'
 import type {
   QuizProfile,
   SupplementRecommendation,
+  TopProduct,
   Sex,
   Goal,
   DietType,
@@ -27,6 +28,35 @@ import type {
   Symptom,
 } from '@/types'
 import { buildRecommendations } from '@/engine/recommendationEngine'
+import evidenceCacheRaw from '@/data/evidenceCache.json'
+
+const topProductsMap =
+  (evidenceCacheRaw as { topProducts?: Record<string, Record<string, TopProduct[]>> }).topProducts || {}
+
+/** Pick the single best product for a given supplement + form. Returns the
+ *  per-form #1 if available, otherwise the cross-form fallback #1. */
+function pickBestProduct(supplementName: string, formName?: string): TopProduct | null {
+  const byForm = topProductsMap[supplementName]
+  if (!byForm) return null
+  const forForm = formName ? byForm[formName] : undefined
+  const list = (forForm && forForm.length > 0) ? forForm : byForm['_all']
+  return list && list[0] ? list[0] : null
+}
+
+/** Short human-readable reason the scored #1 product was picked. Pulls from
+ *  whatever objective signals we have — certifications (most trust-worthy
+ *  differentiator), then dose match, then form match, then "top score". */
+function whyThisProduct(product: TopProduct): string {
+  const certs = product.certifications || []
+  if (certs.length > 0) {
+    const best = certs.find((c) => ['USP', 'NSF', 'Informed-Sport', 'ConsumerLab-Pass'].includes(c))
+    if (best) return `Top pick — ${best}-verified by an independent lab`
+    return `Top pick — ${certs[0]}-certified`
+  }
+  if (product.totalScore >= 85) return 'Top pick — highest match on clinical dose, form, and manufacturing'
+  if (product.totalScore >= 70) return 'Top pick — strong match on form and dosing'
+  return 'Top pick by our quality score'
+}
 
 interface PartialAnswers {
   age?: number
@@ -109,54 +139,79 @@ export default function IntermediatePreview({
         {top3.map((rec) => {
           const supp = rec.supplement
           const isNew = !prevSet.has(supp.name) && previousTopSupplements.length > 0
-          // Pick best form if available, else use the first recommendedForm string
           const pickedForm =
             supp.forms && supp.forms.length > 0
               ? [...supp.forms].sort((a, b) => a.priority - b.priority)[0]
               : null
-          const formLabel = pickedForm?.name || supp.recommendedForms?.[0] || supp.name
-          const amazonQuery = pickedForm?.amazonSearch
-            ? decodeURIComponent(pickedForm.amazonSearch).replace(/\+/g, ' ')
-            : supp.name
+
+          // Look up the specific #1 product for this supplement+form pairing.
+          const bestProduct = pickBestProduct(supp.name, pickedForm?.name)
+          const reason = bestProduct ? whyThisProduct(bestProduct) : null
+
+          // Buy URL: specific brand + product name (search still — ASINs unverified
+          // until PA-API; brand-anchored search is more accurate than generic).
+          const buyQuery = bestProduct
+            ? `${bestProduct.brand} ${bestProduct.productName}`
+            : (pickedForm?.amazonSearch
+                ? decodeURIComponent(pickedForm.amazonSearch).replace(/\+/g, ' ')
+                : supp.name)
+          const buyUrl = `https://www.amazon.com/s?k=${encodeURIComponent(buyQuery)}&tag=${AMAZON_TAG}`
 
           return (
             <div
               key={supp.name}
-              className="flex items-start gap-3 bg-surface-alt border border-border rounded-lg p-3"
+              className="bg-surface-alt border border-border rounded-lg p-3"
             >
-              <div className="flex-shrink-0 w-7 h-7 rounded-full bg-teal/20 border border-teal flex items-center justify-center text-teal text-xs font-bold">
-                {rec.rank}
-              </div>
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-2">
-                  <span className="text-text font-semibold text-sm truncate">
-                    {supp.name}
-                  </span>
-                  {isNew ? (
-                    <span className="text-xs bg-teal/20 text-teal font-semibold rounded px-1.5 py-0.5">
-                      NEW
+              <div className="flex items-start gap-3">
+                <div className="flex-shrink-0 w-7 h-7 rounded-full bg-teal/20 border border-teal flex items-center justify-center text-teal text-xs font-bold">
+                  {rec.rank}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2">
+                    <span className="text-text font-semibold text-sm truncate">
+                      {supp.name}
                     </span>
+                    {isNew ? (
+                      <span className="text-xs bg-teal/20 text-teal font-semibold rounded px-1.5 py-0.5">
+                        NEW
+                      </span>
+                    ) : null}
+                  </div>
+                  {bestProduct ? (
+                    <div className="text-text-secondary text-xs mt-0.5">
+                      <span className="font-semibold">{bestProduct.brand}</span>
+                      <span> · {bestProduct.productName}</span>
+                    </div>
+                  ) : pickedForm?.name ? (
+                    <div className="text-text-secondary text-xs truncate mt-0.5">
+                      Recommended form: {pickedForm.name}
+                    </div>
                   ) : null}
                 </div>
-                {formLabel !== supp.name && (
-                  <div className="text-text-secondary text-xs truncate mt-0.5">
-                    Recommended form: {formLabel}
-                  </div>
-                )}
-                {rec.reasons && rec.reasons.length > 0 && (
-                  <div className="text-text-tertiary text-xs mt-1 truncate">
-                    {rec.reasons[0].label}
-                  </div>
-                )}
+                <a
+                  href={buyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer sponsored"
+                  className="flex-shrink-0 bg-teal hover:bg-teal-light text-bg text-xs font-semibold px-3 py-1.5 rounded transition-colors"
+                >
+                  Buy
+                </a>
               </div>
-              <a
-                href={`https://www.amazon.com/s?k=${encodeURIComponent(amazonQuery)}&tag=${AMAZON_TAG}`}
-                target="_blank"
-                rel="noopener noreferrer sponsored"
-                className="flex-shrink-0 bg-teal hover:bg-teal-light text-bg text-xs font-semibold px-3 py-1.5 rounded transition-colors"
-              >
-                Buy
-              </a>
+
+              {/* Why this specific product */}
+              {reason && (
+                <div className="mt-2 pt-2 border-t border-border flex items-start gap-2">
+                  <span className="text-teal text-xs flex-shrink-0 mt-0.5">✓</span>
+                  <span className="text-text-tertiary text-xs leading-snug">{reason}</span>
+                </div>
+              )}
+              {!reason && rec.reasons && rec.reasons.length > 0 && (
+                <div className="mt-2 pt-2 border-t border-border">
+                  <span className="text-text-tertiary text-xs">
+                    Why: {rec.reasons[0].label}
+                  </span>
+                </div>
+              )}
             </div>
           )
         })}
@@ -164,21 +219,32 @@ export default function IntermediatePreview({
 
       <div className="px-4 pb-4">
         {showFinalCta ? (
-          <div className="bg-teal/10 border border-teal/30 rounded-lg p-3 mt-2">
-            <p className="text-text text-sm font-semibold mb-1">
-              Want even more accurate recommendations?
-            </p>
+          <div className="bg-teal/10 border border-teal/40 rounded-lg p-4 mt-2">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-lg">📱</span>
+              <p className="text-text text-sm font-bold">
+                Unlock labs-grade precision in the app
+              </p>
+            </div>
             <p className="text-text-secondary text-xs leading-relaxed">
-              Blood work + genetic data unlock labs-first scoring (our strongest signal).
-              Download the app to upload your lab PDFs or 23andMe/AncestryDNA exports
-              — your recommendations refine automatically.
+              Blood work + genetic data are our strongest signals. Download the app to
+              upload your lab PDFs or 23andMe / AncestryDNA exports — recommendations
+              refine automatically.
             </p>
           </div>
         ) : (
-          <p className="text-text-tertiary text-xs italic">
-            {disclaimer ??
-              'These early picks may shift as you answer more questions — keep going for a more precise match.'}
-          </p>
+          <div className="bg-teal/10 border border-teal/40 rounded-lg px-4 py-3 flex items-center gap-3">
+            <span className="text-2xl flex-shrink-0">⚡</span>
+            <div className="flex-1 min-w-0">
+              <p className="text-text text-sm font-bold leading-tight">
+                Your picks get sharper with every answer
+              </p>
+              <p className="text-text-secondary text-xs mt-0.5">
+                {disclaimer ?? 'Keep going — the next step usually reshuffles the top 3.'}
+              </p>
+            </div>
+            <span className="text-teal text-xl flex-shrink-0">→</span>
+          </div>
         )}
       </div>
     </div>

@@ -12,7 +12,6 @@ import TopProductsCard from '@/components/TopProductsCard'
 import evidenceCacheRaw from '@/data/evidenceCache.json'
 
 const topProductsMap = (evidenceCacheRaw as { topProducts?: Record<string, Record<string, TopProduct[]>> }).topProducts || {}
-import { incrementPublicStat } from '@/lib/publicStats'
 import { trackResultsView, trackSupplementExpand, trackAmazonClick } from '@/lib/analytics'
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -401,7 +400,9 @@ export default function ResultsPage() {
       setProfile(p)
       const recs = buildRecommendations(p)
       setRecommendations(recs)
-      incrementPublicStat('quiz_completions')
+      // Counter is incremented on step-1 completion in /quiz, not here —
+      // we want the count to reflect users who engaged enough to finish
+      // the first question, not only those who made it to results.
       trackResultsView(recs.length)
     } catch {
       router.replace('/quiz')
