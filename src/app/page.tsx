@@ -229,7 +229,7 @@ export default function HomePage() {
                 Supplements we analyze
               </h2>
               <p className="text-text-secondary text-sm">
-                15 science-backed supplements, each ranked by evidence quality.
+                {SUPPLEMENT_COUNT} science-backed supplements, each ranked by evidence quality.
               </p>
             </div>
             <Link
