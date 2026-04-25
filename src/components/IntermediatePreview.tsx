@@ -343,7 +343,6 @@ export default function IntermediatePreview({
                 {disclaimer ?? 'Keep going — the next step usually reshuffles the top 3.'}
               </p>
             </div>
-            <span className="text-teal text-xl flex-shrink-0">→</span>
           </div>
         )}
       </div>
