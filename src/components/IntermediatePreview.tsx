@@ -289,18 +289,27 @@ export default function IntermediatePreview({
                 </a>
               </div>
 
-              {/* Why this specific product */}
-              {reason && (
-                <div className="mt-2 pt-2 border-t border-border flex items-start gap-2">
-                  <span className="text-teal text-xs flex-shrink-0 mt-0.5">✓</span>
-                  <span className="text-text-tertiary text-xs leading-snug">{reason}</span>
-                </div>
-              )}
-              {!reason && rec.reasons && rec.reasons.length > 0 && (
-                <div className="mt-2 pt-2 border-t border-border">
-                  <span className="text-text-tertiary text-xs">
-                    Why: {rec.reasons[0].label}
-                  </span>
+              {/* Twin explanations: why the supplement + why this product */}
+              {(rec.reasons?.length || reason) && (
+                <div className="mt-2 pt-2 border-t border-border space-y-1.5">
+                  {rec.reasons && rec.reasons.length > 0 && (
+                    <div className="flex items-start gap-2">
+                      <span className="text-teal text-xs flex-shrink-0 mt-0.5" aria-hidden>🎯</span>
+                      <span className="text-text-tertiary text-xs leading-snug">
+                        <span className="font-semibold text-text-secondary">Why this supplement: </span>
+                        {rec.reasons[0].label}
+                      </span>
+                    </div>
+                  )}
+                  {reason && (
+                    <div className="flex items-start gap-2">
+                      <span className="text-teal text-xs flex-shrink-0 mt-0.5" aria-hidden>✓</span>
+                      <span className="text-text-tertiary text-xs leading-snug">
+                        <span className="font-semibold text-text-secondary">Why this product: </span>
+                        {reason}
+                      </span>
+                    </div>
+                  )}
                 </div>
               )}
             </div>
