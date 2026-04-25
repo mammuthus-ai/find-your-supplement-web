@@ -254,7 +254,7 @@ export default function IntermediatePreview({
                     <span
                       className={`text-xs font-semibold rounded border px-1.5 py-0.5 ${gradeStyles(evidenceGrade)}`}
                     >
-                      {GRADE_LABELS[evidenceGrade] ?? evidenceGrade}
+                      Evidence: {GRADE_LABELS[evidenceGrade] ?? evidenceGrade}
                     </span>
                     {delta && delta.kind !== 'same' ? (
                       <span className={`text-xs font-semibold rounded px-1.5 py-0.5 ${deltaStyles(delta.kind)}`}>
