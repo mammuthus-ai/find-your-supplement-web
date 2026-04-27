@@ -59,6 +59,30 @@ function gradeStyles(g?: string): string {
   }[g || 'C'] || 'bg-surface-alt text-text-secondary border-border'
 }
 
+/** Extract just the form descriptor from a full form name. E.g.
+ *  "Magnesium glycinate" + "Magnesium" → "glycinate"
+ *  "Vitamin C ascorbic acid" + "Vitamin C" → "ascorbic acid"
+ *  "Methylfolate (5-MTHF)" + "Methylfolate (5-MTHF)" → "" (form === supplement)
+ *  Returns null if there's nothing meaningful to add. */
+function extractFormDescriptor(formName: string | undefined, suppName: string): string | null {
+  if (!formName) return null
+  const f = formName.trim()
+  const s = suppName.trim()
+  if (f.toLowerCase() === s.toLowerCase()) return null
+  // Strip the supplement-name prefix when present
+  const lowerF = f.toLowerCase()
+  const lowerS = s.toLowerCase()
+  let descriptor = f
+  if (lowerF.startsWith(lowerS + ' ')) {
+    descriptor = f.slice(s.length + 1).trim()
+  } else if (lowerF.startsWith(lowerS)) {
+    descriptor = f.slice(s.length).trim()
+  }
+  // Strip leading punctuation
+  descriptor = descriptor.replace(/^[\(\)\-\,\.\s]+/, '').replace(/[\(\)\s]+$/, '').trim()
+  return descriptor || null
+}
+
 /** Map engine-internal condition strings (PubMed-y terminology) back to the
  *  user-facing symptom or goal label the user actually picked in the quiz.
  *  E.g. internally we matched on "inflammation" but the user selected
@@ -306,9 +330,20 @@ export default function IntermediatePreview({
                   {rec.rank}
                 </div>
                 <div className="flex-1 min-w-0">
+                  {/* Supplement name + recommended form descriptor inline,
+                      e.g. "Magnesium (glycinate)" */}
                   <div className="flex items-center gap-2 flex-wrap">
                     <span className="text-text font-semibold text-sm truncate">
                       {supp.name}
+                      {(() => {
+                        const formDesc = extractFormDescriptor(
+                          bestProduct?.formName ?? pickedForm?.name,
+                          supp.name,
+                        )
+                        return formDesc ? (
+                          <span className="text-text-secondary font-medium"> ({formDesc})</span>
+                        ) : null
+                      })()}
                     </span>
                     {/* Evidence strength badge */}
                     <span
