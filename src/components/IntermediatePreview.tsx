@@ -59,6 +59,63 @@ function gradeStyles(g?: string): string {
   }[g || 'C'] || 'bg-surface-alt text-text-secondary border-border'
 }
 
+/** Map engine-internal condition strings (PubMed-y terminology) back to the
+ *  user-facing symptom or goal label the user actually picked in the quiz.
+ *  E.g. internally we matched on "inflammation" but the user selected
+ *  "joint pain" — show them their term, not ours.
+ *
+ *  Returns the original condition unchanged if no user input mapped to it. */
+function humanizeCondition(
+  condition: string,
+  symptoms: Symptom[],
+  goals: Goal[],
+): string {
+  const c = condition.toLowerCase()
+  const has = (s: Symptom) => symptoms.includes(s)
+  const wants = (g: Goal) => goals.includes(g)
+
+  // Symptom-derived translations
+  if (c === 'inflammation') {
+    if (has('joint_pain')) return 'joint pain'
+    if (has('dry_skin')) return 'skin health'
+    return 'inflammation'
+  }
+  if (c === 'cognitive function' || c === 'focus') {
+    if (has('brain_fog')) return 'brain fog'
+    if (has('poor_memory')) return 'memory'
+    if (wants('focus')) return 'focus'
+    return 'cognitive performance'
+  }
+  if (c === 'muscle strength') {
+    if (has('muscle_weakness')) return 'muscle weakness'
+    if (wants('muscle')) return 'muscle support'
+    return 'muscle support'
+  }
+  if (c === 'depression') {
+    if (has('low_mood')) return 'low mood'
+    return 'mood'
+  }
+  if (c === 'fatigue') {
+    return wants('energy') ? 'energy' : 'fatigue'
+  }
+  if (c === 'immune function') return 'immunity'
+  if (c === 'heart health') return 'cardiovascular health'
+  if (c === 'gerd' || c === 'gastroesophageal reflux') return 'acid reflux'
+  if (c === 'apolipoprotein b' || c === 'apob') return 'ApoB cholesterol'
+  if (c === 'ldl cholesterol' || c === 'hypercholesterolemia') return 'LDL cholesterol'
+  if (c === 'hdl cholesterol') return 'HDL cholesterol'
+  if (c === 'hypertriglyceridemia') return 'triglycerides'
+  if (c === 'irritable bowel syndrome') return 'IBS'
+  if (c === 'dyspepsia') {
+    if (has('bloating')) return 'bloating'
+    if (has('nausea')) return 'nausea'
+    return 'dyspepsia'
+  }
+
+  // Default: return as-is (already user-friendly: 'joint pain', 'sleep', etc.)
+  return condition
+}
+
 /** One-line summary of what the research looks like for this supplement's
  *  primary matched condition. Pulls rctCount + metaAnalysisCount + pubmedCount
  *  from the evidence cache. Example: "Backed by 23 RCTs and 2 meta-analyses
@@ -68,7 +125,7 @@ function buildEvidenceSummary(e: {
   rctCount: number
   metaAnalysisCount: number
   pubmedCount: number
-}): string {
+}, displayCondition: string): string {
   const parts: string[] = []
   if (e.metaAnalysisCount > 0) {
     parts.push(`${e.metaAnalysisCount} meta-analys${e.metaAnalysisCount === 1 ? 'is' : 'es'}`)
@@ -80,9 +137,7 @@ function buildEvidenceSummary(e: {
     parts.push(`${e.pubmedCount} PubMed stud${e.pubmedCount === 1 ? 'y' : 'ies'}`)
   }
   if (parts.length === 0) return ''
-  // Join with " + "; humanize the condition string slightly
-  const cond = e.condition.replace(/_/g, ' ')
-  return `${parts.join(' + ')} for ${cond}`
+  return `${parts.join(' + ')} for ${displayCondition}`
 }
 
 /** Short human-readable reason the scored #1 product was picked. Pulls from
@@ -223,8 +278,13 @@ export default function IntermediatePreview({
           // Primary evidence for the user's top matched condition.
           const primaryEvidence = rec.evidenceByCondition?.[0]
           const evidenceGrade = primaryEvidence?.grade ?? rec.evidenceGrade
+          const userSyms = (answers.symptoms ?? []) as Symptom[]
+          const userGoals = (answers.goals ?? []) as Goal[]
+          const displayCondition = primaryEvidence
+            ? humanizeCondition(primaryEvidence.condition, userSyms, userGoals)
+            : ''
           const evidenceSummary = primaryEvidence
-            ? buildEvidenceSummary(primaryEvidence)
+            ? buildEvidenceSummary(primaryEvidence, displayCondition)
             : null
 
           // Buy URL: specific brand + product name (search still — ASINs unverified
