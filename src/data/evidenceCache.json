@@ -2090,5 +2090,2418 @@
         "lastUpdated": "2026-04-26"
       }
     ]
+  },
+  "topProducts": {
+    "Vitamin D3": {
+      "Vitamin D3 softgel": [
+        {
+          "asin": "B0019LRY8A",
+          "brand": "Thorne",
+          "productName": "Vitamin D-5000",
+          "formName": "Vitamin D3 (cholecalciferol) softgel",
+          "mgPerServing": 0.125,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "TGA",
+            "NSF"
+          ],
+          "totalScore": 100.0,
+          "rank": 1
+        },
+        {
+          "asin": "B001IAGTRI",
+          "brand": "Nature Made",
+          "productName": "Vitamin D3 2000 IU",
+          "formName": "Vitamin D3 (cholecalciferol) softgel",
+          "mgPerServing": 0.05,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "USP"
+          ],
+          "totalScore": 95.0,
+          "rank": 2
+        },
+        {
+          "asin": "B0015R36AC",
+          "brand": "Life Extension",
+          "productName": "Vitamin D3 5000 IU",
+          "formName": "Vitamin D3 (cholecalciferol) softgel",
+          "mgPerServing": 0.125,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 82.0,
+          "rank": 3
+        }
+      ],
+      "Vegan Vitamin D3": [
+        {
+          "asin": "B07JHPVZNY",
+          "brand": "Sports Research",
+          "productName": "Vegan Vitamin D3 5000 IU (Plant-Based)",
+          "formName": "Vegan Vitamin D3 (lichen-derived)",
+          "mgPerServing": 0.125,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "Informed-Sport"
+          ],
+          "totalScore": 98.0,
+          "rank": 1
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B0019LRY8A",
+          "brand": "Thorne",
+          "productName": "Vitamin D-5000",
+          "formName": "Vitamin D3 (cholecalciferol) softgel",
+          "mgPerServing": 0.125,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "TGA",
+            "NSF"
+          ],
+          "totalScore": 100.0,
+          "rank": 1
+        },
+        {
+          "asin": "B07JHPVZNY",
+          "brand": "Sports Research",
+          "productName": "Vegan Vitamin D3 5000 IU (Plant-Based)",
+          "formName": "Vegan Vitamin D3 (lichen-derived)",
+          "mgPerServing": 0.125,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "Informed-Sport"
+          ],
+          "totalScore": 98.0,
+          "rank": 2
+        },
+        {
+          "asin": "B001IAGTRI",
+          "brand": "Nature Made",
+          "productName": "Vitamin D3 2000 IU",
+          "formName": "Vitamin D3 (cholecalciferol) softgel",
+          "mgPerServing": 0.05,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "USP"
+          ],
+          "totalScore": 95.0,
+          "rank": 3
+        }
+      ]
+    },
+    "Magnesium": {
+      "Magnesium glycinate": [
+        {
+          "asin": "B0797H5C1W",
+          "brand": "Thorne",
+          "productName": "Magnesium Bisglycinate (powder)",
+          "formName": "Magnesium glycinate (bisglycinate)",
+          "mgPerServing": 200,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [
+            "NSF",
+            "TGA"
+          ],
+          "totalScore": 90.0,
+          "rank": 1
+        },
+        {
+          "asin": "B0016GVLK8",
+          "brand": "Pure Encapsulations",
+          "productName": "Magnesium (Glycinate)",
+          "formName": "Magnesium glycinate (bisglycinate)",
+          "mgPerServing": 120,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 72.0,
+          "rank": 2
+        }
+      ],
+      "Magnesium L-threonate": [
+        {
+          "asin": "B01LQQH5BA",
+          "brand": "Life Extension",
+          "productName": "Neuro-Mag Magnesium L-Threonate",
+          "formName": "Magnesium L-threonate",
+          "mgPerServing": 144,
+          "servingUnits": 3,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 72.0,
+          "rank": 1
+        }
+      ],
+      "Magnesium citrate": [
+        {
+          "asin": "B0013OXKHC",
+          "brand": "NOW Foods",
+          "productName": "Magnesium Citrate 200 mg",
+          "formName": "Magnesium citrate",
+          "mgPerServing": 200,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [
+            "Labdoor-A"
+          ],
+          "totalScore": 84.0,
+          "rank": 1
+        }
+      ],
+      "Magnesium malate": [
+        {
+          "asin": "B0013OWYXI",
+          "brand": "Designs for Health",
+          "productName": "Magnesium Malate",
+          "formName": "Magnesium malate",
+          "mgPerServing": 360,
+          "servingUnits": 2,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 72.0,
+          "rank": 1
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B0797H5C1W",
+          "brand": "Thorne",
+          "productName": "Magnesium Bisglycinate (powder)",
+          "formName": "Magnesium glycinate (bisglycinate)",
+          "mgPerServing": 200,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [
+            "NSF",
+            "TGA"
+          ],
+          "totalScore": 90.0,
+          "rank": 1
+        },
+        {
+          "asin": "B0013OXKHC",
+          "brand": "NOW Foods",
+          "productName": "Magnesium Citrate 200 mg",
+          "formName": "Magnesium citrate",
+          "mgPerServing": 200,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [
+            "Labdoor-A"
+          ],
+          "totalScore": 84.0,
+          "rank": 2
+        },
+        {
+          "asin": "B0016GVLK8",
+          "brand": "Pure Encapsulations",
+          "productName": "Magnesium (Glycinate)",
+          "formName": "Magnesium glycinate (bisglycinate)",
+          "mgPerServing": 120,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 72.0,
+          "rank": 3
+        }
+      ]
+    },
+    "Omega-3 (Fish Oil / Algae)": {
+      "Omega-3 triglyceride form": [
+        {
+          "asin": "B0797G49DS",
+          "brand": "Thorne",
+          "productName": "Super EPA",
+          "formName": "Omega-3 triglyceride form (high EPA/DHA)",
+          "mgPerServing": 850,
+          "servingUnits": 2,
+          "maxDaily": 2,
+          "certifications": [
+            "NSF"
+          ],
+          "totalScore": 90.0,
+          "rank": 1
+        },
+        {
+          "asin": "B00CAZAU62",
+          "brand": "Nordic Naturals",
+          "productName": "Ultimate Omega",
+          "formName": "Omega-3 triglyceride form (high EPA/DHA)",
+          "mgPerServing": 1280,
+          "servingUnits": 2,
+          "maxDaily": 2,
+          "certifications": [
+            "IFOS-5",
+            "Informed-Sport"
+          ],
+          "totalScore": 88.0,
+          "rank": 2
+        },
+        {
+          "asin": "B01LXDBFLX",
+          "brand": "Kirkland Signature",
+          "productName": "Fish Oil 1200 mg",
+          "formName": "Omega-3 triglyceride form (high EPA/DHA)",
+          "mgPerServing": 684,
+          "servingUnits": 2,
+          "maxDaily": 1,
+          "certifications": [
+            "USP"
+          ],
+          "totalScore": 85.0,
+          "rank": 3
+        }
+      ],
+      "Algae-derived DHA/EPA": [
+        {
+          "asin": "B07F2RFC67",
+          "brand": "Nordic Naturals",
+          "productName": "Algae Omega",
+          "formName": "Algae-derived DHA/EPA (vegan)",
+          "mgPerServing": 715,
+          "servingUnits": 2,
+          "maxDaily": 1,
+          "certifications": [
+            "IFOS-5"
+          ],
+          "totalScore": 84.0,
+          "rank": 1
+        }
+      ],
+      "Krill oil": [
+        {
+          "asin": "B001LF39WC",
+          "brand": "Jarrow Formulas",
+          "productName": "Krill Oil",
+          "formName": "Krill oil",
+          "mgPerServing": 600,
+          "servingUnits": 2,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 72.0,
+          "rank": 1
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B0797G49DS",
+          "brand": "Thorne",
+          "productName": "Super EPA",
+          "formName": "Omega-3 triglyceride form (high EPA/DHA)",
+          "mgPerServing": 850,
+          "servingUnits": 2,
+          "maxDaily": 2,
+          "certifications": [
+            "NSF"
+          ],
+          "totalScore": 90.0,
+          "rank": 1
+        },
+        {
+          "asin": "B00CAZAU62",
+          "brand": "Nordic Naturals",
+          "productName": "Ultimate Omega",
+          "formName": "Omega-3 triglyceride form (high EPA/DHA)",
+          "mgPerServing": 1280,
+          "servingUnits": 2,
+          "maxDaily": 2,
+          "certifications": [
+            "IFOS-5",
+            "Informed-Sport"
+          ],
+          "totalScore": 88.0,
+          "rank": 2
+        },
+        {
+          "asin": "B01LXDBFLX",
+          "brand": "Kirkland Signature",
+          "productName": "Fish Oil 1200 mg",
+          "formName": "Omega-3 triglyceride form (high EPA/DHA)",
+          "mgPerServing": 684,
+          "servingUnits": 2,
+          "maxDaily": 1,
+          "certifications": [
+            "USP"
+          ],
+          "totalScore": 85.0,
+          "rank": 3
+        }
+      ]
+    },
+    "Zinc": {
+      "Zinc bisglycinate": [
+        {
+          "asin": "B0797F5Q7W",
+          "brand": "Thorne",
+          "productName": "Zinc Picolinate 30 mg",
+          "formName": "Zinc bisglycinate (chelate)",
+          "mgPerServing": 30,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "TGA"
+          ],
+          "totalScore": 90.0,
+          "rank": 1
+        }
+      ],
+      "Zinc picolinate": [
+        {
+          "asin": "B0013OUQ74",
+          "brand": "Pure Encapsulations",
+          "productName": "Zinc 30 (picolinate)",
+          "formName": "Zinc picolinate",
+          "mgPerServing": 30,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 82.0,
+          "rank": 1
+        }
+      ],
+      "Zinc citrate": [
+        {
+          "asin": "B0019LRYOS",
+          "brand": "NOW Foods",
+          "productName": "Zinc Picolinate 50 mg",
+          "formName": "Zinc citrate",
+          "mgPerServing": 50,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "Labdoor-A"
+          ],
+          "totalScore": 94.0,
+          "rank": 1
+        }
+      ],
+      "Zinc acetate lozenge": [
+        {
+          "asin": "B00020IAZ4",
+          "brand": "Life Extension",
+          "productName": "Enhanced Zinc Lozenges",
+          "formName": "Zinc acetate lozenge",
+          "mgPerServing": 18.75,
+          "servingUnits": 1,
+          "maxDaily": 4,
+          "certifications": [],
+          "totalScore": 72.0,
+          "rank": 1
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B0019LRYOS",
+          "brand": "NOW Foods",
+          "productName": "Zinc Picolinate 50 mg",
+          "formName": "Zinc citrate",
+          "mgPerServing": 50,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "Labdoor-A"
+          ],
+          "totalScore": 94.0,
+          "rank": 1
+        },
+        {
+          "asin": "B0797F5Q7W",
+          "brand": "Thorne",
+          "productName": "Zinc Picolinate 30 mg",
+          "formName": "Zinc bisglycinate (chelate)",
+          "mgPerServing": 30,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "TGA"
+          ],
+          "totalScore": 90.0,
+          "rank": 2
+        },
+        {
+          "asin": "B0013OUQ74",
+          "brand": "Pure Encapsulations",
+          "productName": "Zinc 30 (picolinate)",
+          "formName": "Zinc picolinate",
+          "mgPerServing": 30,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 82.0,
+          "rank": 3
+        }
+      ]
+    },
+    "Vitamin B12": {
+      "Methylcobalamin": [
+        {
+          "asin": "B0013OXHQ6",
+          "brand": "Jarrow Formulas",
+          "productName": "Methyl B-12 5000 mcg",
+          "formName": "Methylcobalamin (B12)",
+          "mgPerServing": 5,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "Labdoor-A"
+          ],
+          "totalScore": 84.0,
+          "rank": 1
+        },
+        {
+          "asin": "B0797HHQS5",
+          "brand": "Thorne",
+          "productName": "Methylcobalamin 1 mg",
+          "formName": "Methylcobalamin (B12)",
+          "mgPerServing": 1,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "TGA"
+          ],
+          "totalScore": 80.0,
+          "rank": 2
+        }
+      ],
+      "Cyanocobalamin": [
+        {
+          "asin": "B004U3Y9AC",
+          "brand": "Nature Made",
+          "productName": "Vitamin B12 1000 mcg",
+          "formName": "Cyanocobalamin",
+          "mgPerServing": 1,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "USP"
+          ],
+          "totalScore": 85.0,
+          "rank": 1
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B004U3Y9AC",
+          "brand": "Nature Made",
+          "productName": "Vitamin B12 1000 mcg",
+          "formName": "Cyanocobalamin",
+          "mgPerServing": 1,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "USP"
+          ],
+          "totalScore": 85.0,
+          "rank": 1
+        },
+        {
+          "asin": "B0013OXHQ6",
+          "brand": "Jarrow Formulas",
+          "productName": "Methyl B-12 5000 mcg",
+          "formName": "Methylcobalamin (B12)",
+          "mgPerServing": 5,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "Labdoor-A"
+          ],
+          "totalScore": 84.0,
+          "rank": 2
+        },
+        {
+          "asin": "B0797HHQS5",
+          "brand": "Thorne",
+          "productName": "Methylcobalamin 1 mg",
+          "formName": "Methylcobalamin (B12)",
+          "mgPerServing": 1,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "TGA"
+          ],
+          "totalScore": 80.0,
+          "rank": 3
+        }
+      ]
+    },
+    "Methylfolate (5-MTHF)": {
+      "L-Methylfolate": [
+        {
+          "asin": "B0797FLS35",
+          "brand": "Thorne",
+          "productName": "5-MTHF 1 mg",
+          "formName": "L-Methylfolate (5-MTHF, Quatrefolic)",
+          "mgPerServing": 1,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "TGA"
+          ],
+          "totalScore": 90.0,
+          "rank": 1
+        },
+        {
+          "asin": "B0013OVX9Q",
+          "brand": "Jarrow Formulas",
+          "productName": "Methyl Folate 400 mcg",
+          "formName": "L-Methylfolate (5-MTHF, Quatrefolic)",
+          "mgPerServing": 0.4,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 82.0,
+          "rank": 2
+        }
+      ],
+      "Metafolin": [
+        {
+          "asin": "B0017OTVQC",
+          "brand": "Pure Encapsulations",
+          "productName": "Folate 1000 (Metafolin)",
+          "formName": "Metafolin (calcium L-5-MTHF)",
+          "mgPerServing": 1,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 82.0,
+          "rank": 1
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B0797FLS35",
+          "brand": "Thorne",
+          "productName": "5-MTHF 1 mg",
+          "formName": "L-Methylfolate (5-MTHF, Quatrefolic)",
+          "mgPerServing": 1,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "TGA"
+          ],
+          "totalScore": 90.0,
+          "rank": 1
+        },
+        {
+          "asin": "B0013OVX9Q",
+          "brand": "Jarrow Formulas",
+          "productName": "Methyl Folate 400 mcg",
+          "formName": "L-Methylfolate (5-MTHF, Quatrefolic)",
+          "mgPerServing": 0.4,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 82.0,
+          "rank": 2
+        },
+        {
+          "asin": "B0017OTVQC",
+          "brand": "Pure Encapsulations",
+          "productName": "Folate 1000 (Metafolin)",
+          "formName": "Metafolin (calcium L-5-MTHF)",
+          "mgPerServing": 1,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 82.0,
+          "rank": 3
+        }
+      ]
+    },
+    "Iron": {
+      "Iron bisglycinate": [
+        {
+          "asin": "B0013OVY4O",
+          "brand": "Thorne",
+          "productName": "Iron Bisglycinate",
+          "formName": "Iron bisglycinate (gentle iron)",
+          "mgPerServing": 25,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "TGA"
+          ],
+          "totalScore": 90.0,
+          "rank": 1
+        },
+        {
+          "asin": "B0019GW2CW",
+          "brand": "NOW Foods",
+          "productName": "Iron 18 mg (Ferrochel)",
+          "formName": "Iron bisglycinate (gentle iron)",
+          "mgPerServing": 18,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "Labdoor-A"
+          ],
+          "totalScore": 85.6,
+          "rank": 2
+        }
+      ],
+      "Ferrous sulfate": [
+        {
+          "asin": "B002P4V2SY",
+          "brand": "Nature Made",
+          "productName": "Iron 65 mg (ferrous sulfate)",
+          "formName": "Ferrous sulfate",
+          "mgPerServing": 65,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "USP"
+          ],
+          "totalScore": 81.0,
+          "rank": 1
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B0013OVY4O",
+          "brand": "Thorne",
+          "productName": "Iron Bisglycinate",
+          "formName": "Iron bisglycinate (gentle iron)",
+          "mgPerServing": 25,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "TGA"
+          ],
+          "totalScore": 90.0,
+          "rank": 1
+        },
+        {
+          "asin": "B0019GW2CW",
+          "brand": "NOW Foods",
+          "productName": "Iron 18 mg (Ferrochel)",
+          "formName": "Iron bisglycinate (gentle iron)",
+          "mgPerServing": 18,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "Labdoor-A"
+          ],
+          "totalScore": 85.6,
+          "rank": 2
+        },
+        {
+          "asin": "B002P4V2SY",
+          "brand": "Nature Made",
+          "productName": "Iron 65 mg (ferrous sulfate)",
+          "formName": "Ferrous sulfate",
+          "mgPerServing": 65,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "USP"
+          ],
+          "totalScore": 81.0,
+          "rank": 3
+        }
+      ]
+    },
+    "Vitamin C": {
+      "Ascorbic acid": [
+        {
+          "asin": "B005B1JEGO",
+          "brand": "Nature Made",
+          "productName": "Vitamin C 1000 mg",
+          "formName": "Ascorbic acid (standard)",
+          "mgPerServing": 1000,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "USP"
+          ],
+          "totalScore": 85.0,
+          "rank": 1
+        },
+        {
+          "asin": "B0013OVYMQ",
+          "brand": "Thorne",
+          "productName": "Buffered C Powder",
+          "formName": "Ascorbic acid (buffered)",
+          "mgPerServing": 900,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [
+            "TGA"
+          ],
+          "totalScore": 80.0,
+          "rank": 2
+        }
+      ],
+      "Sodium ascorbate": [
+        {
+          "asin": "B0013OVYDU",
+          "brand": "NOW Foods",
+          "productName": "Sodium Ascorbate Powder",
+          "formName": "Sodium ascorbate",
+          "mgPerServing": 1035,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [
+            "Labdoor-A"
+          ],
+          "totalScore": 84.0,
+          "rank": 1
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B005B1JEGO",
+          "brand": "Nature Made",
+          "productName": "Vitamin C 1000 mg",
+          "formName": "Ascorbic acid (standard)",
+          "mgPerServing": 1000,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "USP"
+          ],
+          "totalScore": 85.0,
+          "rank": 1
+        },
+        {
+          "asin": "B0013OVYDU",
+          "brand": "NOW Foods",
+          "productName": "Sodium Ascorbate Powder",
+          "formName": "Sodium ascorbate",
+          "mgPerServing": 1035,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [
+            "Labdoor-A"
+          ],
+          "totalScore": 84.0,
+          "rank": 2
+        },
+        {
+          "asin": "B0013OVYMQ",
+          "brand": "Thorne",
+          "productName": "Buffered C Powder",
+          "formName": "Ascorbic acid (buffered)",
+          "mgPerServing": 900,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [
+            "TGA"
+          ],
+          "totalScore": 80.0,
+          "rank": 3
+        }
+      ]
+    },
+    "Calcium": {
+      "Calcium citrate": [
+        {
+          "asin": "B000BV05EE",
+          "brand": "Citracal",
+          "productName": "Calcium Citrate + D3 Petites",
+          "formName": "Calcium citrate",
+          "mgPerServing": 400,
+          "servingUnits": 2,
+          "maxDaily": 2,
+          "certifications": [
+            "USP"
+          ],
+          "totalScore": 79.0,
+          "rank": 1
+        }
+      ],
+      "Calcium carbonate": [
+        {
+          "asin": "B00M17JCAO",
+          "brand": "Nature Made",
+          "productName": "Calcium 600 mg with D3",
+          "formName": "Calcium carbonate",
+          "mgPerServing": 600,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [
+            "USP"
+          ],
+          "totalScore": 85.0,
+          "rank": 1
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B00M17JCAO",
+          "brand": "Nature Made",
+          "productName": "Calcium 600 mg with D3",
+          "formName": "Calcium carbonate",
+          "mgPerServing": 600,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [
+            "USP"
+          ],
+          "totalScore": 85.0,
+          "rank": 1
+        },
+        {
+          "asin": "B000BV05EE",
+          "brand": "Citracal",
+          "productName": "Calcium Citrate + D3 Petites",
+          "formName": "Calcium citrate",
+          "mgPerServing": 400,
+          "servingUnits": 2,
+          "maxDaily": 2,
+          "certifications": [
+            "USP"
+          ],
+          "totalScore": 79.0,
+          "rank": 2
+        }
+      ]
+    },
+    "CoQ10 (Ubiquinol)": {
+      "Ubiquinol": [
+        {
+          "asin": "B00EDFX9JK",
+          "brand": "Jarrow Formulas",
+          "productName": "QH-Absorb Ubiquinol 100 mg",
+          "formName": "Ubiquinol (Kaneka)",
+          "mgPerServing": 100,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [
+            "Labdoor-A"
+          ],
+          "totalScore": 84.0,
+          "rank": 1
+        },
+        {
+          "asin": "B003L1OGH4",
+          "brand": "Life Extension",
+          "productName": "Super Ubiquinol CoQ10 100 mg",
+          "formName": "Ubiquinol (Kaneka)",
+          "mgPerServing": 100,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 72.0,
+          "rank": 2
+        }
+      ],
+      "Ubiquinone CoQ10 softgel": [
+        {
+          "asin": "B0019LRY48",
+          "brand": "Nature Made",
+          "productName": "CoQ10 200 mg",
+          "formName": "Ubiquinone CoQ10 softgel (oil-based)",
+          "mgPerServing": 200,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "USP"
+          ],
+          "totalScore": 85.0,
+          "rank": 1
+        },
+        {
+          "asin": "B001V9VTU8",
+          "brand": "Thorne",
+          "productName": "CoQ10 (ubiquinone) 100 mg",
+          "formName": "Ubiquinone CoQ10 softgel (oil-based)",
+          "mgPerServing": 100,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "TGA"
+          ],
+          "totalScore": 80.0,
+          "rank": 2
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B0019LRY48",
+          "brand": "Nature Made",
+          "productName": "CoQ10 200 mg",
+          "formName": "Ubiquinone CoQ10 softgel (oil-based)",
+          "mgPerServing": 200,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "USP"
+          ],
+          "totalScore": 85.0,
+          "rank": 1
+        },
+        {
+          "asin": "B00EDFX9JK",
+          "brand": "Jarrow Formulas",
+          "productName": "QH-Absorb Ubiquinol 100 mg",
+          "formName": "Ubiquinol (Kaneka)",
+          "mgPerServing": 100,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [
+            "Labdoor-A"
+          ],
+          "totalScore": 84.0,
+          "rank": 2
+        },
+        {
+          "asin": "B001V9VTU8",
+          "brand": "Thorne",
+          "productName": "CoQ10 (ubiquinone) 100 mg",
+          "formName": "Ubiquinone CoQ10 softgel (oil-based)",
+          "mgPerServing": 100,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "TGA"
+          ],
+          "totalScore": 80.0,
+          "rank": 3
+        }
+      ]
+    },
+    "Ashwagandha (KSM-66)": {
+      "KSM-66 Ashwagandha": [
+        {
+          "asin": "B07HKLF57J",
+          "brand": "Sports Research",
+          "productName": "KSM-66 Ashwagandha 600 mg",
+          "formName": "KSM-66 Ashwagandha",
+          "mgPerServing": 600,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "Informed-Sport"
+          ],
+          "totalScore": 88.0,
+          "rank": 1
+        }
+      ],
+      "Sensoril Ashwagandha": [
+        {
+          "asin": "B015GXJ6WO",
+          "brand": "Jarrow Formulas",
+          "productName": "Ashwagandha (Sensoril) 225 mg",
+          "formName": "Sensoril Ashwagandha",
+          "mgPerServing": 225,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 64.5,
+          "rank": 1
+        }
+      ],
+      "Ashwagandha root powder": [
+        {
+          "asin": "B01BKHQ2CS",
+          "brand": "NOW Foods",
+          "productName": "Ashwagandha 450 mg",
+          "formName": "Ashwagandha root powder (unstandardized)",
+          "mgPerServing": 450,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [
+            "Labdoor-B"
+          ],
+          "totalScore": 72.0,
+          "rank": 1
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B07HKLF57J",
+          "brand": "Sports Research",
+          "productName": "KSM-66 Ashwagandha 600 mg",
+          "formName": "KSM-66 Ashwagandha",
+          "mgPerServing": 600,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "Informed-Sport"
+          ],
+          "totalScore": 88.0,
+          "rank": 1
+        },
+        {
+          "asin": "B01BKHQ2CS",
+          "brand": "NOW Foods",
+          "productName": "Ashwagandha 450 mg",
+          "formName": "Ashwagandha root powder (unstandardized)",
+          "mgPerServing": 450,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [
+            "Labdoor-B"
+          ],
+          "totalScore": 72.0,
+          "rank": 2
+        },
+        {
+          "asin": "B015GXJ6WO",
+          "brand": "Jarrow Formulas",
+          "productName": "Ashwagandha (Sensoril) 225 mg",
+          "formName": "Sensoril Ashwagandha",
+          "mgPerServing": 225,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 64.5,
+          "rank": 3
+        }
+      ]
+    },
+    "Creatine Monohydrate": {
+      "Creatine monohydrate": [
+        {
+          "asin": "B000GIPJ0M",
+          "brand": "Thorne",
+          "productName": "Creatine (Creapure)",
+          "formName": "Creatine monohydrate (Creapure)",
+          "mgPerServing": 5000,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "NSF"
+          ],
+          "totalScore": 90.0,
+          "rank": 1
+        },
+        {
+          "asin": "B002DYIZEO",
+          "brand": "Klean Athlete",
+          "productName": "Klean Creatine",
+          "formName": "Creatine monohydrate (Creapure)",
+          "mgPerServing": 5000,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "NSF"
+          ],
+          "totalScore": 90.0,
+          "rank": 2
+        },
+        {
+          "asin": "B0788LTNSC",
+          "brand": "Klean Athlete / Douglas Labs",
+          "productName": "Pure Creatine Creapure",
+          "formName": "Creatine monohydrate (Creapure)",
+          "mgPerServing": 5000,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "NSF"
+          ],
+          "totalScore": 90.0,
+          "rank": 3
+        }
+      ],
+      "Micronized creatine monohydrate": [
+        {
+          "asin": "B002DYJ0LG",
+          "brand": "NOW Sports",
+          "productName": "Creatine Monohydrate Powder",
+          "formName": "Micronized creatine monohydrate",
+          "mgPerServing": 5000,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "Informed-Sport",
+            "Labdoor-A"
+          ],
+          "totalScore": 88.0,
+          "rank": 1
+        },
+        {
+          "asin": "B002DYIZGM",
+          "brand": "Optimum Nutrition",
+          "productName": "Micronized Creatine Powder",
+          "formName": "Micronized creatine monohydrate",
+          "mgPerServing": 5000,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "Informed-Sport"
+          ],
+          "totalScore": 88.0,
+          "rank": 2
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B000GIPJ0M",
+          "brand": "Thorne",
+          "productName": "Creatine (Creapure)",
+          "formName": "Creatine monohydrate (Creapure)",
+          "mgPerServing": 5000,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "NSF"
+          ],
+          "totalScore": 90.0,
+          "rank": 1
+        },
+        {
+          "asin": "B002DYIZEO",
+          "brand": "Klean Athlete",
+          "productName": "Klean Creatine",
+          "formName": "Creatine monohydrate (Creapure)",
+          "mgPerServing": 5000,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "NSF"
+          ],
+          "totalScore": 90.0,
+          "rank": 2
+        },
+        {
+          "asin": "B0788LTNSC",
+          "brand": "Klean Athlete / Douglas Labs",
+          "productName": "Pure Creatine Creapure",
+          "formName": "Creatine monohydrate (Creapure)",
+          "mgPerServing": 5000,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "NSF"
+          ],
+          "totalScore": 90.0,
+          "rank": 3
+        }
+      ]
+    },
+    "Melatonin": {
+      "Low-dose melatonin": [
+        {
+          "asin": "B00V1UE67M",
+          "brand": "Life Extension",
+          "productName": "Melatonin 300 mcg",
+          "formName": "Low-dose melatonin (0.3–0.5 mg)",
+          "mgPerServing": 0.3,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 60.0,
+          "rank": 1
+        }
+      ],
+      "Standard melatonin 3–5 mg": [
+        {
+          "asin": "B0013OXG1S",
+          "brand": "NOW Foods",
+          "productName": "Melatonin 3 mg",
+          "formName": "Standard melatonin 3–5 mg",
+          "mgPerServing": 3,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "Labdoor-A"
+          ],
+          "totalScore": 84.0,
+          "rank": 1
+        },
+        {
+          "asin": "B00OZU1VSQ",
+          "brand": "Natrol",
+          "productName": "Melatonin 3 mg Time Release",
+          "formName": "Standard melatonin 3–5 mg",
+          "mgPerServing": 3,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "Labdoor-A"
+          ],
+          "totalScore": 79.0,
+          "rank": 2
+        }
+      ],
+      "Sustained-release melatonin": [
+        {
+          "asin": "B00019GDVU",
+          "brand": "Life Extension",
+          "productName": "Melatonin 3 mg 6-Hour Time Release",
+          "formName": "Sustained-release melatonin",
+          "mgPerServing": 3,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 72.0,
+          "rank": 1
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B0013OXG1S",
+          "brand": "NOW Foods",
+          "productName": "Melatonin 3 mg",
+          "formName": "Standard melatonin 3–5 mg",
+          "mgPerServing": 3,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "Labdoor-A"
+          ],
+          "totalScore": 84.0,
+          "rank": 1
+        },
+        {
+          "asin": "B00OZU1VSQ",
+          "brand": "Natrol",
+          "productName": "Melatonin 3 mg Time Release",
+          "formName": "Standard melatonin 3–5 mg",
+          "mgPerServing": 3,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "Labdoor-A"
+          ],
+          "totalScore": 79.0,
+          "rank": 2
+        },
+        {
+          "asin": "B00019GDVU",
+          "brand": "Life Extension",
+          "productName": "Melatonin 3 mg 6-Hour Time Release",
+          "formName": "Sustained-release melatonin",
+          "mgPerServing": 3,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 72.0,
+          "rank": 3
+        }
+      ]
+    },
+    "NAC (N-Acetyl Cysteine)": {
+      "N-Acetyl Cysteine": [
+        {
+          "asin": "B0013OXFQA",
+          "brand": "NOW Foods",
+          "productName": "NAC 600 mg",
+          "formName": "N-Acetyl Cysteine (pharmaceutical grade)",
+          "mgPerServing": 600,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [
+            "Labdoor-A"
+          ],
+          "totalScore": 84.0,
+          "rank": 1
+        },
+        {
+          "asin": "B0797GWH8Z",
+          "brand": "Thorne",
+          "productName": "NAC (N-Acetyl-L-Cysteine) 500 mg",
+          "formName": "N-Acetyl Cysteine (pharmaceutical grade)",
+          "mgPerServing": 500,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [
+            "TGA"
+          ],
+          "totalScore": 80.0,
+          "rank": 2
+        },
+        {
+          "asin": "B001GCUOYC",
+          "brand": "Jarrow Formulas",
+          "productName": "NAC Sustain 600 mg",
+          "formName": "N-Acetyl Cysteine (pharmaceutical grade)",
+          "mgPerServing": 600,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 72.0,
+          "rank": 3
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B0013OXFQA",
+          "brand": "NOW Foods",
+          "productName": "NAC 600 mg",
+          "formName": "N-Acetyl Cysteine (pharmaceutical grade)",
+          "mgPerServing": 600,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [
+            "Labdoor-A"
+          ],
+          "totalScore": 84.0,
+          "rank": 1
+        },
+        {
+          "asin": "B0797GWH8Z",
+          "brand": "Thorne",
+          "productName": "NAC (N-Acetyl-L-Cysteine) 500 mg",
+          "formName": "N-Acetyl Cysteine (pharmaceutical grade)",
+          "mgPerServing": 500,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [
+            "TGA"
+          ],
+          "totalScore": 80.0,
+          "rank": 2
+        },
+        {
+          "asin": "B001GCUOYC",
+          "brand": "Jarrow Formulas",
+          "productName": "NAC Sustain 600 mg",
+          "formName": "N-Acetyl Cysteine (pharmaceutical grade)",
+          "mgPerServing": 600,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 72.0,
+          "rank": 3
+        }
+      ]
+    },
+    "Probiotics": {
+      "Multi-strain Lactobacillus + Bifidobacterium": [
+        {
+          "asin": "B07BQDPW5Z",
+          "brand": "Seed",
+          "productName": "DS-01 Daily Synbiotic",
+          "formName": "Multi-strain Lactobacillus + Bifidobacterium (50B CFU)",
+          "mgPerServing": 53.6,
+          "servingUnits": 2,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 1
+        }
+      ],
+      "Spore-based probiotic": [
+        {
+          "asin": "B072MC85YG",
+          "brand": "Just Thrive",
+          "productName": "Probiotic & Antioxidant",
+          "formName": "Spore-based probiotic (Bacillus)",
+          "mgPerServing": 3,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 1
+        }
+      ],
+      "Saccharomyces boulardii": [
+        {
+          "asin": "B0013OXKPO",
+          "brand": "Jarrow Formulas",
+          "productName": "Saccharomyces Boulardii + MOS",
+          "formName": "Saccharomyces boulardii",
+          "mgPerServing": 250,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 72.0,
+          "rank": 1
+        }
+      ],
+      "Refrigerated single-strain Lactobacillus": [
+        {
+          "asin": "B00JEKYNZA",
+          "brand": "Culturelle",
+          "productName": "Daily Probiotic (LGG)",
+          "formName": "Refrigerated single-strain Lactobacillus",
+          "mgPerServing": 10,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "ConsumerLab-Pass"
+          ],
+          "totalScore": 81.0,
+          "rank": 1
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B00JEKYNZA",
+          "brand": "Culturelle",
+          "productName": "Daily Probiotic (LGG)",
+          "formName": "Refrigerated single-strain Lactobacillus",
+          "mgPerServing": 10,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [
+            "ConsumerLab-Pass"
+          ],
+          "totalScore": 81.0,
+          "rank": 1
+        },
+        {
+          "asin": "B0013OXKPO",
+          "brand": "Jarrow Formulas",
+          "productName": "Saccharomyces Boulardii + MOS",
+          "formName": "Saccharomyces boulardii",
+          "mgPerServing": 250,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 72.0,
+          "rank": 2
+        },
+        {
+          "asin": "B07BQDPW5Z",
+          "brand": "Seed",
+          "productName": "DS-01 Daily Synbiotic",
+          "formName": "Multi-strain Lactobacillus + Bifidobacterium (50B CFU)",
+          "mgPerServing": 53.6,
+          "servingUnits": 2,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 3
+        }
+      ]
+    },
+    "Collagen Peptides": {
+      "Hydrolyzed bovine collagen peptides": [
+        {
+          "asin": "B01N70VTZY",
+          "brand": "Vital Proteins",
+          "productName": "Collagen Peptides Unflavored",
+          "formName": "Hydrolyzed bovine collagen peptides (Type I & III)",
+          "mgPerServing": 20000,
+          "servingUnits": 2,
+          "maxDaily": 1,
+          "certifications": [
+            "NSF"
+          ],
+          "totalScore": 90.0,
+          "rank": 1
+        },
+        {
+          "asin": "B01MZIFZI8",
+          "brand": "Sports Research",
+          "productName": "Collagen Peptides",
+          "formName": "Hydrolyzed bovine collagen peptides (Type I & III)",
+          "mgPerServing": 11000,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [
+            "Informed-Sport"
+          ],
+          "totalScore": 88.0,
+          "rank": 2
+        }
+      ],
+      "Marine collagen": [
+        {
+          "asin": "B01AR9COL4",
+          "brand": "Vital Proteins",
+          "productName": "Marine Collagen",
+          "formName": "Marine collagen (Type I)",
+          "mgPerServing": 20000,
+          "servingUnits": 2,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 1
+        }
+      ],
+      "UC-II undenatured Type II collagen": [
+        {
+          "asin": "B0014D31XQ",
+          "brand": "Now Foods",
+          "productName": "UC-II Joint Health 40 mg",
+          "formName": "UC-II undenatured Type II collagen",
+          "mgPerServing": 40,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 20.12,
+          "rank": 1
+        }
+      ],
+      "Multi-type collagen": [
+        {
+          "asin": "B079B5SCWQ",
+          "brand": "Ancient Nutrition",
+          "productName": "Multi Collagen Protein",
+          "formName": "Multi-type collagen (I, II, III, V, X)",
+          "mgPerServing": 9000,
+          "servingUnits": 2,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 1
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B01N70VTZY",
+          "brand": "Vital Proteins",
+          "productName": "Collagen Peptides Unflavored",
+          "formName": "Hydrolyzed bovine collagen peptides (Type I & III)",
+          "mgPerServing": 20000,
+          "servingUnits": 2,
+          "maxDaily": 1,
+          "certifications": [
+            "NSF"
+          ],
+          "totalScore": 90.0,
+          "rank": 1
+        },
+        {
+          "asin": "B01MZIFZI8",
+          "brand": "Sports Research",
+          "productName": "Collagen Peptides",
+          "formName": "Hydrolyzed bovine collagen peptides (Type I & III)",
+          "mgPerServing": 11000,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [
+            "Informed-Sport"
+          ],
+          "totalScore": 88.0,
+          "rank": 2
+        },
+        {
+          "asin": "B01AR9COL4",
+          "brand": "Vital Proteins",
+          "productName": "Marine Collagen",
+          "formName": "Marine collagen (Type I)",
+          "mgPerServing": 20000,
+          "servingUnits": 2,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 3
+        }
+      ]
+    },
+    "Alginate": {
+      "Sodium alginate + potassium bicarbonate liquid": [
+        {
+          "asin": "B001EPQ818",
+          "brand": "Reckitt (Gaviscon Advance UK)",
+          "productName": "Gaviscon Advance Aniseed Liquid",
+          "formName": "Sodium alginate + potassium bicarbonate liquid (Gaviscon Advance-style)",
+          "mgPerServing": 1000,
+          "servingUnits": 10,
+          "maxDaily": 4,
+          "certifications": [],
+          "totalScore": 45.0,
+          "rank": 1
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B001EPQ818",
+          "brand": "Reckitt (Gaviscon Advance UK)",
+          "productName": "Gaviscon Advance Aniseed Liquid",
+          "formName": "Sodium alginate + potassium bicarbonate liquid (Gaviscon Advance-style)",
+          "mgPerServing": 1000,
+          "servingUnits": 10,
+          "maxDaily": 4,
+          "certifications": [],
+          "totalScore": 45.0,
+          "rank": 1
+        }
+      ]
+    },
+    "Psyllium Husk": {
+      "Psyllium husk powder": [
+        {
+          "asin": "B00P3LPN2Q",
+          "brand": "Organic India",
+          "productName": "Whole Husk Psyllium",
+          "formName": "Psyllium husk powder (organic, unflavored)",
+          "mgPerServing": 5000,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 1
+        },
+        {
+          "asin": "B001EQ4EGG",
+          "brand": "Yerba Prima",
+          "productName": "Organic Psyllium Whole Husks",
+          "formName": "Psyllium husk powder (organic, unflavored)",
+          "mgPerServing": 5000,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 2
+        }
+      ],
+      "Psyllium husk capsules": [
+        {
+          "asin": "B0019GW9G8",
+          "brand": "NOW Foods",
+          "productName": "Psyllium Husk Caps 500 mg",
+          "formName": "Psyllium husk capsules",
+          "mgPerServing": 1500,
+          "servingUnits": 3,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 33.5,
+          "rank": 1
+        }
+      ],
+      "Flavored psyllium drink mix": [
+        {
+          "asin": "B00028M0HC",
+          "brand": "Metamucil (P&G)",
+          "productName": "Metamucil Sugar-Free Orange",
+          "formName": "Flavored psyllium drink mix (Metamucil-style)",
+          "mgPerServing": 3400,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 45.0,
+          "rank": 1
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B00P3LPN2Q",
+          "brand": "Organic India",
+          "productName": "Whole Husk Psyllium",
+          "formName": "Psyllium husk powder (organic, unflavored)",
+          "mgPerServing": 5000,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 1
+        },
+        {
+          "asin": "B001EQ4EGG",
+          "brand": "Yerba Prima",
+          "productName": "Organic Psyllium Whole Husks",
+          "formName": "Psyllium husk powder (organic, unflavored)",
+          "mgPerServing": 5000,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 2
+        },
+        {
+          "asin": "B00028M0HC",
+          "brand": "Metamucil (P&G)",
+          "productName": "Metamucil Sugar-Free Orange",
+          "formName": "Flavored psyllium drink mix (Metamucil-style)",
+          "mgPerServing": 3400,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 45.0,
+          "rank": 3
+        }
+      ]
+    },
+    "Peppermint Oil (Enteric-Coated)": {
+      "Enteric-coated peppermint oil capsule": [
+        {
+          "asin": "B00HSCCBEW",
+          "brand": "IM HealthScience",
+          "productName": "IBgard",
+          "formName": "Enteric-coated peppermint oil capsule (IBgard-style)",
+          "mgPerServing": 90,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 33.0,
+          "rank": 1
+        }
+      ],
+      "Standard enteric-coated peppermint oil softgel": [
+        {
+          "asin": "B00020IAEI",
+          "brand": "Enzymatic Therapy",
+          "productName": "Peppermint Plus",
+          "formName": "Standard enteric-coated peppermint oil softgel",
+          "mgPerServing": 200,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 1
+        },
+        {
+          "asin": "B00020IG3M",
+          "brand": "NOW Foods",
+          "productName": "Peppermint Gels (enteric-coated)",
+          "formName": "Standard enteric-coated peppermint oil softgel",
+          "mgPerServing": 180,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 2
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B00020IAEI",
+          "brand": "Enzymatic Therapy",
+          "productName": "Peppermint Plus",
+          "formName": "Standard enteric-coated peppermint oil softgel",
+          "mgPerServing": 200,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 1
+        },
+        {
+          "asin": "B00020IG3M",
+          "brand": "NOW Foods",
+          "productName": "Peppermint Gels (enteric-coated)",
+          "formName": "Standard enteric-coated peppermint oil softgel",
+          "mgPerServing": 180,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 2
+        },
+        {
+          "asin": "B00HSCCBEW",
+          "brand": "IM HealthScience",
+          "productName": "IBgard",
+          "formName": "Enteric-coated peppermint oil capsule (IBgard-style)",
+          "mgPerServing": 90,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 33.0,
+          "rank": 3
+        }
+      ]
+    },
+    "Ginger (Zingiber officinale)": {
+      "Standardized ginger extract": [
+        {
+          "asin": "B0019LT8G4",
+          "brand": "Pure Encapsulations",
+          "productName": "Ginger Extract",
+          "formName": "Standardized ginger extract (5% gingerols)",
+          "mgPerServing": 250,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 54.5,
+          "rank": 1
+        },
+        {
+          "asin": "B01A6M3CJI",
+          "brand": "Nature's Way",
+          "productName": "Ginger Root 550 mg",
+          "formName": "Standardized ginger extract (5% gingerols)",
+          "mgPerServing": 1100,
+          "servingUnits": 2,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 47.0,
+          "rank": 2
+        }
+      ],
+      "Dried ginger root capsule": [
+        {
+          "asin": "B0019LRNYK",
+          "brand": "NOW Foods",
+          "productName": "Ginger Root 550 mg",
+          "formName": "Dried ginger root capsule",
+          "mgPerServing": 550,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 1
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B0019LT8G4",
+          "brand": "Pure Encapsulations",
+          "productName": "Ginger Extract",
+          "formName": "Standardized ginger extract (5% gingerols)",
+          "mgPerServing": 250,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 54.5,
+          "rank": 1
+        },
+        {
+          "asin": "B0019LRNYK",
+          "brand": "NOW Foods",
+          "productName": "Ginger Root 550 mg",
+          "formName": "Dried ginger root capsule",
+          "mgPerServing": 550,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 2
+        },
+        {
+          "asin": "B01A6M3CJI",
+          "brand": "Nature's Way",
+          "productName": "Ginger Root 550 mg",
+          "formName": "Standardized ginger extract (5% gingerols)",
+          "mgPerServing": 1100,
+          "servingUnits": 2,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 47.0,
+          "rank": 3
+        }
+      ]
+    },
+    "Digestive Enzymes": {
+      "Broad-spectrum enzyme blend": [
+        {
+          "asin": "B0013OQJ7O",
+          "brand": "Pure Encapsulations",
+          "productName": "Digestive Enzymes Ultra",
+          "formName": "Broad-spectrum enzyme blend (amylase, protease, lipase, lactase)",
+          "mgPerServing": 430,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 72.0,
+          "rank": 1
+        },
+        {
+          "asin": "B0019LRK7M",
+          "brand": "NOW Foods",
+          "productName": "Super Enzymes",
+          "formName": "Broad-spectrum enzyme blend (amylase, protease, lipase, lactase)",
+          "mgPerServing": 555,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 2
+        }
+      ],
+      "Pancreatin": [
+        {
+          "asin": "B0013OQ69I",
+          "brand": "Thorne",
+          "productName": "Bio-Gest",
+          "formName": "Pancreatin (porcine, high-potency)",
+          "mgPerServing": 500,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [
+            "TGA"
+          ],
+          "totalScore": 80.0,
+          "rank": 1
+        }
+      ],
+      "Plant-based enzyme blend": [
+        {
+          "asin": "B00140JAFC",
+          "brand": "Enzymedica",
+          "productName": "Digest Gold",
+          "formName": "Plant-based enzyme blend (fungal)",
+          "mgPerServing": 314,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 1
+        }
+      ],
+      "Targeted lactase": [
+        {
+          "asin": "B000I4DVRE",
+          "brand": "Lactaid (J&J)",
+          "productName": "Lactaid Fast Act 9000 FCC",
+          "formName": "Targeted lactase (Lactaid-style)",
+          "mgPerServing": 9000,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 45.0,
+          "rank": 1
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B0013OQ69I",
+          "brand": "Thorne",
+          "productName": "Bio-Gest",
+          "formName": "Pancreatin (porcine, high-potency)",
+          "mgPerServing": 500,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [
+            "TGA"
+          ],
+          "totalScore": 80.0,
+          "rank": 1
+        },
+        {
+          "asin": "B0013OQJ7O",
+          "brand": "Pure Encapsulations",
+          "productName": "Digestive Enzymes Ultra",
+          "formName": "Broad-spectrum enzyme blend (amylase, protease, lipase, lactase)",
+          "mgPerServing": 430,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 72.0,
+          "rank": 2
+        },
+        {
+          "asin": "B0019LRK7M",
+          "brand": "NOW Foods",
+          "productName": "Super Enzymes",
+          "formName": "Broad-spectrum enzyme blend (amylase, protease, lipase, lactase)",
+          "mgPerServing": 555,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 3
+        }
+      ]
+    },
+    "Berberine": {
+      "Berberine HCl 500 mg": [
+        {
+          "asin": "B0013OVVN0",
+          "brand": "Thorne",
+          "productName": "Berberine-500",
+          "formName": "Berberine HCl 500 mg",
+          "mgPerServing": 500,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [
+            "TGA"
+          ],
+          "totalScore": 76.0,
+          "rank": 1
+        },
+        {
+          "asin": "B004LL0ZUU",
+          "brand": "Integrative Therapeutics",
+          "productName": "Berberine",
+          "formName": "Berberine HCl 500 mg",
+          "mgPerServing": 500,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 46.0,
+          "rank": 2
+        },
+        {
+          "asin": "B01ACY3B9A",
+          "brand": "NOW Foods",
+          "productName": "Berberine Glucose Support",
+          "formName": "Berberine HCl 500 mg",
+          "mgPerServing": 400,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 32.0,
+          "rank": 3
+        }
+      ],
+      "Dihydroberberine": [
+        {
+          "asin": "B08N4L7QJW",
+          "brand": "Designs for Health",
+          "productName": "Berberine Synergy",
+          "formName": "Dihydroberberine (DHB)",
+          "mgPerServing": 800,
+          "servingUnits": 2,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 82.0,
+          "rank": 1
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B08N4L7QJW",
+          "brand": "Designs for Health",
+          "productName": "Berberine Synergy",
+          "formName": "Dihydroberberine (DHB)",
+          "mgPerServing": 800,
+          "servingUnits": 2,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 82.0,
+          "rank": 1
+        },
+        {
+          "asin": "B0013OVVN0",
+          "brand": "Thorne",
+          "productName": "Berberine-500",
+          "formName": "Berberine HCl 500 mg",
+          "mgPerServing": 500,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [
+            "TGA"
+          ],
+          "totalScore": 76.0,
+          "rank": 2
+        },
+        {
+          "asin": "B004LL0ZUU",
+          "brand": "Integrative Therapeutics",
+          "productName": "Berberine",
+          "formName": "Berberine HCl 500 mg",
+          "mgPerServing": 500,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 46.0,
+          "rank": 3
+        }
+      ]
+    },
+    "Bergamot (BPF)": {
+      "Citrus bergamot BPF extract": [
+        {
+          "asin": "B07RFBS33Z",
+          "brand": "Jarrow Formulas",
+          "productName": "Bergamot",
+          "formName": "Citrus bergamot BPF extract (500–1000 mg)",
+          "mgPerServing": 500,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 72.0,
+          "rank": 1
+        },
+        {
+          "asin": "B00T45EHCE",
+          "brand": "Life Extension",
+          "productName": "Bergamot Citrus Bergamia",
+          "formName": "Citrus bergamot BPF extract (500–1000 mg)",
+          "mgPerServing": 500,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 72.0,
+          "rank": 2
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B07RFBS33Z",
+          "brand": "Jarrow Formulas",
+          "productName": "Bergamot",
+          "formName": "Citrus bergamot BPF extract (500–1000 mg)",
+          "mgPerServing": 500,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 72.0,
+          "rank": 1
+        },
+        {
+          "asin": "B00T45EHCE",
+          "brand": "Life Extension",
+          "productName": "Bergamot Citrus Bergamia",
+          "formName": "Citrus bergamot BPF extract (500–1000 mg)",
+          "mgPerServing": 500,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 72.0,
+          "rank": 2
+        }
+      ]
+    },
+    "Red Yeast Rice (Standardized)": {
+      "Standardized Red Yeast Rice": [
+        {
+          "asin": "B00IQZQ3KC",
+          "brand": "Pure Encapsulations",
+          "productName": "Red Yeast Rice",
+          "formName": "Standardized Red Yeast Rice (citrinin-free, third-party tested)",
+          "mgPerServing": 1200,
+          "servingUnits": 2,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 82.0,
+          "rank": 1
+        },
+        {
+          "asin": "B00020IO5U",
+          "brand": "Nature's Plus",
+          "productName": "Herbal Actives Red Yeast Rice Extended Release",
+          "formName": "Standardized Red Yeast Rice (citrinin-free, third-party tested)",
+          "mgPerServing": 600,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 60.0,
+          "rank": 2
+        }
+      ],
+      "Red Yeast Rice + CoQ10 combo": [
+        {
+          "asin": "B00IQZQ5PY",
+          "brand": "Jarrow Formulas",
+          "productName": "Red Yeast Rice + CoQ10",
+          "formName": "Red Yeast Rice + CoQ10 combo",
+          "mgPerServing": 1200,
+          "servingUnits": 2,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 72.0,
+          "rank": 1
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B00IQZQ3KC",
+          "brand": "Pure Encapsulations",
+          "productName": "Red Yeast Rice",
+          "formName": "Standardized Red Yeast Rice (citrinin-free, third-party tested)",
+          "mgPerServing": 1200,
+          "servingUnits": 2,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 82.0,
+          "rank": 1
+        },
+        {
+          "asin": "B00IQZQ5PY",
+          "brand": "Jarrow Formulas",
+          "productName": "Red Yeast Rice + CoQ10",
+          "formName": "Red Yeast Rice + CoQ10 combo",
+          "mgPerServing": 1200,
+          "servingUnits": 2,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 72.0,
+          "rank": 2
+        },
+        {
+          "asin": "B00020IO5U",
+          "brand": "Nature's Plus",
+          "productName": "Herbal Actives Red Yeast Rice Extended Release",
+          "formName": "Standardized Red Yeast Rice (citrinin-free, third-party tested)",
+          "mgPerServing": 600,
+          "servingUnits": 1,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 60.0,
+          "rank": 3
+        }
+      ]
+    },
+    "Plant Sterols (Phytosterols)": {
+      "Plant sterol esters": [
+        {
+          "asin": "B0011860O0",
+          "brand": "Nature Made",
+          "productName": "CholestOff Plus",
+          "formName": "Plant sterol esters (CardioAid / Reducol, 2 g/day)",
+          "mgPerServing": 1800,
+          "servingUnits": 2,
+          "maxDaily": 2,
+          "certifications": [
+            "USP"
+          ],
+          "totalScore": 85.0,
+          "rank": 1
+        },
+        {
+          "asin": "B0017O7VGY",
+          "brand": "Jarrow Formulas",
+          "productName": "Plant Sterols 900 mg",
+          "formName": "Plant sterol esters (CardioAid / Reducol, 2 g/day)",
+          "mgPerServing": 900,
+          "servingUnits": 2,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 69.0,
+          "rank": 2
+        }
+      ],
+      "Beta-sitosterol": [
+        {
+          "asin": "B0019LP6IS",
+          "brand": "NOW Foods",
+          "productName": "Beta-Sitosterol Plant Sterols",
+          "formName": "Beta-sitosterol",
+          "mgPerServing": 540,
+          "servingUnits": 3,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 36.2,
+          "rank": 1
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B0011860O0",
+          "brand": "Nature Made",
+          "productName": "CholestOff Plus",
+          "formName": "Plant sterol esters (CardioAid / Reducol, 2 g/day)",
+          "mgPerServing": 1800,
+          "servingUnits": 2,
+          "maxDaily": 2,
+          "certifications": [
+            "USP"
+          ],
+          "totalScore": 85.0,
+          "rank": 1
+        },
+        {
+          "asin": "B0017O7VGY",
+          "brand": "Jarrow Formulas",
+          "productName": "Plant Sterols 900 mg",
+          "formName": "Plant sterol esters (CardioAid / Reducol, 2 g/day)",
+          "mgPerServing": 900,
+          "servingUnits": 2,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 69.0,
+          "rank": 2
+        },
+        {
+          "asin": "B0019LP6IS",
+          "brand": "NOW Foods",
+          "productName": "Beta-Sitosterol Plant Sterols",
+          "formName": "Beta-sitosterol",
+          "mgPerServing": 540,
+          "servingUnits": 3,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 36.2,
+          "rank": 3
+        }
+      ]
+    },
+    "Aged Garlic Extract (Kyolic AGE)": {
+      "Kyolic Aged Garlic Extract": [
+        {
+          "asin": "B000GG87V2",
+          "brand": "Kyolic (Wakunaga)",
+          "productName": "Aged Garlic Extract Cardiovascular Formula 100",
+          "formName": "Kyolic Aged Garlic Extract (AGE, 600–1,200 mg)",
+          "mgPerServing": 600,
+          "servingUnits": 2,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 1
+        },
+        {
+          "asin": "B000NPYY04",
+          "brand": "Kyolic (Wakunaga)",
+          "productName": "Original Cardiovascular Formula 100 (Caplets)",
+          "formName": "Kyolic Aged Garlic Extract (AGE, 600–1,200 mg)",
+          "mgPerServing": 600,
+          "servingUnits": 2,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 48.0,
+          "rank": 2
+        }
+      ],
+      "Aged Garlic + CoQ10 cardiovascular formula": [
+        {
+          "asin": "B000GG7QU4",
+          "brand": "Kyolic (Wakunaga)",
+          "productName": "Aged Garlic Extract + CoQ10 Formula 110",
+          "formName": "Aged Garlic + CoQ10 cardiovascular formula",
+          "mgPerServing": 600,
+          "servingUnits": 2,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 1
+        }
+      ],
+      "Garlic oil softgel": [
+        {
+          "asin": "B0019LPVTE",
+          "brand": "NOW Foods",
+          "productName": "Garlic Oil 1500 (equivalent)",
+          "formName": "Garlic oil softgel",
+          "mgPerServing": 1500,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 1
+        }
+      ],
+      "Allicin-standardized garlic extract": [
+        {
+          "asin": "B001UV4WZ6",
+          "brand": "Allimax International",
+          "productName": "Allimax 180 mg",
+          "formName": "Allicin-standardized garlic extract",
+          "mgPerServing": 180,
+          "servingUnits": 1,
+          "maxDaily": 3,
+          "certifications": [],
+          "totalScore": 33.5,
+          "rank": 1
+        }
+      ],
+      "_all": [
+        {
+          "asin": "B000GG87V2",
+          "brand": "Kyolic (Wakunaga)",
+          "productName": "Aged Garlic Extract Cardiovascular Formula 100",
+          "formName": "Kyolic Aged Garlic Extract (AGE, 600–1,200 mg)",
+          "mgPerServing": 600,
+          "servingUnits": 2,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 1
+        },
+        {
+          "asin": "B000GG7QU4",
+          "brand": "Kyolic (Wakunaga)",
+          "productName": "Aged Garlic Extract + CoQ10 Formula 110",
+          "formName": "Aged Garlic + CoQ10 cardiovascular formula",
+          "mgPerServing": 600,
+          "servingUnits": 2,
+          "maxDaily": 2,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 2
+        },
+        {
+          "asin": "B0019LPVTE",
+          "brand": "NOW Foods",
+          "productName": "Garlic Oil 1500 (equivalent)",
+          "formName": "Garlic oil softgel",
+          "mgPerServing": 1500,
+          "servingUnits": 1,
+          "maxDaily": 1,
+          "certifications": [],
+          "totalScore": 50.0,
+          "rank": 3
+        }
+      ]
+    }
   }
 }
