@@ -94,13 +94,18 @@ const SYMPTOM_GROUPS: SymptomGroup[] = [
     id: 'immunity_appearance', title: 'Immunity & Appearance', emoji: '🛡️',
     items: [
       { key: 'frequent_illness',   label: 'Get Sick Often',           emoji: '🤧', tokens: ['frequent_illness'] },
-      { key: 'hair_skin',          label: 'Hair Loss or Dry Skin',     emoji: '💇', tokens: ['hair_loss', 'dry_skin'] },
+      { key: 'hair_loss',          label: 'Hair Loss',                 emoji: '💇', tokens: ['hair_loss'] },
+      { key: 'dry_skin',           label: 'Dry Skin',                  emoji: '🏜️', tokens: ['dry_skin'] },
     ],
   },
   {
     id: 'movement', title: 'Joints & Muscles', emoji: '💪',
     items: [
-      { key: 'joint_muscle',       label: 'Joint Pain or Muscle Weakness', emoji: '🦴', tokens: ['joint_pain', 'muscle_weakness'] },
+      // Split — they recommend mostly different supplements (joint pain
+      // → Omega-3 / Collagen / Vitamin C; muscle weakness → Creatine /
+      // Magnesium / CoQ10). Only Vitamin D3 overlaps.
+      { key: 'joint_pain',        label: 'Joint Pain',        emoji: '🦴',  tokens: ['joint_pain'] },
+      { key: 'muscle_weakness',   label: 'Muscle Weakness',   emoji: '💪', tokens: ['muscle_weakness'] },
     ],
   },
   {
@@ -109,7 +114,8 @@ const SYMPTOM_GROUPS: SymptomGroup[] = [
       { key: 'acid_reflux',        label: 'Acid Reflux / GERD',       emoji: '🔥', tokens: ['acid_reflux'] },
       { key: 'constipation',       label: 'Constipation',             emoji: '🚽', tokens: ['constipation'] },
       { key: 'ibs',                label: 'IBS',                      emoji: '🌊', tokens: ['ibs'] },
-      { key: 'bloating_nausea',    label: 'Bloating / Nausea',        emoji: '🎈', tokens: ['bloating', 'nausea'] },
+      { key: 'bloating',           label: 'Bloating',                 emoji: '🎈', tokens: ['bloating'] },
+      { key: 'nausea',             label: 'Nausea',                   emoji: '🤢', tokens: ['nausea'] },
     ],
   },
   {
