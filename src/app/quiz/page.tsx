@@ -156,7 +156,7 @@ const ALCOHOL_OPTIONS: { value: AlcoholConsumption; label: string; desc: string 
 // users map themselves correctly.
 const CAFFEINE_OPTIONS: { value: CaffeineIntake; label: string; desc: string }[] = [
   { value: 'heavy', label: 'Yes', desc: '1.5+ cups of coffee daily — or 3+ cups of tea, an energy drink, or a pre-workout scoop' },
-  { value: 'none',  label: 'No',  desc: '1 cup of coffee a day or less, or none at all' },
+  { value: 'none',  label: 'No',  desc: 'Less than 1.5 cups of coffee daily, or none at all' },
 ]
 
 // "high" and "very_high" trigger IDENTICAL engine boosts (Ashwagandha,
