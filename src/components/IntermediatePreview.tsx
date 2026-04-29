@@ -120,6 +120,45 @@ const GOAL_TO_CACHE: Record<string, string[]> = {
   weight_loss: ['weight loss', 'obesity'],
 }
 
+/** Diet-boost lists hard-coded here so we can label why a supplement was
+ *  included when it didn't match a user-picked symptom or goal. Mirrors
+ *  DIET_BOOST in recommendationEngine.ts (post-audit version). */
+const DIET_BOOST_LOOKUP: Record<string, string[]> = {
+  carnivore: ['Vitamin C', 'Magnesium', 'Methylfolate (5-MTHF)', 'Probiotics', 'Calcium'],
+  vegan: ['Vitamin B12', 'Omega-3 (Fish Oil / Algae)', 'Iron', 'Zinc', 'Vitamin D3', 'Calcium', 'Creatine Monohydrate'],
+  vegetarian: ['Vitamin B12', 'Omega-3 (Fish Oil / Algae)', 'Iron', 'Zinc', 'Vitamin D3', 'Calcium', 'Creatine Monohydrate'],
+  keto: ['Vitamin C', 'Methylfolate (5-MTHF)', 'Magnesium', 'Calcium'],
+  paleo: ['Calcium'],
+  pescatarian: ['Creatine Monohydrate'],
+  mediterranean: [],
+}
+
+/** Return a short label explaining WHY a supplement was included when
+ *  it doesn't address any user-picked symptom or goal directly. The
+ *  most likely trigger is the diet boost; we check that first because
+ *  it's user-visible. Returns null if we can't pinpoint a clear cause. */
+function describeBoostContext(
+  suppName: string,
+  answers: PartialAnswers,
+): string | null {
+  const diet = answers.dietType
+  if (diet && DIET_BOOST_LOOKUP[diet]?.includes(suppName)) {
+    const dietLabels: Record<string, string> = {
+      carnivore: 'carnivore diet',
+      vegan: 'plant-based diet',
+      vegetarian: 'plant-based diet',
+      keto: 'keto diet',
+      paleo: 'paleo diet',
+      pescatarian: 'pescatarian diet',
+      mediterranean: 'Mediterranean diet',
+    }
+    return `Recommended for your ${dietLabels[diet] ?? diet}`
+  }
+  // Lifestyle / age / sex inclusions could be added here too, but the
+  // most common diet-boost case is enough for now.
+  return 'Recommended for your profile'
+}
+
 /** Pick the cache entry whose condition string most plausibly answers
  *  "what is this supplement strong for, given the user's actual concerns".
  *  Prefers entries that match a user-picked symptom/goal AND that the
@@ -399,8 +438,20 @@ export default function IntermediatePreview({
           const userSyms = (answers.symptoms ?? []) as Symptom[]
           const userGoals = (answers.goals ?? []) as Goal[]
           const suppSymptoms = (supp.deficiencySymptoms ?? []) as readonly Symptom[]
+          const suppGoals = (supp.goalsSupported ?? []) as readonly Goal[]
+
+          // Direct relevance: does this supplement address something the
+          // user explicitly picked? If not, it's here only because of a
+          // diet/lifestyle/age/sex boost — and we should label it that
+          // way rather than implying it treats one of their symptoms.
+          const symptomMatch = userSyms.some((s) => suppSymptoms.includes(s))
+          const goalMatch = userGoals.some((g) => suppGoals.includes(g))
+          const userRelevantSupp = symptomMatch || goalMatch
+
           const evList = rec.evidenceByCondition ?? []
-          const primaryEvidence = pickPrimaryEvidence(evList, userSyms, userGoals, suppSymptoms)
+          const primaryEvidence = userRelevantSupp
+            ? pickPrimaryEvidence(evList, userSyms, userGoals, suppSymptoms)
+            : undefined  // diet-only inclusion — don't pull a misleading condition
           const evidenceGrade = primaryEvidence?.grade ?? rec.evidenceGrade
           const displayCondition = primaryEvidence
             ? humanizeCondition(primaryEvidence.condition, userSyms, userGoals, suppSymptoms)
@@ -408,6 +459,12 @@ export default function IntermediatePreview({
           const evidenceSummary = primaryEvidence
             ? buildEvidenceSummary(primaryEvidence, displayCondition)
             : null
+
+          // For diet/lifestyle-only inclusions, surface a different
+          // explanation: which input triggered the boost.
+          const boostContext = userRelevantSupp
+            ? null
+            : describeBoostContext(supp.name, answers)
 
           // Buy URL: specific brand + product name (search still — ASINs unverified
           // until PA-API; brand-anchored search is more accurate than generic).
@@ -442,20 +499,31 @@ export default function IntermediatePreview({
                         ) : null
                       })()}
                     </span>
-                    {/* Evidence strength badge — now context-aware */}
-                    <span
-                      className={`text-xs font-semibold rounded border px-1.5 py-0.5 ${gradeStyles(evidenceGrade)}`}
-                    >
-                      Evidence: {GRADE_LABELS[evidenceGrade] ?? evidenceGrade}
-                      {displayCondition ? ` for ${displayCondition}` : ''}
-                    </span>
+                    {/* Evidence badge: context-aware. For supplements
+                        included only via diet/lifestyle/age/sex boost,
+                        show the trigger instead of a misleading
+                        condition match. */}
+                    {boostContext ? (
+                      <span className="text-xs font-semibold rounded border px-1.5 py-0.5 bg-teal/10 text-teal border-teal/30">
+                        {boostContext}
+                      </span>
+                    ) : (
+                      <span
+                        className={`text-xs font-semibold rounded border px-1.5 py-0.5 ${gradeStyles(evidenceGrade)}`}
+                      >
+                        Evidence: {GRADE_LABELS[evidenceGrade] ?? evidenceGrade}
+                        {displayCondition ? ` for ${displayCondition}` : ''}
+                      </span>
+                    )}
                     {delta && delta.kind !== 'same' ? (
                       <span className={`text-xs font-semibold rounded px-1.5 py-0.5 ${deltaStyles(delta.kind)}`}>
                         {delta.label}
                       </span>
                     ) : null}
                   </div>
-                  {/* One-line study summary directly under the name */}
+                  {/* Study summary — only shown when we have user-relevant
+                      evidence. Diet-only inclusions don't get a misleading
+                      study count attributed to a condition the user didn't pick. */}
                   {evidenceSummary ? (
                     <div className="text-text-tertiary text-xs mt-1">
                       📚 {evidenceSummary}

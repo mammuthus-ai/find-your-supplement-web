@@ -52,14 +52,30 @@ const SYMPTOM_CONDITIONS: Record<Symptom, string[]> = {
 
 function getEntries(supplementName: string): EvidenceEntry[] {
   if (!cache) return []
-  // Normalize name for lookup (cache keys may differ slightly)
+  const supLower = supplementName.toLowerCase()
+
+  // 1) Exact match (case-insensitive)
   for (const key of Object.keys(cache.entries)) {
-    if (supplementName.toLowerCase().includes(key.toLowerCase()) ||
-        key.toLowerCase().includes(supplementName.toLowerCase().split(' ')[0])) {
+    if (key.toLowerCase() === supLower) return cache.entries[key]
+  }
+  // 2) Catalog name with parenthetical suffix (e.g. "CoQ10 (Ubiquinol)"
+  //    → cache key "CoQ10"). Strip everything after the first "(".
+  const stripped = supLower.split('(')[0].trim()
+  if (stripped !== supLower) {
+    for (const key of Object.keys(cache.entries)) {
+      if (key.toLowerCase() === stripped) return cache.entries[key]
+    }
+  }
+  // 3) Cache key is a prefix of the catalog name (handles "Omega-3 (Fish
+  //    Oil / Algae)" matching cache key "Omega-3"). Use a word boundary
+  //    after the prefix so "Vitamin" doesn't match "Vitamin D3" / "Vitamin C".
+  for (const key of Object.keys(cache.entries)) {
+    const k = key.toLowerCase()
+    if (supLower === k || supLower.startsWith(k + ' ') || supLower.startsWith(k + ' (')) {
       return cache.entries[key]
     }
   }
-  return cache.entries[supplementName] || []
+  return []
 }
 
 function getRelevantEntries(

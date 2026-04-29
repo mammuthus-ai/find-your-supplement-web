@@ -46,14 +46,19 @@ const CORROBORATION_MIN_DIMENSIONS = 2
 
 // ─── Diet boost/suppress maps (PubMed-derived) ────────────────────────────────
 
+// All entries audited 2026-04-28 — see docs/boost-map-evidence-audit.md
+// for citation per entry. Removed: paleo→B12/D3 (paleo includes meat,
+// no specific D link), pescatarian→B12/Iron/Zn (fish/eggs/dairy adequate
+// for these), mediterranean→B12/D3 (Mediterranean is nutrient-replete),
+// keto→Probiotics (only weak inferential evidence).
 const DIET_BOOST: Record<string, string[]> = {
   carnivore: ['Vitamin C', 'Magnesium', 'Methylfolate (5-MTHF)', 'Probiotics', 'Calcium'],
   vegan: ['Vitamin B12', 'Omega-3 (Fish Oil / Algae)', 'Iron', 'Zinc', 'Vitamin D3', 'Calcium', 'Creatine Monohydrate'],
   vegetarian: ['Vitamin B12', 'Omega-3 (Fish Oil / Algae)', 'Iron', 'Zinc', 'Vitamin D3', 'Calcium', 'Creatine Monohydrate'],
-  keto: ['Vitamin C', 'Methylfolate (5-MTHF)', 'Magnesium', 'Probiotics', 'Calcium'],
-  paleo: ['Calcium', 'Vitamin D3', 'Vitamin B12'],
-  pescatarian: ['Vitamin B12', 'Iron', 'Zinc', 'Creatine Monohydrate'],
-  mediterranean: ['Vitamin D3', 'Vitamin B12'],
+  keto: ['Vitamin C', 'Methylfolate (5-MTHF)', 'Magnesium', 'Calcium'],
+  paleo: ['Calcium'],
+  pescatarian: ['Creatine Monohydrate'],
+  mediterranean: [],
 }
 
 const DIET_SUPPRESS: Record<string, string[]> = {
@@ -73,29 +78,35 @@ const MODERATE_RISK_DIETS: DietType[] = ['keto', 'paleo', 'pescatarian']
 
 type Magnitude = 'high' | 'medium' | 'low'
 
+// Magnitudes audited 2026-04-28 — see docs/boost-map-evidence-audit.md.
+// Downgraded: sun→Mg (high→low, mechanistic only), ex_wt→Mg (high→medium,
+// sweat-loss is real but not high-magnitude), ex_wt→Zn (medium→low,
+// observational only), ex_cardio→D3 (medium→low, indirect via reduced sun),
+// ex_cardio→Mg (high→medium), ex_both→Mg (high→medium),
+// stress→B12 (medium→low, weak evidence), stress→Zn (medium→low, acute-only).
 const LIFESTYLE_BOOST: Record<string, { supplement: string; magnitude: Magnitude }[]> = {
   sun_very_little: [
     { supplement: 'Vitamin D3', magnitude: 'high' },
-    { supplement: 'Magnesium', magnitude: 'medium' },
+    { supplement: 'Magnesium', magnitude: 'low' },
   ],
   exercise_weight_training: [
     { supplement: 'Creatine Monohydrate', magnitude: 'high' },
     { supplement: 'Collagen Peptides', magnitude: 'medium' },
-    { supplement: 'Magnesium', magnitude: 'high' },
-    { supplement: 'Zinc', magnitude: 'medium' },
+    { supplement: 'Magnesium', magnitude: 'medium' },
+    { supplement: 'Zinc', magnitude: 'low' },
   ],
   exercise_cardio: [
     { supplement: 'Iron', magnitude: 'high' },
-    { supplement: 'Vitamin D3', magnitude: 'medium' },
+    { supplement: 'Vitamin D3', magnitude: 'low' },
     { supplement: 'Omega-3 (Fish Oil / Algae)', magnitude: 'medium' },
-    { supplement: 'Magnesium', magnitude: 'high' },
+    { supplement: 'Magnesium', magnitude: 'medium' },
   ],
   exercise_both: [
     { supplement: 'Creatine Monohydrate', magnitude: 'high' },
     { supplement: 'Iron', magnitude: 'high' },
-    { supplement: 'Magnesium', magnitude: 'high' },
-    { supplement: 'Zinc', magnitude: 'medium' },
-    { supplement: 'Vitamin D3', magnitude: 'medium' },
+    { supplement: 'Magnesium', magnitude: 'medium' },
+    { supplement: 'Zinc', magnitude: 'low' },
+    { supplement: 'Vitamin D3', magnitude: 'low' },
     { supplement: 'Omega-3 (Fish Oil / Algae)', magnitude: 'medium' },
     { supplement: 'Collagen Peptides', magnitude: 'medium' },
   ],
@@ -126,17 +137,17 @@ const LIFESTYLE_BOOST: Record<string, { supplement: string; magnitude: Magnitude
   stress_high: [
     { supplement: 'Ashwagandha (KSM-66)', magnitude: 'high' },
     { supplement: 'Magnesium', magnitude: 'high' },
-    { supplement: 'Vitamin B12', magnitude: 'medium' },
+    { supplement: 'Vitamin B12', magnitude: 'low' },
     { supplement: 'Vitamin C', magnitude: 'medium' },
-    { supplement: 'Zinc', magnitude: 'medium' },
+    { supplement: 'Zinc', magnitude: 'low' },
     { supplement: 'Probiotics', magnitude: 'medium' },
   ],
   stress_very_high: [
     { supplement: 'Ashwagandha (KSM-66)', magnitude: 'high' },
     { supplement: 'Magnesium', magnitude: 'high' },
-    { supplement: 'Vitamin B12', magnitude: 'medium' },
+    { supplement: 'Vitamin B12', magnitude: 'low' },
     { supplement: 'Vitamin C', magnitude: 'medium' },
-    { supplement: 'Zinc', magnitude: 'medium' },
+    { supplement: 'Zinc', magnitude: 'low' },
     { supplement: 'Probiotics', magnitude: 'medium' },
   ],
 }
