@@ -83,6 +83,70 @@ function extractFormDescriptor(formName: string | undefined, suppName: string): 
   return descriptor || null
 }
 
+/** Map each user symptom/goal to the cache condition keywords that should
+ *  count as "evidence for this user input". Used to pick the primary
+ *  evidence entry when the cache has multiple conditions per supplement. */
+const SYMPTOM_TO_CACHE: Record<string, string[]> = {
+  fatigue: ['fatigue', 'energy'],
+  poor_sleep: ['sleep', 'insomnia'],
+  brain_fog: ['cognitive', 'cognition', 'brain'],
+  joint_pain: ['joint pain', 'osteoarthritis', 'arthritis'],
+  frequent_illness: ['immune', 'infection'],
+  anxiety: ['anxiety', 'stress'],
+  hair_loss: ['hair', 'alopecia'],
+  digestive_issues: ['digestive', 'gerd', 'gastroesophageal', 'dyspepsia'],
+  low_mood: ['depression', 'mood'],
+  muscle_weakness: ['muscle strength', 'sarcopenia', 'muscle'],
+  poor_memory: ['memory', 'cognitive'],
+  dry_skin: ['skin', 'dermatitis'],
+  acid_reflux: ['gerd', 'gastroesophageal', 'reflux', 'dyspepsia', 'digestive'],
+  constipation: ['constipation', 'bowel', 'digestive'],
+  ibs: ['irritable bowel', 'ibs', 'digestive'],
+  bloating: ['bloating', 'dyspepsia', 'digestive'],
+  nausea: ['nausea', 'dyspepsia', 'digestive'],
+  apo_b_elevated: ['apolipoprotein', 'apob', 'heart'],
+  ldl_elevated: ['ldl', 'hypercholesterolemia', 'heart'],
+  hdl_low: ['hdl', 'heart'],
+  triglycerides_high: ['hypertriglyceridemia', 'triglycerides', 'heart'],
+}
+const GOAL_TO_CACHE: Record<string, string[]> = {
+  energy: ['fatigue', 'energy'],
+  sleep: ['sleep', 'insomnia'],
+  muscle: ['muscle strength', 'sarcopenia', 'muscle'],
+  focus: ['cognitive', 'focus'],
+  longevity: ['longevity', 'mortality', 'heart'],
+  immunity: ['immune'],
+  mood: ['depression', 'mood'],
+  weight_loss: ['weight loss', 'obesity'],
+}
+
+/** Pick the cache entry whose condition string most plausibly answers
+ *  "what is this supplement strong for, given the user's actual concerns".
+ *  Prefers entries that match a user-picked symptom/goal AND that the
+ *  supplement legitimately addresses. */
+function pickPrimaryEvidence<T extends { condition: string }>(
+  evList: readonly T[],
+  symptoms: Symptom[],
+  goals: Goal[],
+  suppSymptoms: readonly Symptom[],
+): T | undefined {
+  if (evList.length === 0) return undefined
+  // Build the set of cache-keyword aliases from the user's matched inputs
+  // (only those the supplement actually covers in deficiencySymptoms).
+  const userMatches = symptoms.filter((s) => suppSymptoms.includes(s))
+  const aliases = new Set<string>()
+  for (const s of userMatches) (SYMPTOM_TO_CACHE[s] ?? []).forEach((a) => aliases.add(a))
+  for (const g of goals) (GOAL_TO_CACHE[g] ?? []).forEach((a) => aliases.add(a))
+  if (aliases.size > 0) {
+    const hit = evList.find((e) => {
+      const c = e.condition.toLowerCase()
+      return Array.from(aliases).some((a) => c.includes(a))
+    })
+    if (hit) return hit
+  }
+  return evList[0]
+}
+
 /** Join an array as a human-readable list: ["a"] → "a", ["a","b"] → "a and b",
  *  ["a","b","c"] → "a, b, and c". */
 function joinHuman(parts: string[]): string {
@@ -321,20 +385,14 @@ export default function IntermediatePreview({
           const bestProduct = pickBestProduct(supp.name, pickedForm?.name)
           const reason = bestProduct ? whyThisProduct(bestProduct) : null
 
-          // Primary evidence: prefer the cached condition that maps cleanly
-          // back to a symptom/goal the user actually picked AND that the
-          // supplement actually addresses. Falls back to the first cache entry.
+          // Primary evidence: pick the cached condition that lines up with
+          // a symptom/goal the user actually picked. Falls back to the first
+          // cache entry if no clean mapping exists.
           const userSyms = (answers.symptoms ?? []) as Symptom[]
           const userGoals = (answers.goals ?? []) as Goal[]
           const suppSymptoms = (supp.deficiencySymptoms ?? []) as readonly Symptom[]
           const evList = rec.evidenceByCondition ?? []
-          const primaryEvidence =
-            evList.find((e) => {
-              const humanized = humanizeCondition(e.condition, userSyms, userGoals, suppSymptoms)
-              // Was the condition translated to a user-input term? If so the
-              // supplement legitimately addresses one of THIS user's concerns.
-              return humanized.toLowerCase() !== e.condition.toLowerCase()
-            }) ?? evList[0]
+          const primaryEvidence = pickPrimaryEvidence(evList, userSyms, userGoals, suppSymptoms)
           const evidenceGrade = primaryEvidence?.grade ?? rec.evidenceGrade
           const displayCondition = primaryEvidence
             ? humanizeCondition(primaryEvidence.condition, userSyms, userGoals, suppSymptoms)
@@ -342,16 +400,6 @@ export default function IntermediatePreview({
           const evidenceSummary = primaryEvidence
             ? buildEvidenceSummary(primaryEvidence, displayCondition)
             : null
-
-          // Combine all matched-symptom reasons into one human label so we
-          // don't drop "joint pain" when "dry skin" was matched first.
-          const symptomLabels = (rec.reasons ?? [])
-            .filter((r) => r.type === 'symptom')
-            .map((r) => r.label.replace(/^Addresses symptom:\s*/i, '').trim())
-          const combinedSupplementReason =
-            symptomLabels.length > 0
-              ? `Addresses your ${joinHuman(symptomLabels)}`
-              : rec.reasons?.[0]?.label ?? ''
 
           // Buy URL: specific brand + product name (search still — ASINs unverified
           // until PA-API; brand-anchored search is more accurate than generic).
@@ -437,27 +485,17 @@ export default function IntermediatePreview({
                 </div>
               )}
 
-              {/* Twin explanations: why the supplement + why this product */}
-              {(combinedSupplementReason || reason) && (
-                <div className="mt-2 pt-2 border-t border-border space-y-1.5">
-                  {combinedSupplementReason && (
-                    <div className="flex items-start gap-2">
-                      <span className="text-teal text-xs flex-shrink-0 mt-0.5" aria-hidden>🎯</span>
-                      <span className="text-text-tertiary text-xs leading-snug">
-                        <span className="font-semibold text-text-secondary">Why this supplement: </span>
-                        {combinedSupplementReason}
-                      </span>
-                    </div>
-                  )}
-                  {reason && (
-                    <div className="flex items-start gap-2">
-                      <span className="text-teal text-xs flex-shrink-0 mt-0.5" aria-hidden>✓</span>
-                      <span className="text-text-tertiary text-xs leading-snug">
-                        <span className="font-semibold text-text-secondary">Why this product: </span>
-                        {reason}
-                      </span>
-                    </div>
-                  )}
+              {/* Why-this-product only — "why this supplement" was duplicative
+                  of the evidence badge + studies count above. */}
+              {reason && (
+                <div className="mt-2 pt-2 border-t border-border">
+                  <div className="flex items-start gap-2">
+                    <span className="text-teal text-xs flex-shrink-0 mt-0.5" aria-hidden>✓</span>
+                    <span className="text-text-tertiary text-xs leading-snug">
+                      <span className="font-semibold text-text-secondary">Why this product: </span>
+                      {reason}
+                    </span>
+                  </div>
                 </div>
               )}
             </div>
