@@ -155,9 +155,10 @@ function humanizeCondition(
 }
 
 /** One-line summary of what the research looks like for this supplement's
- *  primary matched condition. Pulls rctCount + metaAnalysisCount + pubmedCount
- *  from the evidence cache. Example: "Backed by 23 RCTs and 2 meta-analyses
- *  for acid reflux". */
+ *  primary matched condition. Uses plain language ("research reviews",
+ *  "clinical trials") instead of "meta-analyses" / "RCTs" since most users
+ *  won't know those terms. Example: "Backed by 453 research reviews and
+ *  495 clinical trials for acid reflux". */
 function buildEvidenceSummary(e: {
   condition: string
   rctCount: number
@@ -166,16 +167,23 @@ function buildEvidenceSummary(e: {
 }, displayCondition: string): string {
   const parts: string[] = []
   if (e.metaAnalysisCount > 0) {
-    parts.push(`${e.metaAnalysisCount} meta-analys${e.metaAnalysisCount === 1 ? 'is' : 'es'}`)
+    parts.push(
+      `${e.metaAnalysisCount} research review${e.metaAnalysisCount === 1 ? '' : 's'}`
+    )
   }
   if (e.rctCount > 0) {
-    parts.push(`${e.rctCount} RCT${e.rctCount === 1 ? '' : 's'}`)
+    parts.push(
+      `${e.rctCount} clinical trial${e.rctCount === 1 ? '' : 's'}`
+    )
   }
   if (parts.length === 0 && e.pubmedCount > 0) {
-    parts.push(`${e.pubmedCount} PubMed stud${e.pubmedCount === 1 ? 'y' : 'ies'}`)
+    parts.push(
+      `${e.pubmedCount} published stud${e.pubmedCount === 1 ? 'y' : 'ies'}`
+    )
   }
   if (parts.length === 0) return ''
-  return `${parts.join(' + ')} for ${displayCondition}`
+  const joined = parts.length === 2 ? `${parts[0]} and ${parts[1]}` : parts.join(' and ')
+  return `Backed by ${joined} for ${displayCondition}`
 }
 
 /** Short human-readable reason the scored #1 product was picked. Pulls from
@@ -359,15 +367,14 @@ export default function IntermediatePreview({
               key={supp.name}
               className="bg-surface-alt border border-border rounded-lg p-3"
             >
+              {/* Header row: number, supplement name + form, evidence badge */}
               <div className="flex items-start gap-3">
                 <div className="flex-shrink-0 w-7 h-7 rounded-full bg-teal/20 border border-teal flex items-center justify-center text-teal text-xs font-bold">
                   {rec.rank}
                 </div>
                 <div className="flex-1 min-w-0">
-                  {/* Supplement name + recommended form descriptor inline,
-                      e.g. "Magnesium (glycinate)" */}
                   <div className="flex items-center gap-2 flex-wrap">
-                    <span className="text-text font-semibold text-sm truncate">
+                    <span className="text-text font-semibold text-sm">
                       {supp.name}
                       {(() => {
                         const formDesc = extractFormDescriptor(
@@ -379,11 +386,12 @@ export default function IntermediatePreview({
                         ) : null
                       })()}
                     </span>
-                    {/* Evidence strength badge */}
+                    {/* Evidence strength badge — now context-aware */}
                     <span
                       className={`text-xs font-semibold rounded border px-1.5 py-0.5 ${gradeStyles(evidenceGrade)}`}
                     >
                       Evidence: {GRADE_LABELS[evidenceGrade] ?? evidenceGrade}
+                      {displayCondition ? ` for ${displayCondition}` : ''}
                     </span>
                     {delta && delta.kind !== 'same' ? (
                       <span className={`text-xs font-semibold rounded px-1.5 py-0.5 ${deltaStyles(delta.kind)}`}>
@@ -391,35 +399,46 @@ export default function IntermediatePreview({
                       </span>
                     ) : null}
                   </div>
-                  {bestProduct ? (
-                    <div className="text-text-secondary text-xs mt-0.5">
-                      <span className="font-semibold">{bestProduct.brand}</span>
-                      <span> · {bestProduct.productName}</span>
-                    </div>
-                  ) : pickedForm?.name ? (
-                    <div className="text-text-secondary text-xs truncate mt-0.5">
-                      Recommended form: {pickedForm.name}
-                    </div>
-                  ) : null}
-                  {/* One-line study summary */}
+                  {/* One-line study summary directly under the name */}
                   {evidenceSummary ? (
                     <div className="text-text-tertiary text-xs mt-1">
                       📚 {evidenceSummary}
                     </div>
                   ) : null}
                 </div>
-                <a
-                  href={buyUrl}
-                  target="_blank"
-                  rel="noopener noreferrer sponsored"
-                  className="flex-shrink-0 bg-teal hover:bg-teal-light text-bg text-xs font-semibold px-3 py-1.5 rounded transition-colors"
-                >
-                  Buy
-                </a>
               </div>
 
+              {/* Recommended product row — labeled, sitting next to the Buy button */}
+              {(bestProduct || pickedForm?.name) && (
+                <div className="mt-3 pt-3 border-t border-border flex items-center gap-3">
+                  <div className="flex-1 min-w-0">
+                    <div className="text-text-secondary text-[10px] font-semibold uppercase tracking-wide">
+                      Recommended product
+                    </div>
+                    {bestProduct ? (
+                      <div className="text-text text-xs mt-0.5">
+                        <span className="font-semibold">{bestProduct.brand}</span>
+                        <span className="text-text-secondary"> · {bestProduct.productName}</span>
+                      </div>
+                    ) : pickedForm?.name ? (
+                      <div className="text-text text-xs mt-0.5 truncate">
+                        Form: {pickedForm.name}
+                      </div>
+                    ) : null}
+                  </div>
+                  <a
+                    href={buyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored"
+                    className="flex-shrink-0 bg-teal hover:bg-teal-light text-bg text-xs font-semibold px-3 py-1.5 rounded transition-colors"
+                  >
+                    Buy
+                  </a>
+                </div>
+              )}
+
               {/* Twin explanations: why the supplement + why this product */}
-              {(rec.reasons?.length || reason) && (
+              {(combinedSupplementReason || reason) && (
                 <div className="mt-2 pt-2 border-t border-border space-y-1.5">
                   {combinedSupplementReason && (
                     <div className="flex items-start gap-2">
