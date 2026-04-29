@@ -538,15 +538,21 @@ export function buildRecommendations(profile: QuizProfile): SupplementRecommenda
   const hasUserInput = profile.symptoms.length + profile.goals.length > 0
   let ordered = results
   if (hasUserInput) {
-    // Strict filter: show ONLY supplements that address at least one of
-    // the user's stated symptoms/goals. If that produces 1 result, show
-    // 1 — don't pad to 3 with irrelevant generalists. If it produces 0
-    // (very narrow, unsupported input), fall back to unfiltered so the
-    // page isn't empty.
+    // Filter to supplements that legitimately address something the user
+    // told us about. Three valid match dimensions:
+    //   1. Symptom — listed in supplement's deficiencySymptoms
+    //   2. Goal — listed in supplement's goalsSupported
+    //   3. Diet — listed in DIET_BOOST[user's diet] (e.g. carnivore →
+    //      Vit C, Mg, Methylfolate, Probiotics, Calcium because those
+    //      nutrients are commonly deficient on that diet)
+    // If filtering empties the list (very narrow input), fall back to
+    // unfiltered so the page is never blank.
+    const dietBoostList = DIET_BOOST[profile.dietType] ?? []
     const filtered = results.filter((r) => {
       const symHit = profile.symptoms.some((s) => r.supplement.deficiencySymptoms.includes(s))
       const goalHit = profile.goals.some((g) => r.supplement.goalsSupported.includes(g))
-      return symHit || goalHit
+      const dietHit = dietBoostList.includes(r.supplement.name)
+      return symHit || goalHit || dietHit
     })
     if (filtered.length > 0) ordered = filtered
   }

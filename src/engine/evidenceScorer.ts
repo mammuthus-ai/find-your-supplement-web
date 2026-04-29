@@ -34,16 +34,18 @@ const SYMPTOM_CONDITIONS: Record<Symptom, string[]> = {
   low_mood: ['mood', 'depression'],
   muscle_weakness: ['muscle strength'],
   poor_memory: ['cognitive function'],
-  dry_skin: ['inflammation'],
-  acid_reflux: ['GERD', 'acid reflux', 'gastroesophageal reflux'],
+  dry_skin: ['skin health', 'inflammation'],
+  // 'digestive health' added — most supplements (Probiotics especially)
+  // store their reflux-related evidence under that broader bucket in cache.
+  acid_reflux: ['GERD', 'acid reflux', 'gastroesophageal reflux', 'digestive health'],
   constipation: ['constipation', 'digestive health'],
   ibs: ['irritable bowel syndrome', 'IBS', 'digestive health'],
   bloating: ['bloating', 'dyspepsia', 'digestive health'],
-  nausea: ['nausea', 'dyspepsia'],
-  apo_b_elevated: ['apolipoprotein B', 'apoB', 'dyslipidemia', 'cardiovascular risk'],
-  ldl_elevated: ['LDL cholesterol', 'hypercholesterolemia', 'dyslipidemia'],
-  hdl_low: ['HDL cholesterol', 'dyslipidemia', 'cardiovascular risk'],
-  triglycerides_high: ['triglycerides', 'hypertriglyceridemia', 'dyslipidemia'],
+  nausea: ['nausea', 'dyspepsia', 'digestive health'],
+  apo_b_elevated: ['apolipoprotein B', 'apoB', 'dyslipidemia', 'cardiovascular risk', 'heart health'],
+  ldl_elevated: ['LDL cholesterol', 'hypercholesterolemia', 'dyslipidemia', 'heart health'],
+  hdl_low: ['HDL cholesterol', 'dyslipidemia', 'cardiovascular risk', 'heart health'],
+  triglycerides_high: ['triglycerides', 'hypertriglyceridemia', 'dyslipidemia', 'heart health'],
 }
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
