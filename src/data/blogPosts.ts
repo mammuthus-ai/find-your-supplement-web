@@ -201,20 +201,20 @@ This guide cuts through the noise. We'll cover the six most evidence-backed natu
 
 ## How We Grade the Evidence
 
-Throughout this post, we use a simplified evidence grading system:
+Throughout this post, we use a four-tier evidence grading system:
 
-- **Grade A:** Multiple high-quality randomized controlled trials (RCTs) or systematic reviews/meta-analyses with consistent positive findings
-- **Grade B:** At least one well-designed RCT or several smaller trials with generally positive but sometimes mixed results
-- **Grade C:** Preliminary evidence — small trials, animal studies, or traditional use without strong human data
-- **Grade D:** Very limited or conflicting evidence; not recommended without further research
+- **Strong:** Multiple high-quality RCTs or systematic reviews/meta-analyses with consistent positive findings
+- **Moderate:** At least one well-designed RCT or several smaller trials with generally positive but sometimes mixed results
+- **Limited:** Preliminary evidence — small trials, animal studies, or traditional use without robust human data
+- **Insufficient:** Very limited or conflicting evidence; not recommended without further research
 
 ---
 
-## 1. Ashwagandha (Withania somnifera) — Grade A
+## 1. Ashwagandha (Withania somnifera) — Strong Evidence
 
 ### The Research
 
-Ashwagandha is the most studied adaptogen for anxiety, and it earns a Grade A rating through sheer volume and consistency of evidence.
+Ashwagandha is the most studied adaptogen for anxiety, and it earns a Strong rating through sheer volume and consistency of evidence.
 
 A [2024 systematic review and meta-analysis in *Nutrients*](https://pmc.ncbi.nlm.nih.gov/articles/PMC12242034/) — analyzing data from 15 randomized controlled trials involving 873 adults — found that ashwagandha supplementation produced statistically significant reductions in both perceived stress (PSS scale) and anxiety symptoms (HAM-A scale), alongside meaningful decreases in cortisol levels. This is the most comprehensive meta-analysis to date on this herb.
 
@@ -241,7 +241,7 @@ Look for KSM-66 or Sensoril — these are proprietary, well-studied extract form
 
 ---
 
-## 2. Lavender Oil (Silexan) — Grade A
+## 2. Lavender Oil (Silexan) — Strong Evidence
 
 ### The Research
 
@@ -271,7 +271,7 @@ Silexan is sold in Europe as a prescription-grade supplement (Lasea). In the US,
 
 ---
 
-## 3. L-Theanine — Grade B
+## 3. L-Theanine — Moderate Evidence
 
 ### The Research
 
@@ -303,7 +303,7 @@ Look for pharmaceutical-grade L-theanine (Suntheanine® is the most studied bran
 
 ---
 
-## 4. Magnesium — Grade B
+## 4. Magnesium — Moderate Evidence
 
 ### The Research
 
@@ -341,7 +341,7 @@ For anxiety specifically, **magnesium glycinate** is the form most supported by 
 
 ---
 
-## 5. Passionflower (Passiflora incarnata) — Grade B
+## 5. Passionflower (Passiflora incarnata) — Moderate Evidence
 
 ### The Research
 
@@ -365,7 +365,7 @@ The mechanism involves chrysin and other flavonoids in passionflower that bind t
 
 ---
 
-## 6. Omega-3 Fatty Acids — Grade B
+## 6. Omega-3 Fatty Acids — Moderate Evidence
 
 ### The Research
 
@@ -392,14 +392,14 @@ Omega-3s work particularly well as an adjunct — combined with a primary anxiol
 
 ## Evidence Comparison Table
 
-| Supplement | Evidence Grade | Best Dosage | Onset | Key Benefit |
+| Supplement | Evidence Strength | Best Dosage | Onset | Key Benefit |
 |---|---|---|---|---|
-| **Ashwagandha** | A | 300–600 mg/day | 4–8 weeks | Cortisol reduction, HPA axis regulation |
-| **Lavender (Silexan)** | A | 80 mg/day | 2–4 weeks | Non-sedating; comparable to lorazepam |
-| **L-Theanine** | B | 200–400 mg/day | 30–60 min (acute) | Alert relaxation; no sedation |
-| **Magnesium Glycinate** | B | 200–400 mg/day | 4–8 weeks | Best for deficient individuals |
-| **Passionflower** | B | 200–400 mg 3x/day | 1–2 weeks | GABAergic; comparable to oxazepam |
-| **Omega-3 (High EPA)** | B | 1–3 g EPA+DHA/day | 8–12 weeks | Best as adjunct; anti-neuroinflammatory |
+| **Ashwagandha** | Strong | 300–600 mg/day | 4–8 weeks | Cortisol reduction, HPA axis regulation |
+| **Lavender (Silexan)** | Strong | 80 mg/day | 2–4 weeks | Non-sedating; comparable to lorazepam |
+| **L-Theanine** | Moderate | 200–400 mg/day | 30–60 min (acute) | Alert relaxation; no sedation |
+| **Magnesium Glycinate** | Moderate | 200–400 mg/day | 4–8 weeks | Best for deficient individuals |
+| **Passionflower** | Moderate | 200–400 mg 3x/day | 1–2 weeks | GABAergic; comparable to oxazepam |
+| **Omega-3 (High EPA)** | Moderate | 1–3 g EPA+DHA/day | 8–12 weeks | Best as adjunct; anti-neuroinflammatory |
 
 ---
 
@@ -409,7 +409,7 @@ For completeness, several popular anxiety supplements have far less clinical bac
 
 - **Valerian root:** Mixed evidence; most well-designed trials show no significant effect on anxiety (better evidence for sleep)
 - **Kava:** Shows promise mechanistically (GABA modulation), but a [2023 neuroimaging RCT](https://pmc.ncbi.nlm.nih.gov/articles/PMC10649338/) found 240 mg kavalactones/day did not reduce anxiety symptoms at 8 weeks, and there are documented liver toxicity concerns with heavy or prolonged use
-- **CBD (cannabidiol):** Early trials are promising but regulatory uncertainty, product quality variability, and lack of large RCTs makes evidence preliminary; Grade C at best for anxiety
+- **CBD (cannabidiol):** Early trials are promising but regulatory uncertainty, product quality variability, and lack of large RCTs makes evidence preliminary; Limited at best for anxiety
 - **GABA supplements:** GABA molecules do not readily cross the blood-brain barrier, so oral GABA supplementation has limited mechanism of action; effects likely minimal
 
 ---
@@ -506,7 +506,7 @@ A [2023 meta-analysis of 31 RCTs published in *Advances in Nutrition*](https://p
 
 This isn't a marginal rounding error. It's the difference between correcting a deficiency and spending months taking a supplement that barely moves the needle.
 
-**Evidence Grade: A** — Multiple large-scale meta-analyses of RCTs confirm D3's superiority.
+**Evidence Strength: Strong** — Multiple large-scale meta-analyses of RCTs confirm D3's superiority.
 
 ### Why the Body Prefers D3: The Biochemistry
 
@@ -703,16 +703,16 @@ This guide cuts through the noise. Below, you'll find the nine best supplements 
 
 Before diving in, here's the grading system used throughout this article:
 
-- **Grade A** — Multiple large meta-analyses or systematic reviews of RCTs confirm efficacy
-- **Grade B+/B** — Several RCTs with consistent positive findings; some mixed results
-- **Grade B-** — Early or limited RCT data; strong mechanistic evidence but fewer large trials
-- **Grade C** — Mostly preclinical or observational evidence; clinical trials pending or mixed
+- **Strong** — Multiple large meta-analyses or systematic reviews of RCTs confirm efficacy
+- **Moderate** — Several RCTs with consistent positive findings; some mixed results
+- **Limited** — Early or limited RCT data; strong mechanistic evidence but fewer large trials
+- **Insufficient** — Mostly preclinical or observational evidence; clinical trials pending or mixed
 
 Higher grades don't always mean "take this." The best supplement depends on *your* specific gut issue — which is why the quiz at the bottom of the page exists.
 
 ---
 
-## 1. Probiotics — Grade A
+## 1. Probiotics — Strong Evidence
 
 **Best for:** IBS, antibiotic-associated diarrhea, general microbiome support
 
@@ -747,7 +747,7 @@ The [NIH Office of Dietary Supplements probiotic fact sheet](https://ods.od.nih.
 
 ---
 
-## 2. Prebiotics (Inulin, FOS, GOS) — Grade B+
+## 2. Prebiotics (Inulin, FOS, GOS) — Moderate Evidence
 
 **Best for:** Feeding beneficial gut bacteria, constipation, improving microbiome diversity
 
@@ -771,7 +771,7 @@ Start with 3–5g per day and gradually increase to 10–15g to minimize gas. Ch
 
 ---
 
-## 3. L-Glutamine — Grade B
+## 3. L-Glutamine — Moderate Evidence
 
 **Best for:** Post-infectious IBS, leaky gut (intestinal hyperpermeability), exercise-induced gut stress
 
@@ -797,7 +797,7 @@ Glutamine also helps during exercise. A [2017 RCT of endurance runners](https://
 
 ---
 
-## 4. Zinc Carnosine — Grade B+
+## 4. Zinc Carnosine — Moderate Evidence
 
 **Best for:** NSAID-induced gut damage, gastric ulcers, H. pylori support, gastric mucosal repair
 
@@ -821,7 +821,7 @@ A [2022 review of zinc L-carnosine applications](https://pubmed.ncbi.nlm.nih.gov
 
 ---
 
-## 5. Butyrate (Sodium Butyrate / Tributyrin) — Grade B
+## 5. Butyrate (Sodium Butyrate / Tributyrin) — Moderate Evidence
 
 **Best for:** IBD, ulcerative colitis, general colonocyte support, intestinal barrier maintenance
 
@@ -847,7 +847,7 @@ The catch: most people who eat enough fiber produce adequate butyrate naturally.
 
 ---
 
-## 6. Digestive Enzymes — Grade B
+## 6. Digestive Enzymes — Moderate Evidence
 
 **Best for:** Functional dyspepsia, bloating after meals, suspected enzyme insufficiency, food intolerances
 
@@ -871,7 +871,7 @@ Take 1–2 capsules with each meal. Look for a broad-spectrum blend (amylase + p
 
 ---
 
-## 7. Berberine — Grade B
+## 7. Berberine — Moderate Evidence
 
 **Best for:** Gut dysbiosis linked to metabolic conditions, inflammatory GI conditions, SIBO support
 
@@ -897,7 +897,7 @@ An important nuance: berberine has very low oral bioavailability (under 1%). But
 
 ---
 
-## 8. Collagen Peptides — Grade B-
+## 8. Collagen Peptides — Limited Evidence
 
 **Best for:** Early-stage leaky gut support, general GI comfort, bloating
 
@@ -909,7 +909,7 @@ A [two-phase human study (PMC, 2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9
 
 The mechanistic underpinning comes from a cell study showing that [collagen peptides restored tight junction proteins ZO-1 and occludin](https://pubmed.ncbi.nlm.nih.gov/28174772/) in intestinal epithelial cells (Caco-2) after they were disrupted by TNF-α (a key inflammatory mediator in IBD). A [2024 study in npj Science of Food](https://www.nature.com/articles/s41538-024-00367-7) extended these findings to anti-inflammatory effects relevant to ulcerative colitis.
 
-The caveat: Grade B- reflects the still-limited size of the human RCT base. This is a promising supplement, but the evidence is not yet as robust as the top-tier options above.
+The caveat: the Limited rating reflects the still-limited size of the human RCT base. This is a promising supplement, but the evidence is not yet as robust as the top-tier options above.
 
 ### Dosage & Form
 
@@ -923,7 +923,7 @@ The caveat: Grade B- reflects the still-limited size of the human RCT base. This
 
 ---
 
-## 9. Omega-3 Fatty Acids — Grade B (for gut-specific benefits)
+## 9. Omega-3 Fatty Acids — Moderate Evidence (for gut-specific benefits)
 
 **Best for:** Anti-inflammatory gut support, microbiome diversity, IBD adjunct
 
@@ -945,17 +945,17 @@ These effects are likely secondary to omega-3's powerful systemic anti-inflammat
 
 ## The Full Comparison: Gut Health Supplements by Evidence
 
-| Supplement | Evidence Grade | Best Use Case | Time to Effect |
+| Supplement | Evidence Strength | Best Use Case | Time to Effect |
 |---|---|---|---|
-| Probiotics | **A** | IBS, antibiotic diarrhea, general microbiome | 4–8 weeks |
-| Prebiotics (inulin/FOS) | **B+** | Microbiome diversity, constipation | 2–4 weeks |
-| Zinc Carnosine | **B+** | NSAID gut damage, gastric ulcers | 4–8 weeks |
-| L-Glutamine | **B** | Post-infectious IBS-D, leaky gut | 8 weeks |
-| Butyrate | **B** | UC, colonocyte support, IBD | 4–8 weeks |
-| Digestive Enzymes | **B** | Dyspepsia, bloating, food intolerances | Immediate |
-| Berberine | **B** | Dysbiosis, metabolic GI conditions | 4–12 weeks |
-| Collagen Peptides | **B-** | Mild bloating, leaky gut (early evidence) | 8 weeks |
-| Omega-3 Fatty Acids | **B** | Microbiome diversity, IBD support | 8–12 weeks |
+| Probiotics | **Strong** | IBS, antibiotic diarrhea, general microbiome | 4–8 weeks |
+| Prebiotics (inulin/FOS) | **Moderate** | Microbiome diversity, constipation | 2–4 weeks |
+| Zinc Carnosine | **Moderate** | NSAID gut damage, gastric ulcers | 4–8 weeks |
+| L-Glutamine | **Moderate** | Post-infectious IBS-D, leaky gut | 8 weeks |
+| Butyrate | **Moderate** | UC, colonocyte support, IBD | 4–8 weeks |
+| Digestive Enzymes | **Moderate** | Dyspepsia, bloating, food intolerances | Immediate |
+| Berberine | **Moderate** | Dysbiosis, metabolic GI conditions | 4–12 weeks |
+| Collagen Peptides | **Limited** | Mild bloating, leaky gut (early evidence) | 8 weeks |
+| Omega-3 Fatty Acids | **Moderate** | Microbiome diversity, IBD support | 8–12 weeks |
 
 ---
 
@@ -989,7 +989,7 @@ Long-term human safety data beyond 12 weeks is limited. Most clinical protocols 
 
 ## Key Takeaways
 
-- **Probiotics** have the strongest evidence (Grade A) and are a reasonable first step for most people with gut symptoms.
+- **Probiotics** have the strongest evidence (Strong) and are a reasonable first step for most people with gut symptoms.
 - **Prebiotics** are the essential fuel for your gut microbiome — don't overlook them in favor of flashier supplements.
 - **L-Glutamine** has remarkable evidence for post-infectious IBS specifically; less compelling for IBS without a permeability component.
 - **Zinc Carnosine** is underrated and particularly valuable for NSAID users or anyone with gastric mucosal issues.
@@ -1357,7 +1357,7 @@ The good news: targeted supplementation can directly address each of these mecha
 
 ### 1. Vitamin D3: The Injury-Prevention Foundation
 
-**Evidence Grade: A (for deficiency correction and bone health)**
+**Evidence Strength: Strong (for deficiency correction and bone health)**
 
 Vitamin D is less a "supplement" and more a hormone precursor — over 1,000 genes in your body have vitamin D response elements, including those governing muscle function, immune response, and bone mineralization.
 
@@ -1379,7 +1379,7 @@ A [2024 ultramarathon RCT](https://pubmed.ncbi.nlm.nih.gov/40963202/) found that
 
 ### 2. Magnesium Glycinate: Recovery, Sleep, and Muscle Function
 
-**Evidence Grade: B (for deficiency correction and sleep quality)**
+**Evidence Strength: Moderate (for deficiency correction and sleep quality)**
 
 Magnesium is a cofactor for over 300 enzymatic reactions — including those governing ATP production, muscle contraction, protein synthesis, and nervous system regulation. For runners over 40, it matters for three specific reasons:
 
@@ -1401,7 +1401,7 @@ Magnesium is a cofactor for over 300 enzymatic reactions — including those gov
 
 ### 3. Creatine Monohydrate: Muscle Preservation and Sprint Power
 
-**Evidence Grade: A (for strength and muscle mass in older adults)**
+**Evidence Strength: Strong (for strength and muscle mass in older adults)**
 
 Creatine might seem counterintuitive for distance runners, but for masters athletes it's one of the most evidence-backed interventions available — particularly for muscle preservation and late-race kick.
 
@@ -1429,7 +1429,7 @@ For runners, the specific benefits after 40 include:
 
 ### 4. Collagen Peptides: Joint and Tendon Support
 
-**Evidence Grade: B (for joint pain and tendon health)**
+**Evidence Strength: Moderate (for joint pain and tendon health)**
 
 Joint pain is the most common reason runners over 40 reduce their mileage. Knees, hips, and achilles tendons accumulate decades of mechanical stress, and after 40, the collagen synthesis that repairs that damage slows meaningfully.
 
@@ -1455,7 +1455,7 @@ For tendons specifically — the Achilles and patellar tendons being the most co
 
 ### 5. Omega-3 Fish Oil: Inflammation and Muscle Recovery
 
-**Evidence Grade: B (for recovery and inflammation reduction)**
+**Evidence Strength: Moderate (for recovery and inflammation reduction)**
 
 Every long run triggers an inflammatory response. Cytokines flood the system, muscle fibers are damaged, and your body mobilizes to repair the tissue. At 25, this process resolves in 24 hours. At 45, the inflammatory cascade tends to run longer — contributing to the prolonged soreness and fatigue that forces extra rest days.
 
@@ -1477,7 +1477,7 @@ Research from the [Gatorade Sports Science Institute](https://www.gssiweb.org/sp
 
 ### 6. Protein Powder: Meeting Elevated Needs for Muscle Repair
 
-**Evidence Grade: A (for muscle protein synthesis when dietary intake is insufficient)**
+**Evidence Strength: Strong (for muscle protein synthesis when dietary intake is insufficient)**
 
 Protein isn't exciting, but the science is unambiguous: after 40, you need *more* protein to produce the same anabolic response as younger athletes, not less.
 
@@ -1497,7 +1497,7 @@ A [cross-sectional analysis of endurance athletes over 40 published in PubMed](h
 
 ### 7. Electrolytes: The Overlooked Recovery Lever
 
-**Evidence Grade: B (for hydration, cramping, and performance in heat)**
+**Evidence Strength: Moderate (for hydration, cramping, and performance in heat)**
 
 Sweat doesn't just lose water — it loses sodium, potassium, magnesium, and chloride. For runners over 40, electrolyte depletion deserves more attention than it typically gets, for two reasons:
 
@@ -1515,15 +1515,15 @@ For runs longer than 60–75 minutes, electrolyte replacement is performance-cri
 
 ## Evidence Summary Table
 
-| Supplement | Primary Benefit for 40+ Runners | Evidence Grade | Dose | Best Form |
+| Supplement | Primary Benefit for 40+ Runners | Evidence Strength | Dose | Best Form |
 |---|---|---|---|---|
-| Vitamin D3 | Bone health, stress fracture prevention | A | 2,000–4,000 IU/day | D3 with fat |
-| Magnesium Glycinate | Recovery, sleep quality, cramp reduction | B | 300–400 mg/night | Glycinate or malate |
-| Creatine Monohydrate | Muscle preservation, power, recovery | A | 3–5 g/day | Monohydrate |
-| Collagen Peptides | Joint pain, tendon health | B | 10–15 g pre-workout | Hydrolyzed, with vitamin C |
-| Omega-3 Fish Oil | Inflammation, muscle recovery | B | 2,000–3,000 mg EPA+DHA | Triglyceride form |
-| Protein Powder | Muscle repair, counters anabolic resistance | A | 35–40 g post-run | Whey isolate or pea+rice blend |
-| Electrolytes | Hydration, cramp prevention, performance | B | 200–400 mg sodium/hour | During runs 75+ min |
+| Vitamin D3 | Bone health, stress fracture prevention | Strong | 2,000–4,000 IU/day | D3 with fat |
+| Magnesium Glycinate | Recovery, sleep quality, cramp reduction | Moderate | 300–400 mg/night | Glycinate or malate |
+| Creatine Monohydrate | Muscle preservation, power, recovery | Strong | 3–5 g/day | Monohydrate |
+| Collagen Peptides | Joint pain, tendon health | Moderate | 10–15 g pre-workout | Hydrolyzed, with vitamin C |
+| Omega-3 Fish Oil | Inflammation, muscle recovery | Moderate | 2,000–3,000 mg EPA+DHA | Triglyceride form |
+| Protein Powder | Muscle repair, counters anabolic resistance | Strong | 35–40 g post-run | Whey isolate or pea+rice blend |
+| Electrolytes | Hydration, cramp prevention, performance | Moderate | 200–400 mg sodium/hour | During runs 75+ min |
 
 ---
 
