@@ -538,15 +538,17 @@ export function buildRecommendations(profile: QuizProfile): SupplementRecommenda
   const hasUserInput = profile.symptoms.length + profile.goals.length > 0
   let ordered = results
   if (hasUserInput) {
-    // Match against the supplement's actual coverage rather than reasons[]
-    // — the engine reuses reason.type === 'goal' for evidence-strength
-    // labels, which would let unrelated supplements slip through.
+    // Strict filter: show ONLY supplements that address at least one of
+    // the user's stated symptoms/goals. If that produces 1 result, show
+    // 1 — don't pad to 3 with irrelevant generalists. If it produces 0
+    // (very narrow, unsupported input), fall back to unfiltered so the
+    // page isn't empty.
     const filtered = results.filter((r) => {
       const symHit = profile.symptoms.some((s) => r.supplement.deficiencySymptoms.includes(s))
       const goalHit = profile.goals.some((g) => r.supplement.goalsSupported.includes(g))
       return symHit || goalHit
     })
-    if (filtered.length >= 3) ordered = filtered
+    if (filtered.length > 0) ordered = filtered
   }
   ordered.forEach((r, i) => {
     r.rank = i + 1
