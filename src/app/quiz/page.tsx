@@ -84,10 +84,18 @@ const SYMPTOM_GROUPS: SymptomGroup[] = [
   {
     id: 'mind_mood', title: 'Mind & Mood', emoji: '🧠',
     items: [
-      { key: 'fatigue',            label: 'Fatigue / Low Energy',     emoji: '😴', tokens: ['fatigue'] },
-      { key: 'brain_fog_memory',   label: 'Brain Fog / Poor Memory',  emoji: '🌫️', tokens: ['brain_fog', 'poor_memory'] },
-      { key: 'mood',               label: 'Low Mood or Anxiety',      emoji: '😔', tokens: ['low_mood', 'anxiety'] },
-      { key: 'poor_sleep',         label: 'Poor Sleep',               emoji: '🌙', tokens: ['poor_sleep'] },
+      { key: 'fatigue',      label: 'Fatigue / Low Energy', emoji: '😴', tokens: ['fatigue'] },
+      // Split brain_fog and poor_memory — only 33% supplement overlap.
+      // brain_fog (CoQ10, NAC, Iron) is mitochondrial/oxidative; poor_memory
+      // (Magnesium, Zinc, Creatine) is cognitive enhancement.
+      { key: 'brain_fog',    label: 'Brain Fog',            emoji: '🌫️', tokens: ['brain_fog'] },
+      { key: 'poor_memory',  label: 'Poor Memory',          emoji: '🧩', tokens: ['poor_memory'] },
+      // Split low_mood and anxiety — only 33% supplement overlap.
+      // low_mood (Vitamin D3, Omega-3, B12) is neurotransmitter precursors;
+      // anxiety (Magnesium, Ashwagandha, NAC) is calming / GABA / stress-axis.
+      { key: 'low_mood',     label: 'Low Mood',             emoji: '😔', tokens: ['low_mood'] },
+      { key: 'anxiety',      label: 'Anxiety',              emoji: '😰', tokens: ['anxiety'] },
+      { key: 'poor_sleep',   label: 'Poor Sleep',           emoji: '🌙', tokens: ['poor_sleep'] },
     ],
   },
   {
