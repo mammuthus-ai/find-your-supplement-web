@@ -256,9 +256,21 @@ function humanizeCondition(
   if (c === 'hypertriglyceridemia') return 'triglycerides'
   if (c === 'irritable bowel syndrome') return 'IBS'
   if (c === 'dyspepsia') {
-    if (has('bloating')) return 'bloating'
-    if (has('nausea')) return 'nausea'
+    if (has('bloating') && supplementCovers('bloating')) return 'bloating'
+    if (has('nausea') && supplementCovers('nausea')) return 'nausea'
     return 'dyspepsia'
+  }
+  // 'digestive health' is a broad cache bucket the scraper uses for GERD,
+  // IBS, bloating, nausea, constipation evidence. Translate to the user's
+  // specific picked symptom when the supplement legitimately covers it.
+  if (c === 'digestive health') {
+    if (has('acid_reflux') && supplementCovers('acid_reflux')) return 'acid reflux'
+    if (has('ibs') && supplementCovers('ibs')) return 'IBS'
+    if (has('bloating') && supplementCovers('bloating')) return 'bloating'
+    if (has('nausea') && supplementCovers('nausea')) return 'nausea'
+    if (has('constipation') && supplementCovers('constipation')) return 'constipation'
+    if (has('digestive_issues') && supplementCovers('digestive_issues')) return 'digestive issues'
+    return 'digestive health'
   }
 
   // Default: return as-is (already user-friendly: 'joint pain', 'sleep', etc.)
