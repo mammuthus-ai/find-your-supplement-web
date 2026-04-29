@@ -197,6 +197,14 @@ function humanizeCondition(
     if (has('low_mood')) return 'low mood'
     return 'mood'
   }
+  // 'mood' is a broad cache bucket the scraper uses for both depression and
+  // anxiety evidence. Translate to the user's specific picked symptom when
+  // the supplement legitimately covers it.
+  if (c === 'mood') {
+    if (has('anxiety') && supplementCovers('anxiety')) return 'anxiety'
+    if (has('low_mood') && supplementCovers('low_mood')) return 'low mood'
+    return 'mood'
+  }
   if (c === 'fatigue') {
     return wants('energy') ? 'energy' : 'fatigue'
   }

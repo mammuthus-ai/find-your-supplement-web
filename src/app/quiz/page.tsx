@@ -144,9 +144,19 @@ const SUN_OPTIONS: { value: SunExposure; label: string; desc: string }[] = [
   { value: 'very_little', label: 'No',  desc: 'Mostly indoors, or always covered up' },
 ]
 
+// Two questions with literature-matched frequency thresholds:
+// - Resistance training ≥2x/week is the inclusion criterion for ISSN
+//   creatine RCTs (PMID 28615996) and Clifford collagen-tendon RCT
+//   (PMID 31010482).
+// - Aerobic ≥3x/week matches ACSM 2018 guidelines and the inclusion
+//   criteria of iron-deficiency-in-endurance-athlete meta-analyses
+//   (PMID 24505012).
+// Picking neither is equivalent to the old 'light' or 'none' chips —
+// the engine has no boost list for sub-threshold activity, so those
+// options were producing identical output to skipping the question.
 const EXERCISE_OPTIONS: { value: ExerciseType; label: string; desc: string }[] = [
-  { value: 'cardio', label: 'Cardio', desc: 'Running, cycling, swimming' },
-  { value: 'weight_training', label: 'Weight training', desc: 'Lifting, resistance' },
+  { value: 'weight_training', label: 'Resistance training', desc: 'At least 2× per week (lifting, bodyweight, bands)' },
+  { value: 'cardio', label: 'Cardio / endurance', desc: 'At least 3× per week (running, cycling, swimming)' },
 ]
 
 // Engine gives IDENTICAL boost lists (Methylfolate, B12, Mg, Zn, D3, NAC)
