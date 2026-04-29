@@ -168,6 +168,54 @@ const SEX_BOOSTS: { sex: string; supplement: string; magnitude: Magnitude; maxAg
   { sex: 'female', supplement: 'Magnesium', magnitude: 'medium', reason: 'Women are more likely to be magnesium deficient, especially post-menopause' },
 ]
 
+// ─── Boost eligibility ───────────────────────────────────────────────────────
+
+/** Return the set of supplement names that any of the user's diet,
+ *  lifestyle, age, or sex inputs would boost. Used by the relevance
+ *  filter so users with high-stress + low-sun (etc.) get the relevant
+ *  supplements surfaced even when symptom matches are sparse. */
+function computeBoostEligibleSupplements(profile: QuizProfile): Set<string> {
+  const eligible = new Set<string>()
+
+  // Diet
+  for (const name of DIET_BOOST[profile.dietType] ?? []) eligible.add(name)
+
+  // Lifestyle keys
+  const lifestyleKeys: string[] = []
+  if (profile.sunExposure === 'very_little') lifestyleKeys.push('sun_very_little')
+  const exercises = profile.exerciseType ?? []
+  if (exercises.includes('weight_training')) lifestyleKeys.push('exercise_weight_training')
+  if (exercises.includes('cardio')) lifestyleKeys.push('exercise_cardio')
+  if (exercises.includes('weight_training') && exercises.includes('cardio')) lifestyleKeys.push('exercise_both')
+  if (profile.alcoholConsumption === 'moderate') lifestyleKeys.push('alcohol_moderate')
+  else if (profile.alcoholConsumption === 'heavy') lifestyleKeys.push('alcohol_heavy')
+  if (profile.caffeineIntake === 'moderate') lifestyleKeys.push('caffeine_moderate')
+  else if (profile.caffeineIntake === 'heavy') lifestyleKeys.push('caffeine_heavy')
+  if (profile.stressLevel === 'high') lifestyleKeys.push('stress_high')
+  else if (profile.stressLevel === 'very_high') lifestyleKeys.push('stress_very_high')
+  for (const key of lifestyleKeys) {
+    for (const b of LIFESTYLE_BOOST[key] ?? []) eligible.add(b.supplement)
+  }
+
+  // Age
+  if (profile.age && profile.age > 0) {
+    for (const b of AGE_BOOSTS) {
+      if (profile.age >= b.minAge) eligible.add(b.supplement)
+    }
+  }
+
+  // Sex
+  if (profile.sex) {
+    for (const b of SEX_BOOSTS) {
+      if (b.sex !== profile.sex) continue
+      if (b.maxAge && profile.age && profile.age > b.maxAge) continue
+      eligible.add(b.supplement)
+    }
+  }
+
+  return eligible
+}
+
 // ─── Scoring functions ────────────────────────────────────────────────────────
 
 function goalsScore(
@@ -539,20 +587,24 @@ export function buildRecommendations(profile: QuizProfile): SupplementRecommenda
   let ordered = results
   if (hasUserInput) {
     // Filter to supplements that legitimately address something the user
-    // told us about. Three valid match dimensions:
-    //   1. Symptom — listed in supplement's deficiencySymptoms
-    //   2. Goal — listed in supplement's goalsSupported
-    //   3. Diet — listed in DIET_BOOST[user's diet] (e.g. carnivore →
-    //      Vit C, Mg, Methylfolate, Probiotics, Calcium because those
-    //      nutrients are commonly deficient on that diet)
-    // If filtering empties the list (very narrow input), fall back to
-    // unfiltered so the page is never blank.
-    const dietBoostList = DIET_BOOST[profile.dietType] ?? []
+    // told us about. Six valid match dimensions — any one is sufficient:
+    //   1. Symptom listed in supplement's deficiencySymptoms
+    //   2. Goal listed in supplement's goalsSupported
+    //   3. Diet boost — DIET_BOOST[user's diet] includes this supplement
+    //      (e.g. carnivore → Vit C / Mg / Methylfolate / Probiotics / Ca
+    //      because those are typically deficient on that diet)
+    //   4. Lifestyle boost — LIFESTYLE_BOOST entries triggered by the
+    //      user's active lifestyle (low sun, weight training, alcohol,
+    //      caffeine, stress, etc.)
+    //   5. Age boost — AGE_BOOSTS minAge ≤ user's age
+    //   6. Sex boost — SEX_BOOSTS sex match, with optional maxAge
+    // Falls back to unfiltered if filtering empties the list.
+    const eligibleNames = computeBoostEligibleSupplements(profile)
     const filtered = results.filter((r) => {
       const symHit = profile.symptoms.some((s) => r.supplement.deficiencySymptoms.includes(s))
       const goalHit = profile.goals.some((g) => r.supplement.goalsSupported.includes(g))
-      const dietHit = dietBoostList.includes(r.supplement.name)
-      return symHit || goalHit || dietHit
+      const boostHit = eligibleNames.has(r.supplement.name)
+      return symHit || goalHit || boostHit
     })
     if (filtered.length > 0) ordered = filtered
   }
