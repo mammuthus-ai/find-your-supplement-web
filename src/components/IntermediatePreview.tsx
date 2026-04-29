@@ -83,6 +83,15 @@ function extractFormDescriptor(formName: string | undefined, suppName: string): 
   return descriptor || null
 }
 
+/** Join an array as a human-readable list: ["a"] → "a", ["a","b"] → "a and b",
+ *  ["a","b","c"] → "a, b, and c". */
+function joinHuman(parts: string[]): string {
+  if (parts.length === 0) return ''
+  if (parts.length === 1) return parts[0]
+  if (parts.length === 2) return `${parts[0]} and ${parts[1]}`
+  return `${parts.slice(0, -1).join(', ')}, and ${parts[parts.length - 1]}`
+}
+
 /** Map engine-internal condition strings (PubMed-y terminology) back to the
  *  user-facing symptom or goal label the user actually picked in the quiz.
  *  E.g. internally we matched on "inflammation" but the user selected
@@ -93,15 +102,20 @@ function humanizeCondition(
   condition: string,
   symptoms: Symptom[],
   goals: Goal[],
+  /** Optional: only translate inflammation→symptom if the supplement
+   *  actually addresses that symptom (i.e. it's in its deficiencySymptoms). */
+  suppDeficiencySymptoms?: readonly Symptom[],
 ): string {
   const c = condition.toLowerCase()
   const has = (s: Symptom) => symptoms.includes(s)
   const wants = (g: Goal) => goals.includes(g)
+  const supplementCovers = (s: Symptom) =>
+    !suppDeficiencySymptoms || suppDeficiencySymptoms.includes(s)
 
   // Symptom-derived translations
   if (c === 'inflammation') {
-    if (has('joint_pain')) return 'joint pain'
-    if (has('dry_skin')) return 'skin health'
+    if (has('joint_pain') && supplementCovers('joint_pain')) return 'joint pain'
+    if (has('dry_skin') && supplementCovers('dry_skin')) return 'skin health'
     return 'inflammation'
   }
   if (c === 'cognitive function' || c === 'focus') {
@@ -299,17 +313,37 @@ export default function IntermediatePreview({
           const bestProduct = pickBestProduct(supp.name, pickedForm?.name)
           const reason = bestProduct ? whyThisProduct(bestProduct) : null
 
-          // Primary evidence for the user's top matched condition.
-          const primaryEvidence = rec.evidenceByCondition?.[0]
-          const evidenceGrade = primaryEvidence?.grade ?? rec.evidenceGrade
+          // Primary evidence: prefer the cached condition that maps cleanly
+          // back to a symptom/goal the user actually picked AND that the
+          // supplement actually addresses. Falls back to the first cache entry.
           const userSyms = (answers.symptoms ?? []) as Symptom[]
           const userGoals = (answers.goals ?? []) as Goal[]
+          const suppSymptoms = (supp.deficiencySymptoms ?? []) as readonly Symptom[]
+          const evList = rec.evidenceByCondition ?? []
+          const primaryEvidence =
+            evList.find((e) => {
+              const humanized = humanizeCondition(e.condition, userSyms, userGoals, suppSymptoms)
+              // Was the condition translated to a user-input term? If so the
+              // supplement legitimately addresses one of THIS user's concerns.
+              return humanized.toLowerCase() !== e.condition.toLowerCase()
+            }) ?? evList[0]
+          const evidenceGrade = primaryEvidence?.grade ?? rec.evidenceGrade
           const displayCondition = primaryEvidence
-            ? humanizeCondition(primaryEvidence.condition, userSyms, userGoals)
+            ? humanizeCondition(primaryEvidence.condition, userSyms, userGoals, suppSymptoms)
             : ''
           const evidenceSummary = primaryEvidence
             ? buildEvidenceSummary(primaryEvidence, displayCondition)
             : null
+
+          // Combine all matched-symptom reasons into one human label so we
+          // don't drop "joint pain" when "dry skin" was matched first.
+          const symptomLabels = (rec.reasons ?? [])
+            .filter((r) => r.type === 'symptom')
+            .map((r) => r.label.replace(/^Addresses symptom:\s*/i, '').trim())
+          const combinedSupplementReason =
+            symptomLabels.length > 0
+              ? `Addresses your ${joinHuman(symptomLabels)}`
+              : rec.reasons?.[0]?.label ?? ''
 
           // Buy URL: specific brand + product name (search still — ASINs unverified
           // until PA-API; brand-anchored search is more accurate than generic).
@@ -387,12 +421,12 @@ export default function IntermediatePreview({
               {/* Twin explanations: why the supplement + why this product */}
               {(rec.reasons?.length || reason) && (
                 <div className="mt-2 pt-2 border-t border-border space-y-1.5">
-                  {rec.reasons && rec.reasons.length > 0 && (
+                  {combinedSupplementReason && (
                     <div className="flex items-start gap-2">
                       <span className="text-teal text-xs flex-shrink-0 mt-0.5" aria-hidden>🎯</span>
                       <span className="text-text-tertiary text-xs leading-snug">
                         <span className="font-semibold text-text-secondary">Why this supplement: </span>
-                        {rec.reasons[0].label}
+                        {combinedSupplementReason}
                       </span>
                     </div>
                   )}
