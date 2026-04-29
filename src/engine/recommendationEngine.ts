@@ -528,10 +528,30 @@ export function buildRecommendations(profile: QuizProfile): SupplementRecommenda
   }
 
   results.sort((a, b) => b.score - a.score)
-  results.forEach((r, i) => {
+
+  // FIX (b): if the user has stated symptoms or goals, every top-3
+  // candidate must address at least one of them. Prevents high-baseline
+  // generalists (e.g. Methylfolate) from crowding into the top 3 of
+  // unrelated single-symptom personas. Falls back to unfiltered results
+  // if filtering would leave fewer than 3 supplements (rare; only happens
+  // for very narrow input combinations).
+  const hasUserInput = profile.symptoms.length + profile.goals.length > 0
+  let ordered = results
+  if (hasUserInput) {
+    // Match against the supplement's actual coverage rather than reasons[]
+    // — the engine reuses reason.type === 'goal' for evidence-strength
+    // labels, which would let unrelated supplements slip through.
+    const filtered = results.filter((r) => {
+      const symHit = profile.symptoms.some((s) => r.supplement.deficiencySymptoms.includes(s))
+      const goalHit = profile.goals.some((g) => r.supplement.goalsSupported.includes(g))
+      return symHit || goalHit
+    })
+    if (filtered.length >= 3) ordered = filtered
+  }
+  ordered.forEach((r, i) => {
     r.rank = i + 1
   })
-  assignRankedPriorities(results)
+  assignRankedPriorities(ordered)
 
-  return results
+  return ordered
 }

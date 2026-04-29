@@ -1,23 +1,9 @@
 # Quiz QA Report
 
-Generated: 2026-04-29T01:58:28.332Z
+Generated: 2026-04-29T02:06:06.294Z
 
 **Personas tested:** 51
-**Total issues:** 15 (0 high · 15 medium · 0 low)
-
-## unexpected-promotion (11)
-
-- **[medium]** persona `sym:joint_pain` — Methylfolate (5-MTHF) appears in top 3 with no matched symptoms or goals (user picked joint_pain)
-- **[medium]** persona `sym:dry_skin` — Methylfolate (5-MTHF) appears in top 3 with no matched symptoms or goals (user picked dry_skin)
-- **[medium]** persona `sym:acid_reflux` — Methylfolate (5-MTHF) appears in top 3 with no matched symptoms or goals (user picked acid_reflux)
-- **[medium]** persona `sym:constipation` — Methylfolate (5-MTHF) appears in top 3 with no matched symptoms or goals (user picked constipation)
-- **[medium]** persona `sym:constipation` — Vitamin D3 appears in top 3 with no matched symptoms or goals (user picked constipation)
-- **[medium]** persona `sym:ibs` — Methylfolate (5-MTHF) appears in top 3 with no matched symptoms or goals (user picked ibs)
-- **[medium]** persona `sym:nausea` — Methylfolate (5-MTHF) appears in top 3 with no matched symptoms or goals (user picked nausea)
-- **[medium]** persona `sym:nausea` — Vitamin D3 appears in top 3 with no matched symptoms or goals (user picked nausea)
-- **[medium]** persona `sym:hdl_low` — Methylfolate (5-MTHF) appears in top 3 with no matched symptoms or goals (user picked hdl_low)
-- **[medium]** persona `sym:triglycerides_high` — Methylfolate (5-MTHF) appears in top 3 with no matched symptoms or goals (user picked triglycerides_high)
-- **[medium]** persona `goal:weight_loss` — Methylfolate (5-MTHF) appears in top 3 with no matched symptoms or goals (user picked weight_loss)
+**Total issues:** 11 (0 high · 11 medium · 0 low)
 
 ## irrelevant-primary-evidence (4)
 
@@ -26,6 +12,16 @@ Generated: 2026-04-29T01:58:28.332Z
 - **[medium]** persona `combo:poor_sleep+anxiety+fatigue` — Ashwagandha (KSM-66) primary cache condition "mood" doesn't map to user's inputs or this supplement's symptoms
 - **[medium]** persona `combo:poor_sleep+anxiety+fatigue` — NAC (N-Acetyl Cysteine) primary cache condition "mood" doesn't map to user's inputs or this supplement's symptoms
 
+## unexpected-promotion (7)
+
+- **[medium]** persona `sym:constipation` — Methylfolate (5-MTHF) appears in top 3 with no matched symptoms or goals (user picked constipation)
+- **[medium]** persona `sym:constipation` — Vitamin D3 appears in top 3 with no matched symptoms or goals (user picked constipation)
+- **[medium]** persona `sym:ibs` — Methylfolate (5-MTHF) appears in top 3 with no matched symptoms or goals (user picked ibs)
+- **[medium]** persona `sym:nausea` — Methylfolate (5-MTHF) appears in top 3 with no matched symptoms or goals (user picked nausea)
+- **[medium]** persona `sym:nausea` — Vitamin D3 appears in top 3 with no matched symptoms or goals (user picked nausea)
+- **[medium]** persona `sym:hdl_low` — Methylfolate (5-MTHF) appears in top 3 with no matched symptoms or goals (user picked hdl_low)
+- **[medium]** persona `goal:weight_loss` — Methylfolate (5-MTHF) appears in top 3 with no matched symptoms or goals (user picked weight_loss)
+
 ## All persona top-3 outputs
 
 | Persona | Top 3 |
@@ -33,7 +29,7 @@ Generated: 2026-04-29T01:58:28.332Z
 | `sym:fatigue` — Single symptom: fatigue | CoQ10 (Ubiquinol) · Creatine Monohydrate · Iron |
 | `sym:poor_sleep` — Single symptom: poor_sleep | Magnesium · Melatonin · Ashwagandha (KSM-66) |
 | `sym:brain_fog` — Single symptom: brain_fog | Omega-3 (Fish Oil / Algae) · NAC (N-Acetyl Cysteine) · CoQ10 (Ubiquinol) |
-| `sym:joint_pain` — Single symptom: joint_pain | Omega-3 (Fish Oil / Algae) · Collagen Peptides · Methylfolate (5-MTHF) |
+| `sym:joint_pain` — Single symptom: joint_pain | Omega-3 (Fish Oil / Algae) · Collagen Peptides · Vitamin D3 |
 | `sym:frequent_illness` — Single symptom: frequent_illness | Probiotics · Zinc · NAC (N-Acetyl Cysteine) |
 | `sym:anxiety` — Single symptom: anxiety | Ashwagandha (KSM-66) · Probiotics · NAC (N-Acetyl Cysteine) |
 | `sym:hair_loss` — Single symptom: hair_loss | Collagen Peptides · Zinc · Iron |
@@ -41,8 +37,8 @@ Generated: 2026-04-29T01:58:28.332Z
 | `sym:low_mood` — Single symptom: low_mood | Probiotics · Vitamin D3 · Omega-3 (Fish Oil / Algae) |
 | `sym:muscle_weakness` — Single symptom: muscle_weakness | Creatine Monohydrate · Vitamin D3 · Calcium |
 | `sym:poor_memory` — Single symptom: poor_memory | Creatine Monohydrate · Omega-3 (Fish Oil / Algae) · Zinc |
-| `sym:dry_skin` — Single symptom: dry_skin | Omega-3 (Fish Oil / Algae) · Collagen Peptides · Methylfolate (5-MTHF) |
-| `sym:acid_reflux` — Single symptom: acid_reflux | Probiotics · Methylfolate (5-MTHF) · Magnesium |
+| `sym:dry_skin` — Single symptom: dry_skin | Omega-3 (Fish Oil / Algae) · Collagen Peptides · Vitamin C |
+| `sym:acid_reflux` — Single symptom: acid_reflux | Probiotics · Magnesium · Melatonin |
 | `sym:constipation` — Single symptom: constipation | Psyllium Husk · Methylfolate (5-MTHF) · Vitamin D3 |
 | `sym:ibs` — Single symptom: ibs | Peppermint Oil (Enteric-Coated) · Psyllium Husk · Methylfolate (5-MTHF) |
 | `sym:bloating` — Single symptom: bloating | Digestive Enzymes · Ginger (Zingiber officinale) · Peppermint Oil (Enteric-Coated) |
@@ -50,7 +46,7 @@ Generated: 2026-04-29T01:58:28.332Z
 | `sym:apo_b_elevated` — Single symptom: apo_b_elevated | Berberine · Bergamot (BPF) · Red Yeast Rice (Standardized) |
 | `sym:ldl_elevated` — Single symptom: ldl_elevated | Berberine · Bergamot (BPF) · Red Yeast Rice (Standardized) |
 | `sym:hdl_low` — Single symptom: hdl_low | Bergamot (BPF) · Methylfolate (5-MTHF) · Aged Garlic Extract (Kyolic AGE) |
-| `sym:triglycerides_high` — Single symptom: triglycerides_high | Berberine · Bergamot (BPF) · Methylfolate (5-MTHF) |
+| `sym:triglycerides_high` — Single symptom: triglycerides_high | Berberine · Bergamot (BPF) · Aged Garlic Extract (Kyolic AGE) |
 | `goal:energy` — Single goal: energy | CoQ10 (Ubiquinol) · Creatine Monohydrate · Magnesium |
 | `goal:sleep` — Single goal: sleep | Magnesium · Melatonin · Ashwagandha (KSM-66) |
 | `goal:muscle` — Single goal: muscle | Creatine Monohydrate · Calcium · Ashwagandha (KSM-66) |
