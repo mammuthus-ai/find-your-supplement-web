@@ -248,7 +248,17 @@ function humanizeCondition(
     return wants('energy') ? 'energy' : 'fatigue'
   }
   if (c === 'immune function') return 'immunity'
-  if (c === 'heart health') return 'cardiovascular health'
+  // 'heart health' is a broad cache bucket. When the user picked a
+  // specific lipid marker AND the supplement covers it, translate to the
+  // user's specific term (e.g. Plant Sterols + ldl_elevated → "LDL
+  // cholesterol"). Otherwise keep the broader synonym.
+  if (c === 'heart health') {
+    if (has('ldl_elevated') && supplementCovers('ldl_elevated')) return 'LDL cholesterol'
+    if (has('apo_b_elevated') && supplementCovers('apo_b_elevated')) return 'ApoB cholesterol'
+    if (has('hdl_low') && supplementCovers('hdl_low')) return 'HDL cholesterol'
+    if (has('triglycerides_high') && supplementCovers('triglycerides_high')) return 'triglycerides'
+    return 'cardiovascular health'
+  }
   if (c === 'gerd' || c === 'gastroesophageal reflux') return 'acid reflux'
   if (c === 'apolipoprotein b' || c === 'apob') return 'ApoB cholesterol'
   if (c === 'ldl cholesterol' || c === 'hypercholesterolemia') return 'LDL cholesterol'

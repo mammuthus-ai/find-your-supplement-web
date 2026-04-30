@@ -55,7 +55,13 @@ export const supplements: WebSupplement[] = [
       'Long-chain polyunsaturated fatty acids EPA and DHA essential for brain structure, cardiovascular health, and anti-inflammatory signalling. Vegans should choose algae-derived DHA/EPA.',
     evidenceGrade: 'A',
     goalsSupported: ['longevity', 'focus', 'mood', 'energy'],
-    deficiencySymptoms: ['low_mood', 'poor_memory', 'brain_fog', 'dry_skin', 'joint_pain'],
+    // 2026-04-29 evidence audit: added triglycerides_high and hdl_low.
+    // Omega-3 has THE strongest TG-lowering evidence of any supplement —
+    // REDUCE-IT (PMID 30415628) showed 4g/day icosapent ethyl reduced both
+    // TGs (~25%) and CV events (~25%). Bays 2008 meta (PMID 18443581) +
+    // JELIS (PMID 17398308) corroborate. HDL effect is modest (~5%) but
+    // real per the same trials.
+    deficiencySymptoms: ['low_mood', 'poor_memory', 'brain_fog', 'dry_skin', 'joint_pain', 'triglycerides_high', 'hdl_low'],
     safeUpperLimit: '3,000 mg EPA+DHA/day from supplements (FDA GRAS)',
     drugInteractions: [
       {
@@ -423,7 +429,10 @@ export const supplements: WebSupplement[] = [
       'A soluble fiber from Plantago ovata seeds. Forms a gel in the gut that regulates transit, improves stool consistency, lowers LDL cholesterol, and feeds beneficial gut bacteria. The gold-standard fiber supplement for constipation and IBS.',
     evidenceGrade: 'A',
     goalsSupported: ['longevity', 'weight_loss'],
-    deficiencySymptoms: ['constipation', 'ibs'],
+    // 2026-04-29 audit: added ldl_elevated. Brown 1999 meta-analysis
+    // (PMID 9989420) — 5-10% LDL reduction with 10-15g/day soluble fiber.
+    // Mechanism: bile-acid binding in gut → hepatic LDL-receptor upregulation.
+    deficiencySymptoms: ['constipation', 'ibs', 'ldl_elevated'],
     safeUpperLimit: '10–30 g/day (3–10 g per dose, 1–3x daily). Always take with at least 8 oz water.',
     drugInteractions: [
       {

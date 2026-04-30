@@ -130,8 +130,8 @@ const SYMPTOM_GROUPS: SymptomGroup[] = [
     id: 'cardio', title: 'Heart & Cholesterol', emoji: '🫀',
     items: [
       { key: 'high_cholesterol',   label: 'High Cholesterol (LDL / ApoB)', emoji: '🫀', tokens: ['ldl_elevated', 'apo_b_elevated'] },
-      { key: 'hdl_low',            label: 'Low HDL Cholesterol',      emoji: '🫀', tokens: ['hdl_low'] },
-      { key: 'triglycerides_high', label: 'High Triglycerides',       emoji: '🫀', tokens: ['triglycerides_high'] },
+      { key: 'hdl_low',            label: 'Low HDL Cholesterol',           emoji: '📉', tokens: ['hdl_low'] },
+      { key: 'triglycerides_high', label: 'High Triglycerides',            emoji: '🧈', tokens: ['triglycerides_high'] },
     ],
   },
 ]
