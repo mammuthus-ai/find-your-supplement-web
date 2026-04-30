@@ -1,11 +1,11 @@
 # Quiz QA Report
 
-Generated: 2026-04-30T00:50:32.835Z
+Generated: 2026-04-30T02:58:46.520Z
 
 **Personas tested:** 51
-**Total issues:** 18 (0 high · 18 medium · 0 low)
+**Total issues:** 17 (0 high · 17 medium · 0 low)
 
-## unexpected-promotion (14)
+## unexpected-promotion (13)
 
 - **[medium]** persona `sym:joint_pain` — Methylfolate (5-MTHF) appears in top 3 with no matched symptoms or goals (user picked joint_pain)
 - **[medium]** persona `sym:dry_skin` — Methylfolate (5-MTHF) appears in top 3 with no matched symptoms or goals (user picked dry_skin)
@@ -18,7 +18,6 @@ Generated: 2026-04-30T00:50:32.835Z
 - **[medium]** persona `sym:apo_b_elevated` — Calcium appears in top 3 with no matched symptoms or goals (user picked apo_b_elevated)
 - **[medium]** persona `sym:ldl_elevated` — Calcium appears in top 3 with no matched symptoms or goals (user picked ldl_elevated)
 - **[medium]** persona `sym:hdl_low` — Calcium appears in top 3 with no matched symptoms or goals (user picked hdl_low)
-- **[medium]** persona `sym:hdl_low` — Magnesium appears in top 3 with no matched symptoms or goals (user picked hdl_low)
 - **[medium]** persona `sym:triglycerides_high` — Calcium appears in top 3 with no matched symptoms or goals (user picked triglycerides_high)
 - **[medium]** persona `goal:weight_loss` — Methylfolate (5-MTHF) appears in top 3 with no matched symptoms or goals (user picked weight_loss)
 
@@ -52,8 +51,8 @@ Generated: 2026-04-30T00:50:32.835Z
 | `sym:nausea` — Single symptom: nausea | Ginger (Zingiber officinale) · Methylfolate (5-MTHF) · Vitamin D3 |
 | `sym:apo_b_elevated` — Single symptom: apo_b_elevated | Plant Sterols (Phytosterols) · Calcium · Berberine |
 | `sym:ldl_elevated` — Single symptom: ldl_elevated | Plant Sterols (Phytosterols) · Calcium · Berberine |
-| `sym:hdl_low` — Single symptom: hdl_low | Calcium · Bergamot (BPF) · Magnesium |
-| `sym:triglycerides_high` — Single symptom: triglycerides_high | Calcium · Berberine · Bergamot (BPF) |
+| `sym:hdl_low` — Single symptom: hdl_low | Omega-3 (Fish Oil / Algae) · Calcium · Bergamot (BPF) |
+| `sym:triglycerides_high` — Single symptom: triglycerides_high | Omega-3 (Fish Oil / Algae) · Calcium · Berberine |
 | `goal:energy` — Single goal: energy | CoQ10 (Ubiquinol) · Vitamin B12 · Creatine Monohydrate |
 | `goal:sleep` — Single goal: sleep | Magnesium · Melatonin · Ashwagandha (KSM-66) |
 | `goal:muscle` — Single goal: muscle | Creatine Monohydrate · Calcium · Ashwagandha (KSM-66) |
@@ -65,7 +64,7 @@ Generated: 2026-04-30T00:50:32.835Z
 | `diet:omnivore` — Diet only: omnivore | Methylfolate (5-MTHF) · Iron · Vitamin D3 |
 | `diet:vegetarian` — Diet only: vegetarian | Vitamin B12 · Creatine Monohydrate · Vitamin D3 |
 | `diet:vegan` — Diet only: vegan | Vitamin B12 · Creatine Monohydrate · Vitamin D3 |
-| `diet:keto` — Diet only: keto | Methylfolate (5-MTHF) · Magnesium · Calcium |
+| `diet:keto` — Diet only: keto | Magnesium · Calcium · Vitamin C |
 | `diet:paleo` — Diet only: paleo | Calcium · Methylfolate (5-MTHF) · Vitamin D3 |
 | `diet:pescatarian` — Diet only: pescatarian | Creatine Monohydrate · Methylfolate (5-MTHF) · Iron |
 | `diet:mediterranean` — Diet only: mediterranean | Methylfolate (5-MTHF) · Iron · Vitamin D3 |
@@ -77,7 +76,7 @@ Generated: 2026-04-30T00:50:32.835Z
 | `combo:fatigue+brain_fog` — Fatigue + brain fog | CoQ10 (Ubiquinol) · Vitamin B12 · Creatine Monohydrate |
 | `combo:acid_reflux+dry_skin+joint_pain` — GERD + dry skin + joint pain (user reported) | Probiotics · Omega-3 (Fish Oil / Algae) · Collagen Peptides |
 | `combo:bloating+ibs+constipation` — Gut chaos | Digestive Enzymes · Peppermint Oil (Enteric-Coated) · Ginger (Zingiber officinale) |
-| `combo:ldl_elevated+apo_b_elevated+triglycerides_high` — Lipid panel issues | Plant Sterols (Phytosterols) · Berberine · Bergamot (BPF) |
+| `combo:ldl_elevated+apo_b_elevated+triglycerides_high` — Lipid panel issues | Plant Sterols (Phytosterols) · Omega-3 (Fish Oil / Algae) · Berberine |
 | `combo:poor_sleep+anxiety+fatigue` — Insomnia loop | Ashwagandha (KSM-66) · NAC (N-Acetyl Cysteine) · Vitamin B12 |
 | `combo:frequent_illness+fatigue` — Sick & tired | CoQ10 (Ubiquinol) · Vitamin B12 · Vitamin D3 |
 | `realistic:vegan-female-35` — Vegan female, 35, low energy + brain fog | Vitamin B12 · Creatine Monohydrate · Iron |

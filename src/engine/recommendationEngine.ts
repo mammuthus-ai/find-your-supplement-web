@@ -55,7 +55,13 @@ const DIET_BOOST: Record<string, string[]> = {
   carnivore: ['Vitamin C', 'Magnesium', 'Methylfolate (5-MTHF)', 'Probiotics', 'Calcium'],
   vegan: ['Vitamin B12', 'Omega-3 (Fish Oil / Algae)', 'Iron', 'Zinc', 'Vitamin D3', 'Calcium', 'Creatine Monohydrate'],
   vegetarian: ['Vitamin B12', 'Omega-3 (Fish Oil / Algae)', 'Iron', 'Zinc', 'Vitamin D3', 'Calcium', 'Creatine Monohydrate'],
-  keto: ['Vitamin C', 'Methylfolate (5-MTHF)', 'Magnesium', 'Calcium'],
+  // 2026-04-29 evidence audit: removed Methylfolate. Direct PubMed search
+  // for "ketogenic diet" + "folate status" returned 0 hits. The reasoning
+  // ("keto restricts beans/greens which contain folate") is plausible but
+  // not RCT-grounded for adult consumer keto. Pediatric medical KD for
+  // epilepsy IS documented to risk folate deficiency (Tsang 2025, PMID
+  // 40669820), but that's a different protocol from consumer keto.
+  keto: ['Vitamin C', 'Magnesium', 'Calcium'],
   paleo: ['Calcium'],
   pescatarian: ['Creatine Monohydrate'],
   mediterranean: [],
