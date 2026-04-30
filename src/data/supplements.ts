@@ -124,7 +124,11 @@ export const supplements: WebSupplement[] = [
       'The bioactive form of folate that bypasses MTHFR enzyme impairment. Critical for methylation, neurotransmitter synthesis, and homocysteine regulation.',
     evidenceGrade: 'B',
     goalsSupported: ['mood', 'focus', 'longevity', 'energy'],
-    deficiencySymptoms: ['low_mood', 'fatigue', 'brain_fog', 'poor_memory', 'anxiety'],
+    // 2026-04-29 evidence audit: removed anxiety. Folate-mood literature
+    // is dominated by depression RCTs (Coppen 2000, Roberts 2018) — anxiety-
+    // specific RCTs for methylfolate are sparse. Cache 'mood' bucket reflects
+    // the depression-heavy lit. Low_mood, brain_fog, poor_memory remain.
+    deficiencySymptoms: ['low_mood', 'fatigue', 'brain_fog', 'poor_memory'],
     safeUpperLimit: '1,000 mcg/day of folic acid form (NIH UL); methylfolate UL not established',
     drugInteractions: [
       {
@@ -146,7 +150,12 @@ export const supplements: WebSupplement[] = [
       'A potent water-soluble antioxidant essential for collagen synthesis, immune function, iron absorption, and neurotransmitter production.',
     evidenceGrade: 'A',
     goalsSupported: ['immunity', 'energy', 'longevity'],
-    deficiencySymptoms: ['frequent_illness', 'fatigue', 'joint_pain', 'dry_skin'],
+    // 2026-04-29 evidence audit: removed joint_pain and dry_skin. Canter 2007
+    // (PMID 17522095) systematic review found no convincing RCT evidence for
+    // vitamin C in arthritis/joint pain. Skin-specific RCTs are also weak;
+    // the cache only has 'inflammation' (general CRP/CV/sepsis) for both.
+    // Frequent-illness and fatigue evidence remain strong.
+    deficiencySymptoms: ['frequent_illness', 'fatigue'],
     safeUpperLimit: '2,000 mg/day for adults',
     drugInteractions: [
       {

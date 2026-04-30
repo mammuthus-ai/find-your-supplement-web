@@ -1,19 +1,14 @@
 # Quiz QA Report
 
-Generated: 2026-04-29T02:58:45.514Z
+Generated: 2026-04-30T00:50:32.835Z
 
 **Personas tested:** 51
-**Total issues:** 16 (0 high · 16 medium · 0 low)
+**Total issues:** 18 (0 high · 18 medium · 0 low)
 
-## irrelevant-primary-evidence (4)
+## unexpected-promotion (14)
 
-- **[medium]** persona `sym:anxiety` — Ashwagandha (KSM-66) primary cache condition "mood" doesn't map to user's inputs or this supplement's symptoms
-- **[medium]** persona `sym:anxiety` — NAC (N-Acetyl Cysteine) primary cache condition "mood" doesn't map to user's inputs or this supplement's symptoms
-- **[medium]** persona `combo:poor_sleep+anxiety+fatigue` — Ashwagandha (KSM-66) primary cache condition "mood" doesn't map to user's inputs or this supplement's symptoms
-- **[medium]** persona `combo:poor_sleep+anxiety+fatigue` — NAC (N-Acetyl Cysteine) primary cache condition "mood" doesn't map to user's inputs or this supplement's symptoms
-
-## unexpected-promotion (12)
-
+- **[medium]** persona `sym:joint_pain` — Methylfolate (5-MTHF) appears in top 3 with no matched symptoms or goals (user picked joint_pain)
+- **[medium]** persona `sym:dry_skin` — Methylfolate (5-MTHF) appears in top 3 with no matched symptoms or goals (user picked dry_skin)
 - **[medium]** persona `sym:acid_reflux` — Methylfolate (5-MTHF) appears in top 3 with no matched symptoms or goals (user picked acid_reflux)
 - **[medium]** persona `sym:constipation` — Methylfolate (5-MTHF) appears in top 3 with no matched symptoms or goals (user picked constipation)
 - **[medium]** persona `sym:constipation` — Vitamin D3 appears in top 3 with no matched symptoms or goals (user picked constipation)
@@ -27,6 +22,13 @@ Generated: 2026-04-29T02:58:45.514Z
 - **[medium]** persona `sym:triglycerides_high` — Calcium appears in top 3 with no matched symptoms or goals (user picked triglycerides_high)
 - **[medium]** persona `goal:weight_loss` — Methylfolate (5-MTHF) appears in top 3 with no matched symptoms or goals (user picked weight_loss)
 
+## irrelevant-primary-evidence (4)
+
+- **[medium]** persona `sym:anxiety` — Ashwagandha (KSM-66) primary cache condition "mood" doesn't map to user's inputs or this supplement's symptoms
+- **[medium]** persona `sym:anxiety` — NAC (N-Acetyl Cysteine) primary cache condition "mood" doesn't map to user's inputs or this supplement's symptoms
+- **[medium]** persona `combo:poor_sleep+anxiety+fatigue` — Ashwagandha (KSM-66) primary cache condition "mood" doesn't map to user's inputs or this supplement's symptoms
+- **[medium]** persona `combo:poor_sleep+anxiety+fatigue` — NAC (N-Acetyl Cysteine) primary cache condition "mood" doesn't map to user's inputs or this supplement's symptoms
+
 ## All persona top-3 outputs
 
 | Persona | Top 3 |
@@ -34,7 +36,7 @@ Generated: 2026-04-29T02:58:45.514Z
 | `sym:fatigue` — Single symptom: fatigue | CoQ10 (Ubiquinol) · Vitamin B12 · Creatine Monohydrate |
 | `sym:poor_sleep` — Single symptom: poor_sleep | Magnesium · Melatonin · Ashwagandha (KSM-66) |
 | `sym:brain_fog` — Single symptom: brain_fog | Vitamin B12 · Omega-3 (Fish Oil / Algae) · NAC (N-Acetyl Cysteine) |
-| `sym:joint_pain` — Single symptom: joint_pain | Vitamin C · Omega-3 (Fish Oil / Algae) · Collagen Peptides |
+| `sym:joint_pain` — Single symptom: joint_pain | Omega-3 (Fish Oil / Algae) · Collagen Peptides · Methylfolate (5-MTHF) |
 | `sym:frequent_illness` — Single symptom: frequent_illness | Probiotics · Zinc · Vitamin C |
 | `sym:anxiety` — Single symptom: anxiety | Ashwagandha (KSM-66) · Probiotics · NAC (N-Acetyl Cysteine) |
 | `sym:hair_loss` — Single symptom: hair_loss | Collagen Peptides · Zinc · Iron |
@@ -42,7 +44,7 @@ Generated: 2026-04-29T02:58:45.514Z
 | `sym:low_mood` — Single symptom: low_mood | Vitamin B12 · Probiotics · Vitamin D3 |
 | `sym:muscle_weakness` — Single symptom: muscle_weakness | Creatine Monohydrate · Vitamin D3 · Calcium |
 | `sym:poor_memory` — Single symptom: poor_memory | Vitamin B12 · Creatine Monohydrate · Omega-3 (Fish Oil / Algae) |
-| `sym:dry_skin` — Single symptom: dry_skin | Vitamin C · Omega-3 (Fish Oil / Algae) · Collagen Peptides |
+| `sym:dry_skin` — Single symptom: dry_skin | Omega-3 (Fish Oil / Algae) · Collagen Peptides · Methylfolate (5-MTHF) |
 | `sym:acid_reflux` — Single symptom: acid_reflux | Probiotics · Methylfolate (5-MTHF) · Magnesium |
 | `sym:constipation` — Single symptom: constipation | Psyllium Husk · Methylfolate (5-MTHF) · Vitamin D3 |
 | `sym:ibs` — Single symptom: ibs | Peppermint Oil (Enteric-Coated) · Psyllium Husk · Methylfolate (5-MTHF) |
@@ -69,11 +71,11 @@ Generated: 2026-04-29T02:58:45.514Z
 | `diet:mediterranean` — Diet only: mediterranean | Methylfolate (5-MTHF) · Iron · Vitamin D3 |
 | `diet:carnivore` — Diet only: carnivore | Methylfolate (5-MTHF) · Probiotics · Magnesium |
 | `diet:other` — Diet only: other | Methylfolate (5-MTHF) · Iron · Vitamin D3 |
-| `combo:joint_pain+muscle_weakness` — Joint pain + muscle weakness | Creatine Monohydrate · Vitamin D3 · Vitamin C |
+| `combo:joint_pain+muscle_weakness` — Joint pain + muscle weakness | Creatine Monohydrate · Vitamin D3 · Omega-3 (Fish Oil / Algae) |
 | `combo:hair_loss+brittle_nails` — Hair loss + brittle nails | Collagen Peptides · Zinc · Iron |
 | `combo:low_mood+anxiety` — Low mood + anxiety | Probiotics · Vitamin B12 · Ashwagandha (KSM-66) |
 | `combo:fatigue+brain_fog` — Fatigue + brain fog | CoQ10 (Ubiquinol) · Vitamin B12 · Creatine Monohydrate |
-| `combo:acid_reflux+dry_skin+joint_pain` — GERD + dry skin + joint pain (user reported) | Vitamin C · Probiotics · Omega-3 (Fish Oil / Algae) |
+| `combo:acid_reflux+dry_skin+joint_pain` — GERD + dry skin + joint pain (user reported) | Probiotics · Omega-3 (Fish Oil / Algae) · Collagen Peptides |
 | `combo:bloating+ibs+constipation` — Gut chaos | Digestive Enzymes · Peppermint Oil (Enteric-Coated) · Ginger (Zingiber officinale) |
 | `combo:ldl_elevated+apo_b_elevated+triglycerides_high` — Lipid panel issues | Plant Sterols (Phytosterols) · Berberine · Bergamot (BPF) |
 | `combo:poor_sleep+anxiety+fatigue` — Insomnia loop | Ashwagandha (KSM-66) · NAC (N-Acetyl Cysteine) · Vitamin B12 |
