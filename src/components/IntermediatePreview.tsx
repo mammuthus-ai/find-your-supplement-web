@@ -133,14 +133,13 @@ const DIET_BOOST_LOOKUP: Record<string, string[]> = {
   mediterranean: [],
 }
 
-/** Return a short label explaining WHY a supplement was included when
- *  it doesn't address any user-picked symptom or goal directly. The
- *  most likely trigger is the diet boost; we check that first because
- *  it's user-visible. Returns null if we can't pinpoint a clear cause. */
-function describeBoostContext(
+/** When a supplement is included via diet/lifestyle/age/sex boost (no
+ *  symptom or goal match), describe the trigger as a "for X" suffix.
+ *  Returns the suffix only — caller wraps with "Evidence: <grade> for ...". */
+function describeBoostSuffix(
   suppName: string,
   answers: PartialAnswers,
-): string | null {
+): string {
   const diet = answers.dietType
   if (diet && DIET_BOOST_LOOKUP[diet]?.includes(suppName)) {
     const dietLabels: Record<string, string> = {
@@ -152,38 +151,54 @@ function describeBoostContext(
       pescatarian: 'pescatarian diet',
       mediterranean: 'Mediterranean diet',
     }
-    return `Recommended for your ${dietLabels[diet] ?? diet}`
+    return `${dietLabels[diet] ?? diet} deficiency risk`
   }
-  // Lifestyle / age / sex inclusions could be added here too, but the
-  // most common diet-boost case is enough for now.
-  return 'Recommended for your profile'
+  return 'your profile'
 }
 
-/** Pick the cache entry whose condition string most plausibly answers
- *  "what is this supplement strong for, given the user's actual concerns".
- *  Prefers entries that match a user-picked symptom/goal AND that the
- *  supplement legitimately addresses. */
+/** Pick up to N cache entries that best match the user's actual concerns.
+ *  Returns user-relevant entries first (in priority of how directly they
+ *  match a user-picked symptom/goal), then fills remaining slots with
+ *  the highest-impact entries. */
+function pickPrimaryEvidences<T extends { condition: string }>(
+  evList: readonly T[],
+  symptoms: Symptom[],
+  goals: Goal[],
+  suppSymptoms: readonly Symptom[],
+  maxResults: number = 2,
+): T[] {
+  if (evList.length === 0) return []
+  const userMatches = symptoms.filter((s) => suppSymptoms.includes(s))
+  const aliases = new Set<string>()
+  for (const s of userMatches) (SYMPTOM_TO_CACHE[s] ?? []).forEach((a) => aliases.add(a))
+  for (const g of goals) (GOAL_TO_CACHE[g] ?? []).forEach((a) => aliases.add(a))
+
+  if (aliases.size === 0) return [evList[0]]
+
+  const userRelevant: T[] = []
+  const others: T[] = []
+  const seen = new Set<string>()
+  for (const e of evList) {
+    const c = e.condition.toLowerCase()
+    if (seen.has(c)) continue
+    seen.add(c)
+    if (Array.from(aliases).some((a) => c.includes(a))) userRelevant.push(e)
+    else others.push(e)
+  }
+  // User-relevant first; fall back to first cache entry only if nothing matched
+  return userRelevant.length > 0
+    ? userRelevant.slice(0, maxResults)
+    : [evList[0]]
+}
+
+/** Backwards-compat single-result helper. */
 function pickPrimaryEvidence<T extends { condition: string }>(
   evList: readonly T[],
   symptoms: Symptom[],
   goals: Goal[],
   suppSymptoms: readonly Symptom[],
 ): T | undefined {
-  if (evList.length === 0) return undefined
-  // Build the set of cache-keyword aliases from the user's matched inputs
-  // (only those the supplement actually covers in deficiencySymptoms).
-  const userMatches = symptoms.filter((s) => suppSymptoms.includes(s))
-  const aliases = new Set<string>()
-  for (const s of userMatches) (SYMPTOM_TO_CACHE[s] ?? []).forEach((a) => aliases.add(a))
-  for (const g of goals) (GOAL_TO_CACHE[g] ?? []).forEach((a) => aliases.add(a))
-  if (aliases.size > 0) {
-    const hit = evList.find((e) => {
-      const c = e.condition.toLowerCase()
-      return Array.from(aliases).some((a) => c.includes(a))
-    })
-    if (hit) return hit
-  }
-  return evList[0]
+  return pickPrimaryEvidences(evList, symptoms, goals, suppSymptoms, 1)[0]
 }
 
 /** Join an array as a human-readable list: ["a"] → "a", ["a","b"] → "a and b",
@@ -471,22 +486,39 @@ export default function IntermediatePreview({
           const userRelevantSupp = symptomMatch || goalMatch
 
           const evList = rec.evidenceByCondition ?? []
-          const primaryEvidence = userRelevantSupp
-            ? pickPrimaryEvidence(evList, userSyms, userGoals, suppSymptoms)
-            : undefined  // diet-only inclusion — don't pull a misleading condition
+          // For symptom/goal-matched supplements: list up to 2 user-relevant
+          // cache conditions (so dual matches show "for joint pain + skin
+          // health" rather than just one).
+          const primaryList = userRelevantSupp
+            ? pickPrimaryEvidences(evList, userSyms, userGoals, suppSymptoms, 2)
+            : []
+          const primaryEvidence = primaryList[0]
           const evidenceGrade = primaryEvidence?.grade ?? rec.evidenceGrade
-          const displayCondition = primaryEvidence
-            ? humanizeCondition(primaryEvidence.condition, userSyms, userGoals, suppSymptoms)
-            : ''
+          // Human-readable list of conditions (deduplicated after humanize).
+          const conditionLabels = Array.from(new Set(
+            primaryList.map((e) =>
+              humanizeCondition(e.condition, userSyms, userGoals, suppSymptoms)
+            )
+          ))
+          const displayCondition = conditionLabels.length === 0
+            ? ''
+            : conditionLabels.length === 1
+              ? conditionLabels[0]
+              : conditionLabels.length === 2
+                ? `${conditionLabels[0]} + ${conditionLabels[1]}`
+                : `${conditionLabels.slice(0, -1).join(', ')}, and ${conditionLabels[conditionLabels.length - 1]}`
           const evidenceSummary = primaryEvidence
-            ? buildEvidenceSummary(primaryEvidence, displayCondition)
+            ? buildEvidenceSummary(primaryEvidence, conditionLabels[0] || '')
             : null
 
-          // For diet/lifestyle-only inclusions, surface a different
-          // explanation: which input triggered the boost.
-          const boostContext = userRelevantSupp
-            ? null
-            : describeBoostContext(supp.name, answers)
+          // For diet/lifestyle/age/sex-only inclusions, the badge still
+          // uses the unified "Evidence: <grade> for <reason>" format —
+          // grade comes from supplement's catalog evidence, reason from
+          // the boost trigger.
+          const isBoostOnly = !userRelevantSupp
+          const boostSuffix = isBoostOnly
+            ? describeBoostSuffix(supp.name, answers)
+            : null
 
           // Buy URL: specific brand + product name (search still — ASINs unverified
           // until PA-API; brand-anchored search is more accurate than generic).
@@ -521,22 +553,20 @@ export default function IntermediatePreview({
                         ) : null
                       })()}
                     </span>
-                    {/* Evidence badge: context-aware. For supplements
-                        included only via diet/lifestyle/age/sex boost,
-                        show the trigger instead of a misleading
-                        condition match. */}
-                    {boostContext ? (
-                      <span className="text-xs font-semibold rounded border px-1.5 py-0.5 bg-teal/10 text-teal border-teal/30">
-                        {boostContext}
-                      </span>
-                    ) : (
-                      <span
-                        className={`text-xs font-semibold rounded border px-1.5 py-0.5 ${gradeStyles(evidenceGrade)}`}
-                      >
-                        Evidence: {GRADE_LABELS[evidenceGrade] ?? evidenceGrade}
-                        {displayCondition ? ` for ${displayCondition}` : ''}
-                      </span>
-                    )}
+                    {/* Unified evidence badge — every card uses
+                        "Evidence: <grade> for <reason>" format.
+                        Symptom-matched: reason = matched conditions.
+                        Diet/lifestyle/age/sex-matched: reason = trigger. */}
+                    <span
+                      className={`text-xs font-semibold rounded border px-1.5 py-0.5 ${gradeStyles(evidenceGrade)}`}
+                    >
+                      Evidence: {GRADE_LABELS[evidenceGrade] ?? evidenceGrade}
+                      {boostSuffix
+                        ? ` for ${boostSuffix}`
+                        : displayCondition
+                          ? ` for ${displayCondition}`
+                          : ''}
+                    </span>
                     {delta && delta.kind !== 'same' ? (
                       <span className={`text-xs font-semibold rounded px-1.5 py-0.5 ${deltaStyles(delta.kind)}`}>
                         {delta.label}
