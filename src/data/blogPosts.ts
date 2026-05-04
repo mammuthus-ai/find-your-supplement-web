@@ -2,6 +2,168 @@ import { BlogPost } from '@/types'
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'fish-oil-vs-krill-oil',
+    title: 'Fish Oil vs Krill Oil: What the 2024 Network Meta-Analyses Actually Show',
+    excerpt:
+      'Krill oil costs 3–5x more than fish oil and the marketing pitch is "better absorbed." We pulled the most recent network meta-analyses to see whether the bioavailability story holds up, and which omega-3 actually wins on triglycerides, inflammation, and price-per-gram of EPA+DHA.',
+    date: '2026-05-04',
+    category: 'Research Reviews',
+    readTime: '11 min read',
+    content: `
+## The pitch vs. the price tag
+
+Walk through any supplement aisle and the krill oil bottle is the one with the red liquid, the prominent "phospholipid-bound omega-3" claim, and a price tag two to five times higher than the fish oil sitting next to it. The marketing argument is straightforward: krill delivers EPA and DHA attached to phospholipids rather than triglycerides, which is supposed to mean dramatically better absorption — so you need less of it, and the higher price evens out.
+
+That story has been around for over a decade. What has changed is the evidence base. Two large network meta-analyses published in 2024 finally pooled enough randomized controlled trials to compare fish oil and krill oil head-to-head across multiple molecular forms and dose ranges. The results are not what either side of the argument tends to claim.
+
+This post walks through what the current literature actually shows on bioavailability, triglycerides, cardiovascular outcomes, and inflammation — and then translates it into a practical decision: which one should you actually buy, and at what dose.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## What is actually different between fish oil and krill oil
+
+Both supplements deliver the same two long-chain omega-3 fatty acids: **eicosapentaenoic acid (EPA)** and **docosahexaenoic acid (DHA)**. These are the active molecules that your body uses to build resolvins, protectins, and other anti-inflammatory signaling lipids. The difference is not the omega-3s themselves — it is how they are packaged.
+
+### The molecular form
+
+| Feature | Fish Oil | Krill Oil |
+|---|---|---|
+| Source | Anchovy, sardine, mackerel, salmon | Antarctic krill (*Euphausia superba*) |
+| EPA+DHA carrier | Triglyceride (TG), re-esterified TG (rTG), or ethyl ester (EE) | Phospholipid (PL) — primarily phosphatidylcholine |
+| EPA+DHA per 1000 mg oil | ~300 mg (standard) to 600+ mg (concentrate) | ~120–250 mg |
+| Astaxanthin | None (unless added) | ~100–500 mcg natural |
+| Color | Pale yellow | Deep red |
+| Cost per gram EPA+DHA | $0.05–$0.15 | $0.30–$0.80 |
+
+The phospholipid form matters because phospholipids are amphipathic — they have a water-loving and a fat-loving end. Fatty acids attached to phospholipids do not require bile acid emulsification to absorb the way triglyceride-bound fatty acids do. That is the mechanistic basis for the "better absorbed" claim. Whether it actually translates into meaningfully more EPA and DHA in your blood at a real-world dose is the question the meta-analyses are trying to answer.
+
+---
+
+## Bioavailability: does krill oil really absorb better?
+
+**Evidence: Moderate.**
+
+The cleanest single answer comes from the [2024 network meta-analysis published in *Heliyon*](https://pmc.ncbi.nlm.nih.gov/articles/PMC11838114/), which pooled 60 randomized controlled trials and compared bioavailability across four endpoints: omega-3 index (O3i), area under the curve (AUC), time-to-peak (Tmax), and peak concentration (Cmax).
+
+The headline finding: **at low to moderate doses (under 2,000 mg of oil), krill oil's phospholipid form produced the highest AUC of any formulation tested**, narrowly beating fish oil emulsions. But the picture flipped at higher doses. **For raising the omega-3 index — the long-term blood marker that actually correlates with cardiovascular risk — fish oil at doses above 3,000 mg in re-esterified triglyceride or ethyl ester form was as effective or more effective than any krill oil dose studied.**
+
+A widely cited [2011 head-to-head bioavailability trial](https://pmc.ncbi.nlm.nih.gov/articles/PMC3168413/) found that when EPA+DHA doses were matched, krill oil and fish oil produced essentially identical incorporation of EPA and DHA into plasma phospholipids over 4 weeks. The "krill absorbs better" advantage largely disappears once you control for the actual milligrams of EPA+DHA delivered.
+
+### What this means in practice
+
+The phospholipid advantage is real but small, and it shows up most clearly at low doses. If you are taking 250–500 mg of EPA+DHA, krill oil probably gets a slightly higher percentage of those omega-3s into your tissues. If you are taking 1,500–3,000 mg of EPA+DHA — the dose range that actually moves cardiovascular and inflammatory endpoints — fish oil delivers the same blood levels at roughly one-fifth the cost.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## Triglycerides and lipid profile
+
+**Evidence: Strong for both, with no clear winner.**
+
+This is the one area where omega-3 supplementation has the most consistent, well-replicated benefit. The [2020 lipid-modifying network meta-analysis](https://pubmed.ncbi.nlm.nih.gov/32073633/) pooled 64 RCTs and concluded that krill oil and fish oil produce comparable reductions in triglycerides, LDL-C, and total cholesterol, with neither showing apparent superiority over the other.
+
+A more recent [2024 cardiovascular network meta-analysis in *Journal of Functional Foods*](https://www.sciencedirect.com/science/article/pii/S1756464624003815) updated the picture. Krill oil in phospholipid/free-fatty-acid form at 2,000–2,900 mg per day produced significant triglyceride reductions, while fish oil in ethyl ester form above 3,000 mg per day produced significant total cholesterol reductions. Both worked. Neither dominated across all endpoints.
+
+For severe hypertriglyceridemia specifically, [a 2021 randomized clinical trial in *JAMA Network Open*](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2787655) tested a high-dose novel krill oil agent and found meaningful triglyceride reductions, but the dose used (4 g per day) is far higher than what is in any standard krill oil bottle and effectively nullifies the cost-per-gram advantage of fish oil.
+
+### Bottom line on lipids
+
+If you have elevated triglycerides and your goal is to bring them down, both work. The clinically meaningful dose is **2–4 grams of EPA+DHA per day**, which is achievable with a roughly $15–25/month fish oil concentrate or a $60–120/month krill oil regimen. Same outcome, very different cost.
+
+---
+
+## Cardiovascular events and inflammation
+
+**Evidence: Limited for hard endpoints.**
+
+It is worth being honest here: the large randomized trials of omega-3s on actual cardiovascular events (heart attacks, strokes, deaths) — REDUCE-IT, STRENGTH, VITAL, ASCEND — were almost entirely conducted with fish-oil-derived EPA or EPA/DHA at high doses. There is no equivalent multi-thousand-person, hard-endpoint cardiovascular trial of krill oil. Anyone who tells you krill oil is "proven to reduce heart attacks" is extrapolating beyond the data.
+
+For inflammation markers (CRP, IL-6, TNF-α), a [2025 comparative analysis in *International Journal of Molecular Sciences*](https://www.mdpi.com/1422-0067/26/15/7360) found that krill oil's combination of phospholipid-bound EPA/DHA plus astaxanthin produced somewhat stronger antioxidant effects in cell and animal models than fish oil alone. Whether that mechanistic edge translates to clinically meaningful inflammation reduction in humans at real-world doses is still unsettled.
+
+---
+
+## The astaxanthin question
+
+Krill oil naturally contains astaxanthin, a potent carotenoid antioxidant that is part of why krill oil resists oxidation better than fish oil and does not need added vitamin E for stability. The marketing leans heavily on this.
+
+The catch: typical krill oil supplements provide **100–500 mcg of astaxanthin per serving**. The clinical trials that show astaxanthin doing useful things — improving skin elasticity, reducing oxidative stress, improving exercise recovery — use **6,000–12,000 mcg (6–12 mg) per day**. You would need to take 12–60 krill oil capsules to get a clinically active astaxanthin dose. If astaxanthin is what you actually want, [buy a standalone astaxanthin supplement](https://www.amazon.com/s?k=astaxanthin+12mg&tag=insquire-20) for a few dollars per month and pair it with fish oil.
+
+---
+
+## Sustainability and contamination
+
+This is the one place krill oil has a defensible advantage. Antarctic krill (*Euphausia superba*) is a very low-trophic-level organism that feeds on phytoplankton. As a result, it has minimal bioaccumulation of mercury, PCBs, and dioxins compared to larger fish. Most reputable krill oil products contain undetectable levels of heavy metals.
+
+Fish oil contamination is also generally well-controlled in modern products — the [International Fish Oil Standards (IFOS) program](https://www.nutrasource.ca/services/ifos) tests for oxidation, heavy metals, and PCBs, and any IFOS five-star rated product is essentially indistinguishable from krill in purity. But the average bottom-shelf fish oil at the drugstore is not necessarily IFOS tested. If you want fish oil purity guarantees, look for IFOS, USP, or NSF certification on the label.
+
+On sustainability, krill harvesting in the Southern Ocean is regulated by [CCAMLR](https://www.ccamlr.org/) and is currently considered a sustainable fishery, though there is ongoing scientific debate about whether krill biomass can support continued growth in supplement demand without affecting penguin and whale populations that depend on krill. Anchovy and sardine fisheries used for fish oil are also generally sustainably managed (look for Friend of the Sea or MSC certification).
+
+---
+
+## How to actually choose
+
+### Choose **fish oil** if:
+- Your primary goal is cost-effective EPA+DHA dosing at 1,500 mg or higher per day
+- You are targeting triglycerides, cardiovascular risk, or inflammation
+- You want the form that most large clinical trials have validated
+- You are willing to take 2–4 capsules per day to hit your dose
+- You can buy an [IFOS or USP certified concentrate](https://www.amazon.com/s?k=IFOS+certified+fish+oil+omega+3&tag=insquire-20)
+
+### Choose **krill oil** if:
+- You experience persistent fishy reflux on fish oil (krill oil rarely causes this)
+- You have a strong personal preference for the phospholipid form and can absorb the cost
+- You take a low daily dose (under 500 mg EPA+DHA) where the phospholipid bioavailability edge actually shows up
+- Cost is not a major factor
+
+For most people, the math heavily favors a high-quality, third-party-tested fish oil concentrate. The [Viva Naturals Antarctic Krill Oil 1250 mg](https://www.amazon.com/Krill-Oil-Supplement-Astaxanthin-Supplements/dp/B008XNNY5E) is one of the better krill products if you go that route, but a simple [1,000 mg EPA+DHA fish oil concentrate](https://www.amazon.com/s?k=1000mg+EPA+DHA+fish+oil&tag=insquire-20) delivers more omega-3 per dollar.
+
+---
+
+## Dosage recommendations
+
+| Goal | Effective dose (EPA+DHA combined) | Best form |
+|---|---|---|
+| General health / omega-3 index above 8% | 1,000–2,000 mg/day | Fish oil concentrate (rTG or EE) |
+| Triglyceride reduction | 2,000–4,000 mg/day | Fish oil EE or high-dose krill PL |
+| Pregnancy (DHA focus) | 200–300 mg DHA/day | Fish oil or algae oil |
+| Joint / inflammation support | 2,000–3,000 mg/day | Fish oil concentrate |
+| Mood support (depression adjunct) | 1,000–2,000 mg/day, EPA-dominant | High-EPA fish oil |
+
+Take with the largest meal of the day — both fish and krill oil absorb dramatically better with dietary fat. Store in the refrigerator after opening, especially fish oil, to slow oxidation.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## Key Takeaways
+
+- **EPA and DHA are the active ingredients** in both products. The molecular carrier (phospholipid vs. triglyceride) affects absorption efficiency at low doses, not at therapeutic doses.
+- **At equivalent EPA+DHA doses, head-to-head bioavailability and lipid-modifying effects are essentially the same.** The 2020 and 2024 network meta-analyses both reached this conclusion.
+- **Krill oil costs 3–5x more per gram of EPA+DHA.** That premium is rational if you have a specific reason to prefer it (no fishy reflux, low-dose use case, sustainability priority) and not rational as a general recommendation.
+- **The astaxanthin in krill oil is at sub-therapeutic doses.** If you want astaxanthin's benefits, buy it as a separate supplement.
+- **For most people, an IFOS or USP certified fish oil concentrate at 1,500–2,500 mg EPA+DHA per day delivers the best evidence-to-cost ratio** of any omega-3 supplement on the market.
+
+---
+
+## References
+
+1. Pham TPT, et al. [Comparison of Omega-3 polyunsaturated fatty acids bioavailability in fish oil and krill oil: Network Meta-analyses.](https://pmc.ncbi.nlm.nih.gov/articles/PMC11838114/) *Heliyon* (2024). Network meta-analysis of 60 RCTs.
+2. Ulven SM, et al. [Incorporation of EPA and DHA into plasma phospholipids in response to different omega-3 fatty acid formulations - a comparative bioavailability study of fish oil vs. krill oil.](https://pmc.ncbi.nlm.nih.gov/articles/PMC3168413/) *Lipids in Health and Disease* (2011).
+3. Lobraico JM, et al. [Lipid-modifying effects of krill oil vs fish oil: a network meta-analysis.](https://pubmed.ncbi.nlm.nih.gov/32073633/) *Nutrition Reviews* (2020).
+4. [Comparing the cardiovascular risk-reducing effects of polyunsaturated fatty acids in fish oil and krill oil: A network meta-analysis.](https://www.sciencedirect.com/science/article/pii/S1756464624003815) *Journal of Functional Foods* (2024).
+5. Mozaffarian D, et al. [Effectiveness of a Novel ω-3 Krill Oil Agent in Patients With Severe Hypertriglyceridemia: A Randomized Clinical Trial.](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2787655) *JAMA Network Open* (2021).
+6. [Comparative Analysis of the Antioxidant and Anti-Inflammatory Effects of Krill and Fish Oil.](https://www.mdpi.com/1422-0067/26/15/7360) *International Journal of Molecular Sciences* (2025).
+7. Backes J, et al. [The clinical relevance of omega-3 fatty acids in the management of hypertriglyceridemia.](https://pmc.ncbi.nlm.nih.gov/articles/PMC4252213/) *Lipids in Health and Disease* (review).
+
+---
+
+*This article is for informational purposes only and is not medical advice. Omega-3 supplements can interact with anticoagulant medications, including warfarin and direct oral anticoagulants, and may affect bleeding risk before surgery. Consult your physician before starting or changing supplementation, especially if you have a bleeding disorder, are taking blood thinners, or have a known allergy to fish or shellfish.*
+`,
+  },
+  {
     slug: 'best-collagen-supplements',
     title: 'Do Collagen Supplements Actually Work? A 2026 Evidence Review',
     excerpt:
