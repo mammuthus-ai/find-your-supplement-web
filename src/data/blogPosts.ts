@@ -2,6 +2,193 @@ import { BlogPost } from '@/types'
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'ashwagandha-vs-rhodiola',
+    title: 'Ashwagandha vs Rhodiola for Stress: Which Adaptogen Wins in 2026?',
+    excerpt:
+      'Ashwagandha and Rhodiola rosea are the two most-studied adaptogens for stress — but they work on different parts of the stress response. We break down the meta-analyses, head-to-head trials, dosing, and exactly which one to choose for chronic stress, burnout, or performance under fatigue.',
+    date: '2026-05-22',
+    category: 'Research Reviews',
+    readTime: '11 min read',
+    content: `
+## Two adaptogens, two very different stress problems
+
+If you walk into any supplement store and ask for "something for stress," you will almost certainly be handed ashwagandha or Rhodiola rosea. They are the two most-studied herbal adaptogens, they both sit on the HPA (hypothalamic–pituitary–adrenal) axis, and they are routinely lumped together as if they were interchangeable.
+
+They are not.
+
+Ashwagandha is best understood as a *down-regulator* — it lowers chronically elevated cortisol, calms the nervous system, and is the stronger choice when stress shows up as poor sleep, anxiety, and feeling wired-but-tired. Rhodiola is closer to an *up-regulator* — it sharpens mental performance under fatigue, blunts the perception of exhaustion, and is the stronger choice when stress shows up as burnout, brain fog, and not being able to push through a long day.
+
+Picking the wrong one is a common reason people conclude that "adaptogens don't work." This guide pulls the 2023–2025 meta-analyses, lays out what the head-to-head data actually shows, and tells you which one to take, at what dose, and for what symptom pattern.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## The quick comparison
+
+| Feature | Ashwagandha (*Withania somnifera*) | Rhodiola rosea |
+|---|---|---|
+| Primary action | Calming, cortisol-lowering | Stimulating, anti-fatigue |
+| Best for | Anxiety, poor sleep, chronic stress | Burnout, mental fatigue, low energy |
+| Evidence for stress reduction | Strong | Moderate |
+| Evidence for fatigue | Moderate | Moderate |
+| Onset of effect | 2–4 weeks | 1–2 weeks (often within days) |
+| Typical daily dose | 300–600 mg root extract | 200–600 mg standardized extract |
+| Active compounds | Withanolides | Rosavins + salidroside |
+| Time of day | Evening (or split AM/PM) | Morning |
+| Stacks well with | L-theanine, magnesium glycinate | B-complex, caffeine (lower dose) |
+
+---
+
+## How each one actually works
+
+### Ashwagandha: lowering the HPA axis volume knob
+
+Ashwagandha's active constituents are a family of steroidal lactones called **withanolides**. In a chronically stressed person, the HPA axis is stuck in a high-output state — elevated evening cortisol, blunted morning cortisol rhythm, sleep that never feels restorative. Withanolides act on GABAergic signaling and modulate cortisol output, effectively turning the volume of the stress response down.
+
+The cortisol effect is not hand-waving. A [2024 systematic review and meta-analysis in BJPsych Open](https://pmc.ncbi.nlm.nih.gov/articles/PMC12242034/) pooled studies measuring serum cortisol in adults supplementing with ashwagandha and found a statistically significant reduction in cortisol along with improvements on the Perceived Stress Scale (PSS) and Hamilton Anxiety Scale (HAM-A). A [separate 2024 meta-analysis in *Complementary Therapies in Medicine*](https://pubmed.ncbi.nlm.nih.gov/39348746/) pooling nine RCTs and 558 patients found a significant effect on the Perceived Stress Scale, with effects emerging at 4–8 weeks.
+
+### Rhodiola: blunting the fatigue signal
+
+Rhodiola's two main active classes are **rosavins** (rosavin, rosin, rosarin) and **salidroside**. Mechanistically, it appears to influence monoamine signaling (serotonin, dopamine, norepinephrine) and reduce the central perception of fatigue. Where ashwagandha calms you, Rhodiola makes the same workload feel less depleting.
+
+The systematic review evidence is more cautious. A [2012 systematic review in *Complementary Therapies in Medicine* (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3541197/) identified 11 trials and concluded that while several showed efficacy for physical and mental fatigue, the overall body of evidence was limited by risk-of-bias issues. More recent work, including a [2025 randomized crossover trial on cognitive function and exercise performance](https://pmc.ncbi.nlm.nih.gov/articles/PMC12693935/), supports a dose-responsive effect on cognitive performance under fatigue.
+
+---
+
+## Head-to-head: what the comparative trials show
+
+There are far fewer head-to-head trials than there are placebo-controlled studies of each individually. The most relevant recent comparison is a [2025 randomized, double-blind, placebo-controlled study (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12983611/) in 186 adults with high stress, which tested a full-spectrum ashwagandha extract against a multi-herb formula containing Rhodiola, holy basil, and *Schisandra chinensis*, against placebo, over 60 days.
+
+Both adaptogen arms beat placebo on perceived stress and related symptoms. Ashwagandha showed a slightly larger effect on the core stress and anxiety endpoints, while the Rhodiola-containing formula showed somewhat better effects on energy and fatigue-related items. The pattern matches the mechanistic story: ashwagandha calms, Rhodiola energizes.
+
+Two caveats. First, the Rhodiola arm was a *combination* product, so the effect cannot be cleanly attributed to Rhodiola alone. Second, "high stress" was defined by screening scores rather than a clinical diagnosis — these were stressed adults, not patients with diagnosed anxiety disorders.
+
+**Bottom line:** the direct comparative data is thin, but consistent with using the two for different symptom profiles rather than treating them as substitutes.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## Which one should you take?
+
+### Choose ashwagandha if you have...
+
+- **Chronically high stress** with anxious-tense quality
+- **Trouble falling asleep**, racing thoughts at night, or non-restorative sleep
+- **Wired-but-tired** pattern — exhausted but can't switch off
+- **Elevated evening cortisol** symptoms (late-night second wind, 3 AM waking)
+- **Anxiety symptoms** without a clinical diagnosis
+- Want to support **strength training recovery** (modest but real effect on resistance-training outcomes in younger adults)
+
+The cortisol-lowering effect is the most replicable finding across the ashwagandha literature. If your stress shows up as too much "on," ashwagandha is the right tool.
+
+### Choose Rhodiola rosea if you have...
+
+- **Burnout-pattern fatigue** — depleted, low motivation, mentally foggy
+- **Mental fatigue under workload** (long shifts, exam prep, demanding cognitive work)
+- **Mild depressive symptoms** mixed with low energy
+- Need an adaptogen you can take **in the morning** without sedation
+- Don't tolerate ashwagandha (some people find it too calming or get GI upset)
+
+In the [open-label trial in chronic fatigue (PubMed)](https://pubmed.ncbi.nlm.nih.gov/28219059/), the largest improvements showed up within the first week — Rhodiola is unusual among adaptogens for acting relatively quickly. If you need a measurable shift inside two weeks, it is the better starting point.
+
+### Can you take both?
+
+Yes, and it is a reasonable strategy. The common stack is **Rhodiola in the morning** (for energy and mental endurance through the day) and **ashwagandha in the evening** (for cortisol downshift and sleep). Don't start them on the same day — give each two weeks alone so you can tell which is doing what.
+
+---
+
+## Dosing: what the evidence actually supports
+
+### Ashwagandha
+
+- **KSM-66** (full-spectrum root, standardized to ≥5% withanolides): **300 mg twice daily** with meals. This is the most-studied branded extract; the [2012 chronic stress trial showing a 27.9% cortisol reduction](https://pubmed.ncbi.nlm.nih.gov/23439798/) used this protocol.
+- **Sensoril** (root + leaf, higher withanolide concentration): **125–250 mg daily**. Lower dose because of the higher withanolide content.
+- **Generic ashwagandha root extract**: 600 mg/day, split AM/PM, standardized to at least 2.5% withanolides.
+
+Onset is **2–4 weeks** for stress and anxiety endpoints. Don't decide it isn't working before week 4.
+
+[View KSM-66 ashwagandha on Amazon](https://www.amazon.com/s?k=ksm-66+ashwagandha&tag=insquire-20) · [View Sensoril ashwagandha on Amazon](https://www.amazon.com/s?k=sensoril+ashwagandha&tag=insquire-20)
+
+### Rhodiola rosea
+
+- Standardized to **3% rosavins and 1% salidroside** (the SHR-5 ratio used in most clinical trials).
+- **200–400 mg/day** for general stress and fatigue, taken in the morning on an empty stomach.
+- Up to **600 mg/day** has been used in burnout-pattern fatigue trials.
+- Avoid taking after 2 PM — many people find it activating enough to disrupt sleep.
+
+[View Rhodiola rosea 3% rosavins on Amazon](https://www.amazon.com/s?k=rhodiola+rosea+3%25+rosavins+1%25+salidroside&tag=insquire-20)
+
+### What about "Rhodiola crenulata"?
+
+A lot of cheaper Rhodiola products use *Rhodiola crenulata* instead of *Rhodiola rosea*. They are not equivalent — *R. crenulata* has a different phytochemical profile and is not well studied for stress. Read the label and make sure it specifies *Rhodiola rosea*.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## Safety, side effects, and who should skip them
+
+### Ashwagandha
+
+Generally well tolerated. The most common side effects are GI upset (nausea, loose stools), drowsiness, and headache. More important cautions:
+
+- **Hyperthyroidism**: ashwagandha can raise T3/T4 and is contraindicated. People with hypothyroidism should monitor labs if they start taking it.
+- **Autoimmune disease** (lupus, RA, MS, Hashimoto's): theoretical immune-stimulating effect — discuss with a clinician.
+- **Pregnancy and breastfeeding**: avoid. Traditional use suggests abortifacient potential at higher doses.
+- **Sedatives and benzodiazepines**: additive sedation possible.
+- Rare reports of **liver injury** have prompted the [NIH Office of Dietary Supplements Health Professional Fact Sheet on ashwagandha](https://ods.od.nih.gov/factsheets/Ashwagandha-HealthProfessional/) to flag hepatotoxicity as a low-frequency but real concern. Discontinue at any sign of jaundice, dark urine, or right-upper-quadrant pain.
+
+### Rhodiola rosea
+
+Generally well tolerated and with a clean safety profile in trials up to 12 weeks. Most common side effects are jitteriness, dry mouth, and insomnia if taken too late in the day. Specific cautions:
+
+- **Bipolar disorder**: case reports of activating mood episodes — avoid.
+- **MAOIs and SSRIs**: theoretical risk of serotonergic effects; discuss with a prescriber.
+- **Stimulant medications**: can compound activation.
+- **Pregnancy**: insufficient data, avoid.
+
+---
+
+## Key takeaways
+
+1. **They are not interchangeable.** Ashwagandha calms a hyperactive stress response; Rhodiola sharpens performance under fatigue.
+2. **Ashwagandha has the strongest cortisol-lowering evidence** of any over-the-counter supplement.
+3. **Rhodiola works faster** — often within the first week — while ashwagandha typically needs 4 weeks.
+4. **Pick by symptom pattern**: wired and anxious → ashwagandha. Burnt out and foggy → Rhodiola.
+5. **Use the studied extracts** — KSM-66 or Sensoril for ashwagandha, *Rhodiola rosea* SHR-5 (3% rosavins / 1% salidroside) for Rhodiola.
+6. Combining them — Rhodiola AM, ashwagandha PM — is reasonable, but introduce them one at a time so you can attribute effects.
+
+---
+
+## The honest bottom line
+
+The adaptogen literature is better than skeptics give it credit for and worse than supplement marketers claim. For ashwagandha, the cortisol and stress-scale effects are real and have been replicated across multiple independent meta-analyses — **Strong** evidence. For Rhodiola, the evidence is **Moderate**: positive trials exist for both mental fatigue and stress, but the trial quality is uneven and many studies are small.
+
+If you only buy one, pick based on which side of the stress response is dominating your symptoms. If you are not sure, the quiz below will walk you through the symptom pattern questions clinicians actually use.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## References
+
+- Tóth-Bagi N et al. *Effects of multi-herb and ashwagandha root formulas on stress modulation: a randomized, double-blind, placebo-controlled clinical study.* PMC, 2025. [PMC12983611](https://pmc.ncbi.nlm.nih.gov/articles/PMC12983611/)
+- Jorge JG et al. *Effects of Ashwagandha Supplements on Cortisol, Stress, and Anxiety Levels in Adults: A Systematic Review and Meta-Analysis.* BJPsych Open, 2024. [PMC12242034](https://pmc.ncbi.nlm.nih.gov/articles/PMC12242034/)
+- Della Porta M et al. *Effects of Ashwagandha (Withania somnifera) on stress and anxiety: A systematic review and meta-analysis.* Complementary Therapies in Medicine, 2024. [PubMed 39348746](https://pubmed.ncbi.nlm.nih.gov/39348746/)
+- Ishaque S et al. *Rhodiola rosea for physical and mental fatigue: a systematic review.* BMC Complementary and Alternative Medicine, 2012. [PMC3541197](https://pmc.ncbi.nlm.nih.gov/articles/PMC3541197/)
+- Lekomtseva Y et al. *Rhodiola rosea in subjects with prolonged or chronic fatigue symptoms: results of an open-label clinical trial.* Complementary Medicine Research, 2017. [PubMed 28219059](https://pubmed.ncbi.nlm.nih.gov/28219059/)
+- Williams TD et al. *Dose-Response Effects of Short-Term Rhodiola rosea Supplementation on Anaerobic Exercise Performance and Cognitive Function.* PMC, 2025. [PMC12693935](https://pmc.ncbi.nlm.nih.gov/articles/PMC12693935/)
+- Chandrasekhar K, Kapoor J, Anishetty S. *A prospective, randomized double-blind, placebo-controlled study of safety and efficacy of a high-concentration full-spectrum extract of Ashwagandha root in reducing stress and anxiety in adults.* Indian J Psychol Med, 2012. [PubMed 23439798](https://pubmed.ncbi.nlm.nih.gov/23439798/)
+- NIH Office of Dietary Supplements. *Ashwagandha: Is it helpful for stress, anxiety, or sleep? Health Professional Fact Sheet.* [ods.od.nih.gov](https://ods.od.nih.gov/factsheets/Ashwagandha-HealthProfessional/)
+
+---
+
+*This article is for informational and educational purposes only and is not a substitute for personalized medical advice. Adaptogens can interact with prescription medications and may not be appropriate in pregnancy, breastfeeding, or in certain medical conditions including thyroid, autoimmune, bipolar, and liver disease. Consult a qualified healthcare provider before starting any new supplement, especially if you take medications or have a chronic health condition.*
+`,
+  },
+  {
     slug: 'supplements-for-joint-pain',
     title: 'Best Supplements for Joint Pain Over 50: What the 2024 Meta-Analyses Actually Show',
     excerpt:
