@@ -2,6 +2,203 @@ import { BlogPost } from '@/types'
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'best-supplements-for-hair-growth',
+    title: 'Best Supplements for Hair Growth in Women: What the Evidence Actually Says (2026)',
+    excerpt:
+      'Iron, vitamin D, zinc, biotin, marine collagen, saw palmetto, pumpkin seed oil — we rank every popular hair-growth supplement for women by evidence quality, explain who actually needs them, and tell you exactly what to buy.',
+    date: '2026-05-25',
+    category: 'Deep Dives',
+    readTime: '12 min read',
+    content: `
+## Hair loss in women is a nutrient problem more often than a styling problem
+
+If you are a woman noticing more strands in the shower drain, a wider part, or a thinning ponytail, the temptation is to reach for whatever bottle has "hair, skin, and nails" on the label. Most of those products are biotin gummies in a pink jar. Biotin is almost never the reason your hair is shedding.
+
+The actual evidence-based picture is narrower and more useful: in women, the most common reversible drivers of hair loss are **low iron (ferritin), low vitamin D, low zinc, suboptimal protein intake, and chronic stress** — not biotin deficiency. A handful of specific supplements have real clinical trials behind them, and a much larger number are marketing with a multivitamin inside.
+
+This guide ranks every popular hair-growth supplement for women by evidence quality (Strong / Moderate / Limited / Insufficient), explains who actually benefits, and gives you a practical buy-this-not-that protocol.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## First: which kind of hair loss do you have?
+
+Supplements only work for certain mechanisms of hair loss. Pick the wrong target and you will waste six months.
+
+| Pattern | What it looks like | Likely driver | Responds to supplements? |
+|---|---|---|---|
+| Telogen effluvium (TE) | Diffuse shedding 2–4 months after a trigger (illness, postpartum, crash diet, stress) | Nutrient deficiency, stress, illness | **Yes** — often dramatically |
+| Female pattern hair loss (FPHL) | Gradual widening of the part, thinning at the crown | Androgen sensitivity + genetics | Partially — saw palmetto, possibly pumpkin seed oil |
+| Alopecia areata | Round, smooth bald patches | Autoimmune | Low vitamin D is associated; not a standalone fix |
+| Traction alopecia | Loss along the hairline from tight styles | Mechanical | No — change your styling |
+| Scarring alopecias | Smooth, shiny scalp with no follicles | Inflammatory/autoimmune | See a dermatologist; supplements won't fix it |
+
+If your shedding started 2–4 months after a clear trigger (postpartum, COVID, surgery, crash diet, major stress), you almost certainly have **telogen effluvium**, and this is the form most likely to improve with the protocol below.
+
+---
+
+## The evidence-graded ranking
+
+### Iron (ferritin) — Strong evidence (in deficiency)
+
+This is the single most under-recognized cause of hair shedding in women. Menstruating women, vegetarians, frequent blood donors, endurance athletes, and anyone with heavy periods are at high risk. The relevant biomarker is not hemoglobin — you can have normal hemoglobin and still have severely depleted iron stores. The marker that matters is **serum ferritin**.
+
+A [2013 review in the *International Journal of Trichology* (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3746236/) summarized the evidence linking low ferritin to both telogen effluvium and female pattern hair loss, and the comprehensive [2019 review "The Role of Vitamins and Minerals in Hair Loss" in *Dermatology and Therapy* (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6380979/) reached the same conclusion: iron supplementation helps women with hair loss *if* they are iron-deficient, and most experts target a ferritin above 40–70 ng/mL for regrowth even when standard lab "normal" starts at 15.
+
+**What to do:** Get ferritin tested before supplementing. If it is under 40 ng/mL with hair shedding, supplement. Iron bisglycinate ([View on Amazon](https://www.amazon.com/s?k=iron+bisglycinate&tag=insquire-20)) is the form most women tolerate without GI upset. 25–50 mg every other day is now the evidence-based dose — daily dosing actually absorbs *less* due to hepcidin rebound.
+
+**Do not supplement iron blindly.** Iron overload is real and damaging.
+
+**[Take the free supplement quiz →](/quiz)**
+
+### Vitamin D — Strong evidence (in deficiency)
+
+Hair follicles have vitamin D receptors. Low serum 25(OH)D has been repeatedly associated with telogen effluvium, female pattern hair loss, and alopecia areata. The [2019 review in *Dermatology and Therapy*](https://pmc.ncbi.nlm.nih.gov/articles/PMC6380979/) is again the cleanest summary; a [2020 systematic review and meta-analysis in *Skin Appendage Disorders* (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7355094/) found that patients with non-scarring alopecia had significantly lower vitamin D levels than controls.
+
+The interventional evidence is weaker than the association, but the cost–benefit case is clear: vitamin D deficiency is genuinely common, supplementation is cheap and safe, and most women with hair loss who get tested are low.
+
+**What to do:** Aim for serum 25(OH)D between 40–60 ng/mL. Most women need 2,000–4,000 IU of D3 daily, taken with a fatty meal. Pair with vitamin K2 ([View on Amazon](https://www.amazon.com/s?k=vitamin+d3+k2&tag=insquire-20)).
+
+### Zinc — Strong evidence (in deficiency)
+
+Zinc is required for keratin synthesis and follicle cycling. A [2013 case-control study in the *Annals of Dermatology* (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3870206/) found significantly lower serum zinc in patients with all four major hair loss types — alopecia areata, FPHL, male pattern hair loss, and telogen effluvium — compared with controls. The 2019 review again confirms zinc deficiency as a credible contributor.
+
+**What to do:** 15–30 mg zinc picolinate or bisglycinate with food ([View on Amazon](https://www.amazon.com/s?k=zinc+picolinate&tag=insquire-20)). Do not exceed 40 mg/day long-term — high zinc depletes copper.
+
+### Marine protein complex (Viviscal-type formulas) — Moderate evidence
+
+Marine-derived protein blends (the most-studied is the AminoMar complex in Viviscal) have actually been tested in double-blind RCTs in women with self-perceived thinning hair. A [2015 randomized, double-blind, placebo-controlled trial in the *Journal of Clinical and Aesthetic Dermatology* (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4639464/) showed significant increases in terminal hairs and reduction in shedding versus placebo over 90–180 days. Follow-up [2018 RCT in JCAD (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5842869/) replicated the effect.
+
+The trials were industry-funded, which is the standard caveat, but the methodology was reasonable and the effect was consistent across studies.
+
+**What to do:** A marine-protein-based formula ([View on Amazon](https://www.amazon.com/s?k=viviscal+women&tag=insquire-20)) is a reasonable add-on if your bloodwork is already optimized and you still want a hair-targeted product. Expect 3–6 months before judging.
+
+### Saw palmetto — Moderate evidence
+
+Saw palmetto inhibits 5-alpha-reductase — the enzyme that converts testosterone to DHT, the androgen that drives female and male pattern hair loss. A [2020 systematic review of saw palmetto for hair loss in *JAMA Dermatology / PMC* equivalent](https://pmc.ncbi.nlm.nih.gov/articles/PMC7706429/) pooled studies in androgenetic alopecia and found modest but real improvements in hair density and growth, with effects smaller than finasteride but with a much friendlier side-effect profile.
+
+For women specifically, the data is thinner than for men, but mechanistically it is the most defensible oral option for FPHL.
+
+**What to do:** 320 mg of standardized saw palmetto extract daily ([View on Amazon](https://www.amazon.com/s?k=saw+palmetto+320+mg&tag=insquire-20)). Avoid if pregnant, trying to conceive, or on hormonal therapy without doctor sign-off.
+
+### Pumpkin seed oil — Limited evidence
+
+The most-cited trial is a [2014 randomized, double-blind, placebo-controlled trial in *Evidence-Based Complementary and Alternative Medicine* (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4017725/) in men with androgenetic alopecia, which showed a 40% increase in mean hair count after 24 weeks of 400 mg/day pumpkin seed oil versus placebo. A small [2021 trial in women with FPHL](https://pubmed.ncbi.nlm.nih.gov/33655735/) suggested benefits on hair density.
+
+The evidence is promising but still based on a small number of trials, mostly in men, and at least one was industry-tied.
+
+**What to do:** 400 mg pumpkin seed oil softgels daily ([View on Amazon](https://www.amazon.com/s?k=pumpkin+seed+oil+400+mg&tag=insquire-20)) is a reasonable trial — cheap, safe, mechanistically aligned.
+
+### Collagen peptides — Limited evidence
+
+Collagen is fashionable for hair but the direct evidence is thin. Hair shaft is made of keratin, not collagen. The plausible mechanism is that collagen peptides provide bioavailable amino acids — particularly proline, glycine, and (after hydrolysis) cysteine precursors — that support keratin synthesis when dietary protein is suboptimal.
+
+In women eating less than ~0.8 g/kg/day of total protein (extremely common in women cutting calories), adding 10–20 g/day of collagen peptides ([View on Amazon](https://www.amazon.com/s?k=collagen+peptides+unflavored&tag=insquire-20)) acts mostly as a protein top-up. If you are already eating 1.0–1.6 g/kg/day of high-quality protein, collagen for hair is unlikely to add anything.
+
+### Biotin — Insufficient evidence (unless deficient)
+
+This is the supplement industry's favorite ingredient because it is cheap and the placebo effect on nail growth is strong. The reality, well-documented in a [2017 review of biotin in *Skin Appendage Disorders* (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5582478/), is that **biotin deficiency is rare**, and outside of true deficiency, biotin supplementation has not been shown to improve hair growth.
+
+Worse, **high-dose biotin can interfere with critical lab tests** — including troponin (heart attack diagnosis), TSH, and hormone panels. The FDA has issued safety communications on this.
+
+**What to do:** Skip standalone high-dose biotin (5,000–10,000 mcg). A multivitamin level of 30–100 mcg is plenty.
+
+### Omega-3 (fish oil) — Limited evidence
+
+A [2015 randomized comparative trial in the *Journal of Cosmetic Dermatology*](https://pubmed.ncbi.nlm.nih.gov/25573272/) tested a combination of omega-3, omega-6, and antioxidants in women with female pattern hair loss and found improvements in hair density. The trial was combination-based, so attributing the effect specifically to omega-3 is hard.
+
+Given the cardiovascular and inflammation benefits of omega-3 generally, taking 1–2 g/day of combined EPA/DHA is reasonable independent of hair.
+
+### Selenium, copper, vitamin E, vitamin A — Caution
+
+These are sometimes added to hair formulas. They are required for hair, but **excess is harmful**:
+
+- **Selenium:** toxicity (selenosis) directly causes hair loss. Do not exceed 200 mcg/day.
+- **Vitamin A:** excess vitamin A is a classic, well-documented cause of telogen effluvium. Avoid high-dose retinol supplements.
+- **Copper:** needed for hair pigmentation, but most diets cover it.
+
+The 2019 review in *Dermatology and Therapy* explicitly warns against blanket high-dose supplementation of these without documented deficiency.
+
+---
+
+## The practical 90-day protocol for women with hair shedding
+
+**Step 1: Get bloodwork before you buy anything.** Ask your doctor for:
+- Ferritin (target >40–70 ng/mL)
+- 25-hydroxy vitamin D (target 40–60 ng/mL)
+- TSH and free T4 (thyroid dysfunction is a major cause of hair loss)
+- CBC
+- Serum zinc (optional)
+
+**Step 2: Optimize protein and calories.** Hair is a luxury tissue — your body sheds it first when it thinks you are starving. Crash diets and aggressive intermittent fasting are extremely common upstream causes of shedding in women. Aim for at least 1.0–1.2 g of protein per kg of body weight per day.
+
+**Step 3: Targeted supplementation based on labs:**
+- Ferritin under 40 ng/mL → iron bisglycinate, 25 mg every other day, with vitamin C
+- 25(OH)D under 30 ng/mL → vitamin D3 2,000–4,000 IU daily with K2
+- Serum zinc low or borderline → 15–30 mg zinc picolinate
+- Diet under 1.0 g/kg protein → 10–20 g collagen or whey daily
+
+**Step 4: Optional add-ons (only if step 3 is dialed in):**
+- Marine protein complex (Viviscal-type)
+- Saw palmetto 320 mg if your pattern is FPHL
+- Pumpkin seed oil 400 mg
+
+**Step 5: Be patient.** The hair cycle is slow. New growth from supplementation does not show up for **3 months minimum**, and visible thickening typically takes 6 months.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## What to skip
+
+- **High-dose biotin gummies.** Insufficient evidence, lab interference risk.
+- **"Hair, skin, and nails" multivitamins with mega-doses of vitamin A.** Can cause shedding.
+- **Anything containing keratin as an oral supplement.** It is digested into amino acids like any protein — no advantage over whey or collagen.
+- **Topical "growth serums" without minoxidil or finasteride.** The vast majority have no clinical evidence.
+
+---
+
+## When to see a dermatologist
+
+Skip the supplement self-experiment and book a dermatologist if you have:
+- Bald patches (smooth, well-defined)
+- Scalp pain, itching, burning, or scaling
+- Sudden, rapid hair loss
+- Loss accompanied by fatigue, weight changes, or menstrual changes (likely thyroid or PCOS)
+- More than 12 months of progressive thinning without recovery
+
+Some hair loss is medical, not nutritional, and the longer scarring alopecias go untreated the less reversible they become.
+
+---
+
+## Bottom line
+
+For most women with diffuse hair shedding, the highest-yield interventions are **iron and vitamin D correction, adequate protein, and time**. Marine protein complexes and saw palmetto are the legitimate second tier. Pumpkin seed oil is a reasonable adjunct. Biotin is mostly marketing. Selenium and vitamin A excess can make hair loss worse.
+
+Treat hair loss like the systemic signal it is. Fix the inputs, give the follicle cycle the 3–6 months it needs, and stop buying gummies.
+
+---
+
+## References
+
+1. Guo EL, Katta R. "Diet and hair loss: effects of nutrient deficiency and supplement use." *Dermatology Practical & Conceptual*, 2017. [PMC5315033](https://pmc.ncbi.nlm.nih.gov/articles/PMC5315033/)
+2. Almohanna HM, et al. "The Role of Vitamins and Minerals in Hair Loss: A Review." *Dermatology and Therapy*, 2019. [PMC6380979](https://pmc.ncbi.nlm.nih.gov/articles/PMC6380979/)
+3. Trost LB, et al. "The diagnosis and treatment of iron deficiency and its potential relationship to hair loss." *Int J Trichology*, 2013. [PMC3746236](https://pmc.ncbi.nlm.nih.gov/articles/PMC3746236/)
+4. Gerkowicz A, et al. "The Role of Vitamin D in Non-Scarring Alopecia." *Skin Appendage Disorders*, 2020. [PMC7355094](https://pmc.ncbi.nlm.nih.gov/articles/PMC7355094/)
+5. Park SY, et al. "Serum zinc and copper levels in patients with hair loss." *Ann Dermatol*, 2013. [PMC3870206](https://pmc.ncbi.nlm.nih.gov/articles/PMC3870206/)
+6. Ablon G. "A 6-month, randomized, double-blind, placebo-controlled study of an oral marine protein supplement for hair thinning in women." *JCAD*, 2015. [PMC4639464](https://pmc.ncbi.nlm.nih.gov/articles/PMC4639464/)
+7. Ablon G, Dayan S. "A randomized, double-blind, placebo-controlled study of a nutraceutical supplement for promoting hair growth in women." *JCAD*, 2018. [PMC5842869](https://pmc.ncbi.nlm.nih.gov/articles/PMC5842869/)
+8. Evron E, et al. "Natural hair supplement: friend or foe? Saw palmetto for hair loss." *Skin Appendage Disorders*, 2020. [PMC7706429](https://pmc.ncbi.nlm.nih.gov/articles/PMC7706429/)
+9. Cho YH, et al. "Effect of pumpkin seed oil on hair growth in men with androgenetic alopecia." *Evid Based Complement Alternat Med*, 2014. [PMC4017725](https://pmc.ncbi.nlm.nih.gov/articles/PMC4017725/)
+10. Patel DP, et al. "A Review of the Use of Biotin for Hair Loss." *Skin Appendage Disorders*, 2017. [PMC5582478](https://pmc.ncbi.nlm.nih.gov/articles/PMC5582478/)
+
+---
+
+*This article is for educational purposes only and does not constitute medical advice. Hair loss can be a sign of underlying medical conditions including thyroid disease, anemia, autoimmune disorders, and hormonal imbalances. Always consult a board-certified dermatologist or your primary care physician before starting any supplement protocol, particularly if you are pregnant, nursing, taking medications, or have a chronic medical condition. Get bloodwork before supplementing with iron or zinc.*
+`,
+  },
+  {
     slug: 'ashwagandha-vs-rhodiola',
     title: 'Ashwagandha vs Rhodiola for Stress: Which Adaptogen Wins in 2026?',
     excerpt:
