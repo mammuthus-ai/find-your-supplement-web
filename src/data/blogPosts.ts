@@ -2,6 +2,164 @@ import { BlogPost } from '@/types'
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'probiotics-guide',
+    title: 'Best Probiotics for Bloating: Which Strains Actually Work (2026 Evidence Review)',
+    excerpt:
+      'Not all probiotics reduce bloating — most do nothing. We rank the specific strains (B. infantis 35624, L. plantarum 299v, B. lactis HN019, and more) with real RCT evidence, explain who should skip probiotics entirely, and tell you exactly what to buy.',
+    date: '2026-05-31',
+    category: 'Deep Dives',
+    readTime: '11 min read',
+    content: `
+## "I take a probiotic and I'm still bloated"
+
+If you have ever bought a probiotic at the pharmacy hoping it would calm the daily after-lunch balloon belly — and noticed exactly nothing — you are not unusual, and you are not doing anything wrong.
+
+The brutal truth about probiotics for bloating is that **the strain matters far more than the brand**, and almost every popular drugstore probiotic is a generic *Lactobacillus acidophilus* blend with little or no human trial evidence for bloating specifically. "Probiotics" is not a category in the way "antibiotics" is — each strain (the species *plus* the specific numeric/letter designation) is essentially a different drug with a different evidence base.
+
+This guide ranks the specific probiotic strains with real randomized controlled trial evidence for bloating, explains who should *not* be taking probiotics at all (hint: most SIBO patients), and gives you a buy-this-not-that protocol.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## Why bloating happens — and which mechanisms a probiotic can actually fix
+
+"Bloating" is a symptom, not a diagnosis. Probiotics target some of the underlying mechanisms and are useless against others.
+
+| Mechanism | What it feels like | Probiotic likely to help? |
+|---|---|---|
+| Visceral hypersensitivity (IBS) | Pain and distension out of proportion to actual gas | **Yes** — specific strains |
+| Slow transit / constipation-driven bloating | Worse at end of day, relieved after bowel movement | **Yes** — *B. lactis* strains |
+| Excess gas from fermentation (FODMAPs) | Bloating 1–4 hours after high-FODMAP meals | Partially — diet matters more |
+| Small Intestinal Bacterial Overgrowth (SIBO) | Bloating within 30–90 min of *any* meal, often worse with fiber/probiotics | **Often no — can make it worse** |
+| Pelvic floor dysfunction, gastroparesis, hernia | Structural causes | No |
+
+If your bloating gets worse on probiotics or on a high-fiber/prebiotic diet, that is a red flag for SIBO, and the right next step is breath testing — not a different probiotic. A [2020 systematic review in *Antibiotics* (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7551823/) of probiotics in SIBO showed mixed and often null results, with some strains worsening symptoms.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## The evidence-graded ranking of strains
+
+A 2025 umbrella meta-analysis covering trials through mid-2024 found that probiotics as a category produced a roughly **26% reduction in bloating risk** versus placebo — a real but modest signal. The catch is that the average effect hides huge between-strain variation. Below are the strains that drive the signal.
+
+### *Bifidobacterium longum* 35624 (formerly *B. infantis* 35624) — Strong evidence
+
+This is the single best-studied probiotic for IBS-type bloating. A [2017 meta-analysis in *Current Medical Research and Opinion*](https://pubmed.ncbi.nlm.nih.gov/28166427/) of randomized controlled trials concluded that 35624 produced significant reductions in abdominal pain, bloating/distention, and global IBS symptom scores versus placebo over 4–8 weeks. The original landmark [2006 RCT in *The American Journal of Gastroenterology*](https://pubmed.ncbi.nlm.nih.gov/16863564/) — a double-blind trial in 362 women with IBS — established the 1 × 10⁸ CFU/day dose as effective for pain, bloating, and bowel-habit satisfaction.
+
+**What to do:** Look for the **35624 strain** specifically — it is sold under the brand Align in the US ([View on Amazon](https://www.amazon.com/s?k=align+probiotic+35624&tag=insquire-20)). Take one capsule daily for at least 4 weeks before judging. The dose is low (1 billion CFU) on purpose; do not assume a higher-CFU generic product is "stronger."
+
+### *Lactobacillus plantarum* 299v — Strong evidence
+
+299v has been tested specifically for IBS bloating in several double-blind trials. A [2012 RCT in 214 IBS patients (PubMed)](https://pubmed.ncbi.nlm.nih.gov/22531784/) reported a roughly 50% reduction in abdominal pain frequency and significant improvement in bloating versus placebo over 4 weeks, with about 78% of the active group rating symptom relief as good or excellent. A [2020 meta-analysis of *L. plantarum* 299v in IBS (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7019891/) confirmed consistent effects on overall symptoms and bloating.
+
+**What to do:** 299v is sold as **Jarrow Ideal Bowel Support 299v** in the US ([View on Amazon](https://www.amazon.com/s?k=ideal+bowel+support+299v&tag=insquire-20)). 10 billion CFU once daily, ideally on an empty stomach.
+
+**[Take the free supplement quiz →](/quiz)**
+
+### *Bifidobacterium animalis* subsp. *lactis* HN019 — Moderate evidence (constipation-driven bloating)
+
+If your bloating is a *constipation problem in disguise* — worse at the end of the day, better after a bowel movement — HN019 is the most plausible single strain. A [2011 dose-ranging RCT in *Nutrition* (PubMed)](https://pubmed.ncbi.nlm.nih.gov/21663486/) showed HN019 reduced whole-gut transit time and the frequency of functional GI symptoms including bloating in adults with constipation. A more recent [2024 multi-center triple-blind RCT in *Molecular Nutrition & Food Research*](https://onlinelibrary.wiley.com/doi/10.1002/mnfr.70081) confirmed benefits on bowel movement frequency and bloating severity over 8 weeks.
+
+Note: a [larger 28-day trial in *Gut Microbes* (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6219592/) was largely null on primary endpoints, so the evidence is real but not bulletproof.
+
+**What to do:** 10–20 billion CFU/day of HN019 ([View on Amazon](https://www.amazon.com/s?k=bifidobacterium+lactis+HN019&tag=insquire-20)) for at least 4 weeks. Pair with adequate water and fiber.
+
+### *Lactobacillus acidophilus* NCFM + *B. lactis* Bi-07 combination — Moderate evidence
+
+A double-blind RCT in functional bowel disorder patients showed that the **NCFM + Bi-07** combination at high CFU significantly reduced bloating severity at both 4 and 8 weeks versus placebo. This is one of the cleaner "combination probiotic" signals in the literature, summarized in the [2020 *Antibiotics* review (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7551823/).
+
+**What to do:** Several reputable products use this combination ([View on Amazon](https://www.amazon.com/s?k=NCFM+Bi-07+probiotic&tag=insquire-20)). Look for the specific strain designations on the label, not just "*L. acidophilus*."
+
+### Multi-strain "VSL#3-type" high-CFU blends — Moderate evidence
+
+High-CFU multi-strain formulas (the original VSL#3, now sold as Visbiome in the US) have RCT evidence in pouchitis and ulcerative colitis. For bloating specifically in IBS, the data is mixed but trending positive — see the [2018 systematic review in *Alimentary Pharmacology & Therapeutics* (PubMed)](https://pubmed.ncbi.nlm.nih.gov/30178869/) of multi-strain probiotics in IBS.
+
+**What to do:** Reserve high-dose multi-strain blends ([View on Amazon](https://www.amazon.com/s?k=visbiome&tag=insquire-20)) for cases where single-strain trials have failed. They are expensive and refrigerated.
+
+### *Saccharomyces boulardii* — Limited evidence (for bloating specifically)
+
+*S. boulardii* is a probiotic yeast with strong evidence for antibiotic-associated diarrhea and traveler's diarrhea, but limited direct evidence for bloating. The [2020 *Antibiotics* review (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7551823/) notes inconsistent results for IBS-type bloating.
+
+**What to do:** Reasonable to use during or after a course of antibiotics ([View on Amazon](https://www.amazon.com/s?k=saccharomyces+boulardii&tag=insquire-20)) — not a first-line bloating treatment.
+
+### Generic drugstore "*acidophilus*" blends — Insufficient evidence
+
+If the bottle says *Lactobacillus acidophilus* without a strain designation (a number/letter code like NCFM or LA-5), there is **no specific clinical trial behind that product**. The species name alone tells you almost nothing about clinical effect. Skip these — you are paying for marketing.
+
+---
+
+## Strain-matched buyer's table
+
+| Symptom pattern | Best-supported strain | Typical dose | Cost / month |
+|---|---|---|---|
+| IBS-type bloating with pain | *B. longum* 35624 (Align) | 1 billion CFU/day | $25–$35 |
+| Bloating + post-meal pain | *L. plantarum* 299v | 10 billion CFU/day | $20–$30 |
+| Bloating from constipation | *B. lactis* HN019 | 10–20 billion CFU/day | $20–$35 |
+| Mixed functional bloating | NCFM + Bi-07 combo | 10–20 billion CFU/day | $25–$40 |
+| Post-antibiotic bloating/diarrhea | *S. boulardii* | 5–10 billion CFU/day | $15–$25 |
+| Severe refractory IBS/IBD | Multi-strain (Visbiome) | 112–450 billion CFU/day | $70–$130 |
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## When probiotics make bloating *worse* — and what to do instead
+
+About 1 in 5 people who start a probiotic for bloating get worse, not better. Common reasons:
+
+- **SIBO.** If you have small intestinal bacterial overgrowth, adding more bacteria — particularly *Lactobacillus* species — can amplify fermentation in the wrong part of the gut. Bloating that hits within 30–60 minutes of *any* meal, regardless of FODMAP content, is a classic SIBO pattern. Ask your GI about a glucose or lactulose breath test.
+- **Histamine-producing strains.** Some lactobacilli (*L. casei*, *L. bulgaricus*, *L. reuteri*) produce histamine. If you have histamine intolerance or MCAS-spectrum symptoms, these may worsen bloating, headaches, and flushing.
+- **Prebiotic inclusions (FOS/inulin).** Many capsules add prebiotic fibers that ferment heavily and cause gas. Read the label and try a prebiotic-free version.
+
+If a 4-week trial of a strain-matched probiotic doesn't help, **stop it**. Probiotics are not vitamins — there is no benefit to taking one that isn't working.
+
+---
+
+## Bottom line
+
+Most "probiotic for bloating" purchases fail because the bottle doesn't actually contain a strain that has been tested for bloating. The evidence-driven approach is:
+
+1. Identify which mechanism is driving your bloating (IBS-type pain, constipation, post-antibiotic, or possible SIBO).
+2. Pick a **named, strain-designated** product backed by RCTs (35624, 299v, HN019, or NCFM+Bi-07).
+3. Run it for 4 weeks at the studied dose, then judge.
+4. If symptoms worsen on probiotics or fiber, stop and rule out SIBO before trying another product.
+
+Generic drugstore acidophilus is the supplement equivalent of "antibiotic" with no further detail — useless without specifics.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## Key Takeaways
+
+- Strain matters more than brand or CFU count. Look for **species + strain designation** on the label.
+- **Strongest evidence:** *B. longum* 35624 (Align) and *L. plantarum* 299v for IBS-type bloating.
+- **For constipation-driven bloating:** *B. lactis* HN019.
+- Probiotics can *worsen* bloating in SIBO and histamine intolerance — pay attention to your response in the first week.
+- A 4-week trial at the studied dose is the right unit of decision. Stop if it doesn't help.
+
+---
+
+## References
+
+- Yuan F et al. *Efficacy of Bifidobacterium infantis 35624 in patients with irritable bowel syndrome: a meta-analysis.* Curr Med Res Opin. 2017. [PubMed](https://pubmed.ncbi.nlm.nih.gov/28166427/)
+- Whorwell PJ et al. *Efficacy of an encapsulated probiotic Bifidobacterium infantis 35624 in women with irritable bowel syndrome.* Am J Gastroenterol. 2006. [PubMed](https://pubmed.ncbi.nlm.nih.gov/16863564/)
+- Ducrotté P et al. *Clinical trial: Lactobacillus plantarum 299v vs placebo in IBS.* 2012. [PubMed](https://pubmed.ncbi.nlm.nih.gov/22531784/)
+- Niedzielin K et al. *L. plantarum 299v meta-analysis in IBS.* 2020. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC7019891/)
+- Waller PA et al. *Dose-response effect of Bifidobacterium lactis HN019 on whole gut transit time and functional GI symptoms.* Nutrition. 2011. [PubMed](https://pubmed.ncbi.nlm.nih.gov/21663486/)
+- *Effects of 28-day Bifidobacterium animalis subsp. lactis HN019 supplementation.* Gut Microbes. 2017. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC6219592/)
+- *8-Week Bifidobacterium lactis HN019 Supplementation on Functional Constipation.* Mol Nutr Food Res. 2024. [Wiley](https://onlinelibrary.wiley.com/doi/10.1002/mnfr.70081)
+- Wilkins T, Sequoia J. *Probiotics for gastrointestinal conditions: a summary of evidence.* Antibiotics (Basel). 2020. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC7551823/)
+- Asha MZ, Khalil SFH. *Multi-strain probiotics in IBS: systematic review.* Aliment Pharmacol Ther. 2018. [PubMed](https://pubmed.ncbi.nlm.nih.gov/30178869/)
+
+---
+
+*This article is for informational purposes only and is not medical advice. Probiotics can interact with immune-suppressing medications and may be unsafe for severely immunocompromised individuals. Bloating that is severe, sudden in onset, accompanied by weight loss, blood in stool, vomiting, or that wakes you from sleep warrants medical evaluation rather than supplementation. Always consult a qualified healthcare provider before starting any new supplement regimen.*
+`,
+  },
+  {
     slug: 'best-supplements-for-hair-growth',
     title: 'Best Supplements for Hair Growth in Women: What the Evidence Actually Says (2026)',
     excerpt:
