@@ -2,6 +2,200 @@ import { BlogPost } from '@/types'
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'supplements-for-menopause',
+    title: 'Supplements for Menopause Symptoms: What the Evidence Actually Supports in 2026',
+    excerpt:
+      'A no-hype, evidence-graded guide to supplements for menopause symptoms — hot flashes, sleep, mood, and bones. We rank black cohosh, soy isoflavones, magnesium, vitamin D, melatonin, and ERr 731 with the meta-analyses to back them, and call out the popular pills that do nothing.',
+    date: '2026-06-12',
+    category: 'Guides',
+    readTime: '12 min read',
+    content: `
+## "My doctor said try a supplement" — now what?
+
+If you are in perimenopause or post-menopause and you have been told to "try a supplement" before considering hormone therapy, you are in the worst aisle of the entire wellness industry. The menopause shelf is the gold standard of expensive bottles with confident packaging and almost no clinical evidence — wild yam creams, evening primrose pills, dong quai, "femme" multivitamins, adaptogen blends that cost $70 a month.
+
+The good news: there *are* a handful of supplements with real randomized-trial evidence for specific menopause symptoms. The bad news: most of what is sold to you is not on that list, and even the supplements that work tend to work for *one* symptom (hot flashes, sleep, anxiety, or bone density) — not all of them at once.
+
+This guide ranks every major menopause supplement by evidence grade, explains exactly which symptom each one targets, and tells you what dose and form the trials actually used.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## Match the supplement to the symptom — not the life stage
+
+The single biggest mistake women make in this category is buying a generic "menopause complex" and hoping it covers everything. Menopause is a constellation of distinct biological problems — falling estrogen drives vasomotor symptoms, disrupts sleep architecture, accelerates bone loss, and shifts mood — and each one responds to different interventions.
+
+| Symptom | Best-evidence supplement(s) | Evidence grade |
+|---|---|---|
+| Hot flashes / night sweats | Soy isoflavones, ERr 731 (rhubarb extract), black cohosh | Moderate |
+| Sleep disturbance | Melatonin, magnesium glycinate | Moderate |
+| Anxiety / low mood | Magnesium, omega-3, saffron | Limited–Moderate |
+| Bone loss | Vitamin D3 + calcium, vitamin K2 | Strong |
+| Vaginal dryness | Soy isoflavones (50–100 mg), sea buckthorn oil | Limited |
+| "Brain fog" | None with strong evidence | Insufficient |
+| Weight gain | None with strong evidence | Insufficient |
+
+The rest of this article walks through the supplements above in evidence-graded order, with the trials that actually moved the needle.
+
+---
+
+## Hot flashes and night sweats
+
+About 75% of women in the menopausal transition report hot flashes, and they are the symptom most likely to send someone to a supplement aisle. The supplement evidence here is real but modest — typically 20–30% reduction over placebo, which is meaningful but well below what hormone therapy delivers.
+
+### Soy isoflavones — Moderate evidence
+
+Isoflavones (genistein and daidzein) are plant compounds that bind weakly to estrogen receptors. A [2012 meta-analysis in *Menopause* (PubMed)](https://pubmed.ncbi.nlm.nih.gov/22433977/) of 19 RCTs found that extracted or synthesized soy isoflavones significantly reduced hot flash frequency by 20.6% and severity by 26.2% over 6 weeks to 12 months. A follow-up [2014 analysis in the *British Journal of Clinical Pharmacology* (Wiley)](https://bpspubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/bcp.12533) found that supplements providing more than **18.8 mg of genistein per day** were more than twice as effective as lower-genistein products.
+
+**What to do:** 50–60 mg/day of soy isoflavones with at least 18 mg as genistein, for a minimum of 12 weeks before judging effect. Whole-soy foods (tofu, tempeh, edamame, soy milk) work too and are the lower-cost option. [View on Amazon](https://www.amazon.com/s?k=soy+isoflavones+50mg+genistein&tag=insquire-20).
+
+**Important caveat:** Women with a history of estrogen-receptor-positive breast cancer should discuss soy isoflavones with their oncologist. Food-form soy is generally considered safe; high-dose concentrated extracts are more debated.
+
+**[Take the free supplement quiz →](/quiz)**
+
+### ERr 731 (standardized Siberian rhubarb extract) — Moderate evidence
+
+ERr 731 is a specific standardized extract of *Rheum rhaponticum* (Siberian rhubarb root) that has been studied as a non-hormonal hot flash treatment in Europe for decades. A [2024 systematic review and meta-analysis in *Heliyon* (PMC)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11144934/) of eight clinical trials found ERr 731 produced significant reductions in the Menopause Rating Scale, particularly for hot flashes, sleep, and mood — with effect sizes larger than most other plant-based options.
+
+**What to do:** ERr 731 is sold in the US as **Estrovera** (one 4 mg tablet daily). It is one of the few products where the brand actually matters because the supplement is a specific standardized extract — generic "rhubarb root" is not the same. [View on Amazon](https://www.amazon.com/s?k=estrovera+ERr+731&tag=insquire-20).
+
+### Black cohosh (*Cimicifuga racemosa*) — Limited to Moderate evidence
+
+Black cohosh is the most popular herbal menopause supplement and the most controversial. The evidence is genuinely divided. A [2024 narrative review in *Current Issues in Molecular Biology* (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11100637/) concluded that black cohosh appears effective for vasomotor symptoms in early menopause, but a [Cochrane-style systematic review (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6599854/) found that benefits over baseline often disappeared when compared to placebo — meaning a lot of the perceived improvement is placebo response.
+
+The standardized extract used in the positive trials is **Remifemin (40 mg/day of an isopropanolic extract)**. A [2014 placebo-controlled RCT (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4029542/) of this extract in early-menopause women showed significant improvement in Kupperman Menopausal Index versus placebo.
+
+**What to do:** If you try black cohosh, use **Remifemin specifically** ([View on Amazon](https://www.amazon.com/s?k=remifemin+black+cohosh&tag=insquire-20)) at 40 mg/day for 8 weeks. Stop if you do not see meaningful improvement. Black cohosh has had rare reports of hepatotoxicity, so do not stack it with alcohol or other liver-stressing supplements, and discontinue if you develop jaundice or abdominal pain.
+
+### What does *not* work for hot flashes
+
+- **Evening primrose oil** — no consistent benefit in RCTs.
+- **Wild yam cream** — does not convert to progesterone in the body, despite marketing claims.
+- **Dong quai** — null in placebo-controlled trials.
+- **Vitamin E** — modest at best, ~1 hot flash per day reduction.
+- **Maca** — small studies, low quality.
+- **Red clover** — meta-analyses are largely null on hot flashes.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## Sleep disturbance
+
+Menopause disrupts sleep through two mechanisms — night sweats that wake you up, and a structural change in sleep architecture independent of hot flashes. The supplement strategy is different from the standard insomnia stack.
+
+### Melatonin — Moderate evidence
+
+Melatonin levels fall with age, and menopausal women in particular show flattened nighttime melatonin rhythms. A [2025 systematic review and meta-analysis in *Menopause* (PMC)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12894000/) of RCTs in menopausal women found that melatonin supplementation significantly improved sleep quality measured by the Pittsburgh Sleep Quality Index, with some evidence of bone mineral density preservation as a secondary benefit.
+
+**What to do:** Start with **0.3–1 mg of melatonin** taken 30–60 minutes before bed. Most over-the-counter melatonin is wildly overdosed at 5–10 mg, which causes morning grogginess and may worsen sleep over time. [View on Amazon](https://www.amazon.com/s?k=melatonin+0.3mg&tag=insquire-20).
+
+### Magnesium glycinate — Moderate evidence
+
+Magnesium glycinate is the most bioavailable, best-tolerated form for sleep. A [2022 systematic review in *BMC Complementary Medicine and Therapies* (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9209723/) found that magnesium supplementation improved sleep onset latency in older adults, and trials in menopausal women specifically have shown reductions in insomnia severity.
+
+**What to do:** 200–400 mg of **magnesium glycinate** in the evening. Avoid magnesium oxide (poor absorption, causes loose stools). [View on Amazon](https://www.amazon.com/s?k=magnesium+glycinate+400mg&tag=insquire-20).
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## Mood, anxiety, and irritability
+
+Mood symptoms in perimenopause are real and often under-treated. Supplements are not a substitute for therapy or SSRIs in moderate-to-severe cases, but a few have modest evidence for mild symptoms.
+
+### Magnesium — Moderate evidence
+
+A [2017 meta-analysis in *Nutrients* (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5452159/) found that magnesium supplementation modestly reduced anxiety symptoms, particularly in people with low baseline magnesium intake. Roughly half of US adults under-consume magnesium, so this is a common gap. Same dose as for sleep — 200–400 mg/day of glycinate.
+
+### Omega-3 (EPA-dominant) — Limited evidence
+
+EPA-dominant fish oil at **1–2 g/day of EPA** has the most consistent evidence for mood support and is reasonable to add if you do not eat fatty fish twice a week. [View on Amazon](https://www.amazon.com/s?k=high+EPA+omega+3+fish+oil&tag=insquire-20).
+
+### Saffron extract — Limited evidence
+
+A handful of small RCTs of standardized saffron extract (28–30 mg/day) have shown improvements in mild-to-moderate depressive symptoms in menopausal women, but trial quality is mixed and effect sizes are modest.
+
+---
+
+## Bone loss — the symptom you cannot feel
+
+The most under-rated menopause "symptom" is the one without symptoms. Women lose **roughly 10% of bone mass in the first 5 years post-menopause**, and supplement evidence here is some of the strongest in the entire menopause aisle.
+
+### Vitamin D3 + calcium — Strong evidence
+
+A [2020 meta-analysis of RCTs in postmenopausal women (PubMed)](https://pubmed.ncbi.nlm.nih.gov/33237064/) found that combined calcium and vitamin D significantly increased total bone mineral density, including at the lumbar spine and femoral neck — the sites that fracture and matter for quality of life.
+
+**What to do:**
+- **Vitamin D3 (cholecalciferol):** 1,000–2,000 IU/day, more if your blood 25(OH)D is under 30 ng/mL. Get tested. [View on Amazon](https://www.amazon.com/s?k=vitamin+d3+2000+IU&tag=insquire-20).
+- **Calcium:** Aim for 1,200 mg/day **total** (food + supplement). If your diet already provides 800 mg from dairy or fortified foods, you only need 400 mg from a pill. Excess calcium (over 2,000 mg/day) is associated with cardiovascular risk, so do not stack high-dose pills on top of a calcium-rich diet.
+
+### Vitamin K2 (MK-7) — Moderate evidence
+
+K2 helps direct calcium toward bone and away from arteries. A [2019 meta-analysis in *Osteoporosis International* (PubMed)](https://pubmed.ncbi.nlm.nih.gov/31418893/) showed K2 supplementation modestly improved lumbar spine BMD in postmenopausal women.
+
+**What to do:** 100–180 mcg/day of MK-7. Often combined with vitamin D3 in a single capsule. [View on Amazon](https://www.amazon.com/s?k=vitamin+k2+mk7+d3&tag=insquire-20).
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## A practical starter stack (and what to skip)
+
+If you are starting from zero and have no specific contraindication, this is a reasonable evidence-aligned starter stack to discuss with your clinician:
+
+| Goal | Supplement | Dose |
+|---|---|---|
+| Bone protection (everyone) | Vitamin D3 | 1,000–2,000 IU/day |
+| Bone protection | Calcium (food-first) | 1,200 mg/day total |
+| Bone protection | Vitamin K2 (MK-7) | 100 mcg/day |
+| Hot flashes | Soy isoflavones **or** ERr 731 | 50 mg/day **or** 4 mg/day |
+| Sleep | Magnesium glycinate | 300 mg evening |
+| Sleep | Melatonin (low dose) | 0.3–1 mg before bed |
+
+**Skip unless you have a specific reason:**
+
+- "Menopause complex" multi-ingredient blends (under-dosed on the active ingredients that work)
+- Evening primrose oil, wild yam, dong quai, maca
+- High-dose isoflavone products marketed at >100 mg/day (no added benefit, more theoretical risk)
+- Generic "estrogen support" or "hormone balance" pills with proprietary blends
+
+---
+
+## Key Takeaways
+
+1. **Hot flashes:** Soy isoflavones (50–60 mg/day with >18 mg genistein) and ERr 731 (4 mg/day) have the best evidence. Black cohosh works for some women — use Remifemin specifically.
+2. **Sleep:** Low-dose melatonin (0.3–1 mg) plus magnesium glycinate (200–400 mg) is the cleanest evidence-aligned combo.
+3. **Bone loss is the highest-stakes symptom.** Vitamin D3 + calcium has the strongest evidence in the entire menopause supplement category. Add K2 (MK-7) for additional bone benefit.
+4. **Skip the marketing-heavy "menopause complex" products.** They under-dose the actual actives.
+5. **None of these supplements replace hormone therapy.** If your symptoms are severe and you have no contraindication, talk to your clinician about MHT — the supplement evidence is real but modest by comparison.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## References
+
+- [Extracted or synthesized soybean isoflavones reduce menopausal hot flash frequency and severity: systematic review and meta-analysis of randomized controlled trials (PubMed, 2012)](https://pubmed.ncbi.nlm.nih.gov/22433977/)
+- [Quantitative efficacy of soy isoflavones on menopausal hot flashes (Br J Clin Pharmacol, 2014)](https://bpspubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/bcp.12533)
+- [Efficacy evaluation of standardized Rheum rhaponticum root extract (ERr 731) on symptoms of menopause: a systematic review and meta-analysis (PMC, 2024)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11144934/)
+- [Exploring the efficacy and safety of black cohosh in menopausal symptom management (PMC, 2024)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11100637/)
+- [Black cohosh for menopausal symptoms — systematic review (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6599854/)
+- [Efficacy of black cohosh in treating early symptoms of menopause: a randomized clinical trial (PMC, 2014)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4029542/)
+- [Melatonin supplementation on bone mineral density, quality of life, and sleep in menopausal women: a systematic review and meta-analysis (PMC, 2025)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12894000/)
+- [The effect of magnesium supplementation on primary insomnia in older adults: systematic review (PMC, 2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9209723/)
+- [Magnesium status and anxiety: a systematic review (PMC, 2017)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5452159/)
+- [Effects of combined calcium and vitamin D supplementation on osteoporosis in postmenopausal women: a systematic review and meta-analysis of RCTs (PubMed, 2020)](https://pubmed.ncbi.nlm.nih.gov/33237064/)
+- [Vitamin K2 and bone mineral density in postmenopausal women: meta-analysis (PubMed, 2019)](https://pubmed.ncbi.nlm.nih.gov/31418893/)
+- [Efficacy of plant-derived dietary supplements in improving overall menopausal symptoms: updated systematic review and meta-analysis (Phytotherapy Research, 2024)](https://onlinelibrary.wiley.com/doi/10.1002/ptr.8112)
+
+---
+
+*This article is for educational purposes only and is not medical advice. Supplements can interact with prescription medications and may not be appropriate for everyone, particularly women with a history of hormone-sensitive cancers, blood-clotting disorders, or liver disease. Talk to a qualified clinician before starting any new supplement regimen, especially if you are considering or already using menopausal hormone therapy (MHT), tamoxifen, SSRIs, or anticoagulants.*
+`,
+  },
+  {
     slug: 'probiotics-guide',
     title: 'Best Probiotics for Bloating: Which Strains Actually Work (2026 Evidence Review)',
     excerpt:
