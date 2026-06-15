@@ -2,6 +2,206 @@ import { BlogPost } from '@/types'
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'turmeric-curcumin-guide',
+    title: 'Turmeric vs Curcumin Supplement: What You Are Actually Paying For (2026 Evidence Review)',
+    excerpt:
+      'Turmeric and curcumin are not the same thing, and the difference decides whether your supplement does anything at all. We break down the turmeric vs curcumin supplement question — bioavailability, the right dose, which conditions the research actually supports, and the liver-safety news you need before you buy.',
+    date: '2026-06-15',
+    category: 'Research Reviews',
+    readTime: '13 min read',
+    content: `
+## You bought "turmeric" — but did you buy anything that works?
+
+Walk into any pharmacy and you will find a wall of golden bottles, some labeled "turmeric," some labeled "curcumin," some labeled both, with prices ranging from $8 to $45 for what looks like the same thing. It is not the same thing. The label difference between *turmeric* and *curcumin* — and whether the product has an absorption enhancer — is the single biggest predictor of whether you will feel anything at all.
+
+Here is the uncomfortable truth the marketing glosses over: a 1,000 mg capsule of plain turmeric root powder may deliver as little as 20–30 mg of the active compound, and even that tiny amount is mostly destroyed before it reaches your bloodstream. Meanwhile, the research showing turmeric rivals ibuprofen for knee arthritis used concentrated, standardized, absorption-enhanced extracts at doses you will almost never reach by sprinkling spice on your food.
+
+This guide explains exactly what the difference is, which form to buy, how much to take, and — critically — which health claims hold up under randomized trials and which are wishful thinking. We grade every use case so you know where your money is actually buying a benefit.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## Turmeric vs curcumin: the difference that changes everything
+
+**Turmeric** (*Curcuma longa*) is the whole root, the bright orange-yellow spice. **Curcuminoids** are the family of bioactive polyphenols inside it, and **curcumin** is the single most-studied curcuminoid — the compound responsible for most of the anti-inflammatory effects in the research.
+
+The problem is concentration. Raw turmeric root is only about **2–5% curcuminoids by weight** (commonly cited as ~3%). Independent testing of commercial turmeric products found curcuminoid content varied enormously from batch to batch, confirming you often have no idea what you are getting from a "turmeric" label ([turmeric supplement analysis, PMC 2024](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11720146/)).
+
+A standardized **"95% curcuminoids" extract** concentrates those actives roughly 20–30x over the raw root. The three curcuminoids it contains are curcumin (~70–77%), demethoxycurcumin (~15–18%), and bisdemethoxycurcumin (~3–6%).
+
+| | Whole turmeric root powder | Standardized curcumin extract (95%) |
+|---|---|---|
+| Curcuminoid content | ~2–5% by weight | ~95% by weight |
+| Curcuminoids per 1,000 mg | ~20–80 mg | ~950 mg |
+| Best use | Cooking, tea, general wellness | Therapeutic (joint pain, inflammation) |
+| Dose to reach trial levels | ~5–10 g/day (causes nausea) | 1–2 capsules |
+| Absorption without enhancer | Very poor | Still poor — needs piperine/phospholipid |
+
+**Bottom line on the label:** if your goal is culinary or mild everyday wellness, plain turmeric is fine and cheap. If your goal is a measurable effect on joint pain or inflammation, you want a **standardized 95%-curcuminoid extract with an absorption enhancer** — full stop. They are not interchangeable on a milligram basis ([turmeric & curcumin clinical-trial review, PMC 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10111629/)).
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## The bioavailability problem (and why your capsule has black pepper in it)
+
+Even pure curcumin has a fatal flaw: your body barely absorbs it. It is poorly soluble in water, gets rapidly metabolized in the gut and liver (a process called glucuronidation), and is eliminated fast. Swallow plain curcumin and most of it never reaches your bloodstream intact.
+
+This is why formulation matters more than dose. The enhancers fall into a few families:
+
+### Piperine (black pepper extract / BioPerine) — the classic fix
+
+The landmark study here is [Shoba et al., 1998 (*Planta Medica*)](https://pubmed.ncbi.nlm.nih.gov/9619120/), which found that co-administering just **20 mg of piperine with 2 g of curcumin increased human bioavailability by roughly 2,000% — a 20-fold jump.** Piperine works by inhibiting the enzymes that clear curcumin, keeping it in circulation longer. This is why so many turmeric products bundle in black pepper extract.
+
+### Advanced delivery systems
+
+Newer formulations physically repackage curcumin for better absorption:
+
+- **Phytosome / phospholipid (Meriva, Longvida):** curcumin bound to phospholipids — roughly 20–30x better absorbed than standard curcumin.
+- **Micellar (NovaSOL):** curcumin in liquid micelles, one of the highest-absorption forms in head-to-head studies.
+- **Submicron / nanoparticle (Theracurmin):** showed ~20x higher peak blood levels and ~40x higher total exposure (AUC) than unformulated curcumin ([Theracurmin PK study, PMC 2022](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9097512/)).
+- **Turmeric-oil matrix (BCM-95 / Curcugreen):** uses the root's own essential oils to aid uptake.
+
+A [pharmacokinetic review of curcumin formulations in healthy volunteers](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9685553/) consistently ranks micellar, Theracurmin, and Longvida among the best-absorbed. The practical takeaway: a *lower* dose of a well-formulated product can outperform a *higher* dose of cheap curcumin.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## What the evidence actually supports
+
+This is where we separate the real benefits from the internet hype. Grades reflect the quality and consistency of human randomized-trial evidence.
+
+### Osteoarthritis and joint pain — Strong evidence
+
+This is curcumin's flagship use, and the evidence is genuinely impressive. Multiple meta-analyses find curcumin/turmeric extract is **non-inferior to NSAIDs like ibuprofen and diclofenac** for knee osteoarthritis pain (measured on the WOMAC and VAS scales) — with significantly *fewer* gastrointestinal side effects than the drug arms.
+
+A [2022 meta-analysis of arthritis RCTs (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9353077/) found curcuminoids reduced pain and improved function comparably to NSAIDs, while a [Bayesian network meta-analysis (2024)](https://www.sciencedirect.com/science/article/pii/S0378874123013636) ranked it favorably on both efficacy and safety in knee OA. A [2025 critical review (Frontiers in Pharmacology)](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2025.1664319/full) adds the honest caveat that many of these trials are small and industry-funded — so the effect is real, but the magnitude may be somewhat overstated.
+
+**What to do:** ~1,000 mg/day of a standardized extract (often split into two doses), give it 8–12 weeks. This is the use case where buying curcumin instead of plain turmeric matters most.
+
+### Inflammation / CRP reduction — Moderate evidence
+
+Curcumin reliably lowers C-reactive protein (CRP), a key inflammation marker. An [updated meta-analysis (*Phytotherapy Research*)](https://onlinelibrary.wiley.com/doi/epdf/10.1002/ptr.7284) found significant CRP reductions, strongest at doses ≤1,000 mg/day used for longer than 10 weeks, with reductions in IL-6 and TNF-α as well. An [umbrella meta-analysis (PMC 2023)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9870680/) confirmed CRP dropped in 7 of 10 pooled analyses.
+
+### Depression and mood — Moderate evidence
+
+Several meta-analyses find a significant antidepressant effect versus placebo, with nano-formulations performing best and no serious adverse events ([curcumin in depression meta-analysis, PubMed 2017](https://pubmed.ncbi.nlm.nih.gov/28236605/); [2019 meta-analysis](https://pubmed.ncbi.nlm.nih.gov/31423805/)). The honest caveat: trials are short (4–8 weeks) and effect sizes range from modest to large, so treat curcumin as a possible adjunct, not a replacement for proven treatment.
+
+### Metabolic health — blood sugar and lipids — Moderate evidence
+
+In people with type 2 diabetes or prediabetes, curcumin modestly improves fasting glucose, HbA1c, triglycerides, and LDL cholesterol ([lipid + glycemic meta-analysis in T2D, PMC 2022](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9232354/); [prediabetes/T2D analysis, PLOS ONE](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0215840)). Effects are real but small — a supporting actor alongside diet and medication, not a substitute.
+
+### Exercise recovery / muscle soreness — Moderate evidence
+
+Curcumin reduces delayed-onset muscle soreness (DOMS) and the muscle-damage marker creatine kinase in the days after hard training ([DOMS meta-analysis, 2021](https://link.springer.com/article/10.1186/s42269-021-00664-1); [muscle-damage meta-analysis, PLOS ONE](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0299135)). The effect is modest and shows up most clearly with enhanced-bioavailability forms.
+
+### Cognition / Alzheimer's — Limited / Insufficient evidence
+
+Despite spectacular results in mice, human trials are a letdown. An [updated cognition meta-analysis (PMC 2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12040662/) found no significant effect on global cognition, with only weak subgroup hints. The independent [Alzheimer's Drug Discovery Foundation rating](https://www.alzdiscovery.org/cognitive-vitality/ratings/curcumin) reaches the same neutral conclusion. Do not buy curcumin for brain health expecting a proven payoff.
+
+### Cancer — Insufficient evidence
+
+Hugely hyped in preclinical research, but human clinical outcomes have been unconvincing, largely because of the absorption problem ([curcumin in cancer — lessons learned, PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC3535097/)). Be deeply skeptical of any product marketing curcumin as a cancer treatment.
+
+| Use case | Evidence grade | Practical verdict |
+|---|---|---|
+| Osteoarthritis / joint pain | Strong | Best reason to buy; rivals NSAIDs |
+| Inflammation (CRP) | Moderate | Real, dose ≤1,000 mg/day, 10+ weeks |
+| Depression / mood | Moderate | Possible adjunct, short trials |
+| Blood sugar / lipids | Moderate | Small, supportive effect |
+| Exercise recovery / DOMS | Moderate | Modest; use enhanced form |
+| Cognition / Alzheimer's | Limited | Don't count on it |
+| Cancer | Insufficient | Ignore the marketing |
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## How to dose it (and what to actually buy)
+
+The doses that produced results in trials are clear and consistent:
+
+- **Therapeutic dose:** 500–2,000 mg/day of curcumin extract standardized to **95% curcuminoids**, usually split into two doses. For joint pain and inflammation, ~1,000–1,500 mg/day is the sweet spot.
+- **Take with food containing fat** — curcumin is fat-soluble — and/or with an absorption enhancer (piperine, or a phospholipid/micellar formulation).
+- **Be patient:** allow 8–12 weeks for joint and inflammation benefits.
+- **More is not better:** above ~2,000 mg/day you get diminishing returns and more stomach upset ([curcumin human health review, PMC 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5664031/)).
+
+**What to look for on the label:**
+1. The word "curcumin" or "curcuminoids," not just "turmeric."
+2. "Standardized to 95% curcuminoids."
+3. An absorption system — BioPerine/black pepper, phytosome (Meriva), micellar (NovaSOL), or Theracurmin.
+
+[View standardized curcumin with BioPerine on Amazon](https://www.amazon.com/s?k=curcumin+95+curcuminoids+bioperine&tag=insquire-20) or, for a piperine-free high-absorption option, [view Meriva / Theracurmin formulas on Amazon](https://www.amazon.com/s?k=theracurmin+meriva+curcumin&tag=insquire-20).
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## Safety: the liver news you need before you buy
+
+Curcumin is generally well tolerated — the most common complaint is mild GI upset (nausea, bloating, diarrhea) in roughly 5% of users. But there is an important and growing safety signal that the supplement aisle does not advertise.
+
+**Liver injury.** The U.S. Drug-Induced Liver Injury Network has documented confirmed cases of turmeric-associated liver injury — **10 cases in one series, including one fatal acute liver failure** ([DILIN case series](https://www.sciencedirect.com/science/article/abs/pii/S0002934322007409)). The authoritative [NIH LiverTox monograph](https://www.ncbi.nlm.nih.gov/books/NBK548561/) now lists turmeric/curcumin as a recognized cause of liver injury, with a typical latency of one to four months. Notably, the risk appears **higher with piperine-enhanced and highly bioavailable formulations** — the very products that work best may also raise systemic exposure enough to stress the liver ([turmeric + piperine DILI review, PMC 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC11850025/)). This is rare relative to how many people take turmeric, but it is real: stop immediately and see a doctor if you develop fatigue, dark urine, or yellowing skin.
+
+**Who should avoid or use caution:**
+
+- **Gallbladder disease, gallstones, or bile duct obstruction** — turmeric stimulates bile flow.
+- **Blood thinners (warfarin) or antiplatelet drugs** — can increase bleeding risk and INR.
+- **Upcoming surgery** — stop ~2 weeks beforehand due to bleeding risk.
+- **Iron deficiency / anemia** — high doses can impair non-heme iron absorption.
+- **Diabetes medication** — additive glucose-lowering; watch for hypoglycemia.
+
+If you take any prescription medication, clear curcumin with your clinician or pharmacist first.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## Key Takeaways
+
+1. **Turmeric ≠ curcumin.** Plain turmeric root is ~2–5% curcuminoids; a standardized extract is ~95%. For any therapeutic goal, buy the extract.
+2. **Absorption beats dose.** Pair curcumin with piperine (the Shoba 1998 study showed a 20x boost) or buy a phospholipid/micellar/Theracurmin formula. A well-formulated lower dose can beat a cheap high dose.
+3. **Joint pain is the standout.** This is the strongest evidence — curcumin performs comparably to NSAIDs for knee osteoarthritis with fewer GI side effects.
+4. **Solid moderate evidence** for inflammation (CRP), mood, metabolic markers, and exercise recovery. **Weak or no evidence** for cognition and cancer — ignore those marketing claims.
+5. **Dose:** 1,000–1,500 mg/day of 95% extract, with food and fat, for 8–12 weeks.
+6. **Mind your liver.** Turmeric-associated liver injury is rare but documented, and possibly more likely with high-absorption formulas. Avoid with gallbladder disease, blood thinners, and before surgery.
+
+---
+
+## References
+
+- [Influence of piperine on the pharmacokinetics of curcumin in animals and human volunteers (Shoba et al., Planta Medica, 1998)](https://pubmed.ncbi.nlm.nih.gov/9619120/)
+- [Metabolomic analysis of turmeric supplements versus rhizomes (PMC, 2024)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11720146/)
+- [Turmeric and curcumin clinical trials: lessons learned (PMC, 2023)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10111629/)
+- [Theracurmin pharmacokinetics and bioavailability (PMC, 2022)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9097512/)
+- [Comparative pharmacokinetics of new curcumin preparations in healthy adults (PMC)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9685553/)
+- [Curcuminoids vs NSAIDs for arthritis: meta-analysis of RCTs (PMC, 2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9353077/)
+- [Bayesian network meta-analysis of curcumin for knee osteoarthritis (J Ethnopharmacology, 2024)](https://www.sciencedirect.com/science/article/pii/S0378874123013636)
+- [Critical review of curcumin osteoarthritis meta-analyses (Frontiers in Pharmacology, 2025)](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2025.1664319/full)
+- [Updated meta-analysis of curcumin on CRP (Phytotherapy Research)](https://onlinelibrary.wiley.com/doi/epdf/10.1002/ptr.7284)
+- [Umbrella meta-analysis of curcumin on inflammatory biomarkers (PMC, 2023)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9870680/)
+- [Clinical use of curcumin in depression: a meta-analysis (PubMed, 2017)](https://pubmed.ncbi.nlm.nih.gov/28236605/)
+- [Curcumin for depression: a meta-analysis (PubMed, 2019)](https://pubmed.ncbi.nlm.nih.gov/31423805/)
+- [Curcumin on glycemic and lipid profile in type 2 diabetes: meta-analysis (PMC, 2022)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9232354/)
+- [Curcumin in prediabetes and type 2 diabetes (PLOS ONE)](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0215840)
+- [Curcumin and delayed-onset muscle soreness: meta-analysis (2021)](https://link.springer.com/article/10.1186/s42269-021-00664-1)
+- [Curcumin and muscle damage markers: meta-analysis (PLOS ONE)](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0299135)
+- [Curcumin and cognition: updated meta-analysis (PMC, 2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12040662/)
+- [Alzheimer's Drug Discovery Foundation — curcumin rating](https://www.alzdiscovery.org/cognitive-vitality/ratings/curcumin)
+- [Curcumin in cancer: lessons learned from clinical trials (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3535097/)
+- [Curcumin: a review of its effects on human health (PMC, 2017)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5664031/)
+- [NIH LiverTox: Turmeric monograph](https://www.ncbi.nlm.nih.gov/books/NBK548561/)
+- [Turmeric-associated liver injury: DILIN case series (Am J Medicine)](https://www.sciencedirect.com/science/article/abs/pii/S0002934322007409)
+- [Turmeric-piperine drug-induced liver injury: case and review (PMC, 2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11850025/)
+
+---
+
+*This article is for educational purposes only and is not medical advice. Curcumin can interact with prescription medications — including blood thinners, diabetes drugs, and chemotherapy agents — and has been linked in rare cases to liver injury. It is not appropriate for everyone, particularly people with gallbladder disease, bleeding disorders, or upcoming surgery. Talk to a qualified clinician or pharmacist before starting any new supplement regimen.*
+`,
+  },
+  {
     slug: 'supplements-for-menopause',
     title: 'Supplements for Menopause Symptoms: What the Evidence Actually Supports in 2026',
     excerpt:
