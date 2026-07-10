@@ -2,6 +2,241 @@ import { BlogPost } from '@/types'
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'supplements-for-muscle-recovery',
+    title: 'Best Supplements for Muscle Recovery After a Workout: What the Research Actually Supports',
+    excerpt:
+      'Sore for three days after leg day? This evidence-based guide ranks the best supplements for muscle recovery after a workout — creatine, protein, omega-3, tart cherry, and curcumin — with real dosages, timing, and honest evidence grades so you only buy what works.',
+    date: '2026-07-10',
+    category: 'Guides',
+    readTime: '14 min read',
+    content: `
+## When "recovery" is the thing actually holding you back
+
+You trained hard. Now it is 48 hours later, walking down stairs feels like a negotiation, and your next session is already compromised before it starts. That ache has a name — delayed-onset muscle soreness (DOMS) — and it is not a badge of honor so much as a signal that your muscle fibers took microscopic damage and your body is busy repairing them.
+
+Here is the uncomfortable truth most supplement marketing hides: **recovery is where results are actually made.** You do not get stronger during the workout — you get stronger during the repair that follows it. If that repair is slow, incomplete, or under-fueled, you train less often, lift less, and stall. Which is exactly why the "muscle recovery" aisle is one of the most crowded (and most oversold) corners of the supplement world.
+
+The good news is that a small handful of supplements have genuinely strong evidence behind them, and most of the products screaming "RAPID RECOVERY" on the label do not. This guide separates the two. For each supplement you will get an honest evidence grade, the dose that was actually studied, when to take it, and what form to buy — so you spend money only on the things that move the needle.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## How we grade the evidence
+
+Not all "proven" supplements are equal. Throughout this guide we use a simple, honest scale instead of vague hype:
+
+- **Strong** — consistent results across multiple high-quality randomized controlled trials (RCTs) and meta-analyses. You can rely on this.
+- **Moderate** — several supportive trials, but with limitations (small samples, mixed results, or short duration). Worth considering.
+- **Limited** — early or conflicting evidence. Might help specific people in specific situations.
+- **Insufficient** — not enough good human data to recommend for recovery, regardless of how it is marketed.
+
+One principle underlies everything below: **food first, supplements second.** No capsule out-recovers adequate total protein, enough calories, and enough sleep. Supplements are the margin, not the foundation.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## The recovery all-stars (Strong evidence)
+
+### 1. Protein — the non-negotiable foundation
+
+**Evidence: Strong**
+
+Muscle repair is literally rebuilding protein, so it should be no surprise that dietary protein is the single most important recovery input. Resistance exercise and protein ingestion both stimulate muscle protein synthesis (MPS), and they are synergistic when protein is eaten around training. The [International Society of Sports Nutrition (ISSN) position stand on protein and exercise](https://pmc.ncbi.nlm.nih.gov/articles/PMC5477153/) recommends roughly **0.25 g of high-quality protein per kg of body weight per meal, or an absolute dose of 20–40 g**, with each dose ideally containing 700–3,000 mg of leucine (the amino acid that flips the MPS switch).
+
+Interestingly, a well-known crossover trial found that after whole-body resistance training, **40 g of whey stimulated MPS about 20% more than 20 g** — so bigger, multi-muscle sessions may justify a larger post-workout dose than the old "20 g is always enough" rule of thumb ([Macnaughton et al., 2016](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4985555/)).
+
+Whey is the go-to post-workout because it digests quickly and is leucine-rich; casein is slower and useful before bed; and blended or plant proteins (pea + rice) work well if you combine sources to cover all essential amino acids.
+
+**What to buy:** A whey isolate or blend delivering 25–40 g protein and 2.5–3 g leucine per serving. [View whey protein on Amazon](https://www.amazon.com/s?k=whey+protein+isolate&tag=insquire-20)
+
+**[Take the free supplement quiz →](/quiz)**
+
+### 2. Creatine monohydrate — the most-studied supplement in sports nutrition
+
+**Evidence: Strong**
+
+Creatine is best known for strength and power, but its recovery credentials are underrated. By rapidly replenishing phosphocreatine, it speeds energy recovery between efforts; it also appears to reduce markers of muscle damage and inflammation and improve recovery from intense training. The [ISSN position stand on creatine](https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0173-z) — drawing on 1,000+ studies — concludes creatine monohydrate is the most effective ergogenic aid available for increasing high-intensity capacity and lean mass, with a strong safety record.
+
+A 2026 network meta-analysis directly comparing protein, creatine, and omega-3 in trained athletes found that **creatine and protein were the standout interventions for strength and recovery outcomes**, reinforcing that these two belong at the base of any recovery stack ([Nutrients, 2026](https://www.mdpi.com/2072-6643/18/6/909)).
+
+**Dose:** 3–5 g per day of creatine **monohydrate**, every day (not just training days). Timing is nearly irrelevant — consistency is what fills the muscle stores. Skip the fancy "HCL," "buffered," or "liquid" versions; monohydrate is cheaper and better studied.
+
+**What to buy:** Plain creatine monohydrate powder, ideally Creapure-certified. [View creatine monohydrate on Amazon](https://www.amazon.com/s?k=creatine+monohydrate+creapure&tag=insquire-20)
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## The soreness-reducers (Moderate evidence)
+
+These will not build muscle, but the research suggests they can meaningfully blunt DOMS and the inflammatory damage markers behind it — useful during hard training blocks, competitions, or when you simply cannot afford to be wrecked for three days.
+
+### 3. Omega-3 fatty acids (EPA/DHA)
+
+**Evidence: Moderate**
+
+The long-chain omega-3s in fish oil are anti-inflammatory, and that translates into less soreness after damaging exercise. A [systematic review and meta-analysis of RCTs](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7195643/) found that omega-3 supplementation **significantly reduced DOMS after eccentric exercise** (mean difference −0.93 on soreness scales), though it did not reliably improve strength recovery or range of motion. So think of omega-3 as a soreness and inflammation tool, not a performance booster.
+
+**Dose:** 2–3 g combined EPA + DHA per day, taken consistently with food (the effect builds over weeks, so this is a daily habit, not a workout-day pill).
+
+**What to buy:** A concentrated fish oil listing EPA and DHA amounts (not just "fish oil 1,000 mg"). Vegans can use algae oil. [View omega-3 fish oil on Amazon](https://www.amazon.com/s?k=triple+strength+omega+3+fish+oil+EPA+DHA&tag=insquire-20)
+
+**[Take the free supplement quiz →](/quiz)**
+
+### 4. Tart cherry (concentrate or juice)
+
+**Evidence: Moderate**
+
+Tart cherries are loaded with anthocyanins — polyphenols that dampen oxidative stress and inflammation. A [systematic review of tart cherry and pomegranate supplementation](https://pmc.ncbi.nlm.nih.gov/articles/PMC7996379/) found they enhance recovery from exercise-induced muscle damage, with cherries reducing soreness and strength loss in the majority of studies reviewed. The effect on maintaining maximal voluntary contraction (strength) at 24–48 hours is one of the more consistent findings in the recovery literature.
+
+A practical nuance: tart cherry may work best as **"precovery"** — loading it for a few days *before* a hard event, not just after ([review](https://pmc.ncbi.nlm.nih.gov/articles/PMC9306613/)).
+
+**Dose:** Roughly 480 mg of tart cherry powder (standardized to anthocyanins), or 30 mL of concentrate twice daily, for ~4–5 days around a hard bout.
+
+**What to buy:** A concentrate or capsule standardized for anthocyanin content. [View tart cherry concentrate on Amazon](https://www.amazon.com/s?k=tart+cherry+concentrate+extract&tag=insquire-20)
+
+**[Take the free supplement quiz →](/quiz)**
+
+### 5. Curcumin (from turmeric)
+
+**Evidence: Moderate**
+
+Curcumin, turmeric's active compound, inhibits the NF-κB inflammatory pathway. A [systematic review and meta-analysis of RCTs](https://pubmed.ncbi.nlm.nih.gov/33174301/) found curcumin supplementation reduced muscle soreness and lowered creatine kinase (a blood marker of muscle damage) after exercise. A separate [dose-response meta-analysis](https://pubmed.ncbi.nlm.nih.gov/35574627/) reported improvements in DOMS, inflammation, muscle strength recovery, and joint flexibility.
+
+The catch is bioavailability: plain curcumin is poorly absorbed. Look for formulations with piperine (black pepper extract) or a phospholipid/nanoparticle delivery system.
+
+**Dose:** ~150–1,500 mg curcuminoids per day in studies; a common practical dose is 500 mg twice daily of an enhanced-absorption form, taken with a meal containing fat, around hard training days.
+
+**What to buy:** Curcumin with piperine or a bioavailability-enhanced formula. [View curcumin supplements on Amazon](https://www.amazon.com/s?k=curcumin+with+black+pepper+bioavailable&tag=insquire-20)
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## Situational and "fix-a-deficiency-first" supplements (Limited evidence)
+
+### 6. Vitamin D
+
+**Evidence: Limited (for recovery specifically) / Strong (if you are deficient)**
+
+Vitamin D supports muscle function, and low levels are associated with weaker strength and slower recovery. But supplementing only helps if you are actually low — and a huge share of indoor-training adults are. This is a "test, then correct" supplement, not a blanket recovery hack. A daily 1,000–2,000 IU maintenance dose is reasonable for most; higher if a blood test shows deficiency. [View vitamin D3 on Amazon](https://www.amazon.com/s?k=vitamin+d3+2000+iu&tag=insquire-20)
+
+### 7. Magnesium
+
+**Evidence: Limited**
+
+Magnesium is involved in muscle contraction, nerve signaling, and sleep — and hard training plus sweating can deplete it. It will not dramatically speed muscle repair, but correcting a shortfall can ease cramping and support the deep sleep where most recovery actually happens. Glycinate is the gentlest, most bioavailable form. 200–400 mg elemental magnesium in the evening. [View magnesium glycinate on Amazon](https://www.amazon.com/s?k=magnesium+glycinate&tag=insquire-20)
+
+### 8. BCAAs / EAAs
+
+**Evidence: Limited**
+
+Branched-chain amino acids are marketed heavily for recovery, but here is the honest read: **if you already hit your daily protein target, BCAAs add little.** Whole protein contains BCAAs plus all the other essential amino acids MPS needs. BCAAs are mainly useful in the narrow case of training fasted or when whole protein is not available. Essential amino acid (EAA) blends are a slightly better bet than BCAAs alone, but real food or whey usually wins on cost and completeness.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## The at-a-glance comparison table
+
+| Supplement | Evidence grade | Best for | Typical dose | When to take |
+|---|---|---|---|---|
+| Protein (whey/blend) | Strong | Building & repairing tissue | 25–40 g (0.25 g/kg) | Within a few hours of training; spread across day |
+| Creatine monohydrate | Strong | Power, lean mass, faster energy recovery | 3–5 g | Any time, every day |
+| Omega-3 (EPA/DHA) | Moderate | Reducing soreness & inflammation | 2–3 g EPA+DHA | Daily, with food |
+| Tart cherry | Moderate | Blunting DOMS around hard events | ~480 mg extract / 30 mL 2× | 4–5 days around the bout |
+| Curcumin | Moderate | Lowering damage markers & soreness | 500 mg 2× (enhanced form) | With fatty meal, hard-training days |
+| Vitamin D | Limited* | Muscle function if deficient | 1,000–2,000 IU | Daily, with food |
+| Magnesium (glycinate) | Limited | Sleep, cramps, if low | 200–400 mg | Evening |
+| BCAAs / EAAs | Limited | Fasted training only | 5–10 g | Around fasted sessions |
+
+*Strong if a blood test confirms deficiency.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## How to actually build your recovery stack
+
+You do not need all eight. Layer up based on how serious your training is:
+
+**The everyone-tier (start here):**
+- Enough total protein daily (aim ~1.6–2.2 g/kg bodyweight), anchored by 25–40 g post-workout
+- 3–5 g creatine monohydrate daily
+- Sleep (7–9 hours) and calories — the two "supplements" that beat every capsule
+
+**The hard-training add-on (if you are training 4+ intense days/week):**
+- 2–3 g omega-3 daily for baseline inflammation control
+- Correct vitamin D and magnesium if a test or diet points to a shortfall
+
+**The event/peak-week add-on (competition, race, brutal training block):**
+- Tart cherry loaded a few days before and after the event
+- Curcumin on your most damaging sessions
+
+### One important caveat about antioxidants
+
+There is a genuine trade-off worth knowing: high-dose antioxidant supplements (large amounts of vitamin C and E, and to some degree the polyphenols in tart cherry and curcumin) can **blunt some of the adaptive signaling** that inflammation triggers. In an off-season muscle- or strength-building block, you generally want to *keep* that inflammatory signal and lean on protein, creatine, sleep, and food. Save the aggressive anti-inflammatory tools for when fast recovery matters more than long-term adaptation — competition weeks, tournaments, and back-to-back events. This is why "more recovery supplements" is not automatically "better."
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## Common mistakes that quietly sabotage recovery
+
+- **Chasing supplements while under-eating protein.** No pill fixes a 90 g/day protein intake when you need 140 g.
+- **Buying exotic creatine forms.** Monohydrate is the studied, cheap, effective one. Everything else is marketing.
+- **Treating BCAAs as essential.** If you eat enough complete protein, they are largely redundant.
+- **Taking omega-3 or tart cherry once and expecting magic.** These work through consistent, multi-day intake — not single doses.
+- **Ignoring sleep.** Growth hormone release and the bulk of tissue repair happen during deep sleep. Magnesium and a consistent bedtime out-perform most "recovery" powders.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## The Bottom Line
+
+If you only remember one thing: **protein and creatine are the two supplements with Strong evidence for recovery, and they should form the base of every stack.** Get enough total protein, take 3–5 g of creatine monohydrate daily, sleep, and eat enough — that alone puts you ahead of most people spending far more on flashier products.
+
+From there, omega-3, tart cherry, and curcumin (all Moderate evidence) are legitimate tools to reduce soreness and inflammation, most valuable during hard blocks and around events. Vitamin D, magnesium, and BCAAs are situational — worth it mainly to correct a specific gap.
+
+Everything else in the "rapid recovery" aisle is, at best, Limited or Insufficient. Spend your money where the research actually points.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## Key Takeaways
+
+- **Protein (Strong):** 25–40 g quality protein around training; hit ~1.6–2.2 g/kg daily total.
+- **Creatine monohydrate (Strong):** 3–5 g every day; the single most-studied recovery-relevant supplement.
+- **Omega-3 (Moderate):** 2–3 g EPA+DHA daily reduces DOMS and inflammation.
+- **Tart cherry (Moderate):** load around hard events to blunt soreness and preserve strength.
+- **Curcumin (Moderate):** enhanced-absorption forms lower muscle-damage markers and soreness.
+- **Vitamin D / magnesium / BCAAs (Limited):** correct deficiencies; don't expect standalone magic.
+- **Watch the antioxidant trade-off:** don't over-suppress inflammation during muscle-building blocks.
+
+---
+
+## References
+
+1. Jäger R, et al. *International Society of Sports Nutrition Position Stand: Protein and Exercise.* Journal of the International Society of Sports Nutrition, 2017. [PMC5477153](https://pmc.ncbi.nlm.nih.gov/articles/PMC5477153/)
+2. Macnaughton LS, et al. *The response of muscle protein synthesis following whole-body resistance exercise is greater following 40 g than 20 g of ingested whey protein.* Physiological Reports, 2016. [PMC4985555](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4985555/)
+3. Kreider RB, et al. *International Society of Sports Nutrition Position Stand: Safety and Efficacy of Creatine Supplementation.* JISSN, 2017. [Full text](https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0173-z)
+4. *Comparative Effects of Dietary Protein, Creatine, and Omega-3 Supplementation on Muscle Strength, Endurance, and Recovery in Trained Athletes: A Systematic Review and Network Meta-Analysis.* Nutrients, 2026. [MDPI](https://www.mdpi.com/2072-6643/18/6/909)
+5. *Omega-3 PUFA Supplementation for Reducing Muscle Soreness after Eccentric Exercise: A Systematic Review and Meta-Analysis of RCTs.* 2020. [PMC7195643](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7195643/)
+6. *Tart Cherry and Pomegranate Supplementations Enhance Recovery from Exercise-Induced Muscle Damage: A Systematic Review.* 2021. [PMC7996379](https://pmc.ncbi.nlm.nih.gov/articles/PMC7996379/)
+7. *"Precovery" versus recovery: Understanding the role of cherry juice in exercise recovery.* [PMC9306613](https://pmc.ncbi.nlm.nih.gov/articles/PMC9306613/)
+8. Fang W, et al. *The effect of curcumin supplementation on recovery following exercise-induced muscle damage and DOMS: A systematic review and meta-analysis of RCTs.* 2020. [PubMed 33174301](https://pubmed.ncbi.nlm.nih.gov/33174301/)
+9. *The effect of curcumin supplementation on DOMS, inflammation, muscle strength, and joint flexibility: A systematic review and dose-response meta-analysis of RCTs.* 2022. [PubMed 35574627](https://pubmed.ncbi.nlm.nih.gov/35574627/)
+
+---
+
+*This article is for educational purposes only and is not medical advice. Supplements can interact with medications and health conditions, and individual needs vary. Talk to a qualified healthcare professional or registered dietitian before starting any new supplement, especially if you are pregnant, nursing, managing a medical condition, or taking prescription medication.*
+`,
+  },
+  {
     slug: 'b12-deficiency-signs',
     title: 'Vitamin B12 Deficiency Symptoms and Supplements: The Tingling, Fatigue, and Brain Fog You Keep Blaming on Everything Else',
     excerpt:
