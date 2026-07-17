@@ -2,6 +2,123 @@ import { BlogPost } from '@/types'
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'iron-supplements-guide',
+    title: "Best Iron Supplement That Won't Upset Your Stomach: The Gentle Forms and Dosing That Actually Work",
+    excerpt:
+      "Iron pills leaving you nauseated and constipated? The best iron supplement that won't upset your stomach is usually a matter of form and timing. This evidence-based guide covers ferrous bisglycinate, alternate-day dosing, and exactly what to buy.",
+    date: '2026-07-17',
+    category: 'Deep Dives',
+    readTime: '6 min read',
+    content: `
+## When iron is supposed to help — but it wrecks your gut
+
+You got the low-ferritin result, your doctor said "take iron," and within three days you're constipated, nauseated, and staring at a bottle you can barely stomach. You are not imagining it, and you are not doing it wrong. Conventional iron pills cause real, dose-related gut misery for a large share of people — and the standard advice to "just push through" is both miserable and, it turns out, scientifically unnecessary.
+
+The good news: the tolerability problem is mostly a **form** problem and a **dosing** problem, not an iron problem. Change the type of iron you buy and how often you take it, and most people go from dreading their supplement to barely noticing it — while absorbing *more* iron, not less. Here's exactly what to buy and how to take it.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## Why standard iron upsets your stomach
+
+The classic prescription — ferrous sulfate — is cheap and effective, but a [2015 systematic review and meta-analysis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4336293/) found it roughly **doubles the risk of GI side effects versus placebo** (odds ratio ~2.32), with nausea, constipation, cramping, and metallic taste leading the list. The culprit is unabsorbed iron: only a fraction of each dose is taken up, and the leftover iron sits in your gut generating irritation and feeding an unhappy microbiome.
+
+Two facts follow from this, and both point to the fix: give iron in a **more absorbable form**, and give **less of it, less often**.
+
+## How we grade the evidence
+
+- **Strong** — consistent results across multiple high-quality RCTs and meta-analyses.
+- **Moderate** — several supportive trials with limitations (small samples, mixed results).
+- **Limited** — early or conflicting evidence.
+- **Insufficient** — not enough good human data to recommend.
+
+---
+
+## The single best change: ferrous bisglycinate (chelated iron)
+
+**Evidence: Strong**
+
+Ferrous bisglycinate is iron bound to two glycine amino acids ("chelated"). That wrapper lets it absorb through a different, gentler pathway, so less free iron is dumped into your gut. A [2023 systematic review and meta-analysis of RCTs](https://pmc.ncbi.nlm.nih.gov/articles/PMC10331582/) found ferrous bisglycinate reliably raises hemoglobin and ferritin, and a [randomized controlled trial in pregnant women](https://pmc.ncbi.nlm.nih.gov/articles/PMC8839493/) found it corrected iron deficiency with **better GI tolerability** than conventional salts at a lower elemental dose. A broader [2024 comparison of oral iron salts](https://pmc.ncbi.nlm.nih.gov/articles/PMC11554602/) reached the same practical conclusion: chelated iron matches sulfate on efficacy while causing fewer complaints.
+
+If you have IBS, gastritis, or you already failed ferrous sulfate, skip straight to bisglycinate. It is the highest-value change on this page.
+
+**Dose:** 25 mg of elemental iron. That is plenty for most maintenance and mild-to-moderate deficiency — you don't need the 65 mg found in sulfate tablets.
+
+**What to buy:** A chelated "gentle iron" delivering ~25 mg elemental iron per capsule. [View ferrous bisglycinate on Amazon](https://www.amazon.com/s?k=ferrous+bisglycinate+gentle+iron+25mg&tag=insquire-20)
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## The second-best change: take it every other day
+
+**Evidence: Strong**
+
+This one is counterintuitive and it is the part most people have never heard. Landmark absorption studies by Stoffel and colleagues, published in [The Lancet Haematology (2017)](https://www.thelancet.com/article/S2352-3026(17)30182-5/abstract) and [Haematologica (2019)](https://pubmed.ncbi.nlm.nih.gov/31413088/), showed that a single iron dose spikes **hepcidin** — the hormone that blocks iron absorption — for about 24 hours. So a second dose taken the same day (or the next morning) is largely *wasted*: it barely absorbs but still irritates your gut.
+
+Take iron **every other day** and hepcidin falls back to baseline, so the next dose absorbs more efficiently. A [2023 randomized trial](https://www.sciencedirect.com/science/article/pii/S2589537023004637) confirmed alternate-day dosing matches daily dosing for raising iron stores **with fewer side effects**. You take fewer pills, feel better, and lose nothing.
+
+## Vitamin C: helpful, not mandatory
+
+**Evidence: Moderate**
+
+Vitamin C boosts non-heme iron absorption in the lab, and pairing your dose with a little (orange, a 100–250 mg tablet, or food) is a reasonable, cheap habit. But newer clinical data show that for correcting deficiency, **routine high-dose vitamin C isn't essential** — proper form and timing matter far more. Don't stress about it.
+
+## What to avoid alongside your dose
+
+Take iron away from these, which sharply cut absorption:
+
+- Coffee, tea, and red wine (polyphenols)
+- Dairy and calcium supplements
+- Antacids and proton-pump inhibitors
+- High-fiber meals eaten at the same time
+
+## Comparison: iron forms at a glance
+
+| Form | Elemental iron | GI tolerability | Best for |
+|------|---------------|-----------------|----------|
+| **Ferrous bisglycinate (chelated)** | ~25 mg | Best | Sensitive stomachs, IBS, prior failures |
+| Ferrous sulfate | ~65 mg | Poor | Cheapest; if you tolerate it |
+| Ferrous gluconate | ~35 mg | Moderate | Middle ground |
+| Ferrous fumarate | ~33 mg | Moderate–poor | Higher elemental dose |
+| Iron polymaltose / heme iron | varies | Good | Alternative gentle options |
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## Your gentle-iron protocol
+
+1. **Buy ferrous bisglycinate, ~25 mg elemental iron.**
+2. **Take it every other day**, not daily — same results, fewer side effects.
+3. **Take it in the morning**, ideally 30–60 minutes before food, or with a small snack if empty-stomach bothers you.
+4. **Pair with vitamin C** if convenient; don't obsess over it.
+5. **Separate from coffee, tea, dairy, and antacids** by at least 1–2 hours.
+6. **Recheck ferritin and hemoglobin in 8–12 weeks.** Iron stores rebuild slowly; give it time.
+
+## Bottom line
+
+Iron doesn't have to hurt. Most GI misery comes from a poorly absorbed form given too often. Switch to **ferrous bisglycinate at ~25 mg elemental iron, taken every other day**, keep it away from coffee and dairy, and add a little vitamin C if it's easy. That single combination resolves the tolerability problem for the large majority of people while raising iron stores just as effectively as the harsh old approach. If you've genuinely failed multiple oral forms — or your deficiency is severe — talk to your doctor about IV iron, which bypasses the gut entirely.
+
+**[Take the free supplement quiz →](/quiz)**
+
+---
+
+## References
+
+- Tolkien Z, et al. [Ferrous Sulfate Supplementation Causes Significant Gastrointestinal Side-Effects in Adults: A Systematic Review and Meta-Analysis.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4336293/) *PLoS ONE*, 2015.
+- Fischer JAJ, et al. [The effects of oral ferrous bisglycinate supplementation on hemoglobin and ferritin concentrations in adults and children: a systematic review and meta-analysis of RCTs.](https://pmc.ncbi.nlm.nih.gov/articles/PMC10331582/) 2023.
+- Milman N, et al. [Efficacy and Safety of Ferrous Bisglycinate and Folinic Acid in the Control of Iron Deficiency in Pregnant Women: A Randomized, Controlled Trial.](https://pmc.ncbi.nlm.nih.gov/articles/PMC8839493/) 2021.
+- [Comparative evaluation of different oral iron salts in the management of iron deficiency anemia.](https://pmc.ncbi.nlm.nih.gov/articles/PMC11554602/) 2024.
+- Stoffel NU, et al. [Iron absorption from oral iron supplements given on consecutive versus alternate days.](https://www.thelancet.com/article/S2352-3026(17)30182-5/abstract) *The Lancet Haematology*, 2017.
+- Stoffel NU, et al. [Iron absorption from supplements is greater with alternate day than with consecutive day dosing in iron-deficient anemic women.](https://pubmed.ncbi.nlm.nih.gov/31413088/) *Haematologica*, 2019.
+- [Alternate day versus consecutive day oral iron supplementation in iron-depleted women: a randomized double-blind placebo-controlled study.](https://www.sciencedirect.com/science/article/pii/S2589537023004637) *eClinicalMedicine*, 2023.
+
+*This article is for educational purposes only and is not medical advice. Iron supplementation should be guided by blood work (ferritin, hemoglobin, transferrin saturation), because too much iron is harmful and some people carry genetic conditions like hemochromatosis. Always consult a qualified healthcare provider before starting or changing any supplement, especially if you are pregnant, have a chronic condition, or take medications.*
+`,
+  },
+  {
     slug: 'supplements-for-muscle-recovery',
     title: 'Best Supplements for Muscle Recovery After a Workout: What the Research Actually Supports',
     excerpt:
