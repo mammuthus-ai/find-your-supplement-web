@@ -102,6 +102,9 @@ section:has(> .gradient-mesh) a.border-border{
 }
 section:has(> .gradient-mesh) a.border-border:hover{border-color:#fff;color:#fff}
 section:has(> .gradient-mesh) p.text-sm{color:rgba(255,255,255,.75)}
+section:has(> .gradient-mesh) .text-teal,
+section.border-y:has(a[href*="apps.apple.com"]) .text-teal,
+main div.rounded-2xl.border-teal\/20 .text-teal{color:#fff}
 
 /* ---------- "How it works": onboarding-style photo cards ---------- */
 .card-hover:has(> .aspect-\[16\/10\]){
