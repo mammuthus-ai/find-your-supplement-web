@@ -1,0 +1,68 @@
+# Find Your Supplement
+
+> Find Your Supplement (findyoursupplement.co) is a free, evidence-based supplement recommendation platform. A 2-minute quiz matches your health goals, diet, lifestyle, and symptoms to personalized supplement suggestions, and the blog publishes concise, science-backed articles (each a 5-minute read or less) citing sources such as NIH Office of Dietary Supplements, PubMed, and major clinics.
+
+Key things to know:
+
+- All recommendations are educational, not medical advice; readers are advised to consult a healthcare provider before starting supplements.
+- Articles grade the strength of evidence (e.g. "High Evidence", "Good Evidence") rather than making blanket claims.
+- The quiz at https://findyoursupplement.co/quiz/ is free and requires no sign-up.
+
+## Main Pages
+
+- [Personalized Supplement Quiz](https://findyoursupplement.co/quiz/): Free 2-minute quiz for personalized, evidence-based supplement recommendations
+- [Blog](https://findyoursupplement.co/blog/): All articles on supplements, vitamins, and nutrition science
+- [About](https://findyoursupplement.co/about/): How the recommendation engine works and how evidence is scored
+
+## Blog: Deep Dives
+
+In-depth, evidence-graded looks at a single nutrient or problem.
+
+- [Itchy Skin But No Rash? The Nutrient Deficiencies That Make You Itch From the Inside](https://findyoursupplement.co/blog/itchy-skin-vitamin-deficiency/): An itch that crawls under your skin with no rash to show for it is easy to dismiss — but it can be a real, measurable nutrient deficiency. This evidence-based guide covers how iron, vitamin B12, vitamin D, and zinc deficiencies cause itching, which blood tests to ask for, and the exact supplements that fix them.
+- [Best Iron Supplement That Won't Upset Your Stomach: The Gentle Forms and Dosing That Actually Work](https://findyoursupplement.co/blog/iron-supplements-guide/): Iron pills leaving you nauseated and constipated? The best iron supplement that won't upset your stomach is usually a matter of form and timing. This evidence-based guide covers ferrous bisglycinate, alternate-day dosing, and exactly what to buy.
+- [Vitamin B12 Deficiency Symptoms and Supplements: The Tingling, Fatigue, and Brain Fog You Keep Blaming on Everything Else](https://findyoursupplement.co/blog/b12-deficiency-signs/): Vitamin B12 deficiency hides behind ordinary tiredness until the nerve damage starts — and by then some of it can be permanent. This evidence-based guide covers the real symptoms, who is at risk, how it is diagnosed, and exactly which B12 supplement form and dose actually fixes it.
+- [Best Probiotics for Bloating: Which Strains Actually Work (2026 Evidence Review)](https://findyoursupplement.co/blog/probiotics-guide/): Not all probiotics reduce bloating — most do nothing. We rank the specific strains (B. infantis 35624, L. plantarum 299v, B. lactis HN019, and more) with real RCT evidence, explain who should skip probiotics entirely, and tell you exactly what to buy.
+- [Best Magnesium for Sleep: The Science-Backed Guide to Forms, Dosage, and Timing](https://findyoursupplement.co/blog/best-magnesium-for-sleep/): Not all magnesium supplements work the same for sleep. This deep-dive compares magnesium glycinate, L-threonate, citrate, and more — with dosage recommendations backed by clinical trials.
+- [Vitamin D Deficiency: Signs, Testing, and How to Fix It](https://findyoursupplement.co/blog/vitamin-d-deficiency-guide/): A billion people worldwide are deficient in vitamin D — and most don't know it. Learn to recognize the signs, understand your risk factors, and know exactly when and how to supplement.
+- [Magnesium Benefits: The Complete Evidence Guide](https://findyoursupplement.co/blog/magnesium-benefits-guide/): From sleep quality and stress resilience to heart health and blood sugar regulation, magnesium is involved in over 300 enzymatic reactions. Here's a comprehensive look at the science behind every major benefit.
+- [Vitamin D3: Why 70% of People Are Deficient (And What to Do About It)](https://findyoursupplement.co/blog/vitamin-d3-deficiency-guide/): Despite being called a vitamin, D3 functions more like a hormone — influencing over 200 genes. Here's the science on deficiency, optimal levels, and supplementation.
+- [Magnesium: The Master Mineral for Sleep, Stress, and Recovery](https://findyoursupplement.co/blog/magnesium-master-mineral/): Involved in over 300 enzymatic reactions, magnesium may be the single most impactful supplement for modern lifestyles. Here's why most people don't get enough.
+
+## Blog: Guides
+
+Practical supplement roundups for specific goals and audiences.
+
+- [Best Supplements for Muscle Recovery After a Workout: What the Research Actually Supports](https://findyoursupplement.co/blog/supplements-for-muscle-recovery/): Sore for three days after leg day? This evidence-based guide ranks the best supplements for muscle recovery after a workout — creatine, protein, omega-3, tart cherry, and curcumin — with real dosages, timing, and honest evidence grades so you only buy what works.
+- [Supplements for Menopause Symptoms: What the Evidence Actually Supports in 2026](https://findyoursupplement.co/blog/supplements-for-menopause/): A no-hype, evidence-graded guide to supplements for menopause symptoms — hot flashes, sleep, mood, and bones. We rank black cohosh, soy isoflavones, magnesium, vitamin D, melatonin, and ERr 731 with the meta-analyses to back them, and call out the popular pills that do nothing.
+- [Best Supplements for Hair Growth in Women: What the Evidence Actually Says (2026)](https://findyoursupplement.co/blog/best-supplements-for-hair-growth/): Iron, vitamin D, zinc, biotin, marine collagen, saw palmetto, pumpkin seed oil — we rank every popular hair-growth supplement for women by evidence quality, explain who actually needs them, and tell you exactly what to buy.
+- [Best Supplements for Joint Pain Over 50: What the 2024 Meta-Analyses Actually Show](https://findyoursupplement.co/blog/supplements-for-joint-pain/): Glucosamine, collagen, curcumin, omega-3, Boswellia — the joint supplement aisle is a wall of competing claims. We pulled the most recent meta-analyses and randomized trials to rank what actually works for knee and hip pain after 50, what dose to take, and which combinations have the strongest evidence.
+- [Natural Supplements for Anxiety: What the Science Actually Says](https://findyoursupplement.co/blog/supplements-for-anxiety/): Looking for natural supplements for anxiety? This evidence-based guide ranks the top 6 options — ashwagandha, L-theanine, magnesium, lavender, and more — by clinical evidence strength, with exact dosages and what to buy.
+- [Best Supplements for Gut Health: What the Science Actually Says (2026)](https://findyoursupplement.co/blog/best-supplements-for-gut-health/): From probiotics to butyrate, discover the best supplements for gut health ranked by clinical evidence. This research-backed guide covers dosing, strain selection, and exactly which supplements are worth your money.
+- [Supplements for Runners Over 40: The Evidence-Based Guide to Training Harder and Recovering Faster](https://findyoursupplement.co/blog/supplements-for-runners-over-40/): Running after 40 means fighting harder biology: slower recovery, joint wear, and declining muscle mass. This evidence-graded guide covers the best supplements for runners over 40 — what actually works, what to skip, and exactly how to dose each one.
+- [What Supplements Should I Take? A Personalized, Evidence-Based Guide](https://findyoursupplement.co/blog/what-supplements-should-i-take/): With thousands of supplements on the market, deciding what to take can be overwhelming. Here's a systematic, evidence-based approach to figuring out exactly what your body needs.
+- [Best Supplements for Energy: The Evidence-Based Guide](https://findyoursupplement.co/blog/best-supplements-for-energy/): Persistent fatigue and low energy are among the most common reasons people reach for supplements. Here's what the research actually shows works — and what's just marketing.
+- [Top Supplements for Sleep: What Science Says Actually Works](https://findyoursupplement.co/blog/best-supplements-for-sleep/): Sleep problems affect over a third of adults. These supplements have solid clinical trial data supporting their effectiveness for sleep onset, sleep quality, and duration.
+- [Supplements for Brain Fog: What the Evidence Shows](https://findyoursupplement.co/blog/supplements-for-brain-fog/): Brain fog — that feeling of mental cloudiness, slow thinking, and poor concentration — has several root causes. Here are the supplements with the best evidence for clearing it.
+
+## Blog: Research Reviews
+
+Evidence verdicts and head-to-head comparisons of popular supplements.
+
+- [Turmeric vs Curcumin Supplement: What You Are Actually Paying For (2026 Evidence Review)](https://findyoursupplement.co/blog/turmeric-curcumin-guide/): Turmeric and curcumin are not the same thing, and the difference decides whether your supplement does anything at all. We break down the turmeric vs curcumin supplement question — bioavailability, the right dose, which conditions the research actually supports, and the liver-safety news you need before you buy.
+- [Ashwagandha vs Rhodiola for Stress: Which Adaptogen Wins in 2026?](https://findyoursupplement.co/blog/ashwagandha-vs-rhodiola/): Ashwagandha and Rhodiola rosea are the two most-studied adaptogens for stress — but they work on different parts of the stress response. We break down the meta-analyses, head-to-head trials, dosing, and exactly which one to choose for chronic stress, burnout, or performance under fatigue.
+- [Fish Oil vs Krill Oil: What the 2024 Network Meta-Analyses Actually Show](https://findyoursupplement.co/blog/fish-oil-vs-krill-oil/): Krill oil costs 3–5x more than fish oil and the marketing pitch is "better absorbed." We pulled the most recent network meta-analyses to see whether the bioavailability story holds up, and which omega-3 actually wins on triglycerides, inflammation, and price-per-gram of EPA+DHA.
+- [Do Collagen Supplements Actually Work? A 2026 Evidence Review](https://findyoursupplement.co/blog/best-collagen-supplements/): Collagen powders are a $2B category, but the science is messier than the marketing. Here is what recent meta-analyses actually show for skin, joints, hair, and bones — and how to pick a product that does what it claims.
+- [Multivitamin vs. Individual Supplements: Why One Pill Isn’t Enough (and When It Is)](https://findyoursupplement.co/blog/multivitamin-vs-individual-supplements/): A multivitamin is a generic seatbelt; individual supplements are targeted treatments. Here’s the evidence on dose, form, and absorption — and when a multi actually makes sense.
+- [Vitamin D3 vs D2: Which Form Actually Works Better?](https://findyoursupplement.co/blog/vitamin-d3-vs-d2/): Wondering whether to take vitamin D3 or D2? Research shows D3 raises blood levels up to 3x more effectively than D2. This evidence-based guide breaks down the science, dosages, and exactly which form to buy.
+- [Zinc vs Magnesium: Which Mineral Do You Actually Need?](https://findyoursupplement.co/blog/zinc-vs-magnesium/): Zinc and magnesium are two of the most commonly deficient minerals in adults — but they do completely different things. This research-backed comparison breaks down the benefits, deficiency signs, dosage, and who should take zinc vs magnesium (or both).
+- [Creatine vs Protein Powder: Which One Is Right for Your Goals?](https://findyoursupplement.co/blog/creatine-vs-protein-powder/): Creatine and protein powder both build muscle — but they work completely differently. This evidence-graded breakdown tells you exactly which to prioritize, how to dose each, and why serious athletes use both.
+- [The Science Behind Ashwagandha: Does It Actually Work?](https://findyoursupplement.co/blog/ashwagandha-science/): KSM-66 ashwagandha has accumulated impressive clinical trial data for stress, cortisol, and even testosterone. We review the evidence.
+- [Creatine Is Not Just for Bodybuilders — The Brain Benefits Are Compelling](https://findyoursupplement.co/blog/creatine-brain-benefits/): The most evidence-backed sports supplement also shows remarkable benefits for cognition, mood, and neuroprotection. Here's what the research says.
+
+## Blog: Nutrition Science
+
+How diet, lifestyle, and physiology shape what your body actually needs.
+
+- [How Your Diet Shapes Your Supplement Needs](https://findyoursupplement.co/blog/diet-affects-supplement-needs/): Your dietary pattern is the single strongest predictor of which nutrients you're likely deficient in. Here's what each major diet gets right — and where the gaps are.
+- [The Science of Personalized Supplements: Why One Size Doesn't Fit All](https://findyoursupplement.co/blog/science-personalized-supplements/): Why does your friend swear by iron while it does nothing for you? Why do vegans need different supplements than omnivores? The science of nutritional individuality explains why personalization isn't optional — it's everything.
+- [Omega-3 for Vegans and Vegetarians: The Complete Algae Oil Guide](https://findyoursupplement.co/blog/omega3-vegan-guide/): Fish don't actually make omega-3 — they get it from algae. Here's why algae oil is the superior choice for plant-based eaters (and arguably everyone).
