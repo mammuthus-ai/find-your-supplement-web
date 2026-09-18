@@ -164,7 +164,18 @@ clutter on a sheet once carried pseudo-text into risk territory.
 7. **Deliver to a FRESH upload slot on every revision** (media_upload →
    same-call PUT → media_confirm). Re-PUTting an already-served URL risks CDN
    caching the old bytes.
-8. **Revisions are cheap if scoped:** a line edit = one take + caption re-run
+8. **A stat the narration counts must be recounted on-screen at full size.**
+   When a line quotes a number and the visual encodes it (three of ten drops
+   gold, a gauge at a third), the video model drifts even when the reference
+   plate is exact — a shipped cut showed FOUR gold drops under "three of every
+   ten" and the user caught it, not the QC pass. Extract full-resolution
+   frames from EVERY wide shot of that block (not a downscaled strip — small
+   montages miscount) and literally count the counted things in each. On a
+   miss, regenerate that block with the geometry frozen in the prompt: name
+   the exact count AND positions ("gold at the second, fifth and ninth"),
+   state the layout never changes between shots, and put the wrong counts in
+   the NEGATIVE ("a fourth gold drop, eleven drops, a second row").
+9. **Revisions are cheap if scoped:** a line edit = one take + caption re-run
    on the preserved clean master; a recolor = only the affected blocks. Never
    rebuild everything for a caption or wording change.
 
