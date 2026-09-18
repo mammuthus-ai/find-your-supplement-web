@@ -7,9 +7,10 @@ description: >
   video, "video version" of a post, or to run the blog-to-video pipeline on a
   new or existing article — even if they don't name a platform. It locks the
   channel's established look (Editorial Motion Graphics collage, muted
-  monochrome with per-beat color highlights), narrator (Archie, upbeat),
-  caption rules, and the hard-won production fixes from the first runs, so
-  every video looks like the same channel.
+  monochrome with per-beat color highlights), the fast gap-free narration
+  standard, caption rules, and the hard-won production fixes from the first
+  runs — while requiring fresh assets and a new visual concept for every
+  video so the feed never repeats itself.
 ---
 
 # Blog post → Reel/Short (Find Your Supplement channel)
@@ -65,38 +66,64 @@ block's PALETTE LOCK — an emphasis element left in the base petrol reads as
 - **Petrol blue** — structural base only (discs, the vial's liquid) — matches the site's teal brand
 - **Forest green** — the payoff check stroke
 
-**Voice — Archie** (`voice_id: bd072316-f77c-588b-b6e5-e46b9b03d008`,
-`voice_type: preset`), engine per the workflow (`text2speech_v2` /
+**Voice — pick per video, suggest before locking.** Archie
+(`voice_id: bd072316-f77c-588b-b6e5-e46b9b03d008`, `voice_type: preset`) is
+the incumbent, but the user wants a suggestion when a different voice suits
+the topic better (e.g., a warmer female voice for a sleep or pregnancy post):
+open the `list_voices` picker, name your recommendation and why, and let the
+user decide. Engine per the workflow (`text2speech_v2` /
 `variant: elevenlabs`). Delivery bracket, verbatim on every line and KEPT
-SHORT: `[upbeat energetic health explainer, bright quick pace]` — see the
-bracket-leak gotcha below for why short matters.
+SHORT: `[upbeat energetic health explainer, fast lively pace]` — see the
+bracket-leak gotcha below for why short matters. **The read should be FAST:**
+prefer takes in the 2.5–2.9 words/sec range (2.9 is the validator's hard
+ceiling — never exceed it); a take that ambles below ~2.3 wps is worth one
+re-roll even when its length passes.
 
-**Pacing — punchy.** Five ~2s hard-cut shots per block per the workflow, but
-write the choreography aggressive: elements slam/whip/stamp in with hard
+**Pacing — punchy, with NO dead air.** Five ~2s hard-cut shots per block per
+the workflow, choreography aggressive: elements slam/whip/stamp in with hard
 overshoot, rapid staggered entrances, two impact beats per block, "quick
 push-in"/"whip pan" instead of gentle drifts. The user rejected the calmer
-first cut as too slow.
+first cut as too slow. **Audio gaps at block seams are a known complaint:**
+the assembler centers each line inside its fixed 10s block, so a line that
+speaks only 8s leaves ~1s of silence on each side of every seam. Target
+speech at the TOP of the window — 9.0–9.5s — by writing full 22–23-word
+lines and re-rolling takes that land short (7.8–8.5s is "pass" to the gate
+but sounds gappy). Check every take's measured `speech` value against this
+tighter target before assembly, not just the gate's floor.
 
-**Recurring cast (this Higgsfield account — reuse as `medias` job ids for
-channel consistency; generate new assets only for new subject matter):**
-- woman (halftone cutout, knit sweater): `d692d924-835e-4fb6-81e0-a65a5a2586e4`
-- disc stage plate: `8811caea-6677-4818-9953-63fa2bdd228a` · lateral coverage: `69fa9363-b933-4a11-8cca-5c13654fcf4e`
-- chart plate (dot gauge): `ba543508-37f1-4f20-8c90-8b11ca5852c3` · detail coverage: `813e480c-2165-40d2-b18e-97390e2d59eb`
-- newsprint frame plate: `ab60c725-04fa-4723-b82e-14f9d65aabaa`
-- body-map plate: `f45c3227-7aaa-41be-b4b8-043dfc781fa4`
-- blood-test vial (through-line prop): `879a4111-e90a-410a-bb4a-763654dfb75e`
-- giant hand: `b556cb6e-debf-42d9-bb4a-b8083274dc01` · pill bottle: `5932295e-ad06-4f3b-9ea8-4632a21c68d0`
+**Fresh visuals every video — do NOT reuse assets from earlier videos.** The
+style formula and color logic are the only things carried over; the cast,
+locations, props, and through-line are invented new for each post so the feed
+never feels like the same video re-skinned. Be creative: derive the visual
+concept from the post's own subject (a magnesium post might live on a night
+sky plate with a filling moon; a gut-health post inside a torn-paper stomach
+diagram). Generating a full new asset roster each time is an accepted cost —
+the user explicitly prefers spend over sameness.
 
-Give every video a physical **through-line prop** that escalates each block
-and resolves in the payoff (the vial filling toward a green check). Character
-sheets go on a completely plain cream field — background collage clutter on a
-sheet once carried pseudo-text into risk territory.
+Within a single video, variety is also a rule, not a preference:
+- **No plate or composition appears twice.** Give every block its own
+  location/setting — the workflow's "≤2 consecutive blocks per location" is a
+  floor; this channel wants zero repeats (a repeated graphic mid-video was
+  called out specifically). Skip the coverage-revisit pattern entirely.
+- Still give every video ONE physical **through-line prop** that escalates
+  each block and resolves in the payoff — the through-line recurs by design;
+  it is the backgrounds and compositions that must not.
+
+Character sheets go on a completely plain cream field — background collage
+clutter on a sheet once carried pseudo-text into risk territory.
 
 ## Script & caption rules
 
-- Hook's first sentence ≤8 words; one idea per block; 20–23 words per line
-  (the workflow's validator enforces this). Spoken lines write numbers as
+- Hook's first sentence ≤8 words; one idea per block; write FULL 22–23-word
+  lines (the validator's band is 20–23 — stay at the top so the audio fills
+  its block; see the dead-air rule above). Spoken lines write numbers as
   WORDS so the TTS pronounces them ("B twelve", "twenty nine percent").
+- **Every shot illustrates the words being spoken during it.** Before
+  submitting a block, read each SHOT beat against the block's vo_line: if the
+  line says "nerves misfire", the shot shows sparks on nerves — not a torn
+  paper edge peeling for texture's sake (a real complaint: a decorative shot
+  landed mid-line with no relation to the narration). Decorative flourishes
+  are allowed only as entrances/exits for the thing the line names.
 - **No "take our quiz" CTA in the narration** — the user removed it. CTAs
   belong in the post caption/description, not the audio.
 - When naming the tests to get, the post's first-line trio is ferritin, B12
