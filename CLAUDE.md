@@ -30,6 +30,17 @@ hand — rather than adding negative instructions) and re-inspect the
 replacement before converting and publishing. Prompts that pose people
 holding or comparing multiple objects are the highest-risk category.
 
+## Shared to-do list
+
+The user keeps a cross-session to-do list in `TODO.md` on the `todo` branch
+of this repo (deliberately kept off `gh-pages` so it is never published to
+the live site). When the user asks to add, complete, or show to-dos in ANY
+session, operate on that file: `git fetch origin todo`, read
+`origin/todo:TODO.md`, apply the change (date new items, move finished ones
+under Done with their completion date), commit on the `todo` branch, and
+push. A scheduled Routine emails the user a report of this list daily at
+7:00 AM ET — do not delete or restructure the Open/Done headings it parses.
+
 ## Adding or editing a blog post (built-output mechanics)
 
 Each page stores its content in THREE places that must stay consistent, or
