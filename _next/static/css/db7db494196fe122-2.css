@@ -6,9 +6,9 @@
 /* ===== EON-inspired UI revision (kept teal/slate/amber scheme) ===== */
 :root{
   --eon-radius:1.5rem;
-  --eon-grad:radial-gradient(85% 60% at 88% 100%,rgba(255,153,0,.40) 0%,rgba(255,153,0,0) 62%),
-    radial-gradient(70% 55% at 8% 4%,rgba(165,243,252,.55) 0%,rgba(165,243,252,0) 60%),
-    linear-gradient(168deg,#22d3ee 0%,#14b8a6 42%,#0d9488 68%,#115e59 100%);
+  --eon-grad:radial-gradient(85% 60% at 88% 100%,rgba(255,153,0,.26) 0%,rgba(255,153,0,0) 62%),
+    radial-gradient(70% 55% at 8% 4%,rgba(165,243,252,.10) 0%,rgba(165,243,252,0) 60%),
+    linear-gradient(168deg,#0e7490 0%,#0f766e 45%,#115e59 72%,#134e4a 100%);
 }
 body{font-family:Poppins,Inter,system-ui,sans-serif}
 h1,h2,h3,h4{font-family:Poppins,Inter,system-ui,sans-serif;letter-spacing:-.02em}
@@ -51,8 +51,8 @@ section:has(> .gradient-mesh) > .relative{
   }
 }
 section:has(> .gradient-mesh) .inline-flex.rounded-full{
-  background:rgba(255,255,255,.16);
-  border-color:rgba(255,255,255,.35);
+  background:rgba(0,0,0,.14);
+  border-color:rgba(255,255,255,.45);
   color:#fff;
   -webkit-backdrop-filter:blur(8px);
   backdrop-filter:blur(8px);
@@ -86,14 +86,14 @@ section:has(> .gradient-mesh) .flex.flex-col.sm\:flex-row{
 section:has(> .gradient-mesh) a.bg-teal{
   flex:1 1 auto;
   text-align:center;
-  background:rgba(255,255,255,.24);
-  border:1px solid rgba(255,255,255,.42);
+  background:rgba(255,255,255,.16);
+  border:1px solid rgba(255,255,255,.55);
   color:#fff;
   box-shadow:0 8px 32px rgba(15,118,110,.25);
   -webkit-backdrop-filter:blur(12px);
   backdrop-filter:blur(12px);
 }
-section:has(> .gradient-mesh) a.bg-teal:hover{background:rgba(255,255,255,.34)}
+section:has(> .gradient-mesh) a.bg-teal:hover{background:rgba(255,255,255,.26)}
 section:has(> .gradient-mesh) a.border-border{
   border-radius:9999px;
   border-color:rgba(255,255,255,.45);
@@ -156,8 +156,8 @@ main div.rounded-2xl.border-teal\/20 .absolute{display:none}
 main div.rounded-2xl.border-teal\/20 h2{color:#fff;font-weight:700;font-size:2.1rem}
 main div.rounded-2xl.border-teal\/20 p{color:rgba(255,255,255,.92);font-weight:300}
 main div.rounded-2xl.border-teal\/20 a.bg-teal{
-  background:rgba(255,255,255,.24);
-  border:1px solid rgba(255,255,255,.42);
+  background:rgba(255,255,255,.16);
+  border:1px solid rgba(255,255,255,.55);
   color:#fff;
   -webkit-backdrop-filter:blur(12px);
   backdrop-filter:blur(12px);
