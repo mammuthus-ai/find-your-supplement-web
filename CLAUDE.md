@@ -41,6 +41,26 @@ under Done with their completion date), commit on the `todo` branch, and
 push. A scheduled Routine emails the user a report of this list daily at
 7:00 AM ET — do not delete or restructure the Open/Done headings it parses.
 
+## blog/feed.json — regenerate after every post
+
+`blog/feed.json` is the machine-readable index of all articles. The app's
+Blog tab reads it over the network, and it is the only thing the app knows
+about the blog: **a post that is not in the feed does not exist to app
+users.** The homepage's "Latest from the Blog" strip is separate hand-built
+markup and still has to be updated by hand as described below.
+
+Regenerate the feed after adding or editing any post, with the generator the
+user keeps outside this branch (`build_blog_feed.py`; ask for it if it is not
+to hand — it is deliberately not on `gh-pages` so it is never published):
+
+    python3 build_blog_feed.py            # rewrites blog/feed.json
+    python3 build_blog_feed.py --check    # verify only, non-zero on problems
+
+It reads each article's own `<title>`, description, `article:published_time`,
+`og:image` and its category chip, sorts newest first, and flags articles
+whose `og:image` belongs to a different post — a copy-paste slip that ships a
+wrong social preview and has happened once already.
+
 ## Adding or editing a blog post (built-output mechanics)
 
 Each page stores its content in THREE places that must stay consistent, or
