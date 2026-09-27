@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # AI and answer-engine crawlers are explicitly welcome.
-# A machine-readable guide to this site is at https://findyoursupplement.co/llms.txt
+# A machine-readable guide to this site is at https://findyoursupplement.com/llms.txt
 
 User-agent: GPTBot
 Allow: /
@@ -46,4 +46,4 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-Sitemap: https://findyoursupplement.co/sitemap.xml
+Sitemap: https://findyoursupplement.com/sitemap.xml

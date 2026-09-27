@@ -1,7 +1,7 @@
 # Find Your Supplement — site repo
 
 **This repository is PUBLIC, and every file on `gh-pages` is served verbatim
-at findyoursupplement.co (including dot-folders — `.nojekyll` is set).**
+at findyoursupplement.com (including dot-folders — `.nojekyll` is set).**
 Anyone can read every branch, every commit message and the full history.
 
 Never put anything confidential or proprietary here: internal notes,
