@@ -13,11 +13,13 @@ Key things to know:
 - [Personalized Supplement Quiz](https://findyoursupplement.com/quiz/): Free 2-minute quiz for personalized, evidence-based supplement recommendations
 - [Blog](https://findyoursupplement.com/blog/): All articles on supplements, vitamins, and nutrition science
 - [About](https://findyoursupplement.com/about/): How the recommendation engine works and how evidence is scored
+- [Find Your Supplement App](https://findyoursupplement.com/app/): The iOS and Android app — full supplement regimen, blood work and genetic insights, the medication interaction checker, and brand match scores, for a one-time $3.99
 
 ## Blog: Deep Dives
 
 In-depth, evidence-graded looks at a single nutrient or problem.
 
+- [Brittle, Ridged, or Peeling Nails? The Deficiencies Your Hands Are Trying to Show You](https://findyoursupplement.com/blog/brittle-nails-vitamin-deficiency/): Splitting, peeling, or spoon-shaped nails can be a six-month record of a nutrient shortfall — or just what dish soap does to keratin. This evidence-based guide covers which deficiencies genuinely show up in nails, the one supplement with real trial data, and what no capsule will fix.
 - [Itchy Skin But No Rash? The Nutrient Deficiencies That Make You Itch From the Inside](https://findyoursupplement.com/blog/itchy-skin-vitamin-deficiency/): An itch that crawls under your skin with no rash to show for it is easy to dismiss — but it can be a real, measurable nutrient deficiency. This evidence-based guide covers how iron, vitamin B12, vitamin D, and zinc deficiencies cause itching, which blood tests to ask for, and the exact supplements that fix them.
 - [Best Iron Supplement That Won't Upset Your Stomach: The Gentle Forms and Dosing That Actually Work](https://findyoursupplement.com/blog/iron-supplements-guide/): Iron pills leaving you nauseated and constipated? The best iron supplement that won't upset your stomach is usually a matter of form and timing. This evidence-based guide covers ferrous bisglycinate, alternate-day dosing, and exactly what to buy.
 - [Vitamin B12 Deficiency Symptoms and Supplements: The Tingling, Fatigue, and Brain Fog You Keep Blaming on Everything Else](https://findyoursupplement.com/blog/b12-deficiency-signs/): Vitamin B12 deficiency hides behind ordinary tiredness until the nerve damage starts — and by then some of it can be permanent. This evidence-based guide covers the real symptoms, who is at risk, how it is diagnosed, and exactly which B12 supplement form and dose actually fixes it.
@@ -63,6 +65,7 @@ Evidence verdicts and head-to-head comparisons of popular supplements.
 
 How diet, lifestyle, and physiology shape what your body actually needs.
 
+- [Does Coffee Block Your Supplements? What Caffeine Does to Iron, Calcium, and Your Multivitamin](https://findyoursupplement.com/blog/coffee-supplement-absorption/): Taking your vitamins with your morning coffee can quietly erase most of what you paid for — iron absorption can drop by half or more. This evidence-based guide covers exactly which supplements coffee interferes with, which ones it leaves alone, and the simple timing fix.
 - [How Your Diet Shapes Your Supplement Needs](https://findyoursupplement.com/blog/diet-affects-supplement-needs/): Your dietary pattern is the single strongest predictor of which nutrients you're likely deficient in. Here's what each major diet gets right — and where the gaps are.
 - [The Science of Personalized Supplements: Why One Size Doesn't Fit All](https://findyoursupplement.com/blog/science-personalized-supplements/): Why does your friend swear by iron while it does nothing for you? Why do vegans need different supplements than omnivores? The science of nutritional individuality explains why personalization isn't optional — it's everything.
 - [Omega-3 for Vegans and Vegetarians: The Complete Algae Oil Guide](https://findyoursupplement.com/blog/omega3-vegan-guide/): Fish don't actually make omega-3 — they get it from algae. Here's why algae oil is the superior choice for plant-based eaters (and arguably everyone).
