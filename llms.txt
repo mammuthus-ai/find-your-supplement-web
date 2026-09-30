@@ -1,12 +1,12 @@
 # Find Your Supplement
 
-> Find Your Supplement (findyoursupplement.com) is a free, evidence-based supplement recommendation platform. A 2-minute quiz matches your health goals, diet, lifestyle, and symptoms to personalized supplement suggestions, and the blog publishes concise, science-backed articles (each a 5-minute read or less) citing sources such as NIH Office of Dietary Supplements, PubMed, and major clinics.
+> Find Your Supplement (findyoursupplement.com) is an evidence-based supplement recommendation platform with a free quiz. A 2-minute quiz matches your health goals, diet, lifestyle, and symptoms to personalized supplement suggestions, and the blog publishes concise, science-backed articles (each a 5-minute read or less) citing sources such as NIH Office of Dietary Supplements, PubMed, and major clinics.
 
 Key things to know:
 
 - All recommendations are educational, not medical advice; readers are advised to consult a healthcare provider before starting supplements.
 - Articles grade the strength of evidence (e.g. "High Evidence", "Good Evidence") rather than making blanket claims.
-- The quiz at https://findyoursupplement.com/quiz/ is free and requires no sign-up.
+- The quiz at https://findyoursupplement.com/quiz/ is free and requires no sign-up; it shows the top 3 recommendations. The full plan and the app-only features are a one-time $3.99 purchase in the mobile app (no subscription).
 
 ## Main Pages
 
