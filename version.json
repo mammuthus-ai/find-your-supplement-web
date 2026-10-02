@@ -1,8 +1,8 @@
 {
   "ios": {
-    "latest": "1.3.0",
+    "latest": "1.6.0",
     "minRequired": "1.2.0",
-    "notes": "New digestive health supplements + clearer evidence grades"
+    "notes": "Accounts that keep your plan on every device, plus a brand-new look"
   },
   "android": {
     "latest": "1.6.0",
