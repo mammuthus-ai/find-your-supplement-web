@@ -1,11 +1,12 @@
 # Find Your Supplement
 
-> Find Your Supplement (findyoursupplement.com) is an evidence-based supplement recommendation platform with a free quiz. A 2-minute quiz matches your health goals, diet, lifestyle, and symptoms to personalized supplement suggestions, and the blog publishes concise, science-backed articles (each a 5-minute read or less) citing sources such as NIH Office of Dietary Supplements, PubMed, and major clinics.
+> Find Your Supplement (findyoursupplement.com) is an evidence-based supplement recommendation platform with a free quiz. A 2-minute quiz matches your health goals, diet, lifestyle, and symptoms to personalized supplement suggestions, and the blog publishes concise, science-backed articles (each a 5-minute read or less); most articles cite primary sources such as the NIH Office of Dietary Supplements, PubMed, and major clinics.
 
 Key things to know:
 
 - All recommendations are educational, not medical advice; readers are advised to consult a healthcare provider before starting supplements.
-- Articles grade the strength of evidence (e.g. "High Evidence", "Good Evidence") rather than making blanket claims.
+- Supplement recommendations are graded on a four-tier evidence scale rather than given as blanket claims: Strong (meta-analyses and randomized controlled trials), Moderate (multiple controlled trials), Limited (small trials), Weak (preliminary or mechanistic evidence only). The tiers are defined at https://findyoursupplement.com/about/.
+- Published by Insquire, LLC, based in New York City. Contact: support@findyoursupplement.com. The companion app is on the App Store (id6761743777) and Google Play (com.findyoursupplement.app).
 - The quiz at https://findyoursupplement.com/quiz/ is free and requires no sign-up; it shows the top 3 recommendations. The full plan and the app-only features are a one-time $3.99 purchase in the mobile app (no subscription).
 
 ## Main Pages
@@ -70,3 +71,11 @@ How diet, lifestyle, and physiology shape what your body actually needs.
 - [How Your Diet Shapes Your Supplement Needs](https://findyoursupplement.com/blog/diet-affects-supplement-needs/): Your dietary pattern is the single strongest predictor of which nutrients you're likely deficient in. Here's what each major diet gets right — and where the gaps are.
 - [The Science of Personalized Supplements: Why One Size Doesn't Fit All](https://findyoursupplement.com/blog/science-personalized-supplements/): Why does your friend swear by iron while it does nothing for you? Why do vegans need different supplements than omnivores? The science of nutritional individuality explains why personalization isn't optional — it's everything.
 - [Omega-3 for Vegans and Vegetarians: The Complete Algae Oil Guide](https://findyoursupplement.com/blog/omega3-vegan-guide/): Fish don't actually make omega-3 — they get it from algae. Here's why algae oil is the superior choice for plant-based eaters (and arguably everyone).
+
+## Optional
+
+- [RSS feed](https://findyoursupplement.com/feed.xml): All blog articles with publish dates
+- [Sitemap](https://findyoursupplement.com/sitemap.xml): Every indexable page with its last-modified date
+- [Privacy Policy](https://findyoursupplement.com/privacy/): What data the site and app collect and how it is used
+- [Terms of Service](https://findyoursupplement.com/terms/)
+- [Delete your account](https://findyoursupplement.com/delete-account/): How to remove an app account and its data

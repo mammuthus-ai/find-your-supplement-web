@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
+# Next.js client-navigation payloads: plain-text duplicates of each page, not meant for indexing
+Disallow: /*index.txt
+Disallow: /*?_rsc=
 
 # AI and answer-engine crawlers are explicitly welcome.
 # A machine-readable guide to this site is at https://findyoursupplement.com/llms.txt
@@ -47,3 +50,4 @@ User-agent: Bytespider
 Allow: /
 
 Sitemap: https://findyoursupplement.com/sitemap.xml
+Sitemap: https://findyoursupplement.com/feed.xml
