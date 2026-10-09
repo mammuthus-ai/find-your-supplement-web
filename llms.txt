@@ -14,7 +14,7 @@ Key things to know:
 - [Personalized Supplement Quiz](https://findyoursupplement.com/quiz/): Free 2-minute quiz for personalized, evidence-based supplement recommendations
 - [Blog](https://findyoursupplement.com/blog/): All articles on supplements, vitamins, and nutrition science
 - [About](https://findyoursupplement.com/about/): How the recommendation engine works and how evidence is scored
-- [Supplements We Review](https://findyoursupplement.com/how-we-choose/): Every supplement checked for the quiz: in the app, not included, and removed
+- [Supplements We Review](https://findyoursupplement.com/how-we-choose/): The supplements the quiz can recommend, names only
 - [Find Your Supplement App](https://findyoursupplement.com/app/): The iOS and Android app — full supplement regimen, blood work and genetic insights, the medication interaction checker, and brand match scores, for a one-time $3.99
 
 ## Blog: Deep Dives
