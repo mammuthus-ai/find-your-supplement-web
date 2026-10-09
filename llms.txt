@@ -5,7 +5,7 @@
 Key things to know:
 
 - All recommendations are educational, not medical advice; readers are advised to consult a healthcare provider before starting supplements.
-- Supplement recommendations are graded on a four-tier evidence scale rather than given as blanket claims: Strong (meta-analyses and randomized controlled trials), Moderate (multiple controlled trials), Limited (small trials), Weak (preliminary or mechanistic evidence only). The tiers are defined at https://findyoursupplement.com/about/.
+- Each recommendation carries an evidence label rather than a blanket claim: Strong (consistent results in good-quality trials or reviews), Moderate (some good trials found a benefit), or Limited (small or mixed studies); nothing below Limited is credited. Labels are graded from what the studies found for each use, not from how many studies exist. They are explained at https://findyoursupplement.com/about/.
 - Published by Insquire, LLC, based in New York City. Contact: support@findyoursupplement.com. The companion app is on the App Store (id6761743777) and Google Play (com.findyoursupplement.app).
 - The quiz at https://findyoursupplement.com/quiz/ is free and requires no sign-up; it shows the top 3 recommendations. The full plan and the app-only features are a one-time $3.99 purchase in the mobile app (no subscription).
 
@@ -14,6 +14,7 @@ Key things to know:
 - [Personalized Supplement Quiz](https://findyoursupplement.com/quiz/): Free 2-minute quiz for personalized, evidence-based supplement recommendations
 - [Blog](https://findyoursupplement.com/blog/): All articles on supplements, vitamins, and nutrition science
 - [About](https://findyoursupplement.com/about/): How the recommendation engine works and how evidence is scored
+- [Supplements We Review](https://findyoursupplement.com/how-we-choose/): Every supplement checked for the quiz: in the app, not included, and removed
 - [Find Your Supplement App](https://findyoursupplement.com/app/): The iOS and Android app — full supplement regimen, blood work and genetic insights, the medication interaction checker, and brand match scores, for a one-time $3.99
 
 ## Blog: Deep Dives
