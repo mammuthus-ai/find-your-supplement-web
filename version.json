@@ -1,8 +1,8 @@
 {
   "ios": {
-    "latest": "1.6.0",
+    "latest": "1.7.0",
     "minRequired": "1.2.0",
-    "notes": "Accounts that keep your plan on every device, plus a brand-new look"
+    "notes": "Lab report and DNA file reading, label scanning, clearer medication warnings, and a new look"
   },
   "android": {
     "latest": "1.7.0",
