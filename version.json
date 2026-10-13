@@ -1,8 +1,8 @@
 {
   "ios": {
-    "latest": "1.7.0",
+    "latest": "1.8.0",
     "minRequired": "1.2.0",
-    "notes": "Lab report and DNA file reading, label scanning, clearer medication warnings, and a new look"
+    "notes": "A simpler quiz, evidence labels on every pick, a new match score, and a new icon"
   },
   "android": {
     "latest": "1.8.0",
