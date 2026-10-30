@@ -1,13 +1,13 @@
 {
   "ios": {
-    "latest": "1.8.0",
+    "latest": "1.9.0",
     "minRequired": "1.2.0",
-    "notes": "A simpler quiz, evidence labels on every pick, a new match score, and a new icon"
+    "notes": "Pro plans and monthly lab and DNA readings"
   },
   "android": {
-    "latest": "1.8.0",
+    "latest": "1.9.0",
     "minRequired": "1.2.0",
-    "notes": "A simpler quiz, evidence labels on every pick, a new match score, and a new icon"
+    "notes": "Pro plans and monthly lab and DNA readings"
   },
   "comment": "Update this file with every release. `latest` bumps trigger soft banner. `minRequired` bumps force a blocking modal. Keep minRequired conservative — only bump when shipping a critical fix that invalidates older clients (e.g. API breaking change)."
 }

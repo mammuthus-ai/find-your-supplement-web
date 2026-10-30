@@ -7,7 +7,7 @@ Key things to know:
 - All recommendations are educational, not medical advice; readers are advised to consult a healthcare provider before starting supplements.
 - Each recommendation carries an evidence label rather than a blanket claim: Strong (consistent results in good-quality trials or reviews), Moderate (some good trials found a benefit), or Limited (small or mixed studies); nothing below Limited is credited. Labels are graded from what the studies found for each use, not from how many studies exist. They are explained at https://findyoursupplement.com/about/.
 - Published by Insquire, LLC, based in New York City. Contact: support@findyoursupplement.com. The companion app is on the App Store (id6761743777) and Google Play (com.findyoursupplement.app).
-- The quiz at https://findyoursupplement.com/quiz/ is free and requires no sign-up; it shows the top 3 recommendations. The full plan and the app-only features are a one-time $3.99 purchase in the mobile app (no subscription).
+- The quiz at https://findyoursupplement.com/quiz/ is free and requires no sign-up; it shows the top 3 recommendations. The full plan and the app-only features are part of Pro, an auto-renewing subscription in the mobile app: $3.99 a month, $14.99 for 6 months or $24.99 a year (US prices), which can be cancelled any time in the App Store or Google Play. People who bought the earlier one-time unlock keep it.
 
 ## Main Pages
 
@@ -15,7 +15,7 @@ Key things to know:
 - [Blog](https://findyoursupplement.com/blog/): All articles on supplements, vitamins, and nutrition science
 - [About](https://findyoursupplement.com/about/): How the recommendation engine works and how evidence is scored
 - [Supplements We Review](https://findyoursupplement.com/how-we-choose/): The supplements the quiz can recommend, names only
-- [Find Your Supplement App](https://findyoursupplement.com/app/): The iOS and Android app — full supplement regimen, blood work and genetic insights, the medication interaction checker, and brand match scores, for a one-time $3.99
+- [Find Your Supplement App](https://findyoursupplement.com/app/): The iOS and Android app — full supplement regimen, blood work and genetic insights, the medication interaction checker, and brand match scores, with a Pro subscription from $3.99 a month
 
 ## Blog: Deep Dives
 
@@ -85,5 +85,5 @@ How diet, lifestyle, and physiology shape what your body actually needs.
 - [RSS feed](https://findyoursupplement.com/feed.xml): All blog articles with publish dates
 - [Sitemap](https://findyoursupplement.com/sitemap.xml): Every indexable page with its last-modified date
 - [Privacy Policy](https://findyoursupplement.com/privacy/): What data the site and app collect and how it is used
-- [Terms of Service](https://findyoursupplement.com/terms/)
+- [Terms of Use](https://findyoursupplement.com/terms/)
 - [Delete your account](https://findyoursupplement.com/delete-account/): How to remove an app account and its data
