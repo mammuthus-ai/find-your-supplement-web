@@ -1,7 +1,18 @@
 {
- "generated": "2026-11-06",
- "count": 45,
+ "generated": "2026-11-13",
+ "count": 46,
  "articles": [
+  {
+   "slug": "electrolyte-supplements-guide",
+   "url": "https://findyoursupplement.com/blog/electrolyte-supplements-guide/",
+   "title": "Do You Need Electrolyte Supplements? When Water Is Enough and When It Isn't",
+   "description": "Do you need electrolyte supplements, or is water enough? For most people on most days, food and water cover it, but long sweaty workouts and bouts of diarrhea or vomiting are different. Here's what the research shows, and who should check with a doctor first.",
+   "category": "Guides",
+   "categoryColor": "#2563eb",
+   "readTime": "4 min read",
+   "date": "2026-11-13",
+   "image": "https://findyoursupplement.com/images/blog/electrolyte-supplements-guide-hero.jpg"
+  },
   {
    "slug": "vitamin-k2-with-d3",
    "url": "https://findyoursupplement.com/blog/vitamin-k2-with-d3/",
