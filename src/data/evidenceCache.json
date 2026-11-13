@@ -2089,6 +2089,252 @@
         "productCount": 1320,
         "lastUpdated": "2026-08-30"
       }
+    ],
+    "Turmeric": [
+      {
+        "supplement": "Turmeric",
+        "condition": "joint pain",
+        "pubmedCount": 13,
+        "rctCount": 5,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-10-09"
+      },
+      {
+        "supplement": "Turmeric",
+        "condition": "inflammation",
+        "pubmedCount": 1885,
+        "rctCount": 120,
+        "metaAnalysisCount": 41,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-10-09"
+      },
+      {
+        "supplement": "Turmeric",
+        "condition": "mood",
+        "pubmedCount": 42,
+        "rctCount": 13,
+        "metaAnalysisCount": 2,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-10-09"
+      },
+      {
+        "supplement": "Turmeric",
+        "condition": "depression",
+        "pubmedCount": 144,
+        "rctCount": 23,
+        "metaAnalysisCount": 10,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-10-09"
+      }
+    ],
+    "Saffron": [
+      {
+        "supplement": "Saffron",
+        "condition": "mood",
+        "pubmedCount": 30,
+        "rctCount": 13,
+        "metaAnalysisCount": 4,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-10-09"
+      },
+      {
+        "supplement": "Saffron",
+        "condition": "depression",
+        "pubmedCount": 109,
+        "rctCount": 41,
+        "metaAnalysisCount": 13,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-10-09"
+      },
+      {
+        "supplement": "Saffron",
+        "condition": "anxiety",
+        "pubmedCount": 62,
+        "rctCount": 23,
+        "metaAnalysisCount": 8,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-10-09"
+      },
+      {
+        "supplement": "Saffron",
+        "condition": "sleep",
+        "pubmedCount": 25,
+        "rctCount": 14,
+        "metaAnalysisCount": 4,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-10-09"
+      }
+    ],
+    "L-Theanine": [
+      {
+        "supplement": "L-Theanine",
+        "condition": "anxiety",
+        "pubmedCount": 44,
+        "rctCount": 18,
+        "metaAnalysisCount": 2,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-10-09"
+      },
+      {
+        "supplement": "L-Theanine",
+        "condition": "mood",
+        "pubmedCount": 32,
+        "rctCount": 18,
+        "metaAnalysisCount": 2,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-10-09"
+      },
+      {
+        "supplement": "L-Theanine",
+        "condition": "sleep",
+        "pubmedCount": 43,
+        "rctCount": 19,
+        "metaAnalysisCount": 2,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-10-09"
+      },
+      {
+        "supplement": "L-Theanine",
+        "condition": "cognitive function",
+        "pubmedCount": 23,
+        "rctCount": 8,
+        "metaAnalysisCount": 1,
+        "citationScore": 0,
+        "trialData": {
+          "completed": 0,
+          "positive": 0,
+          "phase3Plus": 0
+        },
+        "safety": {
+          "safeUpperLimit": "",
+          "adverseEventCount": 0,
+          "interactionWarnings": []
+        },
+        "productCount": 0,
+        "lastUpdated": "2026-10-09"
+      }
     ]
   }
 }
